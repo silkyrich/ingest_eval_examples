@@ -1,9 +1,99 @@
-2020-08-26 01:49:32.829 splunk> Open a can of whooparse label="double quotes"
-2020-08-27 06:49:28.864 Splunk> The Notorious B.I.G. D.A.T.A. average=0.8528412945210389 label="double quotes" name="double quotes" sum=2867 group=no_quotes
-2020-08-27 07:07:19.839 Splunk> See your world. Maybe wish you hadn’t. group=no_quotes average=0.7814642824075492 sum=1908 name=no_quotes
-2020-08-27 07:54:04.934 splunk> this way: Run-D.M.C. label=no_quotes average=0.5647517323964387 average=0.16353544697610456 sum=653
-2020-08-27 19:38:46.945 Splunk> I like big data and I cannot lie. sum=7807 sum=9062 group=no_quotes name=no_quotes name="double quotes"
-2020-08-27 22:52:49.255 splunk> We enjoy breaks more than Unions group=no_quotes sum=2638 name='single quotes'
-2020-08-29 02:47:46.828 splunk> The mars rover of the IT landfill. group="double quotes" group="double quotes"
-2020-08-29 13:28:42.119 splunk ML> Solve problems you didn't know you were about to have sum=9394 sum=9573 name="double quotes" group=no_quotes average=0.3937494254807543 group="double quotes"
-2020-08-30 05:20:42.373 splunk> These are the droids you are looking for label='single quotes' name="double quotes" sum=8090 group='single quotes'
+2020-08-26 11:33:29 group="double quotes" name="double quotes"
+2020-08-26 11:36:11 label="double quotes"
+2020-08-26 12:12:18 group="double quotes" name=no_quotes
+2020-08-26 12:27:04 group="double quotes" sum=2144
+2020-08-26 12:29:17 average=0.8236172316532552 name="double quotes"
+2020-08-26 13:05:43 label='single quotes' label=no_quotes
+2020-08-26 13:44:44 sum=8702 name="double quotes" average=0.8579775137137854 sum=9947
+2020-08-26 14:40:50 name="double quotes" sum=8796 group="double quotes"
+2020-08-26 15:14:17 sum=5882 sum=4083
+2020-08-26 15:33:57 average=0.9438823365794671 sum=546
+2020-08-26 15:57:19 average=0.8606733703320595
+2020-08-26 16:20:28 label="double quotes" name=no_quotes group='single quotes'
+2020-08-26 21:24:51 group=no_quotes
+2020-08-26 22:47:50 label="double quotes" name="double quotes" sum=2001
+2020-08-26 23:11:55 name="double quotes"
+2020-08-26 23:49:55 sum=6754 name=no_quotes group="double quotes"
+2020-08-27 01:13:40 group='single quotes'
+2020-08-27 05:00:08 name=no_quotes label=no_quotes
+2020-08-27 06:37:47 label=no_quotes label="double quotes"
+2020-08-27 07:10:41 sum=9252
+2020-08-27 10:24:34 group="double quotes" sum=667
+2020-08-27 12:39:21 label=no_quotes label=no_quotes average=0.41404207114038405
+2020-08-27 13:30:02 group="double quotes" group='single quotes'
+2020-08-27 13:50:24 average=0.5267940196527484 name=no_quotes
+2020-08-27 14:08:08 group=no_quotes sum=4796 sum=8784
+2020-08-27 17:52:01 average=0.12973728098626358 group="double quotes" sum=1856
+2020-08-27 18:06:01 average=0.7201496339828177
+2020-08-27 19:05:58 name="double quotes" name="double quotes"
+2020-08-27 19:56:32 name='single quotes' average=0.9034561495088128 group=no_quotes
+2020-08-27 20:48:06 average=0.31307888270908224 label="double quotes" average=0.5861005239879847 label='single quotes'
+2020-08-27 21:18:45 group="double quotes" label='single quotes' average=0.8876160930861176
+2020-08-28 06:00:01 name='single quotes' name="double quotes" group='single quotes'
+2020-08-28 06:32:18 name="double quotes" sum=5712
+2020-08-28 07:17:27 sum=2015 label=no_quotes label=no_quotes
+2020-08-28 08:23:02 sum=6589
+2020-08-28 09:56:49 group='single quotes' group='single quotes' sum=9136 name='single quotes'
+2020-08-28 12:17:23 group=no_quotes label=no_quotes label=no_quotes
+2020-08-28 13:13:00 sum=2830 name="double quotes" average=0.9806452001799657 group='single quotes'
+2020-08-28 14:27:25 group='single quotes' average=0.03206138441021533
+2020-08-28 15:56:04 group=no_quotes sum=6295 group=no_quotes label="double quotes"
+2020-08-28 17:05:28 name="double quotes" sum=4718
+2020-08-28 18:09:12 sum=1472 sum=6577 group='single quotes' name="double quotes"
+2020-08-28 19:41:21 sum=5019
+2020-08-28 20:02:26 sum=5660 label='single quotes' label=no_quotes average=0.1585910247513641
+2020-08-28 20:06:52 label=no_quotes
+2020-08-29 02:03:18 label="double quotes" group=no_quotes label='single quotes' label="double quotes"
+2020-08-29 03:01:17 label=no_quotes group="double quotes"
+2020-08-29 03:47:58 label='single quotes' group=no_quotes
+2020-08-29 05:10:19 sum=1570
+2020-08-29 05:12:53 sum=1234
+2020-08-29 05:17:03 name=no_quotes
+2020-08-29 05:33:27 group='single quotes'
+2020-08-29 06:31:04 average=0.8162091266676014 sum=5651
+2020-08-29 06:54:22 average=0.5764618984814478 sum=6008
+2020-08-29 07:46:23 average=0.8038113514398869 average=0.8680417439534572
+2020-08-29 08:03:29 average=0.9358714333849275
+2020-08-29 08:21:04 label=no_quotes
+2020-08-29 09:52:43 sum=1152
+2020-08-29 09:53:19 sum=9580 group='single quotes' average=0.23569003708610758 label="double quotes"
+2020-08-29 11:54:37 average=0.38120506727990966 label="double quotes" group=no_quotes
+2020-08-29 12:12:17 name="double quotes"
+2020-08-29 13:07:34 name='single quotes' group="double quotes" average=0.023449550641368 label="double quotes"
+2020-08-29 13:10:37 sum=8820 average=0.8691414921194369
+2020-08-29 14:26:37 sum=8988
+2020-08-29 16:13:38 name="double quotes"
+2020-08-29 16:39:39 label=no_quotes
+2020-08-29 16:53:35 label=no_quotes name='single quotes' label='single quotes'
+2020-08-29 16:57:09 group='single quotes'
+2020-08-29 17:28:22 sum=7937
+2020-08-29 18:03:13 average=0.5389781821038454
+2020-08-29 21:02:09 average=0.8788297473326615
+2020-08-29 21:33:22 group=no_quotes
+2020-08-29 21:43:38 average=0.612959479283946 group='single quotes' sum=1537 group=no_quotes
+2020-08-29 22:26:00 average=0.9510180991703092 group=no_quotes name='single quotes'
+2020-08-29 22:37:00 sum=3618
+2020-08-29 22:39:37 name="double quotes" average=0.48498141045159415 label='single quotes' average=0.8591614602556985
+2020-08-30 04:13:28 sum=8315 group=no_quotes average=0.4250793481580698 group='single quotes'
+2020-08-30 04:46:47 average=0.1499596863553211 group=no_quotes
+2020-08-30 05:07:06 label='single quotes' label='single quotes'
+2020-08-30 08:18:49 sum=2001 sum=7210 group="double quotes" group="double quotes"
+2020-08-30 10:38:17 sum=5856 name='single quotes' label='single quotes'
+2020-08-30 13:11:44 sum=2906 group="double quotes" group="double quotes"
+2020-08-30 14:40:30 name=no_quotes label="double quotes" average=0.9679863892097315 name="double quotes"
+2020-08-30 15:25:32 label="double quotes" group="double quotes" sum=4366
+2020-08-30 17:19:48 label="double quotes" name="double quotes" average=0.6430088546165067
+2020-08-30 17:24:32 group=no_quotes group=no_quotes
+2020-08-30 17:26:36 name="double quotes"
+2020-08-30 18:09:57 sum=4426 average=0.26551342422991886 sum=3345
+2020-08-30 18:40:15 sum=787
+2020-08-30 19:16:22 label='single quotes'
+2020-08-30 19:27:36 name='single quotes' sum=7787
+2020-08-30 20:13:22 group="double quotes"
+2020-08-30 23:06:18 name=no_quotes
+2020-08-30 23:32:57 group='single quotes'
+2020-08-31 04:12:59 name='single quotes' average=0.35992039127750786 average=0.15699689293340136 group=no_quotes
+2020-08-31 05:00:08 name=no_quotes sum=4651 average=0.35908581896929304 group="double quotes"
+2020-08-31 06:04:59 sum=2350
+2020-08-31 08:16:25 label='single quotes'
+2020-08-31 09:21:25 sum=634 name="double quotes" average=0.8288612186340123
