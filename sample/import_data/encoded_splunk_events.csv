@@ -1,9 +1,10 @@
-1598403340.635041%%%ingest_tom%%%laptop%%%ground%%%ingest_bananas%%%Wed Aug 26 01:55:40 2020 Splunk> The Notorious B.I.G. D.A.T.A.
-1598454800.635105%%%ingest_tom%%%server%%%sea%%%ingest_apples%%%26 Wed 2020 16:13:20 Splunk> 4TW
-1598457229.635129%%%ingest_buttercup%%%phone%%%tree%%%ingest_bananas%%%Wed Aug 26 16:53:49 2020 splunk> Chasing tail since 2003
-1598510391.635146%%%ingest_buttercup%%%server%%%ground%%%ingest_pairs%%%07:39:51 20-08-27 splunk> Digs deeper than a jealous spouse.
-1598528519.635161%%%ingest_buttercup%%%phone%%%ground%%%ingest_pairs%%%12:41:59 20-08-27 splunk> These are the droids you are looking for
-1598576304.635175%%%ingest_bob%%%server%%%sky%%%ingest_pairs%%%01:58:24 20-08-28 splunk> Chasing tail since 2003
-1598597164.635188%%%ingest_bob%%%phone%%%ground%%%ingest_pairs%%%07:46:04 20-08-28 Splunk> Take the sh out of IT.
-1598626192.635201%%%ingest_buttercup%%%phone%%%ground%%%ingest_apples%%%28 Fri 2020 15:49:52 splunk ML> Solve problems you didn't know you were about to have
-1598674241.635214%%%ingest_buttercup%%%laptop%%%ground%%%ingest_meat%%%2020-08-29 05:10:41 splunk> Caught me on the server - Wasn't me.
+1599324403.766301%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%17:46:43 20-09-05 splunk> We enjoy breaks more than Unions 
+1599332651.852272%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-05 20:04:11 Splunk> CSI: Logfiles. 
+1599348741.562296%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%06 Sun 2020 00:32:21 splunk> \\\. nuff said. 
+1599352120.388277%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%01:28:40 20-09-06 splunk> Chasing tail since 2003 
+1599354342.687282%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%chicken%%%06 Sun 2020 02:05:42 Splunk> Take the sh out of IT. 
+1599355214.837261%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 02:20:14 2020 Splunk> Needle. Haystack. Found. 
+1599380190.586292%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Sun Sep  6 09:16:30 2020 Splunk> see the light before you tunnel
+1599428371.298267%%%ingest_pipeline_demo_a%%%online%%%tree%%%fish%%%22:39:31 20-09-06 splunk> Show me your logs 
+1599461430.428249%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Mon Sep  7 07:50:30 2020 splunk> Open a can of whooparse 
+1599471138.146287%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 10:32:18 2020 splunk> We enjoy breaks more than Unions 
