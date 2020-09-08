@@ -1,0 +1,72 @@
+[
+{
+    "id": "conflicting_datetime_formats",
+    "title": "Handling conflicting datetime formats",
+    "short-description": "Bad data hygene can result in multiple datetime formats in a single sourcetype, we can use INGEST_EVAL and strptime to workaround this problem",
+    "category": "Datetime problems"
+},
+{
+    "id": "compound_datetimes",
+    "title": "Handling diseparate dates and times",
+    "short-description": "Some applications separate the date form the time. This example show how to use INGEST_EVAL to pull the date from a file name and join that with the time stamp found in the file",
+    "category": "Datetime problems"
+},
+{
+    "id": "auto_extract_indexed_fields",
+    "title": "Dynamic extraction of indexed fields",
+    "short-description": "Some log files conform to an informal syntax where attribute='value'. This example shows how we can use REPEAT_MATCH=true and ADD_META=true to discover and create indexed fields.",
+    "category": "Enrichment"
+},
+{
+    "id": "add_event_length",
+    "title": "Additional license usage metadata",
+    "short-description": "When back billing license usage it can be difficult to allocate where data volumes originate from. This example assigns the length of the _raw string to each event.",
+    "category": "Enrichment"
+},
+{
+    "id": "add_event_length",
+    "title": "Additional license usage metadata",
+    "short-description": "When back billing license usage it can be difficult to allocate where data volumes originate from. This example assigns the length of the _raw string to each event.",
+    "category": "Enrichment"
+},
+{
+    "id": "drop_indexed_fields",
+    "title" : "Dropping indexed fields from INDEXED_CSV",
+    "short-description" : "INDEXED_CSV and INDEXED_JSON allow you to use tstats and indexed fields on structured data, however sometimes it can bloat your storage. This example demonstrates how to blend search time and indexed time enrichment for a CSV file",
+    "category" : "Enrichment"
+},
+{
+    "id": "mask_data_and_map",
+    "title" : "Advanced Masking data with SHA1",
+    "short-description" : "Some log files contain sensitive data that should be hidden from users. This example shows how you can replace senstive data in your log message while creating a reverse map using INGEST_EVAL and CLONE_SOURCETYPE",
+    "category" : "Security"
+},
+{
+    "id": "mask_and_clone",
+    "title" : "Simple masking data",
+    "short-description" : "Some log files contain sensitive data that should be hidden from users. This example shows simple method to double index data once with a mask and once without.",
+    "category" : "Security"
+},
+{
+    "id": "load_into_indexes",
+    "title" : "Export and import data",
+    "short-description" : "It is sometimes useful to export snippets of data from one Spunk instance and load that into another. This examples shows how we can build a simple export import tool for loading data into Splunk using REGEX and INGEST_EVAL",
+    "category" : "Utilities"
+},
+{
+    "id": "data_estimation",
+    "title" : "Data estimation pipeline",
+    "short-description" : "Ingesting sources can blow your license. This examples shows how you can assess data volumes in metrics before indexing",
+    "category" : "Utilities"
+},
+{
+    "id": "split_forwarding",
+    "title" : "Split splunk forwarding",
+    "short-description" : "Splunk can send about 20MB/s per pipeline, and this can staturate ingestion on an indexer. This example shows how you can use INGEST_EVAL and routing groups to split pipeline output across multiple TCP streams",
+    "category" : "Utilities"
+}
+
+
+
+
+]

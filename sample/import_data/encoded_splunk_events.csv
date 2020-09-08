@@ -1,10 +1,1000 @@
-1599324403.766301%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%17:46:43 20-09-05 splunk> We enjoy breaks more than Unions 
-1599332651.852272%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-05 20:04:11 Splunk> CSI: Logfiles. 
-1599348741.562296%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%06 Sun 2020 00:32:21 splunk> \\\. nuff said. 
-1599352120.388277%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%01:28:40 20-09-06 splunk> Chasing tail since 2003 
-1599354342.687282%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%chicken%%%06 Sun 2020 02:05:42 Splunk> Take the sh out of IT. 
-1599355214.837261%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 02:20:14 2020 Splunk> Needle. Haystack. Found. 
-1599380190.586292%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Sun Sep  6 09:16:30 2020 Splunk> see the light before you tunnel
-1599428371.298267%%%ingest_pipeline_demo_a%%%online%%%tree%%%fish%%%22:39:31 20-09-06 splunk> Show me your logs 
-1599461430.428249%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Mon Sep  7 07:50:30 2020 splunk> Open a can of whooparse 
-1599471138.146287%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 10:32:18 2020 splunk> We enjoy breaks more than Unions 
+1599084036.301423%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-02 23:00:36 splunk> IT like you mean it 
+1599085397.692667%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%02 Wed 2020 23:23:17 splunk> Walking War Room!! 
+1599086928.00643%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-02 23:48:48 splunk> because ninjas are too busy 
+1599088238.646029%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%00:10:38 20-09-03 Splunk> Now with more code! 
+1599088334.522019%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-03 00:12:14 splunk ML> Solve problems you didn't know you were about to have 
+1599088883.619903%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Thu Sep  3 00:21:23 2020 splunk> because ninjas are too busy 
+1599089098.077499%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Thu Sep  3 00:24:58 2020 Splunk> data with destiny 
+1599089115.380624%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Thu Sep  3 00:25:15 2020 splunk> this way: Run-D.M.C. 
+1599089338.012555%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%00:28:58 20-09-03 Splunk> Now with more code! 
+1599090036.561607%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-03 00:40:36 splunk> More flexible than an Olympic gymnast. 
+1599090770.072963%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-03 00:52:50 splunk> All batbelt. No tights. 
+1599091540.348076%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%03 Thu 2020 01:05:40 splunk> We enjoy breaks more than Unions 
+1599091594.134233%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%03 Thu 2020 01:06:34 Splunk> Map. Reduce. Recycle. 
+1599092873.026297%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-03 01:27:53 splunk> Open a can of whooparse 
+1599093113.579055%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-03 01:31:53 splunk> Rhymes with drunk 
+1599093491.47371%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-03 01:38:11 splunk> Walking War Room!! 
+1599093495.453495%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-03 01:38:15 splunk> More flexible than an Olympic gymnast. 
+1599094530.966129%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%03 Thu 2020 01:55:30 splunk> don't get caught up in the game of pwns 
+1599095102.153472%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-03 02:05:02 splunk> this way: Run-D.M.C. 
+1599095192.709683%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%03 Thu 2020 02:06:32 Splunk> Map. Reduce. Recycle. 
+1599095199.749917%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Thu Sep  3 02:06:39 2020 splunk> These are the droids you are looking for 
+1599095746.104637%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%02:15:46 20-09-03 splunk> Chasing tail since 2003 
+1599097140.657026%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-03 02:39:00 Splunk> Take the sh out of IT. 
+1599097853.793518%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-03 02:50:53 splunk> this way: Run-D.M.C. 
+1599098938.121922%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%03:08:58 20-09-03 Splunk> see the forest, and the trees 
+1599099169.793198%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%03:12:49 20-09-03 splunk ML> Solve problems you didn't know you were about to have 
+1599099572.955427%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Thu Sep  3 03:19:32 2020 splunk> We enjoy breaks more than Unions 
+1599100025.168314%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%03:27:05 20-09-03 splunk> The bran for your system 
+1599100483.896614%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-03 03:34:43 Splunk> Map. Reduce. Recycle. 
+1599100598.884757%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Thu Sep  3 03:36:38 2020 splunk> Rhymes with drunk 
+1599101616.995488%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%03:53:36 20-09-03 Splunk> See your world. Maybe wish you hadn’t. 
+1599101801.084862%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Thu Sep  3 03:56:41 2020 Splunk> Finding your faults, just like mom. 
+1599102345.604446%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%03 Thu 2020 04:05:45 Splunk> Winning the War on Error 
+1599102912.537426%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-03 04:15:12 splunk> Caught me on the server - Wasn't me. 
+1599103310.574081%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%03 Thu 2020 04:21:50 splunk> More flexible than an Olympic gymnast. 
+1599104860.700564%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-03 04:47:40 splunk> These are the droids you are looking for 
+1599105223.602945%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%03 Thu 2020 04:53:43 splunk> Walking War Room!! 
+1599105351.7492%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Thu Sep  3 04:55:51 2020 Splunk> see the light before you tunnel
+1599105485.101767%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%04:58:05 20-09-03 splunk> Show me your logs 
+1599105579.354142%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Thu Sep  3 04:59:39 2020 splunk> because ninjas are too busy 
+1599105751.954095%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Thu Sep  3 05:02:31 2020 Splunk> see the forest, and the trees 
+1599106099.207197%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%03 Thu 2020 05:08:19 splunk> Chasing tail since 2003 
+1599106310.975042%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%05:11:50 20-09-03 Splunk> See your world. Maybe wish you hadn’t. 
+1599106364.592292%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%05:12:44 20-09-03 splunk> We enjoy breaks more than Unions 
+1599106461.485703%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Thu Sep  3 05:14:21 2020 splunk> Caught me on the server - Wasn't me. 
+1599107355.812726%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-03 05:29:15 Splunk> Finding your faults, just like mom. 
+1599107612.95741%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-03 05:33:32 Splunk> Take the sh out of IT. 
+1599108692.088267%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-03 05:51:32 splunk> We enjoy breaks more than Unions 
+1599110372.466055%%%ingest_pipeline_demo_b%%%online%%%sea%%%beef%%%2020-09-03 06:19:32 splunk> Walking War Room!! 
+1599110851.231743%%%ingest_pipeline_demo_b%%%online%%%sea%%%beef%%%2020-09-03 06:27:31 splunk> IT like you mean it 
+1599111493.575254%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%03 Thu 2020 06:38:13 Splunk> All batbelt. No tights. 
+1599111730.237035%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%03 Thu 2020 06:42:10 Splunk> Be an IT superhero. Go home early. 
+1599112163.197367%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%03 Thu 2020 06:49:23 Splunk> The IT Search Engine. 
+1599112281.957531%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-03 06:51:21 splunk> Open a can of whooparse 
+1599112341.703383%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Thu Sep  3 06:52:21 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599112785.760309%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-03 06:59:45 splunk> Show me your logs 
+1599113022.433697%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%03 Thu 2020 07:03:42 Splunk> All batbelt. No tights. 
+1599113613.109112%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-03 07:13:33 splunk> don't get caught up in the game of pwns 
+1599113924.964078%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%07:18:44 20-09-03 Splunk> Take the sh out of IT. 
+1599114199.715459%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Thu Sep  3 07:23:19 2020 splunk> Caught me on the server - Wasn't me. 
+1599114479.340927%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-03 07:27:59 splunk> More flexible than an Olympic gymnast. 
+1599114839.246032%%%ingest_pipeline_demo_b%%%market%%%tree%%%chicken%%%03 Thu 2020 07:33:59 Splunk> All batbelt. No tights. 
+1599115834.875756%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Thu Sep  3 07:50:34 2020 Splunk> Like an F-18, bro. 
+1599115909.502403%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%03 Thu 2020 07:51:49 splunk> More flexible than an Olympic gymnast. 
+1599115974.884274%%%ingest_pipeline_demo_b%%%market%%%sea%%%chicken%%%03 Thu 2020 07:52:54 Splunk> Map. Reduce. Recycle. 
+1599118097.090581%%%ingest_pipeline_demo_b%%%online%%%sky%%%fish%%%08:28:17 20-09-03 splunk> Digs deeper than a jealous spouse. 
+1599118443.904319%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-03 08:34:03 Splunk> Map. Reduce. Recycle. 
+1599118692.962889%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-03 08:38:12 splunk> The mars rover of the IT landfill. 
+1599118964.851803%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-03 08:42:44 Splunk> Like an F-18, bro. 
+1599119255.612753%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-03 08:47:35 Splunk> Map. Reduce. Recycle. 
+1599119459.997012%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Thu Sep  3 08:50:59 2020 splunk> Rhymes with drunk 
+1599120638.484532%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%09:10:38 20-09-03 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599121618.905499%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%09:26:58 20-09-03 splunk> Digs deeper than a jealous spouse. 
+1599122120.42481%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%03 Thu 2020 09:35:20 splunk> We enjoy breaks more than Unions 
+1599122480.369049%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-03 09:41:20 Splunk> CSI: Logfiles. 
+1599122810.498878%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%09:46:50 20-09-03 splunk> The corkscrew for your vintage data. 
+1599123264.799506%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%09:54:24 20-09-03 splunk> We line break for regular expressions 
+1599124438.441165%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%03 Thu 2020 10:13:58 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599124841.81233%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Thu Sep  3 10:20:41 2020 Splunk> I like big data and I cannot lie. 
+1599125341.501165%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%03 Thu 2020 10:29:01 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599125444.95562%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%03 Thu 2020 10:30:44 splunk> because ninjas are too busy 
+1599125622.98238%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%chicken%%%03 Thu 2020 10:33:42 splunk> All batbelt. No tights. 
+1599125914.766293%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%10:38:34 20-09-03 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599126542.211466%%%ingest_pipeline_demo_b%%%online%%%sky%%%beef%%%2020-09-03 10:49:02 splunk> The mars rover of the IT landfill. 
+1599126861.179257%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%10:54:21 20-09-03 splunk> IT like you mean it 
+1599127553.154212%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%11:05:53 20-09-03 splunk> IT like you mean it 
+1599128129.752826%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-03 11:15:29 splunk> More flexible than an Olympic gymnast. 
+1599129273.523124%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-03 11:34:33 splunk> Finding your faults, just like mom. 
+1599129336.379403%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%03 Thu 2020 11:35:36 splunk> this way: Run-D.M.C. 
+1599129903.796843%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fruit%%%Thu Sep  3 11:45:03 2020 splunk> \\\. nuff said. 
+1599130048.523449%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%11:47:28 20-09-03 splunk> Chasing tail since 2003 
+1599130137.565647%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-03 11:48:57 splunk> Rhymes with drunk 
+1599130206.893916%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%11:50:06 20-09-03 Splunk> Map. Reduce. Recycle. 
+1599130792.944898%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%03 Thu 2020 11:59:52 Splunk> Australian for grep. 
+1599131296.178541%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-03 12:08:16 Splunk> Winning the War on Error 
+1599131496.525332%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%12:11:36 20-09-03 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599131786.859005%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%chicken%%%03 Thu 2020 12:16:26 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599131959.618063%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-03 12:19:19 splunk> Rhymes with drunk 
+1599132080.035303%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Thu Sep  3 12:21:20 2020 splunk> The mars rover of the IT landfill. 
+1599132763.506379%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%12:32:43 20-09-03 Splunk> Finding your faults, just like mom. 
+1599133062.032191%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%12:37:42 20-09-03 splunk> Finding your faults, just like mom. 
+1599133566.925833%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Thu Sep  3 12:46:06 2020 Splunk> Finding your faults, just like mom. 
+1599134178.922188%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%03 Thu 2020 12:56:18 splunk ML> Solve problems you didn't know you were about to have 
+1599134850.346067%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Thu Sep  3 13:07:30 2020 splunk> More flexible than an Olympic gymnast. 
+1599135468.997618%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%chicken%%%03 Thu 2020 13:17:48 splunk> The mars rover of the IT landfill. 
+1599135863.732889%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%13:24:23 20-09-03 splunk> We line break for regular expressions 
+1599135904.89087%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%13:25:04 20-09-03 splunk> We line break for regular expressions 
+1599136224.08278%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-03 13:30:24 splunk> don't get caught up in the game of pwns 
+1599136287.135999%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%13:31:27 20-09-03 Splunk> data with destiny 
+1599136554.591789%%%ingest_pipeline_demo_b%%%online%%%sky%%%fish%%%13:35:54 20-09-03 Splunk> Needle. Haystack. Found. 
+1599137070.035965%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Thu Sep  3 13:44:30 2020 splunk> Caught me on the server - Wasn't me. 
+1599137695.13737%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Thu Sep  3 13:54:55 2020 Splunk> I like big data and I cannot lie. 
+1599137734.732152%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%13:55:34 20-09-03 splunk> The bran for your system 
+1599139865.192849%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%03 Thu 2020 14:31:05 splunk ML> Solve problems you didn't know you were about to have 
+1599140306.633009%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%14:38:26 20-09-03 splunk> More flexible than an Olympic gymnast. 
+1599140570.42271%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-03 14:42:50 Splunk> See your world. Maybe wish you hadn’t. 
+1599141049.622032%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%03 Thu 2020 14:50:49 splunk> Open a can of whooparse 
+1599141114.133204%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Thu Sep  3 14:51:54 2020 splunk> Rhymes with drunk 
+1599141146.596739%%%ingest_pipeline_demo_b%%%market%%%tree%%%chicken%%%03 Thu 2020 14:52:26 Splunk> CSI: Logfiles. 
+1599141450.895731%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%14:57:30 20-09-03 splunk> We line break for regular expressions 
+1599141536.43932%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%14:58:56 20-09-03 Splunk> All batbelt. No tights. 
+1599141594.538973%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-03 14:59:54 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599141611.564075%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-03 15:00:11 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599141922.509574%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-03 15:05:22 splunk> The mars rover of the IT landfill. 
+1599142015.856981%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%15:06:55 20-09-03 splunk> Show me your logs 
+1599142220.741907%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-03 15:10:20 splunk> Rhymes with drunk 
+1599143000.127634%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%03 Thu 2020 15:23:20 splunk> Rhymes with drunk 
+1599143980.04325%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%15:39:40 20-09-03 splunk> Rhymes with drunk 
+1599144699.405206%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%15:51:39 20-09-03 splunk> The corkscrew for your vintage data. 
+1599144760.188833%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%03 Thu 2020 15:52:40 splunk> All batbelt. No tights. 
+1599145364.482857%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%03 Thu 2020 16:02:44 Splunk> Finding your faults, just like mom. 
+1599145593.586194%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%16:06:33 20-09-03 splunk> We line break for regular expressions 
+1599146220.187809%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%16:17:00 20-09-03 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599146502.884512%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%16:21:42 20-09-03 splunk> All batbelt. No tights. 
+1599146521.067976%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%16:22:01 20-09-03 Splunk> data with destiny 
+1599146890.66766%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Thu Sep  3 16:28:10 2020 splunk> More flexible than an Olympic gymnast. 
+1599147010.603158%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%16:30:10 20-09-03 splunk> We enjoy breaks more than Unions 
+1599147746.590637%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%03 Thu 2020 16:42:26 splunk> These are the droids you are looking for 
+1599147776.020303%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%16:42:56 20-09-03 Splunk> Like an F-18, bro. 
+1599148098.14147%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%03 Thu 2020 16:48:18 splunk> Open a can of whooparse 
+1599148805.941049%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-03 17:00:05 Splunk> 4TW 
+1599149099.598182%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Thu Sep  3 17:04:59 2020 Splunk> CSI: Logfiles. 
+1599149157.67432%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Thu Sep  3 17:05:57 2020 Splunk> Needle. Haystack. Found. 
+1599149748.34092%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-03 17:15:48 Splunk> see the forest, and the trees 
+1599149802.043564%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Thu Sep  3 17:16:42 2020 Splunk> Australian for grep. 
+1599150116.407394%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fruit%%%Thu Sep  3 17:21:56 2020 Splunk> I like big data and I cannot lie. 
+1599150584.570234%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%17:29:44 20-09-03 Splunk> Winning the War on Error 
+1599150614.517627%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Thu Sep  3 17:30:14 2020 splunk> IT like you mean it 
+1599150997.686281%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Thu Sep  3 17:36:37 2020 Splunk> Winning the War on Error 
+1599151515.969671%%%ingest_pipeline_demo_b%%%online%%%sea%%%fruit%%%Thu Sep  3 17:45:15 2020 splunk> We enjoy breaks more than Unions 
+1599151527.116386%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-03 17:45:27 Splunk> I like big data and I cannot lie. 
+1599151565.875986%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%17:46:05 20-09-03 Splunk> CSI: Logfiles. 
+1599152179.87236%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Thu Sep  3 17:56:19 2020 Splunk> Like an F-18, bro. 
+1599152250.712999%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%03 Thu 2020 17:57:30 splunk> \\\. nuff said. 
+1599152423.691562%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%chicken%%%03 Thu 2020 18:00:23 splunk> Open a can of whooparse 
+1599152425.185267%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%03 Thu 2020 18:00:25 splunk> These are the droids you are looking for 
+1599152477.246815%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-03 18:01:17 splunk> The mars rover of the IT landfill. 
+1599153364.945975%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-03 18:16:04 splunk> Finding your faults, just like mom. 
+1599153406.474174%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Thu Sep  3 18:16:46 2020 Splunk> Like an F-18, bro. 
+1599153692.088376%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-03 18:21:32 Splunk> Needle. Haystack. Found. 
+1599153821.605611%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%03 Thu 2020 18:23:41 splunk> Show me your logs 
+1599154701.10782%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%18:38:21 20-09-03 splunk> Walking War Room!! 
+1599154922.007876%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Thu Sep  3 18:42:02 2020 Splunk> See your world. Maybe wish you hadn’t. 
+1599155243.533741%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%18:47:23 20-09-03 splunk ML> Solve problems you didn't know you were about to have 
+1599155325.122567%%%ingest_pipeline_demo_b%%%market%%%tree%%%chicken%%%03 Thu 2020 18:48:45 Splunk> 4TW 
+1599155572.089182%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-03 18:52:52 Splunk> Now with more code! 
+1599156369.137023%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%19:06:09 20-09-03 splunk> The bran for your system 
+1599157297.398175%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Thu Sep  3 19:21:37 2020 splunk> The bran for your system 
+1599157501.726446%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%03 Thu 2020 19:25:01 splunk> The mars rover of the IT landfill. 
+1599157819.020142%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Thu Sep  3 19:30:19 2020 Splunk> data with destiny 
+1599158249.24587%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Thu Sep  3 19:37:29 2020 Splunk> see the light before you tunnel
+1599158625.698287%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%19:43:45 20-09-03 splunk> \\\. nuff said. 
+1599158780.132973%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-03 19:46:20 Splunk> data with destiny 
+1599159755.368238%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Thu Sep  3 20:02:35 2020 Splunk> see the forest, and the trees 
+1599160912.969836%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-03 20:21:52 Splunk> The IT Search Engine. 
+1599160982.679102%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Thu Sep  3 20:23:02 2020 Splunk> 4TW 
+1599161655.864555%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Thu Sep  3 20:34:15 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599161945.21858%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%20:39:05 20-09-03 splunk> \\\. nuff said. 
+1599162289.230413%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%20:44:49 20-09-03 splunk> More flexible than an Olympic gymnast. 
+1599162756.488098%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fruit%%%Thu Sep  3 20:52:36 2020 splunk> Caught me on the server - Wasn't me. 
+1599163004.333071%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Thu Sep  3 20:56:44 2020 splunk> Caught me on the server - Wasn't me. 
+1599163375.890474%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%21:02:55 20-09-03 Splunk> Like an F-18, bro. 
+1599164184.477263%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-03 21:16:24 Splunk> Needle. Haystack. Found. 
+1599164234.256483%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%03 Thu 2020 21:17:14 splunk> The mars rover of the IT landfill. 
+1599164757.429572%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Thu Sep  3 21:25:57 2020 Splunk> data with destiny 
+1599165338.263065%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%03 Thu 2020 21:35:38 Splunk> Take the sh out of IT. 
+1599165712.816983%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-03 21:41:52 splunk> We enjoy breaks more than Unions 
+1599167440.57591%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-03 22:10:40 Splunk> See your world. Maybe wish you hadn’t. 
+1599169896.719508%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%22:51:36 20-09-03 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599171588.537816%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-03 23:19:48 Splunk> Finding your faults, just like mom. 
+1599171610.158604%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%23:20:10 20-09-03 splunk> Show me your logs 
+1599172345.333637%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Thu Sep  3 23:32:25 2020 splunk> Show me your logs 
+1599172361.409273%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%03 Thu 2020 23:32:41 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599172371.893102%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Thu Sep  3 23:32:51 2020 Splunk> data with destiny 
+1599172491.191545%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%03 Thu 2020 23:34:51 Splunk> see the forest, and the trees 
+1599172497.128587%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-03 23:34:57 splunk> Walking War Room!! 
+1599173226.206529%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Thu Sep  3 23:47:06 2020 splunk> this way: Run-D.M.C. 
+1599174519.663611%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%00:08:39 20-09-04 splunk> \\\. nuff said. 
+1599174715.877205%%%ingest_pipeline_demo_a%%%online%%%tree%%%beef%%%2020-09-04 00:11:55 splunk> The bran for your system 
+1599174843.969883%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Fri Sep  4 00:14:03 2020 Splunk> 4TW 
+1599175017.835854%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-04 00:16:57 Splunk> Like an F-18, bro. 
+1599175038.65563%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%00:17:18 20-09-04 Splunk> Finding your faults, just like mom. 
+1599175411.989892%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-04 00:23:31 splunk> don't get caught up in the game of pwns 
+1599175665.534905%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Fri Sep  4 00:27:45 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599175784.481019%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-04 00:29:44 Splunk> see the forest, and the trees 
+1599176969.046466%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Fri Sep  4 00:49:29 2020 Splunk> Australian for grep. 
+1599177266.305022%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%04 Fri 2020 00:54:26 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599177901.742565%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Fri Sep  4 01:05:01 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599178402.64928%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%01:13:22 20-09-04 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599179014.049601%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%01:23:34 20-09-04 splunk> The mars rover of the IT landfill. 
+1599179248.865695%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Fri Sep  4 01:27:28 2020 splunk> Chasing tail since 2003 
+1599179649.44733%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%01:34:09 20-09-04 splunk> Caught me on the server - Wasn't me. 
+1599180222.695115%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-04 01:43:42 Splunk> Take the sh out of IT. 
+1599180726.749231%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 01:52:06 splunk> IT like you mean it 
+1599181577.719036%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%02:06:17 20-09-04 splunk> \\\. nuff said. 
+1599181634.239281%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Fri Sep  4 02:07:14 2020 Splunk> Needle. Haystack. Found. 
+1599181718.965056%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Fri Sep  4 02:08:38 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599181951.203956%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%02:12:31 20-09-04 Splunk> Be an IT superhero. Go home early. 
+1599182228.835634%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%02:17:08 20-09-04 splunk> The bran for your system 
+1599182235.422075%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-04 02:17:15 splunk> Show me your logs 
+1599182392.362879%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%02:19:52 20-09-04 Splunk> Map. Reduce. Recycle. 
+1599182667.588594%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-04 02:24:27 splunk> All batbelt. No tights. 
+1599182825.274417%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%02:27:05 20-09-04 Splunk> Winning the War on Error 
+1599183719.879412%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 02:41:59 splunk> Rhymes with drunk 
+1599183852.563207%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%02:44:12 20-09-04 splunk> Chasing tail since 2003 
+1599184084.127608%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%04 Fri 2020 02:48:04 splunk> IT like you mean it 
+1599184844.61683%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%04 Fri 2020 03:00:44 Splunk> data with destiny 
+1599185215.015117%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%04 Fri 2020 03:06:55 splunk> Caught me on the server - Wasn't me. 
+1599185791.590278%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%03:16:31 20-09-04 splunk> \\\. nuff said. 
+1599186313.502323%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%04 Fri 2020 03:25:13 splunk> Open a can of whooparse 
+1599186449.525336%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Fri Sep  4 03:27:29 2020 Splunk> I like big data and I cannot lie. 
+1599187120.087863%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 03:38:40 splunk> IT like you mean it 
+1599187206.309456%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Fri Sep  4 03:40:06 2020 splunk> We line break for regular expressions 
+1599188116.386098%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 03:55:16 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599188274.341373%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%03:57:54 20-09-04 Splunk> I like big data and I cannot lie. 
+1599188388.749001%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-04 03:59:48 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599189001.550211%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Fri Sep  4 04:10:01 2020 Splunk> see the forest, and the trees 
+1599189886.305059%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%04 Fri 2020 04:24:46 Splunk> See your world. Maybe wish you hadn’t. 
+1599190651.403306%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Fri Sep  4 04:37:31 2020 splunk> \\\. nuff said. 
+1599191129.667604%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-04 04:45:29 splunk> Walking War Room!! 
+1599191557.184548%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%04 Fri 2020 04:52:37 Splunk> Be an IT superhero. Go home early. 
+1599192161.016363%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-04 05:02:41 Splunk> data with destiny 
+1599192669.261644%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%05:11:09 20-09-04 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599192717.954209%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Fri Sep  4 05:11:57 2020 Splunk> data with destiny 
+1599193735.575515%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%05:28:55 20-09-04 splunk> Finding your faults, just like mom. 
+1599194012.526989%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-04 05:33:32 splunk> We line break for regular expressions 
+1599194183.442525%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%05:36:23 20-09-04 splunk> Rhymes with drunk 
+1599195640.022979%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%04 Fri 2020 06:00:40 Splunk> Be an IT superhero. Go home early. 
+1599195829.273927%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Fri Sep  4 06:03:49 2020 splunk> Show me your logs 
+1599196245.860992%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%06:10:45 20-09-04 splunk> Caught me on the server - Wasn't me. 
+1599197301.929052%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-04 06:28:21 Splunk> see the light before you tunnel
+1599198281.551833%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-04 06:44:41 splunk> All batbelt. No tights. 
+1599198906.380019%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-04 06:55:06 splunk> We enjoy breaks more than Unions 
+1599199127.492922%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%04 Fri 2020 06:58:47 splunk> Finding your faults, just like mom. 
+1599199285.595363%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 07:01:25 splunk> Chasing tail since 2003 
+1599199675.172333%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%04 Fri 2020 07:07:55 splunk> The bran for your system 
+1599200136.466094%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-04 07:15:36 Splunk> 4TW 
+1599200425.323026%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%04 Fri 2020 07:20:25 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599201410.657799%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Fri Sep  4 07:36:50 2020 Splunk> Take the sh out of IT. 
+1599201715.816175%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-04 07:41:55 splunk> Walking War Room!! 
+1599201787.952932%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Fri Sep  4 07:43:07 2020 Splunk> I like big data and I cannot lie. 
+1599201811.81664%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%07:43:31 20-09-04 Splunk> data with destiny 
+1599202112.922769%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Fri Sep  4 07:48:32 2020 Splunk> All batbelt. No tights. 
+1599202261.155317%%%ingest_pipeline_demo_a%%%market%%%ground%%%chicken%%%04 Fri 2020 07:51:01 splunk> Chasing tail since 2003 
+1599202290.668188%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%07:51:30 20-09-04 splunk> this way: Run-D.M.C. 
+1599202345.606155%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Fri Sep  4 07:52:25 2020 Splunk> Winning the War on Error 
+1599204617.313238%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%04 Fri 2020 08:30:17 splunk> this way: Run-D.M.C. 
+1599205444.817571%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%08:44:04 20-09-04 Splunk> The IT Search Engine. 
+1599207141.248979%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Fri Sep  4 09:12:21 2020 splunk> because ninjas are too busy 
+1599207523.821558%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%09:18:43 20-09-04 splunk ML> Solve problems you didn't know you were about to have 
+1599208836.834904%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Fri Sep  4 09:40:36 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599208890.560932%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-04 09:41:30 splunk> Show me your logs 
+1599210102.100241%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%10:01:42 20-09-04 splunk> We line break for regular expressions 
+1599210503.089766%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%04 Fri 2020 10:08:23 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599210596.087836%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Fri Sep  4 10:09:56 2020 Splunk> Needle. Haystack. Found. 
+1599210642.217853%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-04 10:10:42 Splunk> Australian for grep. 
+1599211066.461271%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%10:17:46 20-09-04 Splunk> data with destiny 
+1599211193.446373%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%04 Fri 2020 10:19:53 Splunk> see the light before you tunnel
+1599212144.940288%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-04 10:35:44 Splunk> Finding your faults, just like mom. 
+1599212153.457043%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-04 10:35:53 splunk> Show me your logs 
+1599212552.269926%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%10:42:32 20-09-04 Splunk> See your world. Maybe wish you hadn’t. 
+1599213055.877594%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%10:50:55 20-09-04 splunk> because ninjas are too busy 
+1599213336.018145%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%10:55:36 20-09-04 splunk> We enjoy breaks more than Unions 
+1599213452.88635%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Fri Sep  4 10:57:32 2020 splunk> Caught me on the server - Wasn't me. 
+1599214103.074813%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-04 11:08:23 splunk> Walking War Room!! 
+1599214460.664092%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-04 11:14:20 splunk> We enjoy breaks more than Unions 
+1599214686.828097%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%11:18:06 20-09-04 splunk> Finding your faults, just like mom. 
+1599214790.054141%%%ingest_pipeline_demo_a%%%online%%%tree%%%beef%%%2020-09-04 11:19:50 splunk> Finding your faults, just like mom. 
+1599214790.312992%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Fri Sep  4 11:19:50 2020 splunk> More flexible than an Olympic gymnast. 
+1599214985.78095%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%11:23:05 20-09-04 splunk> Digs deeper than a jealous spouse. 
+1599215716.508591%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-04 11:35:16 Splunk> Take the sh out of IT. 
+1599216589.262399%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-04 11:49:49 splunk> The corkscrew for your vintage data. 
+1599216852.186989%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%04 Fri 2020 11:54:12 Splunk> Finding your faults, just like mom. 
+1599217117.918192%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%04 Fri 2020 11:58:37 Splunk> Finding your faults, just like mom. 
+1599217954.562099%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%12:12:34 20-09-04 splunk> \\\. nuff said. 
+1599221005.270674%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-04 13:03:25 splunk> Open a can of whooparse 
+1599221651.414049%%%ingest_pipeline_demo_b%%%market%%%sea%%%chicken%%%04 Fri 2020 13:14:11 Splunk> See your world. Maybe wish you hadn’t. 
+1599221916.092978%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%04 Fri 2020 13:18:36 Splunk> Now with more code! 
+1599223279.568307%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-04 13:41:19 Splunk> data with destiny 
+1599223368.617247%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Fri Sep  4 13:42:48 2020 splunk> Finding your faults, just like mom. 
+1599223813.322983%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Fri Sep  4 13:50:13 2020 Splunk> Map. Reduce. Recycle. 
+1599224548.194521%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Fri Sep  4 14:02:28 2020 splunk> Chasing tail since 2003 
+1599224721.330155%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-04 14:05:21 splunk> Chasing tail since 2003 
+1599224945.053295%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-04 14:09:05 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599224984.4459%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Fri Sep  4 14:09:44 2020 splunk> IT like you mean it 
+1599225654.918621%%%ingest_pipeline_demo_b%%%online%%%sky%%%fish%%%14:20:54 20-09-04 splunk> \\\. nuff said. 
+1599226011.502149%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%14:26:51 20-09-04 Splunk> The IT Search Engine. 
+1599226735.069848%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Fri Sep  4 14:38:55 2020 Splunk> Australian for grep. 
+1599226822.474346%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-04 14:40:22 Splunk> The IT Search Engine. 
+1599226888.865039%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Fri Sep  4 14:41:28 2020 Splunk> Winning the War on Error 
+1599227012.034326%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Fri Sep  4 14:43:32 2020 splunk> We line break for regular expressions 
+1599227414.307366%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%04 Fri 2020 14:50:14 splunk> Walking War Room!! 
+1599227924.90585%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-04 14:58:44 splunk> Digs deeper than a jealous spouse. 
+1599228212.399406%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%15:03:32 20-09-04 splunk ML> Solve problems you didn't know you were about to have 
+1599229024.664162%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 15:17:04 splunk> The bran for your system 
+1599229109.75648%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-04 15:18:29 splunk> Show me your logs 
+1599229533.442976%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%04 Fri 2020 15:25:33 splunk> don't get caught up in the game of pwns 
+1599230084.543302%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Fri Sep  4 15:34:44 2020 Splunk> I like big data and I cannot lie. 
+1599230100.212918%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%04 Fri 2020 15:35:00 Splunk> Winning the War on Error 
+1599231197.385947%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%15:53:17 20-09-04 splunk> We line break for regular expressions 
+1599231559.755986%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-04 15:59:19 Splunk> All batbelt. No tights. 
+1599231687.800976%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-04 16:01:27 splunk> The corkscrew for your vintage data. 
+1599232034.729676%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Fri Sep  4 16:07:14 2020 splunk> These are the droids you are looking for 
+1599232282.065959%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-04 16:11:22 Splunk> Like an F-18, bro. 
+1599232387.019819%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%16:13:07 20-09-04 Splunk> see the light before you tunnel
+1599233214.322805%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Fri Sep  4 16:26:54 2020 splunk> because ninjas are too busy 
+1599233251.145568%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%04 Fri 2020 16:27:31 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599234197.650601%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-04 16:43:17 splunk> Finding your faults, just like mom. 
+1599234308.88096%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%04 Fri 2020 16:45:08 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599234462.731894%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-04 16:47:42 splunk> The bran for your system 
+1599235981.563873%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%chicken%%%04 Fri 2020 17:13:01 Splunk> see the light before you tunnel
+1599236275.94895%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%17:17:55 20-09-04 splunk> More flexible than an Olympic gymnast. 
+1599236724.052707%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%chicken%%%04 Fri 2020 17:25:24 Splunk> see the forest, and the trees 
+1599237126.096581%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Fri Sep  4 17:32:06 2020 splunk> All batbelt. No tights. 
+1599237352.461986%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Fri Sep  4 17:35:52 2020 splunk> \\\. nuff said. 
+1599237864.732575%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%04 Fri 2020 17:44:24 Splunk> Take the sh out of IT. 
+1599238585.956462%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Fri Sep  4 17:56:25 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599240171.471685%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%04 Fri 2020 18:22:51 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599241186.861057%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%04 Fri 2020 18:39:46 Splunk> data with destiny 
+1599241402.84572%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%18:43:22 20-09-04 Splunk> Finding your faults, just like mom. 
+1599241780.770181%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Fri Sep  4 18:49:40 2020 Splunk> data with destiny 
+1599242484.859234%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Fri Sep  4 19:01:24 2020 splunk> Rhymes with drunk 
+1599243715.760548%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%beef%%%2020-09-04 19:21:55 splunk ML> Solve problems you didn't know you were about to have 
+1599244014.828353%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%19:26:54 20-09-04 Splunk> All batbelt. No tights. 
+1599244048.560112%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-04 19:27:28 Splunk> Like an F-18, bro. 
+1599244689.285837%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%04 Fri 2020 19:38:09 splunk> These are the droids you are looking for 
+1599245167.109968%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Fri Sep  4 19:46:07 2020 Splunk> The IT Search Engine. 
+1599245271.485227%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Fri Sep  4 19:47:51 2020 splunk> Rhymes with drunk 
+1599245613.46941%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%19:53:33 20-09-04 splunk> Digs deeper than a jealous spouse. 
+1599245808.406456%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%19:56:48 20-09-04 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599246268.844829%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-04 20:04:28 splunk> We enjoy breaks more than Unions 
+1599246551.167228%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%20:09:11 20-09-04 splunk> because ninjas are too busy 
+1599246732.457383%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-04 20:12:12 splunk ML> Solve problems you didn't know you were about to have 
+1599246864.683135%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%04 Fri 2020 20:14:24 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599247328.761762%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%04 Fri 2020 20:22:08 splunk> The bran for your system 
+1599247368.103846%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fish%%%20:22:48 20-09-04 splunk> We line break for regular expressions 
+1599247609.148162%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%04 Fri 2020 20:26:49 Splunk> The IT Search Engine. 
+1599248275.879509%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%04 Fri 2020 20:37:55 Splunk> Be an IT superhero. Go home early. 
+1599248882.407678%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%04 Fri 2020 20:48:02 splunk> this way: Run-D.M.C. 
+1599248989.669504%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-04 20:49:49 Splunk> Needle. Haystack. Found. 
+1599249649.89135%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Fri Sep  4 21:00:49 2020 splunk> The bran for your system 
+1599249886.095084%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%21:04:46 20-09-04 splunk> Caught me on the server - Wasn't me. 
+1599249923.665816%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%04 Fri 2020 21:05:23 Splunk> Like an F-18, bro. 
+1599251623.441125%%%ingest_pipeline_demo_a%%%online%%%sky%%%fruit%%%Fri Sep  4 21:33:43 2020 Splunk> Map. Reduce. Recycle. 
+1599252007.275985%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%chicken%%%04 Fri 2020 21:40:07 Splunk> The IT Search Engine. 
+1599252373.778131%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-04 21:46:13 splunk> this way: Run-D.M.C. 
+1599253604.597813%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-04 22:06:44 Splunk> Finding your faults, just like mom. 
+1599254635.857443%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-04 22:23:55 Splunk> 4TW 
+1599254811.283389%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Fri Sep  4 22:26:51 2020 splunk> We enjoy breaks more than Unions 
+1599255126.246236%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-04 22:32:06 splunk> Open a can of whooparse 
+1599255451.392159%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%04 Fri 2020 22:37:31 Splunk> data with destiny 
+1599255633.111809%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%22:40:33 20-09-04 splunk> Show me your logs 
+1599255739.351727%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%22:42:19 20-09-04 Splunk> see the forest, and the trees 
+1599255821.068327%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Fri Sep  4 22:43:41 2020 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599258406.673179%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%23:26:46 20-09-04 Splunk> see the light before you tunnel
+1599258825.426893%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%04 Fri 2020 23:33:45 splunk> We enjoy breaks more than Unions 
+1599258893.742343%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%04 Fri 2020 23:34:53 splunk> \\\. nuff said. 
+1599258946.078168%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Fri Sep  4 23:35:46 2020 splunk> The mars rover of the IT landfill. 
+1599258989.283688%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%04 Fri 2020 23:36:29 Splunk> The IT Search Engine. 
+1599259021.41536%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Fri Sep  4 23:37:01 2020 Splunk> Like an F-18, bro. 
+1599259124.299446%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-04 23:38:44 Splunk> See your world. Maybe wish you hadn’t. 
+1599259210.125887%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Fri Sep  4 23:40:10 2020 Splunk> see the light before you tunnel
+1599259222.702691%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%23:40:22 20-09-04 Splunk> 4TW 
+1599259875.628737%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Fri Sep  4 23:51:15 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599259887.35077%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Fri Sep  4 23:51:27 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599260220.498327%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fruit%%%Fri Sep  4 23:57:00 2020 Splunk> The IT Search Engine. 
+1599260330.363913%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Fri Sep  4 23:58:50 2020 Splunk> Australian for grep. 
+1599261535.717252%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Sat Sep  5 00:18:55 2020 splunk> The bran for your system 
+1599261582.96794%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-05 00:19:42 Splunk> Finding your faults, just like mom. 
+1599261652.942684%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%00:20:52 20-09-05 Splunk> Winning the War on Error 
+1599261995.040251%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-05 00:26:35 splunk> We line break for regular expressions 
+1599262666.072273%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sat Sep  5 00:37:46 2020 splunk> \\\. nuff said. 
+1599262936.301492%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%05 Sat 2020 00:42:16 splunk> These are the droids you are looking for 
+1599263522.800267%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sat Sep  5 00:52:02 2020 Splunk> Like an F-18, bro. 
+1599263620.458231%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-05 00:53:40 Splunk> data with destiny 
+1599264078.799957%%%ingest_pipeline_demo_a%%%online%%%tree%%%beef%%%2020-09-05 01:01:18 Splunk> The IT Search Engine. 
+1599264690.349535%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%01:11:30 20-09-05 splunk> More flexible than an Olympic gymnast. 
+1599265350.842677%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sat Sep  5 01:22:30 2020 splunk> Caught me on the server - Wasn't me. 
+1599265469.77739%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-05 01:24:29 Splunk> Winning the War on Error 
+1599266065.02065%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-05 01:34:25 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599266151.832953%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%01:35:51 20-09-05 splunk> We enjoy breaks more than Unions 
+1599266266.804777%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Sat Sep  5 01:37:46 2020 splunk> The bran for your system 
+1599266361.06143%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%05 Sat 2020 01:39:21 Splunk> Winning the War on Error 
+1599266996.622751%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 01:49:56 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599267231.933826%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%01:53:51 20-09-05 splunk> Chasing tail since 2003 
+1599267458.444199%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-05 01:57:38 Splunk> CSI: Logfiles. 
+1599268943.270033%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-05 02:22:23 Splunk> Now with more code! 
+1599269332.392574%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Sat Sep  5 02:28:52 2020 splunk> Finding your faults, just like mom. 
+1599269744.534588%%%ingest_pipeline_demo_b%%%online%%%sky%%%chicken%%%05 Sat 2020 02:35:44 Splunk> Be an IT superhero. Go home early. 
+1599269790.556484%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-05 02:36:30 splunk> The bran for your system 
+1599270053.987796%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-05 02:40:53 Splunk> Finding your faults, just like mom. 
+1599270657.844022%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Sat Sep  5 02:50:57 2020 splunk> Show me your logs 
+1599271140.418697%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%05 Sat 2020 02:59:00 Splunk> Map. Reduce. Recycle. 
+1599271677.668002%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%chicken%%%05 Sat 2020 03:07:57 splunk> These are the droids you are looking for 
+1599272594.19646%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%03:23:14 20-09-05 Splunk> Australian for grep. 
+1599272840.929595%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%05 Sat 2020 03:27:20 Splunk> See your world. Maybe wish you hadn’t. 
+1599272843.544996%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%03:27:23 20-09-05 Splunk> Winning the War on Error 
+1599272997.569105%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%05 Sat 2020 03:29:57 Splunk> Take the sh out of IT. 
+1599273026.737012%%%ingest_pipeline_demo_b%%%online%%%sky%%%chicken%%%05 Sat 2020 03:30:26 Splunk> 4TW 
+1599274005.508118%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-05 03:46:45 splunk> because ninjas are too busy 
+1599274541.655578%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%05 Sat 2020 03:55:41 Splunk> Finding your faults, just like mom. 
+1599274673.953072%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 03:57:53 2020 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599274716.390079%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%03:58:36 20-09-05 splunk> \\\. nuff said. 
+1599274932.525218%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%04:02:12 20-09-05 splunk> We line break for regular expressions 
+1599275867.975532%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-05 04:17:47 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599275910.545279%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 04:18:30 2020 splunk> Chasing tail since 2003 
+1599276085.861165%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%05 Sat 2020 04:21:25 Splunk> See your world. Maybe wish you hadn’t. 
+1599276147.193012%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-05 04:22:27 Splunk> Finding your faults, just like mom. 
+1599276246.805552%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Sat Sep  5 04:24:06 2020 splunk> Open a can of whooparse 
+1599276568.708598%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%05 Sat 2020 04:29:28 splunk> this way: Run-D.M.C. 
+1599276852.104654%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-05 04:34:12 Splunk> See your world. Maybe wish you hadn’t. 
+1599277537.2787%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-05 04:45:37 Splunk> Australian for grep. 
+1599278326.787721%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%04:58:46 20-09-05 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599278463.975924%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%05:01:03 20-09-05 Splunk> The IT Search Engine. 
+1599279665.048959%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%05 Sat 2020 05:21:05 splunk> These are the droids you are looking for 
+1599280029.977966%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%05:27:09 20-09-05 Splunk> Map. Reduce. Recycle. 
+1599280835.292032%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Sat Sep  5 05:40:35 2020 Splunk> see the forest, and the trees 
+1599281722.773201%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%05:55:22 20-09-05 Splunk> All batbelt. No tights. 
+1599282672.965885%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-05 06:11:12 splunk> \\\. nuff said. 
+1599282778.588554%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%06:12:58 20-09-05 Splunk> Winning the War on Error 
+1599283504.736463%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%05 Sat 2020 06:25:04 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599283633.181349%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%06:27:13 20-09-05 Splunk> Winning the War on Error 
+1599283873.442792%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%06:31:13 20-09-05 splunk> IT like you mean it 
+1599284071.361073%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%06:34:31 20-09-05 splunk> \\\. nuff said. 
+1599284616.358139%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%06:43:36 20-09-05 Splunk> Australian for grep. 
+1599284680.360502%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%05 Sat 2020 06:44:40 splunk> Open a can of whooparse 
+1599285360.510663%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%05 Sat 2020 06:56:00 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599286053.203611%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fish%%%07:07:33 20-09-05 Splunk> see the forest, and the trees 
+1599286814.488196%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 07:20:14 2020 splunk> Show me your logs 
+1599287798.837266%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%05 Sat 2020 07:36:38 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599287859.571202%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 07:37:39 2020 splunk> Digs deeper than a jealous spouse. 
+1599288089.826627%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 07:41:29 Splunk> 4TW 
+1599288101.447604%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Sat Sep  5 07:41:41 2020 Splunk> see the light before you tunnel
+1599288881.178135%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%07:54:41 20-09-05 splunk> All batbelt. No tights. 
+1599289260.352006%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-05 08:01:00 Splunk> see the light before you tunnel
+1599289326.82431%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%08:02:06 20-09-05 splunk> Caught me on the server - Wasn't me. 
+1599289469.173939%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-05 08:04:29 splunk> Caught me on the server - Wasn't me. 
+1599289704.150283%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-05 08:08:24 Splunk> All batbelt. No tights. 
+1599290200.490992%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-05 08:16:40 splunk> \\\. nuff said. 
+1599290228.34097%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%05 Sat 2020 08:17:08 Splunk> Be an IT superhero. Go home early. 
+1599290515.045148%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 08:21:55 splunk> Chasing tail since 2003 
+1599290718.870316%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-05 08:25:18 splunk> this way: Run-D.M.C. 
+1599290963.331002%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-05 08:29:23 splunk> because ninjas are too busy 
+1599290981.410917%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-05 08:29:41 splunk> Rhymes with drunk 
+1599291123.494873%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%beef%%%2020-09-05 08:32:03 splunk> Digs deeper than a jealous spouse. 
+1599291539.370805%%%ingest_pipeline_demo_b%%%online%%%ground%%%beef%%%2020-09-05 08:38:59 splunk> Rhymes with drunk 
+1599291581.502674%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 08:39:41 Splunk> Take the sh out of IT. 
+1599292102.660584%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%08:48:22 20-09-05 Splunk> I like big data and I cannot lie. 
+1599292117.919218%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-05 08:48:37 Splunk> Needle. Haystack. Found. 
+1599292909.401952%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Sat Sep  5 09:01:49 2020 splunk> We line break for regular expressions 
+1599293013.959607%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 09:03:33 splunk> \\\. nuff said. 
+1599293909.125181%%%ingest_pipeline_demo_a%%%online%%%ground%%%chicken%%%05 Sat 2020 09:18:29 splunk> More flexible than an Olympic gymnast. 
+1599294012.655191%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Sat Sep  5 09:20:12 2020 splunk> don't get caught up in the game of pwns 
+1599294060.47685%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%05 Sat 2020 09:21:00 Splunk> Australian for grep. 
+1599294444.821614%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-05 09:27:24 splunk> We line break for regular expressions 
+1599294839.674261%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%09:33:59 20-09-05 Splunk> See your world. Maybe wish you hadn’t. 
+1599295079.254701%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%09:37:59 20-09-05 Splunk> 4TW 
+1599295345.370621%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%05 Sat 2020 09:42:25 Splunk> Australian for grep. 
+1599295374.359087%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 09:42:54 Splunk> Be an IT superhero. Go home early. 
+1599295424.891002%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-05 09:43:44 Splunk> Australian for grep. 
+1599295971.910397%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%05 Sat 2020 09:52:51 splunk> Finding your faults, just like mom. 
+1599296309.675178%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%05 Sat 2020 09:58:29 splunk> because ninjas are too busy 
+1599298105.966489%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Sat Sep  5 10:28:25 2020 Splunk> Finding your faults, just like mom. 
+1599298348.749101%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-05 10:32:28 splunk> \\\. nuff said. 
+1599298554.020436%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-05 10:35:54 splunk> Chasing tail since 2003 
+1599298749.353942%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%05 Sat 2020 10:39:09 splunk ML> Solve problems you didn't know you were about to have 
+1599299368.409016%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-05 10:49:28 splunk> All batbelt. No tights. 
+1599300670.626453%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-05 11:11:10 splunk> Chasing tail since 2003 
+1599300715.925274%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Sat Sep  5 11:11:55 2020 Splunk> Like an F-18, bro. 
+1599301211.090902%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%11:20:11 20-09-05 Splunk> data with destiny 
+1599301313.420364%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-05 11:21:53 splunk> We enjoy breaks more than Unions 
+1599301665.813128%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%05 Sat 2020 11:27:45 splunk> We enjoy breaks more than Unions 
+1599302524.713009%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%05 Sat 2020 11:42:04 splunk> because ninjas are too busy 
+1599302681.701871%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 11:44:41 Splunk> Australian for grep. 
+1599302841.906601%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 11:47:21 splunk> this way: Run-D.M.C. 
+1599303118.2213%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%05 Sat 2020 11:51:58 Splunk> Now with more code! 
+1599303973.257542%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Sat Sep  5 12:06:13 2020 splunk> The corkscrew for your vintage data. 
+1599304158.739551%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%05 Sat 2020 12:09:18 Splunk> The IT Search Engine. 
+1599305639.237334%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Sat Sep  5 12:33:59 2020 Splunk> Finding your faults, just like mom. 
+1599305761.998822%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%05 Sat 2020 12:36:01 splunk> IT like you mean it 
+1599306021.14424%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Sat Sep  5 12:40:21 2020 Splunk> Now with more code! 
+1599306024.769323%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-05 12:40:24 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599306117.434248%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Sat Sep  5 12:41:57 2020 splunk> Rhymes with drunk 
+1599306427.290617%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Sat Sep  5 12:47:07 2020 splunk> All batbelt. No tights. 
+1599306714.758323%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-05 12:51:54 Splunk> 4TW 
+1599307401.943423%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%13:03:21 20-09-05 splunk> Finding your faults, just like mom. 
+1599307515.208518%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%05 Sat 2020 13:05:15 Splunk> Take the sh out of IT. 
+1599308403.067261%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%05 Sat 2020 13:20:03 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599308440.721585%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%13:20:40 20-09-05 Splunk> Take the sh out of IT. 
+1599308868.235433%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%13:27:48 20-09-05 splunk> We line break for regular expressions 
+1599309053.695798%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Sat Sep  5 13:30:53 2020 Splunk> See your world. Maybe wish you hadn’t. 
+1599309219.46863%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sat Sep  5 13:33:39 2020 splunk> IT like you mean it 
+1599309794.638387%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 13:43:14 2020 splunk> Digs deeper than a jealous spouse. 
+1599310206.830128%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%05 Sat 2020 13:50:06 splunk> The bran for your system 
+1599310811.730707%%%ingest_pipeline_demo_a%%%online%%%tree%%%fish%%%14:00:11 20-09-05 Splunk> Australian for grep. 
+1599312316.279087%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%05 Sat 2020 14:25:16 Splunk> see the forest, and the trees 
+1599312793.363992%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%05 Sat 2020 14:33:13 splunk> Show me your logs 
+1599313904.756132%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-05 14:51:44 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599314108.341149%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-05 14:55:08 splunk> Finding your faults, just like mom. 
+1599314262.926839%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Sat Sep  5 14:57:42 2020 Splunk> See your world. Maybe wish you hadn’t. 
+1599314728.608256%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 15:05:28 2020 splunk> Show me your logs 
+1599315879.397078%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%15:24:39 20-09-05 Splunk> Australian for grep. 
+1599315953.500525%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Sat Sep  5 15:25:53 2020 splunk> More flexible than an Olympic gymnast. 
+1599316253.825209%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Sat Sep  5 15:30:53 2020 splunk> Digs deeper than a jealous spouse. 
+1599317746.742717%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%05 Sat 2020 15:55:46 splunk> Walking War Room!! 
+1599317799.830185%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%05 Sat 2020 15:56:39 splunk> Show me your logs 
+1599319974.629545%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%16:32:54 20-09-05 splunk> These are the droids you are looking for 
+1599320769.482854%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%16:46:09 20-09-05 Splunk> Be an IT superhero. Go home early. 
+1599321610.762356%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Sat Sep  5 17:00:10 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599321925.962263%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%chicken%%%05 Sat 2020 17:05:25 Splunk> Needle. Haystack. Found. 
+1599322151.676039%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%05 Sat 2020 17:09:11 splunk> Finding your faults, just like mom. 
+1599322325.812657%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-05 17:12:05 splunk ML> Solve problems you didn't know you were about to have 
+1599322513.979746%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%05 Sat 2020 17:15:13 Splunk> 4TW 
+1599323212.67296%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%05 Sat 2020 17:26:52 Splunk> CSI: Logfiles. 
+1599323216.415453%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%17:26:56 20-09-05 Splunk> data with destiny 
+1599323608.54122%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 17:33:28 Splunk> Map. Reduce. Recycle. 
+1599324520.747867%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%05 Sat 2020 17:48:40 splunk> The bran for your system 
+1599324665.271584%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-05 17:51:05 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599325472.667396%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%18:04:32 20-09-05 splunk> Open a can of whooparse 
+1599326025.72538%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-05 18:13:45 Splunk> Take the sh out of IT. 
+1599326321.527773%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%05 Sat 2020 18:18:41 splunk> The corkscrew for your vintage data. 
+1599326338.016823%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Sat Sep  5 18:18:58 2020 splunk> We enjoy breaks more than Unions 
+1599327168.586624%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Sat Sep  5 18:32:48 2020 Splunk> Winning the War on Error 
+1599327383.634535%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Sat Sep  5 18:36:23 2020 Splunk> All batbelt. No tights. 
+1599327953.981493%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-05 18:45:53 Splunk> CSI: Logfiles. 
+1599328070.585241%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-05 18:47:50 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599328250.273283%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%05 Sat 2020 18:50:50 splunk> Rhymes with drunk 
+1599328284.83064%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%18:51:24 20-09-05 splunk> Finding your faults, just like mom. 
+1599328368.957525%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Sat Sep  5 18:52:48 2020 splunk> Rhymes with drunk 
+1599328494.933062%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-05 18:54:54 splunk> Finding your faults, just like mom. 
+1599328922.431744%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 19:02:02 Splunk> Like an F-18, bro. 
+1599329381.796491%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%05 Sat 2020 19:09:41 splunk> These are the droids you are looking for 
+1599329656.898644%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%19:14:16 20-09-05 Splunk> Needle. Haystack. Found. 
+1599329715.913542%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Sat Sep  5 19:15:15 2020 Splunk> data with destiny 
+1599330005.043245%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%05 Sat 2020 19:20:05 Splunk> Map. Reduce. Recycle. 
+1599330071.136384%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 19:21:11 splunk> More flexible than an Olympic gymnast. 
+1599330347.102866%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%05 Sat 2020 19:25:47 Splunk> see the light before you tunnel
+1599332184.389664%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-05 19:56:24 Splunk> Take the sh out of IT. 
+1599332323.012844%%%ingest_pipeline_demo_b%%%market%%%tree%%%chicken%%%05 Sat 2020 19:58:43 Splunk> Take the sh out of IT. 
+1599332587.131029%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%20:03:07 20-09-05 Splunk> Winning the War on Error 
+1599332831.663155%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%05 Sat 2020 20:07:11 splunk> Chasing tail since 2003 
+1599333359.240597%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-05 20:15:59 splunk> Caught me on the server - Wasn't me. 
+1599334720.20394%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Sat Sep  5 20:38:40 2020 splunk> The corkscrew for your vintage data. 
+1599334776.925366%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%05 Sat 2020 20:39:36 splunk> The mars rover of the IT landfill. 
+1599334885.874292%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-05 20:41:25 splunk ML> Solve problems you didn't know you were about to have 
+1599335145.140853%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-05 20:45:45 splunk> Rhymes with drunk 
+1599335286.644653%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Sat Sep  5 20:48:06 2020 splunk> Walking War Room!! 
+1599336667.309456%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-05 21:11:07 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599337157.20204%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-05 21:19:17 splunk> don't get caught up in the game of pwns 
+1599337275.547204%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%05 Sat 2020 21:21:15 Splunk> Needle. Haystack. Found. 
+1599337302.134545%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Sat Sep  5 21:21:42 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599338106.402213%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-05 21:35:06 splunk> Open a can of whooparse 
+1599338157.097966%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Sat Sep  5 21:35:57 2020 splunk> because ninjas are too busy 
+1599338283.65179%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-05 21:38:03 Splunk> Like an F-18, bro. 
+1599339392.794184%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%beef%%%2020-09-05 21:56:32 Splunk> Australian for grep. 
+1599340521.610764%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%05 Sat 2020 22:15:21 splunk> We enjoy breaks more than Unions 
+1599340563.748503%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%22:16:03 20-09-05 Splunk> 4TW 
+1599340826.42745%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%22:20:26 20-09-05 splunk> Show me your logs 
+1599341048.559478%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%22:24:08 20-09-05 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599341480.34605%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%05 Sat 2020 22:31:20 Splunk> data with destiny 
+1599341866.205135%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-05 22:37:46 Splunk> Be an IT superhero. Go home early. 
+1599343198.69292%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fruit%%%Sat Sep  5 22:59:58 2020 Splunk> All batbelt. No tights. 
+1599344358.462251%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%05 Sat 2020 23:19:18 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599344450.408342%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Sat Sep  5 23:20:50 2020 Splunk> Needle. Haystack. Found. 
+1599344611.14429%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Sat Sep  5 23:23:31 2020 splunk> Chasing tail since 2003 
+1599344800.850091%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-05 23:26:40 Splunk> see the forest, and the trees 
+1599345261.615508%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%05 Sat 2020 23:34:21 splunk> IT like you mean it 
+1599345778.316404%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%23:42:58 20-09-05 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599345849.097856%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Sat Sep  5 23:44:09 2020 Splunk> 4TW 
+1599346122.046053%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%23:48:42 20-09-05 splunk> IT like you mean it 
+1599346146.297736%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%05 Sat 2020 23:49:06 splunk> These are the droids you are looking for 
+1599346593.429937%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%05 Sat 2020 23:56:33 splunk> The bran for your system 
+1599347096.413152%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-06 00:04:56 splunk> don't get caught up in the game of pwns 
+1599348453.84389%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%00:27:33 20-09-06 splunk> Chasing tail since 2003 
+1599349230.049714%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Sun Sep  6 00:40:30 2020 splunk> The bran for your system 
+1599349266.691131%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%06 Sun 2020 00:41:06 splunk> Digs deeper than a jealous spouse. 
+1599349413.952052%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Sun Sep  6 00:43:33 2020 Splunk> Australian for grep. 
+1599349629.29267%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%06 Sun 2020 00:47:09 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599349681.478188%%%ingest_pipeline_demo_a%%%market%%%ground%%%chicken%%%06 Sun 2020 00:48:01 splunk> IT like you mean it 
+1599350259.589443%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%06 Sun 2020 00:57:39 Splunk> The IT Search Engine. 
+1599350485.46842%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%06 Sun 2020 01:01:25 Splunk> Map. Reduce. Recycle. 
+1599350928.189724%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-06 01:08:48 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599351110.236463%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-06 01:11:50 splunk> Finding your faults, just like mom. 
+1599351643.953969%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%01:20:43 20-09-06 Splunk> The IT Search Engine. 
+1599351801.962416%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-06 01:23:21 splunk> The mars rover of the IT landfill. 
+1599352187.705223%%%ingest_pipeline_demo_b%%%market%%%ground%%%chicken%%%06 Sun 2020 01:29:47 splunk> We enjoy breaks more than Unions 
+1599353143.134924%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Sun Sep  6 01:45:43 2020 splunk> don't get caught up in the game of pwns 
+1599353670.169095%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%chicken%%%06 Sun 2020 01:54:30 Splunk> Australian for grep. 
+1599353919.451393%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%06 Sun 2020 01:58:39 Splunk> data with destiny 
+1599354553.628786%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-06 02:09:13 splunk> The corkscrew for your vintage data. 
+1599356116.695618%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%02:35:16 20-09-06 splunk> Finding your faults, just like mom. 
+1599357237.075316%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-06 02:53:57 splunk> because ninjas are too busy 
+1599357280.4827%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sun Sep  6 02:54:40 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599357571.370936%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fruit%%%Sun Sep  6 02:59:31 2020 splunk> These are the droids you are looking for 
+1599357837.091258%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-06 03:03:57 splunk> The corkscrew for your vintage data. 
+1599358145.636793%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Sun Sep  6 03:09:05 2020 splunk> don't get caught up in the game of pwns 
+1599358693.422671%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%03:18:13 20-09-06 Splunk> All batbelt. No tights. 
+1599358759.104247%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%03:19:19 20-09-06 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599358799.682687%%%ingest_pipeline_demo_a%%%online%%%tree%%%beef%%%2020-09-06 03:19:59 Splunk> Be an IT superhero. Go home early. 
+1599358895.836172%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%03:21:35 20-09-06 splunk> Chasing tail since 2003 
+1599359065.146989%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Sun Sep  6 03:24:25 2020 splunk> because ninjas are too busy 
+1599359110.582494%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%03:25:10 20-09-06 splunk> Open a can of whooparse 
+1599360324.197243%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Sun Sep  6 03:45:24 2020 splunk> Chasing tail since 2003 
+1599360413.120347%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Sun Sep  6 03:46:53 2020 splunk> Caught me on the server - Wasn't me. 
+1599360543.798224%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-06 03:49:03 Splunk> Now with more code! 
+1599360809.821414%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-06 03:53:29 Splunk> Now with more code! 
+1599360957.554347%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%03:55:57 20-09-06 Splunk> CSI: Logfiles. 
+1599361649.665104%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Sun Sep  6 04:07:29 2020 Splunk> Like an F-18, bro. 
+1599361880.551661%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Sun Sep  6 04:11:20 2020 Splunk> Take the sh out of IT. 
+1599362239.545253%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%04:17:19 20-09-06 splunk> because ninjas are too busy 
+1599362711.83697%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%04:25:11 20-09-06 Splunk> Winning the War on Error 
+1599362857.731089%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%04:27:37 20-09-06 splunk> Show me your logs 
+1599363265.377482%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%04:34:25 20-09-06 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599363786.62183%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%beef%%%2020-09-06 04:43:06 Splunk> All batbelt. No tights. 
+1599364237.3674%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%04:50:37 20-09-06 splunk> IT like you mean it 
+1599364244.001949%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%06 Sun 2020 04:50:44 Splunk> Australian for grep. 
+1599364607.177277%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%06 Sun 2020 04:56:47 Splunk> Map. Reduce. Recycle. 
+1599364646.477473%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%06 Sun 2020 04:57:26 splunk> More flexible than an Olympic gymnast. 
+1599364670.663145%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Sun Sep  6 04:57:50 2020 splunk> The corkscrew for your vintage data. 
+1599364746.795156%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%04:59:06 20-09-06 splunk> Finding your faults, just like mom. 
+1599365721.991036%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%05:15:21 20-09-06 Splunk> Australian for grep. 
+1599366071.630694%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-06 05:21:11 splunk> Caught me on the server - Wasn't me. 
+1599366209.199823%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%06 Sun 2020 05:23:29 splunk> this way: Run-D.M.C. 
+1599366408.351312%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-06 05:26:48 splunk> Digs deeper than a jealous spouse. 
+1599366648.27957%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-06 05:30:48 splunk> Open a can of whooparse 
+1599367625.863259%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%05:47:05 20-09-06 splunk> The mars rover of the IT landfill. 
+1599367669.298436%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-06 05:47:49 Splunk> Now with more code! 
+1599367742.336369%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-06 05:49:02 splunk> this way: Run-D.M.C. 
+1599367901.69734%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%06 Sun 2020 05:51:41 Splunk> 4TW 
+1599368019.105198%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%06 Sun 2020 05:53:39 splunk> More flexible than an Olympic gymnast. 
+1599368457.213963%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-06 06:00:57 Splunk> See your world. Maybe wish you hadn’t. 
+1599369746.311973%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Sun Sep  6 06:22:26 2020 Splunk> data with destiny 
+1599370743.642294%%%ingest_pipeline_demo_b%%%online%%%sea%%%beef%%%2020-09-06 06:39:03 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599370900.372627%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-06 06:41:40 splunk> Caught me on the server - Wasn't me. 
+1599370976.286168%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-06 06:42:56 splunk> We enjoy breaks more than Unions 
+1599371309.880009%%%ingest_pipeline_demo_b%%%market%%%ground%%%fruit%%%Sun Sep  6 06:48:29 2020 Splunk> Now with more code! 
+1599371812.016884%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-06 06:56:52 Splunk> Map. Reduce. Recycle. 
+1599372301.77127%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-06 07:05:01 splunk> don't get caught up in the game of pwns 
+1599372703.067686%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-06 07:11:43 splunk> We enjoy breaks more than Unions 
+1599372985.642161%%%ingest_pipeline_demo_a%%%market%%%sea%%%beef%%%2020-09-06 07:16:25 Splunk> Like an F-18, bro. 
+1599375085.758122%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-06 07:51:25 splunk> IT like you mean it 
+1599375116.412754%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%chicken%%%06 Sun 2020 07:51:56 splunk> Show me your logs 
+1599375168.2189%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Sun Sep  6 07:52:48 2020 splunk> Rhymes with drunk 
+1599375223.519877%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-06 07:53:43 splunk> Digs deeper than a jealous spouse. 
+1599376626.067121%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Sun Sep  6 08:17:06 2020 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599376962.86593%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sun Sep  6 08:22:42 2020 splunk> Digs deeper than a jealous spouse. 
+1599377403.445837%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%06 Sun 2020 08:30:03 Splunk> Australian for grep. 
+1599377488.488859%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%08:31:28 20-09-06 splunk> because ninjas are too busy 
+1599377907.44382%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%06 Sun 2020 08:38:27 splunk> We enjoy breaks more than Unions 
+1599377939.398512%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%06 Sun 2020 08:38:59 splunk> this way: Run-D.M.C. 
+1599378026.209016%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-06 08:40:26 splunk> Rhymes with drunk 
+1599378057.082151%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%chicken%%%06 Sun 2020 08:40:57 splunk> Show me your logs 
+1599378421.432406%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%08:47:01 20-09-06 Splunk> I like big data and I cannot lie. 
+1599378916.91507%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Sun Sep  6 08:55:16 2020 splunk> Chasing tail since 2003 
+1599379153.179192%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-06 08:59:13 Splunk> See your world. Maybe wish you hadn’t. 
+1599379554.62545%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fish%%%09:05:54 20-09-06 Splunk> 4TW 
+1599379743.684082%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 09:09:03 2020 splunk> The mars rover of the IT landfill. 
+1599381317.239188%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%06 Sun 2020 09:35:17 Splunk> see the forest, and the trees 
+1599381902.943644%%%ingest_pipeline_demo_b%%%market%%%sea%%%beef%%%2020-09-06 09:45:02 splunk> Digs deeper than a jealous spouse. 
+1599382089.703084%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-06 09:48:09 splunk> Walking War Room!! 
+1599382211.567225%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-06 09:50:11 splunk> don't get caught up in the game of pwns 
+1599382550.23206%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%09:55:50 20-09-06 Splunk> Australian for grep. 
+1599382941.050433%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-06 10:02:21 splunk> These are the droids you are looking for 
+1599383380.940864%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%06 Sun 2020 10:09:40 splunk> The bran for your system 
+1599383904.860258%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%06 Sun 2020 10:18:24 Splunk> 4TW 
+1599384814.550012%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fruit%%%Sun Sep  6 10:33:34 2020 Splunk> Like an F-18, bro. 
+1599385299.800577%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%06 Sun 2020 10:41:39 Splunk> All batbelt. No tights. 
+1599385450.517647%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%10:44:10 20-09-06 Splunk> Winning the War on Error 
+1599386261.188705%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%10:57:41 20-09-06 Splunk> Now with more code! 
+1599387380.348306%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%11:16:20 20-09-06 Splunk> data with destiny 
+1599387581.212631%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-06 11:19:41 splunk> this way: Run-D.M.C. 
+1599387713.483522%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%06 Sun 2020 11:21:53 Splunk> see the light before you tunnel
+1599388010.995988%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%06 Sun 2020 11:26:50 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599388611.790086%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-06 11:36:51 splunk> These are the droids you are looking for 
+1599389224.455548%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-06 11:47:04 Splunk> Winning the War on Error 
+1599389411.0654%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 11:50:11 2020 splunk> These are the droids you are looking for 
+1599390080.030124%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%12:01:20 20-09-06 splunk> don't get caught up in the game of pwns 
+1599390781.081226%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%12:13:01 20-09-06 splunk> These are the droids you are looking for 
+1599391060.827029%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Sun Sep  6 12:17:40 2020 splunk> The corkscrew for your vintage data. 
+1599391129.409178%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Sun Sep  6 12:18:49 2020 Splunk> data with destiny 
+1599392321.803217%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%12:38:41 20-09-06 Splunk> Needle. Haystack. Found. 
+1599392558.971081%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%12:42:38 20-09-06 Splunk> All batbelt. No tights. 
+1599393090.380847%%%ingest_pipeline_demo_b%%%online%%%sky%%%fish%%%12:51:30 20-09-06 Splunk> 4TW 
+1599393862.356277%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-06 13:04:22 Splunk> Take the sh out of IT. 
+1599393864.269254%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fish%%%13:04:24 20-09-06 Splunk> Now with more code! 
+1599394317.898118%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Sun Sep  6 13:11:57 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599394364.094481%%%ingest_pipeline_demo_b%%%market%%%sea%%%chicken%%%06 Sun 2020 13:12:44 splunk> Finding your faults, just like mom. 
+1599394636.316386%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%13:17:16 20-09-06 Splunk> I like big data and I cannot lie. 
+1599394715.749135%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-06 13:18:35 Splunk> Now with more code! 
+1599394718.533963%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-06 13:18:38 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599394740.758489%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%06 Sun 2020 13:19:00 splunk> These are the droids you are looking for 
+1599395597.419284%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-06 13:33:17 splunk> Chasing tail since 2003 
+1599395773.605158%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-06 13:36:13 splunk ML> Solve problems you didn't know you were about to have 
+1599395782.56323%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%06 Sun 2020 13:36:22 Splunk> See your world. Maybe wish you hadn’t. 
+1599396501.917069%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Sun Sep  6 13:48:21 2020 Splunk> see the light before you tunnel
+1599396854.456772%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%06 Sun 2020 13:54:14 splunk> Caught me on the server - Wasn't me. 
+1599397785.930895%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-06 14:09:45 splunk> The mars rover of the IT landfill. 
+1599397965.140996%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%06 Sun 2020 14:12:45 Splunk> Be an IT superhero. Go home early. 
+1599398075.601114%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Sun Sep  6 14:14:35 2020 Splunk> Take the sh out of IT. 
+1599398089.3768%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%chicken%%%06 Sun 2020 14:14:49 splunk> More flexible than an Olympic gymnast. 
+1599398492.538161%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Sun Sep  6 14:21:32 2020 Splunk> data with destiny 
+1599398494.915223%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-06 14:21:34 splunk> We enjoy breaks more than Unions 
+1599398635.766915%%%ingest_pipeline_demo_b%%%online%%%sky%%%beef%%%2020-09-06 14:23:55 Splunk> The IT Search Engine. 
+1599398882.661046%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Sun Sep  6 14:28:02 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599399387.671949%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Sun Sep  6 14:36:27 2020 splunk> Rhymes with drunk 
+1599399499.634246%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%06 Sun 2020 14:38:19 Splunk> Winning the War on Error 
+1599400225.743614%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Sun Sep  6 14:50:25 2020 splunk> Finding your faults, just like mom. 
+1599400606.53593%%%ingest_pipeline_demo_b%%%online%%%sky%%%chicken%%%06 Sun 2020 14:56:46 Splunk> The IT Search Engine. 
+1599401131.369092%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%06 Sun 2020 15:05:31 Splunk> Take the sh out of IT. 
+1599401341.692337%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%15:09:01 20-09-06 splunk> We line break for regular expressions 
+1599401474.551005%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%15:11:14 20-09-06 splunk> Chasing tail since 2003 
+1599402194.504195%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-06 15:23:14 splunk> The corkscrew for your vintage data. 
+1599402933.999109%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%15:35:33 20-09-06 splunk> don't get caught up in the game of pwns 
+1599403777.749006%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%15:49:37 20-09-06 splunk> IT like you mean it 
+1599403873.020132%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Sun Sep  6 15:51:13 2020 Splunk> Map. Reduce. Recycle. 
+1599403927.475881%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%beef%%%2020-09-06 15:52:07 Splunk> Like an F-18, bro. 
+1599404012.929065%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%15:53:32 20-09-06 splunk> We line break for regular expressions 
+1599404715.697787%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-06 16:05:15 splunk> Rhymes with drunk 
+1599404856.972142%%%ingest_pipeline_demo_b%%%market%%%sea%%%chicken%%%06 Sun 2020 16:07:36 Splunk> Needle. Haystack. Found. 
+1599405168.664851%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%16:12:48 20-09-06 splunk> Open a can of whooparse 
+1599405262.991497%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%16:14:22 20-09-06 splunk> Caught me on the server - Wasn't me. 
+1599405555.06476%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Sun Sep  6 16:19:15 2020 splunk> All batbelt. No tights. 
+1599405691.656453%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Sun Sep  6 16:21:31 2020 splunk> The corkscrew for your vintage data. 
+1599405944.557944%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%16:25:44 20-09-06 Splunk> see the forest, and the trees 
+1599406238.833651%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-06 16:30:38 splunk> More flexible than an Olympic gymnast. 
+1599407447.996094%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sun Sep  6 16:50:47 2020 splunk> More flexible than an Olympic gymnast. 
+1599407840.847469%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%06 Sun 2020 16:57:20 splunk> Walking War Room!! 
+1599407866.429673%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-06 16:57:46 Splunk> Winning the War on Error 
+1599408584.437046%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-06 17:09:44 Splunk> Take the sh out of IT. 
+1599408855.089476%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%06 Sun 2020 17:14:15 splunk> IT like you mean it 
+1599409034.157215%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Sun Sep  6 17:17:14 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599409901.88668%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Sun Sep  6 17:31:41 2020 splunk> Chasing tail since 2003 
+1599410231.573357%%%ingest_pipeline_demo_a%%%online%%%ground%%%fruit%%%Sun Sep  6 17:37:11 2020 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599410774.08037%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-06 17:46:14 splunk> More flexible than an Olympic gymnast. 
+1599410903.21222%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%17:48:23 20-09-06 Splunk> Map. Reduce. Recycle. 
+1599411667.297185%%%ingest_pipeline_demo_a%%%market%%%ground%%%chicken%%%06 Sun 2020 18:01:07 splunk> Walking War Room!! 
+1599411903.609118%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%18:05:03 20-09-06 Splunk> CSI: Logfiles. 
+1599412197.071466%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%06 Sun 2020 18:09:57 Splunk> Needle. Haystack. Found. 
+1599412467.744062%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fruit%%%Sun Sep  6 18:14:27 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599412858.054953%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%18:20:58 20-09-06 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599412994.94021%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%06 Sun 2020 18:23:14 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599413185.670233%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sun Sep  6 18:26:25 2020 splunk> We enjoy breaks more than Unions 
+1599413581.735376%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sun Sep  6 18:33:01 2020 splunk> this way: Run-D.M.C. 
+1599414441.675145%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%beef%%%2020-09-06 18:47:21 splunk> We line break for regular expressions 
+1599415184.458166%%%ingest_pipeline_demo_b%%%online%%%ground%%%beef%%%2020-09-06 18:59:44 splunk> IT like you mean it 
+1599415378.04769%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fruit%%%Sun Sep  6 19:02:58 2020 Splunk> I like big data and I cannot lie. 
+1599415778.508561%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-06 19:09:38 splunk> don't get caught up in the game of pwns 
+1599416832.693207%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 19:27:12 2020 splunk> Chasing tail since 2003 
+1599416969.267907%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 19:29:29 2020 splunk> Digs deeper than a jealous spouse. 
+1599417102.83634%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-06 19:31:42 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599417293.807393%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%06 Sun 2020 19:34:53 splunk> Walking War Room!! 
+1599418143.41142%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-06 19:49:03 splunk> Rhymes with drunk 
+1599419183.147108%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%06 Sun 2020 20:06:23 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599419741.155302%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-06 20:15:41 splunk> The corkscrew for your vintage data. 
+1599419913.52231%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%20:18:33 20-09-06 splunk> don't get caught up in the game of pwns 
+1599420409.544539%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-06 20:26:49 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599421726.3633%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Sun Sep  6 20:48:46 2020 splunk> The mars rover of the IT landfill. 
+1599422037.572214%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%06 Sun 2020 20:53:57 splunk> Walking War Room!! 
+1599422183.547264%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%06 Sun 2020 20:56:23 splunk> We line break for regular expressions 
+1599423157.858661%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%21:12:37 20-09-06 splunk> These are the droids you are looking for 
+1599423257.540071%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%21:14:17 20-09-06 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599423324.443344%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%06 Sun 2020 21:15:24 splunk> The corkscrew for your vintage data. 
+1599423369.642284%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fruit%%%Sun Sep  6 21:16:09 2020 Splunk> Map. Reduce. Recycle. 
+1599423883.581374%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%21:24:43 20-09-06 splunk> Caught me on the server - Wasn't me. 
+1599424008.27326%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-06 21:26:48 Splunk> 4TW 
+1599424306.956551%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%chicken%%%06 Sun 2020 21:31:46 Splunk> I like big data and I cannot lie. 
+1599424997.592843%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%21:43:17 20-09-06 Splunk> All batbelt. No tights. 
+1599425483.408982%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%21:51:23 20-09-06 splunk> \\\. nuff said. 
+1599425737.450999%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-06 21:55:37 Splunk> see the forest, and the trees 
+1599425864.643485%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%21:57:44 20-09-06 Splunk> Be an IT superhero. Go home early. 
+1599426487.042178%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Sun Sep  6 22:08:07 2020 splunk> \\\. nuff said. 
+1599427070.311138%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%22:17:50 20-09-06 Splunk> Australian for grep. 
+1599427605.890729%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%06 Sun 2020 22:26:45 splunk> All batbelt. No tights. 
+1599427663.630045%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%06 Sun 2020 22:27:43 Splunk> 4TW 
+1599427869.42242%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%06 Sun 2020 22:31:09 splunk ML> Solve problems you didn't know you were about to have 
+1599428185.876538%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%06 Sun 2020 22:36:25 Splunk> Like an F-18, bro. 
+1599428410.463377%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-06 22:40:10 splunk> because ninjas are too busy 
+1599429331.193171%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Sun Sep  6 22:55:31 2020 Splunk> Australian for grep. 
+1599430165.288995%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Sun Sep  6 23:09:25 2020 Splunk> Australian for grep. 
+1599430178.014979%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-06 23:09:38 splunk> Chasing tail since 2003 
+1599430657.959221%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%06 Sun 2020 23:17:37 splunk> because ninjas are too busy 
+1599431409.361522%%%ingest_pipeline_demo_a%%%market%%%sea%%%fruit%%%Sun Sep  6 23:30:09 2020 splunk> Rhymes with drunk 
+1599431541.236535%%%ingest_pipeline_demo_a%%%market%%%tree%%%fruit%%%Sun Sep  6 23:32:21 2020 splunk> We enjoy breaks more than Unions 
+1599432192.124015%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%23:43:12 20-09-06 Splunk> Be an IT superhero. Go home early. 
+1599432240.754114%%%ingest_pipeline_demo_a%%%market%%%tree%%%beef%%%2020-09-06 23:44:00 splunk> The bran for your system 
+1599433559.475826%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%00:05:59 20-09-07 Splunk> data with destiny 
+1599433784.967287%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-07 00:09:44 Splunk> data with destiny 
+1599434020.736172%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-07 00:13:40 splunk> because ninjas are too busy 
+1599434332.32764%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Mon Sep  7 00:18:52 2020 Splunk> data with destiny 
+1599435926.687171%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Mon Sep  7 00:45:26 2020 splunk> Open a can of whooparse 
+1599436622.528436%%%ingest_pipeline_demo_a%%%online%%%tree%%%fish%%%00:57:02 20-09-07 splunk> this way: Run-D.M.C. 
+1599436654.975651%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%00:57:34 20-09-07 Splunk> Winning the War on Error 
+1599436659.31444%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-07 00:57:39 Splunk> The IT Search Engine. 
+1599437415.808913%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fish%%%01:10:15 20-09-07 Splunk> All batbelt. No tights. 
+1599437593.939515%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Mon Sep  7 01:13:13 2020 splunk> The corkscrew for your vintage data. 
+1599439090.107297%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-07 01:38:10 Splunk> Map. Reduce. Recycle. 
+1599439185.435486%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-07 01:39:45 splunk> Walking War Room!! 
+1599439588.11884%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-07 01:46:28 splunk> Digs deeper than a jealous spouse. 
+1599439836.041866%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-07 01:50:36 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599440190.098008%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-07 01:56:30 splunk> because ninjas are too busy 
+1599440391.346169%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%chicken%%%07 Mon 2020 01:59:51 splunk> because ninjas are too busy 
+1599440507.825806%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 02:01:47 Splunk> 4TW 
+1599441010.016036%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-07 02:10:10 splunk> Digs deeper than a jealous spouse. 
+1599441069.434354%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%02:11:09 20-09-07 Splunk> data with destiny 
+1599441719.949654%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Mon Sep  7 02:21:59 2020 Splunk> see the forest, and the trees 
+1599442252.125276%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-07 02:30:52 Splunk> see the forest, and the trees 
+1599442629.920264%%%ingest_pipeline_demo_a%%%online%%%sea%%%beef%%%2020-09-07 02:37:09 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599442999.429919%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%07 Mon 2020 02:43:19 splunk> Walking War Room!! 
+1599443130.349934%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-07 02:45:30 Splunk> data with destiny 
+1599443275.603577%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Mon Sep  7 02:47:55 2020 Splunk> see the light before you tunnel
+1599443605.007667%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%02:53:25 20-09-07 Splunk> Australian for grep. 
+1599444111.927111%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%03:01:51 20-09-07 splunk> The corkscrew for your vintage data. 
+1599444189.022681%%%ingest_pipeline_demo_b%%%online%%%sea%%%beef%%%2020-09-07 03:03:09 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599444575.55936%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Mon Sep  7 03:09:35 2020 Splunk> data with destiny 
+1599444576.088886%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Mon Sep  7 03:09:36 2020 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599445642.947759%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%fish%%%03:27:22 20-09-07 Splunk> Map. Reduce. Recycle. 
+1599446531.005357%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Mon Sep  7 03:42:11 2020 Splunk> Map. Reduce. Recycle. 
+1599446616.355121%%%ingest_pipeline_demo_b%%%market%%%tree%%%beef%%%2020-09-07 03:43:36 Splunk> Take the sh out of IT. 
+1599447044.498896%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%03:50:44 20-09-07 Splunk> Needle. Haystack. Found. 
+1599447056.547664%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%03:50:56 20-09-07 splunk> The corkscrew for your vintage data. 
+1599447112.122783%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%03:51:52 20-09-07 splunk> We enjoy breaks more than Unions 
+1599447317.130505%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Mon Sep  7 03:55:17 2020 splunk ML> Solve problems you didn't know you were about to have 
+1599447319.465043%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fruit%%%Mon Sep  7 03:55:19 2020 splunk> The mars rover of the IT landfill. 
+1599447409.131015%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 03:56:49 Splunk> The IT Search Engine. 
+1599447946.150353%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%04:05:46 20-09-07 splunk> \\\. nuff said. 
+1599447975.492298%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Mon Sep  7 04:06:15 2020 Splunk> data with destiny 
+1599448934.793228%%%ingest_pipeline_demo_a%%%market%%%sky%%%beef%%%2020-09-07 04:22:14 splunk> We line break for regular expressions 
+1599449719.420888%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Mon Sep  7 04:35:19 2020 Splunk> see the light before you tunnel
+1599449746.77947%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-07 04:35:46 Splunk> Like an F-18, bro. 
+1599450075.525935%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%07 Mon 2020 04:41:15 splunk> Show me your logs 
+1599450291.076943%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%07 Mon 2020 04:44:51 splunk> because ninjas are too busy 
+1599450405.239329%%%ingest_pipeline_demo_b%%%market%%%ground%%%fish%%%04:46:45 20-09-07 Splunk> See your world. Maybe wish you hadn’t. 
+1599450765.113783%%%ingest_pipeline_demo_b%%%super_market%%%ground%%%fruit%%%Mon Sep  7 04:52:45 2020 splunk> The corkscrew for your vintage data. 
+1599451114.804046%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%04:58:34 20-09-07 splunk> \\\. nuff said. 
+1599451319.846433%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%beef%%%2020-09-07 05:01:59 splunk> We line break for regular expressions 
+1599452159.966779%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%05:15:59 20-09-07 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599452291.628511%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%07 Mon 2020 05:18:11 Splunk> See your world. Maybe wish you hadn’t. 
+1599452296.687966%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%fish%%%05:18:16 20-09-07 Splunk> Take the sh out of IT. 
+1599452346.318409%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-07 05:19:06 Splunk> All batbelt. No tights. 
+1599452485.978561%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%beef%%%2020-09-07 05:21:25 splunk> this way: Run-D.M.C. 
+1599453165.477972%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%07 Mon 2020 05:32:45 splunk> Rhymes with drunk 
+1599453233.635088%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%05:33:53 20-09-07 splunk ML> Solve problems you didn't know you were about to have 
+1599454229.437026%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%05:50:29 20-09-07 splunk> These are the droids you are looking for 
+1599454388.802955%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%05:53:08 20-09-07 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599454997.659243%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Mon Sep  7 06:03:17 2020 splunk> Caught me on the server - Wasn't me. 
+1599455150.364059%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fish%%%06:05:50 20-09-07 Splunk> I like big data and I cannot lie. 
+1599455778.76539%%%ingest_pipeline_demo_a%%%market%%%tree%%%fish%%%06:16:18 20-09-07 Splunk> All batbelt. No tights. 
+1599455804.979337%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 06:16:44 Splunk> Australian for grep. 
+1599455844.920122%%%ingest_pipeline_demo_b%%%online%%%ground%%%beef%%%2020-09-07 06:17:24 splunk> IT like you mean it 
+1599456454.348063%%%ingest_pipeline_demo_b%%%online%%%sea%%%fish%%%06:27:34 20-09-07 splunk> Rhymes with drunk 
+1599456579.901698%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Mon Sep  7 06:29:39 2020 splunk> Walking War Room!! 
+1599457455.465908%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-07 06:44:15 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599458566.74988%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%fruit%%%Mon Sep  7 07:02:46 2020 splunk> The corkscrew for your vintage data. 
+1599458984.873841%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%beef%%%2020-09-07 07:09:44 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599459089.664111%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fish%%%07:11:29 20-09-07 splunk> Finding your faults, just like mom. 
+1599459515.295053%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 07:18:35 splunk> Open a can of whooparse 
+1599459913.377101%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%07:25:13 20-09-07 splunk> Finding your faults, just like mom. 
+1599460909.609091%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%07:41:49 20-09-07 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599461754.603802%%%ingest_pipeline_demo_b%%%online%%%ground%%%beef%%%2020-09-07 07:55:54 Splunk> 4TW 
+1599461791.866723%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Mon Sep  7 07:56:31 2020 splunk> \\\. nuff said. 
+1599461977.613019%%%ingest_pipeline_demo_b%%%market%%%sea%%%chicken%%%07 Mon 2020 07:59:37 Splunk> Now with more code! 
+1599462157.138289%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Mon Sep  7 08:02:37 2020 splunk> Chasing tail since 2003 
+1599462180.644528%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%08:03:00 20-09-07 splunk> Walking War Room!! 
+1599463426.710443%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Mon Sep  7 08:23:46 2020 splunk> this way: Run-D.M.C. 
+1599464265.375128%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-07 08:37:45 Splunk> Take the sh out of IT. 
+1599464470.906042%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%08:41:10 20-09-07 Splunk> data with destiny 
+1599465101.001108%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%08:51:41 20-09-07 splunk> Digs deeper than a jealous spouse. 
+1599465185.701145%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 08:53:05 2020 splunk> \\\. nuff said. 
+1599465772.355104%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%09:02:52 20-09-07 Splunk> Needle. Haystack. Found. 
+1599465779.685597%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-07 09:02:59 splunk> Open a can of whooparse 
+1599466774.356236%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Mon Sep  7 09:19:34 2020 splunk> Walking War Room!! 
+1599466949.771713%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-07 09:22:29 Splunk> see the forest, and the trees 
+1599467603.178081%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-07 09:33:23 splunk> The corkscrew for your vintage data. 
+1599468040.659624%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fish%%%09:40:40 20-09-07 splunk> Open a can of whooparse 
+1599468111.791184%%%ingest_pipeline_demo_b%%%market%%%sky%%%fish%%%09:41:51 20-09-07 splunk> don't get caught up in the game of pwns 
+1599469355.948708%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%10:02:35 20-09-07 splunk> These are the droids you are looking for 
+1599469505.480734%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 10:05:05 2020 splunk> \\\. nuff said. 
+1599469658.718591%%%ingest_pipeline_demo_b%%%market%%%tree%%%fish%%%10:07:38 20-09-07 Splunk> data with destiny 
+1599470138.060077%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 10:15:38 2020 splunk> We enjoy breaks more than Unions 
+1599470412.73529%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%fruit%%%Mon Sep  7 10:20:12 2020 splunk> IT like you mean it 
+1599470732.183194%%%ingest_pipeline_demo_a%%%market%%%sky%%%chicken%%%07 Mon 2020 10:25:32 Splunk> Australian for grep. 
+1599470981.137952%%%ingest_pipeline_demo_a%%%online%%%sea%%%chicken%%%07 Mon 2020 10:29:41 splunk> We line break for regular expressions 
+1599471301.230068%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Mon Sep  7 10:35:01 2020 splunk> Walking War Room!! 
+1599471458.545538%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Mon Sep  7 10:37:38 2020 splunk> The mars rover of the IT landfill. 
+1599472035.253174%%%ingest_pipeline_demo_a%%%online%%%ground%%%fish%%%10:47:15 20-09-07 splunk> Caught me on the server - Wasn't me. 
+1599472057.568423%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%07 Mon 2020 10:47:37 splunk> We line break for regular expressions 
+1599472554.898501%%%ingest_pipeline_demo_b%%%market%%%sky%%%fruit%%%Mon Sep  7 10:55:54 2020 splunk> The mars rover of the IT landfill. 
+1599472859.808417%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 11:00:59 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599473248.525634%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%07 Mon 2020 11:07:28 splunk> All batbelt. No tights. 
+1599473330.26869%%%ingest_pipeline_demo_a%%%online%%%sea%%%fruit%%%Mon Sep  7 11:08:50 2020 Splunk> data with destiny 
+1599473804.640681%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%07 Mon 2020 11:16:44 Splunk> Be an IT superhero. Go home early. 
+1599474236.648911%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fish%%%11:23:56 20-09-07 splunk> Open a can of whooparse 
+1599474869.156658%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%07 Mon 2020 11:34:29 Splunk> 4TW 
+1599475035.422843%%%ingest_pipeline_demo_a%%%market%%%sky%%%fruit%%%Mon Sep  7 11:37:15 2020 Splunk> Be an IT superhero. Go home early. 
+1599476037.450229%%%ingest_pipeline_demo_a%%%farm_shop%%%tree%%%beef%%%2020-09-07 11:53:57 Splunk> CSI: Logfiles. 
+1599476551.315269%%%ingest_pipeline_demo_a%%%market%%%ground%%%beef%%%2020-09-07 12:02:31 splunk> The bran for your system 
+1599478019.875897%%%ingest_pipeline_demo_b%%%online%%%sea%%%beef%%%2020-09-07 12:26:59 splunk> The bran for your system 
+1599479092.482138%%%ingest_pipeline_demo_b%%%online%%%tree%%%chicken%%%07 Mon 2020 12:44:52 splunk ML> Solve problems you didn't know you were about to have 
+1599479549.754892%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%12:52:29 20-09-07 Splunk> see the forest, and the trees 
+1599480301.999875%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%chicken%%%07 Mon 2020 13:05:01 splunk> Digs deeper than a jealous spouse. 
+1599480353.704244%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Mon Sep  7 13:05:53 2020 splunk> All batbelt. No tights. 
+1599480360.570957%%%ingest_pipeline_demo_a%%%farm_shop%%%sea%%%beef%%%2020-09-07 13:06:00 splunk ML> Solve problems you didn't know you were about to have 
+1599480551.518925%%%ingest_pipeline_demo_b%%%online%%%sky%%%beef%%%2020-09-07 13:09:11 splunk> Caught me on the server - Wasn't me. 
+1599480599.301733%%%ingest_pipeline_demo_b%%%online%%%ground%%%fish%%%13:09:59 20-09-07 splunk> All batbelt. No tights. 
+1599480846.715203%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%13:14:06 20-09-07 Splunk> Take the sh out of IT. 
+1599481253.943059%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%07 Mon 2020 13:20:53 splunk> The bran for your system 
+1599481418.449998%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%07 Mon 2020 13:23:38 splunk> don't get caught up in the game of pwns 
+1599482865.851704%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-07 13:47:45 splunk> Finding disturbances in the Force before the Jedi Masters 
+1599484036.643151%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fruit%%%Mon Sep  7 14:07:16 2020 splunk> Walking War Room!! 
+1599484062.726833%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-07 14:07:42 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599484615.355299%%%ingest_pipeline_demo_a%%%online%%%sea%%%fish%%%14:16:55 20-09-07 splunk> Caught me on the server - Wasn't me. 
+1599484949.857039%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Mon Sep  7 14:22:29 2020 splunk> Finding your faults, just like mom. 
+1599485327.884942%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%fish%%%14:28:47 20-09-07 splunk> The bran for your system 
+1599485686.991591%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%07 Mon 2020 14:34:46 Splunk> Take the sh out of IT. 
+1599486734.643169%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%fruit%%%Mon Sep  7 14:52:14 2020 Splunk> Like an F-18, bro. 
+1599487236.321239%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%07 Mon 2020 15:00:36 splunk> Finding your faults, just like mom. 
+1599487514.652286%%%ingest_pipeline_demo_a%%%online%%%tree%%%fruit%%%Mon Sep  7 15:05:14 2020 splunk> All batbelt. No tights. 
+1599487523.467214%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%beef%%%2020-09-07 15:05:23 splunk> \\\. nuff said. 
+1599487688.159516%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%fruit%%%Mon Sep  7 15:08:08 2020 Splunk> Finding your faults, just like mom. 
+1599487994.033407%%%ingest_pipeline_demo_b%%%online%%%tree%%%beef%%%2020-09-07 15:13:14 Splunk> Take the sh out of IT. 
+1599488682.945026%%%ingest_pipeline_demo_a%%%online%%%sky%%%chicken%%%07 Mon 2020 15:24:42 Splunk> data with destiny 
+1599488700.438479%%%ingest_pipeline_demo_b%%%market%%%tree%%%chicken%%%07 Mon 2020 15:25:00 splunk> Show me your logs 
+1599488874.48491%%%ingest_pipeline_demo_b%%%online%%%sea%%%chicken%%%07 Mon 2020 15:27:54 splunk> Open a can of whooparse 
+1599489164.440558%%%ingest_pipeline_demo_b%%%farm_shop%%%tree%%%fruit%%%Mon Sep  7 15:32:44 2020 splunk> More flexible than an Olympic gymnast. 
+1599489949.148148%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%15:45:49 20-09-07 Splunk> Finding your faults, just like mom. 
+1599490207.053945%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%15:50:07 20-09-07 Splunk> CSI: Logfiles. 
+1599490309.349747%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%chicken%%%07 Mon 2020 15:51:49 splunk> Digs deeper than a jealous spouse. 
+1599490632.281796%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-07 15:57:12 Splunk> Map. Reduce. Recycle. 
+1599490865.862717%%%ingest_pipeline_demo_a%%%online%%%sky%%%beef%%%2020-09-07 16:01:05 Splunk> Take the sh out of IT. 
+1599493120.166519%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%beef%%%2020-09-07 16:38:40 splunk> IT like you mean it 
+1599493195.71003%%%ingest_pipeline_demo_a%%%market%%%sky%%%fish%%%16:39:55 20-09-07 splunk> We enjoy breaks more than Unions 
+1599494122.528085%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Mon Sep  7 16:55:22 2020 splunk> Caught me on the server - Wasn't me. 
+1599494606.992068%%%ingest_pipeline_demo_a%%%market%%%sea%%%fish%%%17:03:26 20-09-07 Splunk> Map. Reduce. Recycle. 
+1599495809.184933%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%07 Mon 2020 17:23:29 Splunk> Map. Reduce. Recycle. 
+1599496033.075857%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fish%%%17:27:13 20-09-07 splunk> Chasing tail since 2003 
+1599496436.306937%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%beef%%%2020-09-07 17:33:56 splunk> I gotta fever, and the only cure is MOAR LICENSE! 
+1599497014.441115%%%ingest_pipeline_demo_a%%%market%%%ground%%%fish%%%17:43:34 20-09-07 Splunk> The Notorious B.I.G. D.A.T.A. 
+1599497938.525496%%%ingest_pipeline_demo_b%%%market%%%tree%%%fruit%%%Mon Sep  7 17:58:58 2020 Splunk> Map. Reduce. Recycle. 
+1599498363.521928%%%ingest_pipeline_demo_b%%%market%%%sky%%%beef%%%2020-09-07 18:06:03 splunk> The corkscrew for your vintage data. 
+1599498495.578459%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fruit%%%Mon Sep  7 18:08:15 2020 splunk> this way: Run-D.M.C. 
+1599498664.041668%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Mon Sep  7 18:11:04 2020 Splunk> Winning the War on Error 
+1599498673.378107%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%18:11:13 20-09-07 Splunk> Australian for grep. 
+1599499292.684396%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%beef%%%2020-09-07 18:21:32 Splunk> Australian for grep. 
+1599499496.079296%%%ingest_pipeline_demo_b%%%market%%%sea%%%fish%%%18:24:56 20-09-07 splunk> IT like you mean it 
+1599499602.362221%%%ingest_pipeline_demo_b%%%market%%%sky%%%chicken%%%07 Mon 2020 18:26:42 Splunk> Like an F-18, bro. 
+1599501050.658929%%%ingest_pipeline_demo_b%%%market%%%sea%%%fruit%%%Mon Sep  7 18:50:50 2020 splunk> Walking War Room!! 
+1599501403.302528%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%07 Mon 2020 18:56:43 splunk> More flexible than an Olympic gymnast. 
+1599501446.733812%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%chicken%%%07 Mon 2020 18:57:26 splunk> Finding your faults, just like mom. 
+1599502050.76343%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%beef%%%2020-09-07 19:07:30 Splunk> All batbelt. No tights. 
+1599502591.339962%%%ingest_pipeline_demo_b%%%online%%%ground%%%fruit%%%Mon Sep  7 19:16:31 2020 Splunk> Like an F-18, bro. 
+1599503439.419847%%%ingest_pipeline_demo_a%%%market%%%ground%%%fruit%%%Mon Sep  7 19:30:39 2020 Splunk> I like big data and I cannot lie. 
+1599503516.959426%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%fish%%%19:31:56 20-09-07 splunk> Walking War Room!! 
+1599503679.508587%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fish%%%19:34:39 20-09-07 Splunk> see the forest, and the trees 
+1599504057.456313%%%ingest_pipeline_demo_a%%%market%%%sea%%%chicken%%%07 Mon 2020 19:40:57 Splunk> Australian for grep. 
+1599504116.685159%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%beef%%%2020-09-07 19:41:56 Splunk> Needle. Haystack. Found. 
+1599504372.795749%%%ingest_pipeline_demo_b%%%online%%%tree%%%fish%%%19:46:12 20-09-07 Splunk> All batbelt. No tights. 
+1599504399.437826%%%ingest_pipeline_demo_b%%%online%%%tree%%%fruit%%%Mon Sep  7 19:46:39 2020 splunk> Chasing tail since 2003 
+1599504761.414066%%%ingest_pipeline_demo_a%%%super_market%%%sea%%%chicken%%%07 Mon 2020 19:52:41 splunk> Chasing tail since 2003 
+1599504906.106249%%%ingest_pipeline_demo_b%%%super_market%%%tree%%%fish%%%19:55:06 20-09-07 Splunk> Finding your faults, just like mom. 
+1599505105.68244%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%fruit%%%Mon Sep  7 19:58:25 2020 splunk> More flexible than an Olympic gymnast. 
+1599505436.193105%%%ingest_pipeline_demo_a%%%online%%%tree%%%beef%%%2020-09-07 20:03:56 Splunk> Finding your faults, just like mom. 
+1599505659.71586%%%ingest_pipeline_demo_a%%%online%%%sky%%%fish%%%20:07:39 20-09-07 Splunk> see the forest, and the trees 
+1599508006.018647%%%ingest_pipeline_demo_b%%%farm_shop%%%sea%%%fruit%%%Mon Sep  7 20:46:46 2020 Splunk> Australian for grep. 
+1599508952.904568%%%ingest_pipeline_demo_b%%%farm_shop%%%ground%%%chicken%%%07 Mon 2020 21:02:32 splunk> The mars rover of the IT landfill. 
+1599509478.294693%%%ingest_pipeline_demo_a%%%super_market%%%ground%%%beef%%%2020-09-07 21:11:18 splunk> The mars rover of the IT landfill. 
+1599510140.79444%%%ingest_pipeline_demo_a%%%online%%%ground%%%beef%%%2020-09-07 21:22:20 Splunk> All batbelt. No tights. 
+1599510256.517125%%%ingest_pipeline_demo_b%%%online%%%ground%%%chicken%%%07 Mon 2020 21:24:16 splunk> \\\. nuff said. 
+1599510279.563996%%%ingest_pipeline_demo_a%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 21:24:39 splunk> \\\. nuff said. 
+1599510376.945023%%%ingest_pipeline_demo_a%%%farm_shop%%%ground%%%fruit%%%Mon Sep  7 21:26:16 2020 Splunk> I like big data and I cannot lie. 
+1599510706.932947%%%ingest_pipeline_demo_a%%%online%%%tree%%%chicken%%%07 Mon 2020 21:31:46 splunk> These are the droids you are looking for 
+1599511324.239657%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%fish%%%21:42:04 20-09-07 splunk> Caught me on the server - Wasn't me. 
+1599512229.314558%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%21:57:09 20-09-07 splunk> Rhymes with drunk 
+1599512970.765861%%%ingest_pipeline_demo_a%%%super_market%%%sky%%%chicken%%%07 Mon 2020 22:09:30 splunk> The corkscrew for your vintage data. 
+1599512985.280339%%%ingest_pipeline_demo_a%%%market%%%tree%%%chicken%%%07 Mon 2020 22:09:45 splunk> We enjoy breaks more than Unions 
+1599513606.007939%%%ingest_pipeline_demo_b%%%super_market%%%sea%%%chicken%%%07 Mon 2020 22:20:06 splunk> The corkscrew for your vintage data. 
+1599513957.407776%%%ingest_pipeline_demo_b%%%online%%%sky%%%fruit%%%Mon Sep  7 22:25:57 2020 splunk> We enjoy breaks more than Unions 
+1599514092.512139%%%ingest_pipeline_demo_a%%%super_market%%%tree%%%fish%%%22:28:12 20-09-07 Splunk> Like an F-18, bro. 
+1599514588.076271%%%ingest_pipeline_demo_b%%%market%%%ground%%%beef%%%2020-09-07 22:36:28 Splunk> Like an F-18, bro. 
+1599515148.997476%%%ingest_pipeline_demo_b%%%super_market%%%sky%%%chicken%%%07 Mon 2020 22:45:48 Splunk> 4TW 
+1599515497.910216%%%ingest_pipeline_demo_b%%%farm_shop%%%sky%%%chicken%%%07 Mon 2020 22:51:37 splunk> The mars rover of the IT landfill. 
