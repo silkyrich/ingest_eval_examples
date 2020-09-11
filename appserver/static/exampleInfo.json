@@ -24,12 +24,6 @@
     "category": "Enrichment"
 },
 {
-    "id": "add_event_length",
-    "title": "Additional license usage metadata",
-    "short-description": "When back billing license usage it can be difficult to allocate where data volumes originate from. This example assigns the length of the _raw string to each event.",
-    "category": "Enrichment"
-},
-{
     "id": "drop_indexed_fields",
     "title" : "Dropping indexed fields from INDEXED_CSV",
     "short-description" : "INDEXED_CSV and INDEXED_JSON allow you to use tstats and indexed fields on structured data, however sometimes it can bloat your storage. This example demonstrates how to blend search time and indexed time enrichment for a CSV file",

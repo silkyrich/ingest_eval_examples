@@ -1,0 +1,17 @@
+<dashboard>
+  <label>Compound data times</label>
+  <row>
+    <panel>
+      <event>
+        <title>Example data loaded into Splunk, note the timestamp is in raw, but the date is in the source field</title>
+        <search>
+          <query>index=ingest_eval_examples_* sourcetype=compound_date_time</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
+</dashboard>

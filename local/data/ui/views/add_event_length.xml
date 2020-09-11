@@ -1,0 +1,62 @@
+<form>
+  <label>Additional license usage metadata</label>
+  <search>
+    <query>| noop | eval dummy_trigger="$selected_resolution$"</query>
+    <earliest>$time.earliest$</earliest>
+    <latest>$time.latest$</latest>
+    <progress>
+      <eval token="absolute_earliest">$job.searchEarliestTime$</eval>
+      <eval token="absolute_latest">$job.searchLatestTime$</eval>
+      <eval token="absolute_duration">$absolute_latest$-$absolute_earliest$</eval>
+      <eval token="form.selected_span_min_1s">ceiling($absolute_duration$/$selected_resolution$)</eval>
+    </progress>
+  </search>
+  <fieldset submitButton="false">
+    <input type="time" token="time">
+      <label>Select timerange</label>
+      <default>
+        <earliest>-7d@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="dropdown" token="selected_span">
+      <label>Select time span for chart</label>
+      <prefix>span=</prefix>
+      <choice value="5min">5min</choice>
+      <choice value="15min">15min</choice>
+      <choice value="30min">30min</choice>
+      <choice value="1hr">1hr</choice>
+      <choice value="6hr">6hr</choice>
+      <choice value="1d">1d</choice>
+      <choice value="1w">1w</choice>
+      <default>30min</default>
+    </input>
+    <input type="dropdown" token="selected_field">
+      <label>Select field</label>
+      <choice value="index">index</choice>
+      <choice value="sourcetype">sourcetype</choice>
+      <choice value="host">host</choice>
+      <choice value="source">source</choice>
+      <default>index</default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Detailed volume over time</title>
+      <chart>
+        <search id="base">
+          <query>| tstats sum(event_length) as total_ingestion 
+    where index=* 
+    by _time $selected_field$ $selected_span$ 
+| xyseries _time $selected_field$ total_ingestion</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">area</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+</form>

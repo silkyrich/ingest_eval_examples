@@ -1,0 +1,56 @@
+pre .str, code .str, pre .atv, code .atv { color: #D14; }
+pre .kwd, code .kwd, .prettyprint .tag { color: #1e347b; }
+pre .com, code .com { color: #93a1a1; font-style: italic; }
+pre .typ, code .typ { color: teal; }
+pre .lit, code .lit { color: #195f91; }
+pre .pun, code .pun, pre .opn, code .opn, pre .clo, code .clo { color: #93a1a1; }
+pre .pln, code .pln { color: #48484c; }
+pre .typ, code .typ, pre .atn, code .atn, pre .dec, code .dec, pre .var, code .var { color: teal; }
+pre .dec, code .dec { color: #3387CC; }
+pre .fun, code .fun { color: #dc322f; }
+
+.prettyprint {
+    padding: 8px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+.prettyprint ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+/* Dark Theme */
+
+pre.dark .str, code.dark .str { color: #65B042; }
+pre.dark .kwd, code.dark .kwd { color: #E28964; }
+pre.dark .com, code.dark .com { color: #AEAEAE; font-style: italic; }
+pre.dark .typ, code.dark .typ { color: #89bdff; }
+pre.dark .lit, code.dark .lit { color: #3387CC; }
+pre.dark .pun, code.dark .pun { color: #FFFFFF; }
+pre.dark .pln, code.dark .pln { color: #FFFFFF; }
+pre.dark .tag, code.dark .tag { color: #BD9872; }
+pre.dark .atn, code.dark .atn { color: #AF575A; }
+pre.dark .atv, code.dark .atv { color: #58A383; }
+pre.dark .dec, code.dark .dec { color: #3387CC; }
+
+.prettyprint.dark.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #31373E, inset 41px 0 0 #2B3033;
+    -moz-box-shadow: inset 40px 0 0 #31373E, inset 41px 0 0 #2B3033;
+    box-shadow: inset 40px 0 0 #31373E, inset 41px 0 0 #2B3033;
+}
+
+.prettyprint.dark ol.linenums li {
+    text-shadow: none;
+}

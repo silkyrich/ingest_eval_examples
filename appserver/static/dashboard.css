@@ -1,28 +1,180 @@
+.html .showsource-container {
+    margin: 0 -10px;
+}
+
+.example-info {
+    margin: 0 0 15px 15px;
+}
+
+.example-info li>p {
+    margin: 0;
+}
+
 .dashboard-body {
-	font-size: 14px;
-	line-height: 150%;
+    padding-bottom: 20px;
 }
 
-.dashboard-header .description {
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-	font-weight: 400;
-	font-size: 14px;
+.sourcecode-viewer .dashboard-description {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    padding: 0 20px;
 }
 
-.dashboard-header h2 {
-	font-weight: 400;
+.sourcecode-viewer .description-title {
+    margin: 15px 0 0 15px;
 }
 
-.dashboard-cell h2 {
-	font-weight: 600;
-	font-size: 16px;
+.sourcecode-viewer {
+    background: #fff;
 }
 
-.dashboard-cell ol {
-	margin-top: 10px !important;
+.showsource-container .nav {
+    margin-bottom: 0;
 }
 
-.dashboard-cell li {
-	line-height: 150%;
+.showsource-container .nav li.nav-title {
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 24px;
+    z-index: 5;
+    color: #000;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -o-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: linear-gradient(to bottom, #f8f8f8, #eeeeee);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8f8f8', endColorstr='#ffeeeeee', GradientType=0);
+    padding: 8px 20px 5px 24px;
+    font-weight: bold;
+}
+
+.showsource-container .nav li.nav-title::before,
+.showsource-container .nav li.nav-title::after {
+    display: none;
+}
+
+.showsource-container .prettyprint {
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #aeaeae;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+}
+
+.prettyprint code, pre {
+    font-size: 12px;
+}
+
+.showsource-container .nav-tabs {
+    padding-left: 0px;
+}
+
+.showsource-container .nav-tabs > li.active > a {
+    background: #f7f7f9;
+}
+
+.tab-pane.error {
+    padding: 25px;
+}
+
+code.inline {
+    padding: 2px 4px;
+}
+
+.showsource-container h5 {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.empty-dashboard {
+    display: none;
+}
+
+.dashboard-banner {
+    color: #333;
+    background-color: white;
+    position: relative;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid #ccc;
+}
+
+.dashboard-banner .icon {
+    color: #f2b827;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 200%;
+}
+
+.dashboard-banner p {
+    margin: 0px;
+}
+
+
+/* Dark Theme */
+
+.sourcecode-viewer.dark .dashboard-description {
+    border-top: 1px solid #171D21;
+    background: #31373E;
+}
+
+.sourcecode-viewer.dark .dashboard-description pre {
+    background-color: #2B3033;
+    border: 1px solid rgba(225, 230, 235, 1);
+}
+
+.sourcecode-viewer.dark .dashboard-description pre code {
+    color: #FFFFFF;
+    border: none;
+}
+
+.sourcecode-viewer.dark .dashboard-description code {
+    color: #E28964;
+    background-color: #2B3033;
+    border: 1px solid rgba(129, 141, 153, 1);
+}
+
+.sourcecode-viewer.dark {
+    background: #31373E;
+}
+
+.showsource-container.dark .nav li.nav-title {
+    border: 1px solid #171D21;
+    color: #FFFFFF;
+    background: #31373E;
+}
+
+.showsource-container.dark .prettyprint {
+    background: #31373E;
+    border-bottom: 1px solid #171D21;
+}
+
+.prettyprint.dark listing{
+    font-size: 20px;
+    background: #000000;
+}
+
+.showsource-container.dark .nav-tabs {
+    background: #31373E;
+    border-bottom: 1px solid #171D21;
+}
+
+.showsource-container.dark .nav-tabs > li > a {
+    color: #C3CBD4;
+}
+
+.showsource-container.dark .nav-tabs > li.active > a {
+    background: #2B3033;
+}
+
+
+.dashboard-banner.dark {
+    background-color: #31373E;
+    border: 1px solid #C3CBD4;
 }

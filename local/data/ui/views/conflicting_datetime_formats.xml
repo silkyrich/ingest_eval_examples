@@ -1,0 +1,27 @@
+<form>
+  <label>Conflicting date formats</label>
+  <fieldset submitButton="false">
+    <input type="time" token="field1">
+      <label></label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Events loaded into Splunk</title>
+      <event>
+        <title>Note how multiple timestamps have been normalized</title>
+        <search id="base">
+          <query>index=ingest_eval_examples* sourcetype=demutliplexed_datetime_formats</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
+</form>

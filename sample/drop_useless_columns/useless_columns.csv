@@ -1,101 +1,101 @@
-primary_key,primary_value,repeated_field,random_nonsense,long_payload
-2020-08-28 23:08:48.484193,680451,same silly value,f3fcc23e-c3dc-4a5e-9a86-7389ba7ef755,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
-2020-08-28 23:44:20.826356,686643,same silly value,04ddccba-f4f7-4258-a8b8-22239d1734f6,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
-2020-08-29 00:17:22.409591,689997,same silly value,5772bf63-c04f-47b0-b448-c89061dfd33f,Splunk> data with destiny 
-2020-08-29 03:20:59.626587,403408,same silly value,f2968278-92b3-488e-917e-f71386941f1d,splunk> We enjoy breaks more than Unions 
-2020-08-29 04:29:48.787284,574236,same silly value,e611102e-caef-4192-9bff-1bb7da0e016f,splunk ML> Solve problems you didn't know you were about to have 
-2020-08-29 10:39:34.719542,886930,same silly value,50b07d27-d2d9-4653-aa6f-2a9bb585065f,"Splunk> Like an F-18, bro. "
-2020-08-29 10:52:14.786550,631044,same silly value,0b30aeb7-0045-484f-a2a7-3efe1d4a4f8d,"Splunk> Finding your faults, just like mom. "
-2020-08-29 11:01:57.198484,718321,same silly value,11937066-57aa-4ae8-aacf-e7cbb22a8c1b,splunk> Chasing tail since 2003 
-2020-08-29 12:37:17.181231,728127,same silly value,a6849d6c-b3d3-4cb7-82f2-23616564fd6f,splunk> We line break for regular expressions 
-2020-08-29 13:04:48.499405,261367,same silly value,6ae70d96-4524-48d4-a2bb-cf419d372b6b,"Splunk> Like an F-18, bro. "
-2020-08-29 17:35:06.398203,397179,same silly value,001e0e96-fefc-49d1-922f-e79a0079e473,Splunk> Now with more code! 
-2020-08-29 19:35:22.631577,680270,same silly value,044aa065-ee4a-4f9c-a6c6-53411065d1da,Splunk> CSI: Logfiles. 
-2020-08-30 01:11:20.984257,307124,same silly value,042448cd-2a91-4a61-bfdb-a91c870ab123,splunk> Walking War Room!! 
-2020-08-30 04:18:06.523559,419288,same silly value,e5a6ffcd-277b-4a1b-a15d-841b20df1aa3,Splunk> Needle. Haystack. Found. 
-2020-08-30 05:01:04.542471,418107,same silly value,12b14cf9-2610-436b-8b78-0c3edd41fde7,splunk> Open a can of whooparse 
-2020-08-30 05:36:44.263311,902479,same silly value,f72e3d6b-2ea0-42d7-9334-93cde4fc445e,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
-2020-08-30 16:23:54.151600,521345,same silly value,a11e5f93-cfa5-4be6-ba9e-34aeb2f2dadd,splunk> Walking War Room!! 
-2020-08-30 17:19:53.565369,196328,same silly value,2da13ae1-1ac3-410a-a2ef-07c26b6c2092,splunk> Show me your logs 
-2020-08-30 23:55:25.939267,267800,same silly value,244c7f95-4e4b-46aa-8a18-e6b0dd1e0672,splunk> Caught me on the server - Wasn't me. 
-2020-08-31 01:11:31.854374,154637,same silly value,856badfe-d0de-46f3-902f-b1efb4be5069,splunk> Open a can of whooparse 
-2020-08-31 04:11:21.987449,256108,same silly value,0a8efe4a-a564-483c-8d02-af29cf894a72,splunk> this way: Run-D.M.C. 
-2020-08-31 08:50:37.925604,248888,same silly value,1f91dc76-28bd-4f17-83dc-69a06e482a41,Splunk> 4TW 
-2020-08-31 09:16:32.493441,223259,same silly value,59a3879b-c456-41ca-8541-eaf9e4b91d12,"Splunk> Finding your faults, just like mom. "
-2020-08-31 15:43:17.116422,576483,same silly value,5fe4cc64-4c32-4291-96f2-2c6620e7bf83,splunk> Show me your logs 
-2020-08-31 17:16:25.036546,287673,same silly value,e5cff891-c47e-4aea-9a46-283ccef509b3,splunk> The bran for your system 
-2020-08-31 17:20:03.657347,279401,same silly value,386353a1-9f67-4664-9436-be5a7d484d93,splunk> this way: Run-D.M.C. 
-2020-08-31 21:27:08.949498,106826,same silly value,9e0a9a14-7ecd-45a3-b2ab-a9dfdf383bd8,splunk> Walking War Room!! 
-2020-08-31 23:00:20.041387,272642,same silly value,7d0d5f9f-a6a1-4ed1-a72c-afcbc92365db,Splunk> data with destiny 
-2020-09-01 00:17:18.154378,309687,same silly value,19fb5d4e-7df1-4417-905d-f1bc42ec0d9d,splunk> The bran for your system 
-2020-09-01 07:16:31.996297,520646,same silly value,e5d87b33-de33-4f91-aed1-d19512ba1e94,Splunk> Needle. Haystack. Found. 
-2020-09-01 10:26:26.260396,98675,same silly value,2db53219-5a8f-4624-bf43-dc039e6211ae,splunk> Open a can of whooparse 
-2020-09-01 13:13:36.924458,435454,same silly value,a2020437-2ca0-438f-99b5-12bdbfcfc509,splunk> don't get caught up in the game of pwns 
-2020-09-01 14:50:29.349564,982613,same silly value,967e7c76-9992-455a-8f04-ecb8c2d8fce2,splunk> More flexible than an Olympic gymnast. 
-2020-09-01 16:38:11.436164,871639,same silly value,2c62d805-c860-4777-9830-af07b1c3eaa7,splunk> We line break for regular expressions 
-2020-09-01 19:15:47.739253,227788,same silly value,820fe41d-bc98-40b6-8dc4-4b1af7274d15,"splunk> Finding your faults, just like mom. "
-2020-09-01 22:34:27.412569,743485,same silly value,a1c0e9a2-7d83-47de-9ba1-26fff5d4f3a9,splunk> Open a can of whooparse 
-2020-09-01 23:59:26.261174,903615,same silly value,214c887a-40ca-45c3-a1e0-b63956a6b9b0,Splunk> Needle. Haystack. Found. 
-2020-09-02 07:12:31.897520,61417,same silly value,77ada7c6-8604-4167-a8f0-385ca9be4aa1,Splunk> All batbelt. No tights. 
-2020-09-02 13:28:30.115207,734600,same silly value,abca8947-cce6-4d63-b2a0-1debbf9084ab,splunk> Digs deeper than a jealous spouse. 
-2020-09-02 14:23:31.741427,836457,same silly value,8555ccc7-d957-4746-a5b7-901eb15f72f3,splunk> Rhymes with drunk 
-2020-09-02 15:19:09.809170,13555,same silly value,dcc81e31-a856-45b0-9093-60e42b05f1d0,splunk ML> Solve problems you didn't know you were about to have 
-2020-09-02 17:36:15.367320,187723,same silly value,45ca7551-2566-487e-8a6f-621a4888a1b7,"splunk> Finding your faults, just like mom. "
-2020-09-02 22:41:57.606262,348142,same silly value,b832cbdd-f1b2-4541-af7b-ac83b94d7b59,splunk> The bran for your system 
-2020-09-02 23:57:41.757240,310449,same silly value,d20890c5-2150-4e00-8df7-a9ec21e62ae6,Splunk> The Notorious B.I.G. D.A.T.A. 
-2020-09-03 08:00:45.825183,695806,same silly value,963bc903-db40-470b-bea1-5d418beb33d8,splunk> don't get caught up in the game of pwns 
-2020-09-03 08:00:58.883529,737344,same silly value,689470eb-951b-4c9d-bd0d-17fc018b97fa,Splunk> I like big data and I cannot lie. 
-2020-09-03 08:30:06.016595,30488,same silly value,64d6fb1b-a8b4-497b-9766-2d904170ecf7,Splunk> Take the sh out of IT. 
-2020-09-03 09:19:11.044432,803295,same silly value,4f0ad843-0242-49bd-9a53-935bc7b76cd6,Splunk> Take the sh out of IT. 
-2020-09-03 11:12:18.765494,536572,same silly value,701efde7-0609-4857-90a5-25e33750e231,Splunk> Australian for grep. 
-2020-09-03 13:00:07.400249,2622,same silly value,7ecccf3a-761c-46fe-b0df-5565346131f9,splunk> We line break for regular expressions 
-2020-09-03 13:39:33.493401,110385,same silly value,5928e535-16e5-459b-a504-4b2a707213bf,Splunk> Australian for grep. 
-2020-09-03 15:34:45.649414,65848,same silly value,0324535e-8145-4cfe-886c-510a5a7dd231,splunk ML> Solve problems you didn't know you were about to have 
-2020-09-03 17:50:14.426502,612210,same silly value,79167806-10ec-4bf6-85e7-07e7c324d28a,splunk> Show me your logs 
-2020-09-03 17:56:19.966573,935120,same silly value,dc2b869d-5d04-4eb2-baa9-87432c68915a,splunk> The mars rover of the IT landfill. 
-2020-09-03 19:01:25.579352,224400,same silly value,a5152fb6-d04d-4cd8-8380-9c697554e71e,splunk> IT like you mean it 
-2020-09-04 05:00:17.216392,882821,same silly value,048cf21f-69a5-4e4e-8742-8ae3856e3065,splunk> Rhymes with drunk 
-2020-09-04 08:47:45.840506,620238,same silly value,b41aa466-a146-415c-b3a2-842e3cbb989e,splunk> don't get caught up in the game of pwns 
-2020-09-04 10:56:31.962271,776551,same silly value,f32758c0-8f26-4d4d-94e2-d50bd8591efb,"Splunk> Finding your faults, just like mom. "
-2020-09-04 11:41:06.712462,470653,same silly value,ff1b4f3c-3095-4ac5-b00d-cfff0a36eeac,Splunk> See your world. Maybe wish you hadn’t. 
-2020-09-04 13:57:17.253226,945266,same silly value,2ebbea69-46a3-40cd-a9bc-03a4d01d6767,Splunk> Be an IT superhero. Go home early. 
-2020-09-04 15:57:01.072418,438922,same silly value,3276dc2e-c985-45dc-bc05-08ca27b5d1b1,"Splunk> Like an F-18, bro. "
-2020-09-04 16:29:50.212555,410188,same silly value,aa414ef1-82e6-4b3f-a83d-738c84d11deb,Splunk> CSI: Logfiles. 
-2020-09-04 19:43:11.114222,620008,same silly value,6a1a0c02-fc2b-45dd-a4de-698ae37acb7a,"splunk> Finding your faults, just like mom. "
-2020-09-04 21:02:22.217467,881382,same silly value,4e8f3184-855f-4e2b-babe-8b33cac7fe45,splunk> because ninjas are too busy 
-2020-09-04 21:31:36.809329,705051,same silly value,23f9e3e8-2390-471c-aeda-d6c465c7aeaf,Splunk> Needle. Haystack. Found. 
-2020-09-04 21:41:20.306293,328233,same silly value,e48ce601-5b1b-404c-ac52-756a5622e7ef,splunk> Walking War Room!! 
-2020-09-04 22:24:15.051361,320510,same silly value,2af9075f-d8bd-4768-a79c-9906a8fdc2f7,splunk> Digs deeper than a jealous spouse. 
-2020-09-05 02:54:30.284198,334490,same silly value,f37c92ef-bf76-436f-addb-8b3da7b9f296,Splunk> Needle. Haystack. Found. 
-2020-09-05 03:44:09.623489,287125,same silly value,f3468fe2-16d9-4a55-aefc-3b1d34b0b058,Splunk> All batbelt. No tights. 
-2020-09-05 08:40:37.645280,955748,same silly value,a59842d7-a654-46cf-a3a4-b26030259d72,splunk> IT like you mean it 
-2020-09-05 10:55:34.319582,148984,same silly value,3dd859f8-baa1-40f2-bd73-f9a5fe301faa,Splunk> The Notorious B.I.G. D.A.T.A. 
-2020-09-05 15:07:18.332178,142390,same silly value,d406fe16-770d-4341-9585-3d854eb30bb3,"Splunk> Finding your faults, just like mom. "
-2020-09-05 21:22:11.911152,543006,same silly value,beea5507-0697-4b50-9746-340b3fe790ee,splunk> These are the droids you are looking for 
-2020-09-05 23:52:15.513188,297931,same silly value,b9649652-b1b7-40c5-a193-007232409be4,Splunk> Be an IT superhero. Go home early. 
-2020-09-06 00:28:42.794511,857386,same silly value,58dbcc88-a1e9-479a-8f10-9595a2d97d17,splunk> All batbelt. No tights. 
-2020-09-06 02:16:04.263445,895715,same silly value,50e8064d-5ecb-49a5-b13b-3b6e2ca777c2,Splunk> Map. Reduce. Recycle. 
-2020-09-06 02:57:54.964275,697983,same silly value,ee0f84b7-f88f-4e0f-8c06-298755a54d99,splunk> IT like you mean it 
-2020-09-06 09:39:09.054515,96569,same silly value,7ff0816c-175d-4907-87b8-3befcab828c8,Splunk> see the light before you tunnel
-2020-09-06 11:24:00.343289,299237,same silly value,a55d0a21-f986-4750-aff1-22f22f375c8f,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
-2020-09-06 13:10:00.904383,847172,same silly value,b3ca3e56-18dd-49e7-85bd-bc0553ef24d8,splunk ML> Solve problems you didn't know you were about to have 
-2020-09-06 16:20:40.713338,219240,same silly value,6fb7651f-6206-4565-bd97-77c0a3a09f7b,Splunk> Map. Reduce. Recycle. 
-2020-09-06 16:54:12.331333,236844,same silly value,aca02af7-0b2f-4a92-8e2b-b23cb05efbba,splunk> Rhymes with drunk 
-2020-09-06 19:18:35.008244,781996,same silly value,f79fff72-2038-4ae1-8c37-632815aa6e7a,Splunk> I like big data and I cannot lie. 
-2020-09-06 21:30:38.277436,61282,same silly value,fd1afdca-d374-4bc3-afbd-eb5545d5e3cc,"Splunk> Finding your faults, just like mom. "
-2020-09-06 21:35:39.953409,804530,same silly value,585e8620-4e7c-437b-8a40-be23ecbfd80e,splunk> We line break for regular expressions 
-2020-09-07 00:30:27.635315,918504,same silly value,2e9a5c7a-cbba-4f12-9f86-75dd315ff676,Splunk> Needle. Haystack. Found. 
-2020-09-07 01:18:21.061217,570880,same silly value,5da15985-a5d6-4352-b5b4-e8630410ecac,splunk> We line break for regular expressions 
-2020-09-07 01:38:55.835479,257714,same silly value,bb80b61e-8f15-471d-b176-4c578ecf3cd6,Splunk> Winning the War on Error 
-2020-09-07 03:28:33.902342,605101,same silly value,55c51ecb-e10b-4651-8374-6bc062dc97b0,splunk> Show me your logs 
-2020-09-07 06:08:47.898475,49088,same silly value,923ef9cb-c8d1-4366-afd4-d89973e6a9d1,Splunk> CSI: Logfiles. 
-2020-09-07 12:14:06.476524,988857,same silly value,74ea4910-6701-453e-9e45-d47b248ede14,splunk> The mars rover of the IT landfill. 
-2020-09-07 14:07:11.671365,789910,same silly value,73702a2a-fc24-446f-9d41-8fb5558fd0f4,Splunk> Winning the War on Error 
-2020-09-07 14:10:41.791306,211440,same silly value,20a084fc-2f8b-47e2-b857-d33afe1ddf5c,Splunk> Be an IT superhero. Go home early. 
-2020-09-07 16:41:10.224212,25420,same silly value,a858bec3-d1f7-42b9-a7d4-2a2a04354edb,splunk> Finding disturbances in the Force before the Jedi Masters 
-2020-09-07 17:13:38.583302,817968,same silly value,01854c8e-6e81-4c8f-83e2-dbb263f2ef84,splunk> \\\. nuff said. 
-2020-09-07 17:35:08.431533,831139,same silly value,ff4b8f2f-1acd-4da7-8115-d72bbc50678b,Splunk> Take the sh out of IT. 
-2020-09-07 18:07:00.573235,346737,same silly value,bcf1cf08-b2b2-44fb-9760-63f9eef1a14f,splunk> More flexible than an Olympic gymnast. 
-2020-09-07 18:23:22.138324,242918,same silly value,d13f4a1d-1244-4aa4-9c8d-4fefee811fd3,splunk> this way: Run-D.M.C. 
-2020-09-07 18:44:04.815537,378980,same silly value,c85d794e-4d3c-459a-8668-da475c8fffbf,splunk> Rhymes with drunk 
-2020-09-07 19:06:41.401453,824322,same silly value,f295dede-2ee1-4d5f-a839-62f72154f117,splunk> Show me your logs 
+time,primary_key,primary_value,repeated_field,random_nonsense,long_payload
+2020-08-31 18:48:59.740190,0xb18e,193699,same silly value,38f89ee4-3789-4905-8e60-94505cccfb83,Splunk> Needle. Haystack. Found. 
+2020-08-31 19:07:23.139460,0x1cb4,283244,same silly value,41a5a46c-1b28-4c8c-8a55-ef41a95f838f,Splunk> The IT Search Engine. 
+2020-08-31 21:57:53.968634,0x128,622697,same silly value,ab06dbe1-c960-4089-8dd8-5ca1cbbf59ea,"Splunk> see the forest, and the trees "
+2020-08-31 23:14:52.861145,0xaf0d,367787,same silly value,c58eeb1e-e9bf-49e7-afd0-6297c86d0d66,"Splunk> see the forest, and the trees "
+2020-08-31 23:21:04.887591,0xa78f,555320,same silly value,91ad63ec-e90b-4979-9023-e6e72a1e598a,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-01 00:35:31.259360,0x3602,282600,same silly value,3c51f618-c35e-4135-95ee-8f13f5675d55,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
+2020-09-01 04:39:28.389630,0xea7d,979068,same silly value,2a585a9f-c651-47cf-9bb0-58099dbdc8ab,Splunk> Map. Reduce. Recycle. 
+2020-09-01 04:49:04.322312,0xf3a1,325511,same silly value,1a5d75e6-11ea-45c9-930e-f687d3de3502,"Splunk> Like an F-18, bro. "
+2020-09-01 04:55:23.890622,0xb8e7,753418,same silly value,b3643bcb-73e2-4cda-bb95-e7baea0d1973,splunk> Finding disturbances in the Force before the Jedi Masters 
+2020-09-01 06:28:14.927340,0x1973,173758,same silly value,a681c0cc-3f5c-46ca-a789-706b2de45ca3,splunk> The mars rover of the IT landfill. 
+2020-09-01 10:27:04.269375,0x901f,470616,same silly value,42c932ac-8f4d-42ba-a260-fe3cb7448d73,splunk> More flexible than an Olympic gymnast. 
+2020-09-01 11:12:16.486558,0x8deb,80947,same silly value,d14e66ba-10d5-46d8-be6e-aa2a7bff3634,"splunk> Finding your faults, just like mom. "
+2020-09-01 19:33:05.546288,0xfb04,463995,same silly value,422ae09d-43c9-4aa7-9621-784d6d773dc7,Splunk> data with destiny 
+2020-09-02 10:25:43.386542,0xe2d1,284173,same silly value,84b3c72b-cfc2-4cc0-aa2b-f679f59550b1,splunk> Caught me on the server - Wasn't me. 
+2020-09-02 11:53:02.418500,0xe094,552680,same silly value,1c70e4e9-1497-4745-a98d-0ee42a15bc18,Splunk> 4TW 
+2020-09-02 15:21:18.799521,0xf144,599322,same silly value,18797f7e-28f9-40fb-a92f-f6556716001a,splunk> These are the droids you are looking for 
+2020-09-02 16:54:56.371232,0xf1b3,560379,same silly value,ffa46df8-f97a-43af-8706-46895a03b18a,"Splunk> see the forest, and the trees "
+2020-09-02 17:01:20.555184,0x9fd6,149240,same silly value,261a2944-fa1c-47fd-b61b-0336d19eea2b,splunk> More flexible than an Olympic gymnast. 
+2020-09-02 18:04:43.725487,0x8e,925013,same silly value,500e7730-aec1-467e-8d54-155aee935b5a,Splunk> Winning the War on Error 
+2020-09-02 18:15:33.671641,0x3c00,750642,same silly value,8a31fc3d-4b83-4810-9b52-d78f74931a04,splunk> because ninjas are too busy 
+2020-09-02 18:43:11.915221,0x75c1,234615,same silly value,49ac548b-07a3-4e26-9754-78d7bcb8bc97,splunk> Digs deeper than a jealous spouse. 
+2020-09-02 18:59:56.967645,0xae75,473312,same silly value,c3fdd183-d443-44b0-9b5d-cd855b5c6951,splunk> \\\. nuff said. 
+2020-09-03 05:07:16.592525,0x9a0b,35258,same silly value,21a65a79-e6ee-4d21-b4ff-9f311ae2df88,splunk> All batbelt. No tights. 
+2020-09-03 09:45:03.684316,0x10bd,529655,same silly value,3e6a27bf-be64-4723-8a4f-799ab0040642,splunk ML> Solve problems you didn't know you were about to have 
+2020-09-03 12:51:50.973505,0x4920,284403,same silly value,0cbbd3ee-9e58-468d-99a5-5ed235b1df57,splunk> Open a can of whooparse 
+2020-09-03 18:25:50.326363,0x1f77,79106,same silly value,77667a69-8cbf-44e8-924e-9278d25b9063,splunk> Walking War Room!! 
+2020-09-03 19:14:41.007261,0xc82b,421137,same silly value,10819e70-579c-4587-a560-b104af2bb1de,splunk> Rhymes with drunk 
+2020-09-03 21:01:26.967348,0x28ba,456914,same silly value,a58be983-4b32-40d2-a15f-f1bbaa58541e,Splunk> All batbelt. No tights. 
+2020-09-04 01:19:50.377471,0x7b08,878741,same silly value,30edb8c6-f396-4c34-a7c3-30abb505b0bb,Splunk> I like big data and I cannot lie. 
+2020-09-04 02:16:02.051483,0xf68a,207647,same silly value,da128fe5-8190-4314-a7dd-998fda2c570a,splunk> The mars rover of the IT landfill. 
+2020-09-04 03:33:48.281336,0x641e,162267,same silly value,2c955343-57d0-4b33-bc56-23adac94fbb7,splunk> Chasing tail since 2003 
+2020-09-04 04:53:14.637653,0x38a0,9772,same silly value,9416ec47-7de0-4a89-b55f-98f119d23e5a,splunk> don't get caught up in the game of pwns 
+2020-09-04 08:34:04.310608,0x73b,50419,same silly value,5e2a2f9c-a2b6-463b-8ce0-0832c8601aa1,"Splunk> Finding your faults, just like mom. "
+2020-09-04 09:23:08.831550,0xa027,862640,same silly value,9b9dcb11-8dbe-4901-88db-0120446b2c37,splunk> The corkscrew for your vintage data. 
+2020-09-04 12:37:13.924269,0x8a60,850431,same silly value,7cc22365-080a-4de4-8f9d-e74be2a4a481,Splunk> I like big data and I cannot lie. 
+2020-09-04 13:33:53.374308,0xd8e8,821660,same silly value,13abdc1d-a73d-4897-b219-4421e5b09068,Splunk> Map. Reduce. Recycle. 
+2020-09-04 14:02:11.832213,0xf4b,344109,same silly value,5e534993-a2cb-4204-a4b5-caf65bde6eda,splunk> We enjoy breaks more than Unions 
+2020-09-04 15:13:33.551466,0xe63b,36707,same silly value,3e2318f2-6d73-457e-a2fc-fbc5a4c2cba6,Splunk> CSI: Logfiles. 
+2020-09-04 16:05:27.251240,0xd876,722302,same silly value,6f0e78e0-17ab-4408-95b0-db73369cb737,splunk> We line break for regular expressions 
+2020-09-04 19:28:28.071236,0x5f87,368522,same silly value,541ea917-76db-48ae-854b-7e5ebbb2b232,splunk> Caught me on the server - Wasn't me. 
+2020-09-04 22:24:43.495478,0x3ed4,673381,same silly value,bd4dad74-3aad-4b7d-9529-2d0d8eb9192b,Splunk> See your world. Maybe wish you hadn’t. 
+2020-09-05 06:33:29.279546,0x105,751737,same silly value,4ecfe95e-8f06-4fb6-9782-65e2e5bb69d3,Splunk> 4TW 
+2020-09-06 00:05:49.275352,0xe6f3,199972,same silly value,c4894a7c-ed8e-4fe2-ad51-6a1bc5e4fbd3,"splunk> I gotta fever, and the only cure is MOAR LICENSE! "
+2020-09-06 02:41:32.582600,0x6143,726541,same silly value,b38bf83c-38b4-406b-b92a-d4ed3c9d912e,splunk> Caught me on the server - Wasn't me. 
+2020-09-06 02:53:52.219491,0xa18b,829575,same silly value,9f655cd9-9cbd-4bb7-b778-2803f24c7529,Splunk> Australian for grep. 
+2020-09-06 05:31:20.452292,0xc327,64538,same silly value,46329a55-2ff9-4fc9-8a3e-4adc7608cac4,Splunk> CSI: Logfiles. 
+2020-09-06 05:32:52.221328,0x2a26,737594,same silly value,6520d965-295c-4587-b5bf-4ea6820556df,splunk> Caught me on the server - Wasn't me. 
+2020-09-06 06:31:28.234554,0xc715,265793,same silly value,6e2ec796-dd71-4af9-9d8d-97a302b2c7ed,"Splunk> see the forest, and the trees "
+2020-09-06 08:01:59.052562,0xbe28,57776,same silly value,6923e891-ef35-4852-aff9-2b6ed385f778,splunk> Digs deeper than a jealous spouse. 
+2020-09-06 09:53:43.780250,0x2c2d,22897,same silly value,0b71f1de-dcb0-4b5c-8942-1f8f4cd81e26,splunk> because ninjas are too busy 
+2020-09-06 10:37:52.692435,0xb210,36924,same silly value,1bc073f9-fad2-4f06-b929-729fac254d26,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-06 10:52:37.966578,0xd70b,507469,same silly value,9f6ed1d6-c5d1-4858-a077-5ce19246bd72,Splunk> Map. Reduce. Recycle. 
+2020-09-06 12:30:10.306613,0x9fb,544872,same silly value,ed9bc905-6e4e-48f2-a73a-e7d70305d5e8,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-06 19:19:53.982367,0xdd38,231708,same silly value,8660bc9f-f6ed-4fc1-ac97-935a9834dee5,Splunk> Winning the War on Error 
+2020-09-06 20:16:46.417296,0xf2af,190479,same silly value,078060da-337e-4b1b-93e2-2b37097a9a42,"Splunk> Finding your faults, just like mom. "
+2020-09-06 21:19:08.279344,0xf313,24477,same silly value,b94ce6c9-8c13-417c-b350-9fc762fdbc0c,Splunk> CSI: Logfiles. 
+2020-09-06 21:23:50.380495,0x5a2f,589502,same silly value,99393fd3-b7d4-4bc4-ac3f-0b5041cc8a67,Splunk> Now with more code! 
+2020-09-06 22:21:02.493273,0xf654,515603,same silly value,9ba750d7-7ca3-46b6-8193-779a42f5cb45,splunk> Rhymes with drunk 
+2020-09-07 00:47:14.942276,0x8dd2,284982,same silly value,f931f232-3fb9-4797-a401-b7b6fd58311c,Splunk> Needle. Haystack. Found. 
+2020-09-07 04:17:27.817513,0xf7ad,753584,same silly value,14900eb5-2900-455b-8dfe-3421eda24382,splunk> Show me your logs 
+2020-09-07 04:54:07.446200,0x4ea8,731915,same silly value,6114d671-1673-40a3-8167-795c894513a7,splunk> this way: Run-D.M.C. 
+2020-09-07 05:47:59.923304,0x7b29,610961,same silly value,12e73315-676f-40d7-8957-b6d4545de2e4,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-07 06:04:38.998300,0x7efd,523216,same silly value,2888ac2c-06ee-4bdb-8a11-352818931c33,Splunk> Map. Reduce. Recycle. 
+2020-09-07 07:27:02.808383,0x4da3,839425,same silly value,f69c0812-dc27-4d06-b14c-69d5ab72a5ed,Splunk> Take the sh out of IT. 
+2020-09-07 07:53:18.551195,0xbf76,359651,same silly value,d2803f34-9cc2-4d5e-92ad-1f3edc43bf93,splunk> IT like you mean it 
+2020-09-07 09:00:04.491626,0xfd6d,862156,same silly value,66d2b56d-c89c-4777-ba53-915728bba29b,splunk> Chasing tail since 2003 
+2020-09-07 09:34:44.520570,0x79d4,772985,same silly value,cd54ce79-1c46-49ab-a40a-ae7890f9d6e0,Splunk> Be an IT superhero. Go home early. 
+2020-09-07 11:43:44.808244,0xa718,399493,same silly value,4c29af47-4d46-4ad3-becb-538097c190a9,Splunk> Be an IT superhero. Go home early. 
+2020-09-07 16:37:46.247387,0xa924,709648,same silly value,9c62b363-d5a2-4b9c-bb6d-338c8e9c143e,splunk> Chasing tail since 2003 
+2020-09-07 20:05:47.146280,0x55e7,606028,same silly value,e0f1938b-74ae-4980-bba2-7c87f0595dbe,Splunk> Now with more code! 
+2020-09-07 20:46:15.128566,0x29f7,649150,same silly value,fcf9464e-8714-4ccb-bfce-be578f50a759,splunk> Walking War Room!! 
+2020-09-08 04:52:20.138228,0xb5d5,979551,same silly value,f99e5b82-1eff-4331-bdaf-0145ab1dbfe1,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-08 05:14:46.866379,0x1d77,353523,same silly value,6694f00f-62a4-48cd-bbc7-73c1107c4d28,Splunk> Be an IT superhero. Go home early. 
+2020-09-08 08:54:16.323637,0xf88,20501,same silly value,9824dc3b-4374-44fc-9113-81b0caac1e6b,splunk> More flexible than an Olympic gymnast. 
+2020-09-08 08:57:23.876216,0x70ec,36550,same silly value,72dee959-a025-4c5d-95ff-e5da623774ff,splunk> don't get caught up in the game of pwns 
+2020-09-08 11:41:26.782257,0xca26,28762,same silly value,b4ee364c-9da5-41c2-be77-a2d72210448b,Splunk> Map. Reduce. Recycle. 
+2020-09-08 13:18:45.893529,0xe3c7,866610,same silly value,8b059bf2-d78b-43c3-8540-1d49c762082d,Splunk> I like big data and I cannot lie. 
+2020-09-08 13:47:16.486649,0x4151,212334,same silly value,e1f78fbd-e759-4dfe-b521-34a661273700,splunk> The mars rover of the IT landfill. 
+2020-09-08 15:06:45.305395,0x88b5,922724,same silly value,306297ac-d68b-4d2f-88a9-8b191fb30c34,splunk> More flexible than an Olympic gymnast. 
+2020-09-08 15:35:19.905324,0xe2ee,255282,same silly value,d8b57f6e-f10d-4306-8c28-30c0a90d7364,splunk> The bran for your system 
+2020-09-08 22:04:16.652356,0xd08d,468899,same silly value,a20c4985-5cc5-4860-90d8-873a8dcf8c9f,splunk> Finding disturbances in the Force before the Jedi Masters 
+2020-09-08 23:55:24.038509,0xfe5d,509017,same silly value,8587840a-ab3b-4885-9f95-47d94b69a489,Splunk> See your world. Maybe wish you hadn’t. 
+2020-09-09 02:47:03.647533,0xd775,976101,same silly value,baa5bdf9-8e0b-4d31-b0f9-d6dd5aa11657,splunk> Chasing tail since 2003 
+2020-09-09 04:04:19.147265,0x6f63,550580,same silly value,a53363c1-9c37-4488-a5de-0e1300dfa218,splunk> Caught me on the server - Wasn't me. 
+2020-09-09 05:08:02.216537,0xfcee,61147,same silly value,eb39d989-8838-4c6f-9af5-f1e69d5975cb,"Splunk> Finding your faults, just like mom. "
+2020-09-09 07:34:45.911284,0x9b6d,31731,same silly value,6d41cb1b-36df-451a-9996-cdcc57b647c0,splunk> Digs deeper than a jealous spouse. 
+2020-09-09 07:41:25.531320,0xda8a,729396,same silly value,c68eaa5a-9c5f-442e-bb51-472ceb72a89a,splunk> These are the droids you are looking for 
+2020-09-09 12:13:59.553604,0xdb3b,532770,same silly value,db1ebfad-65f5-4e6d-bab6-c0eeeac86757,"Splunk> Finding your faults, just like mom. "
+2020-09-09 12:27:26.563657,0xdb14,272148,same silly value,ecf16151-253e-4c67-a200-a26eb5b5efbb,Splunk> See your world. Maybe wish you hadn’t. 
+2020-09-09 12:47:03.817208,0x1f15,770926,same silly value,c7666072-ceb1-4e4d-ae35-55c285e36b1a,Splunk> Map. Reduce. Recycle. 
+2020-09-09 16:34:14.681391,0x3c6,194081,same silly value,b1077ff8-e1fb-4336-8850-42ce5a6e6011,splunk> Show me your logs 
+2020-09-09 17:19:40.451371,0xe8b9,335841,same silly value,5f290bf1-b0d5-47f7-af38-ada9faab3743,Splunk> The Notorious B.I.G. D.A.T.A. 
+2020-09-09 17:49:38.606225,0x4108,771491,same silly value,200781c7-4d4d-452b-a19f-1424584ba621,Splunk> Map. Reduce. Recycle. 
+2020-09-09 22:47:19.100574,0xd7bb,78373,same silly value,597bf92a-bd22-4a49-b79d-d22b1bb64a03,splunk> These are the droids you are looking for 
+2020-09-10 00:32:13.870332,0xf8a4,253566,same silly value,9813f0cb-ef66-4557-820d-20671ab6abb9,splunk> Open a can of whooparse 
+2020-09-10 01:07:14.071618,0xb9de,29459,same silly value,495e535e-0d77-40eb-85f4-2eea153da638,splunk> Caught me on the server - Wasn't me. 
+2020-09-10 02:05:26.066204,0x68e8,672240,same silly value,a7efc432-66dc-44f0-97ef-c9e41a85570e,Splunk> Winning the War on Error 
+2020-09-10 04:31:00.190596,0x50eb,56377,same silly value,ebec8160-a8d2-4522-9a59-2c1ae7905550,splunk> Finding disturbances in the Force before the Jedi Masters 
+2020-09-10 10:14:23.011475,0xd563,129760,same silly value,6c91d82f-7c32-49a6-8ab7-fa600f6a80cf,Splunk> Take the sh out of IT. 
+2020-09-10 11:09:31.815517,0xeda1,913089,same silly value,5df6be0d-1d69-41ac-85f7-8526cb43c7c4,splunk> Show me your logs 

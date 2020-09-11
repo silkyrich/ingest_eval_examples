@@ -1,3 +1,73 @@
 [views/contents]
 version = 8.0.5
 modtime = 1599574663.046025000
+
+[views/conflicting_datetime_formats]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599752512.858359000
+
+[views/split_forwarding]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599638044.796573000
+
+[views/add_event_length]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599752300.362882000
+
+[views/auto_extract_indexed_fields]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599753126.546100000
+
+[views/compound_datetimes]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599752543.554755000
+
+[views/data_estimation]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599638093.757743000
+
+[views/drop_indexed_fields]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599638101.926795000
+
+[views/load_into_indexes]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599746370.028217000
+
+[views/mask_and_clone]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599829531.114249000
+
+[views/mask_data_and_map]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1599638134.762137000

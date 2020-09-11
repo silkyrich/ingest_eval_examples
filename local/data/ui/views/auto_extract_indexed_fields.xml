@@ -1,0 +1,36 @@
+<form>
+  <label>Auto extract indexed fields</label>
+  <fieldset submitButton="false">
+    <input type="time" token="time">
+      <label></label>
+      <default>
+        <earliest>0</earliest>
+        <latest></latest>
+      </default>
+    </input>
+    <input type="dropdown" token="selected">
+      <label>Select numeric field</label>
+      <choice value="average_kbps">average_kbps</choice>
+      <choice value="stdev_kbps">stdev_kbps</choice>
+      <choice value="value">value</choice>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>| tstats sum(sum_kbps) as sum_kbps 
+    where index=ingest_eval_examples_* sourcetype=indexed_log 
+    by group name
+| xyseries group name sum_kbps</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+</form>

@@ -1,0 +1,56 @@
+<form>
+  <label>load_into_indexes</label>
+  <fieldset submitButton="false">
+    <input type="multiselect" token="selected_indexes">
+      <label>Select indexes to export</label>
+      <default>ingest_eval_examples_1,ingest_eval_examples_2</default>
+      <prefix>index IN (</prefix>
+      <delimiter>, </delimiter>
+      <fieldForLabel>label</fieldForLabel>
+      <fieldForValue>index</fieldForValue>
+      <search>
+        <query>| eventcount summarize=false index=* index=_* 
+| stats sum(count) as count by index 
+| sort - count
+| eval labe=index." (".count.")"</query>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </search>
+      <suffix>)</suffix>
+    </input>
+    <input type="text" token="selected_sample_ratio">
+      <label>Set sampling</label>
+      <default>1</default>
+    </input>
+    <input type="time" token="index_time">
+      <label>Select indexed time range</label>
+      <default>
+        <earliest>-15m</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="time" token="time">
+      <label>Select timestamp range</label>
+      <default>
+        <earliest>-1y</earliest>
+        <latest>+1y</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>$selected_indexes$ _index_earliest=$index_time.earliest$ _index_latest=$index_time.latest$ earliest=$time.earliest$ latest=$time.latest$
+| noop sample_ratio=$selected_sample_ratio$ 
+| eval _raw=_time."%%%".index."%%%".host."%%%".sourcetype."%%%".sourcetype."%%%"._raw."^^^END^^^"
+| table _raw</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</form>

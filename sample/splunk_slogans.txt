@@ -36,8 +36,10 @@ splunk> Rhymes with drunk
 splunk> Chasing tail since 2003 
 splunk> this way: Run-D.M.C. 
 splunk> Walking War Room!! 
+splunk> log, I am your father
 splunk> IT like you mean it 
 splunk ML> Solve problems you didn't know you were about to have 
 Splunk> see the forest, and the trees 
 Splunk> data with destiny 
 Splunk> see the light before you tunnel
+Splunk> Ctrl + F1
