@@ -27,8 +27,8 @@ modtime = 1599752300.362882000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1599753126.546100000
+version = 8.0.6
+modtime = 1600452899.424415000
 
 [views/compound_datetimes]
 access = read : [ * ], write : [ * ]
