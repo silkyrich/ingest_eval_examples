@@ -24,6 +24,12 @@
     "category": "Enrichment"
 },
 {
+    "id": "metricify_license",
+    "title": "Write license.log into _metrics index",
+    "short-description": "This example uses CLONE_SOURCETYPE to duplicate license_usage.log events and copy the values into the _metrics index",
+    "category": "Platform extension"
+},
+{
     "id": "drop_indexed_fields",
     "title" : "Dropping indexed fields from INDEXED_CSV",
     "short-description" : "INDEXED_CSV and INDEXED_JSON allow you to use tstats and indexed fields on structured data, however sometimes it can bloat your storage. This example demonstrates how to blend search time and indexed time enrichment for a CSV file",

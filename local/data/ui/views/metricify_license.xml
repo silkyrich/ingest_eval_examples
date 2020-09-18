@@ -1,0 +1,96 @@
+<form>
+  <label>Convert license.log into metrics events</label>
+  <init>
+    <set token="splitby_mstats">sourcetype</set>
+    <set token="splitby_raw">st</set>
+  </init>
+  <search>
+    <progress>
+      <unset token="selected_span_min_30s"></unset>
+    </progress>
+    <done>
+      <eval token="duration">round($result.info_max_time$-$result.info_min_time$,0)</eval>
+      <eval token="resolution">ceiling($duration$/$selected_resolution$)</eval>
+      <eval token="form.selected_span_min_30_secs">if($resolution$ &gt; 30,$resolution$,30)</eval>
+    </done>
+    <query>| makeresults
+| eval force_rerun_on_resolution_change="$selected_resolution$"
+| addinfo</query>
+    <earliest>$time.earliest$</earliest>
+    <latest>$time.latest$</latest>
+  </search>
+  <fieldset submitButton="false">
+    <input type="time" token="time">
+      <label></label>
+      <default>
+        <earliest>@w0</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="dropdown" token="selected_splitby">
+      <label>Select splitby</label>
+      <choice value="host|h">host</choice>
+      <choice value="source|s">source</choice>
+      <choice value="sourcetype|st">sourcetype</choice>
+      <choice value="into_index|idx">index</choice>
+      <choice value="on_indexer|i">splunk_server</choice>
+      <choice value="allocated_to_pool|pool">pool</choice>
+      <change>
+        <eval token="splitby_mstats">mvindex($selected_splitby$,1)</eval>
+        <eval token="splitby_raw">mvindex($selected_splitby$,2)</eval>
+      </change>
+      <default>sourcetype|st</default>
+    </input>
+    <input type="dropdown" token="selected_resolution">
+      <label>Select resolution</label>
+      <choice value="100">low</choice>
+      <choice value="200">medium</choice>
+      <choice value="500">high</choice>
+      <choice value="750">ultra</choice>
+      <default>200</default>
+    </input>
+    <input type="text" token="selected_span_min_30_secs">
+      <label>selected span for time+divisions</label>
+      <prefix>span=</prefix>
+      <suffix>sec</suffix>
+    </input>
+    <input type="text" token="selected_limit">
+      <label>Limit for split by</label>
+      <default>20</default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>This chart is calculated by mstats</title>
+      <chart>
+        <search>
+          <query>| mstats sum(_value) as bytes_indexed $selected_span_min_30_secs$ where index=_metrics metric_name=license_usage  by $splitby_mstats$
+| xyseries _time $splitby_mstats$ bytes_indexed</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>This chart is calculated via raw search</title>
+      <chart>
+        <search>
+          <query>index=_internal TERM(LicenseUsage) sourcetype=splunkd NOT(IndexProcessor) TERM(type=Usage)
+| timechart limit=0 $selected_span_min_30_secs$ sum(b) as license_used by $splitby_raw$</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+</form>

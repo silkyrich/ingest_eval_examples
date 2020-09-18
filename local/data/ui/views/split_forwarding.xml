@@ -1,3 +1,16 @@
 <dashboard>
-  <label>split_forwarding</label>
+  <label>Split forwarding</label>
+  <row>
+    <panel>
+      <event>
+        <search>
+          <query>index="ingest_eval_examples_*" sourcetype=split*</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
 </dashboard>

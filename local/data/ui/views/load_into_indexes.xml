@@ -25,8 +25,8 @@
     <input type="time" token="index_time">
       <label>Select indexed time range</label>
       <default>
-        <earliest>-15m</earliest>
-        <latest>now</latest>
+        <earliest>-1yr</earliest>
+        <latest>+1yr</latest>
       </default>
     </input>
     <input type="time" token="time">

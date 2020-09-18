@@ -1,3 +1,47 @@
 <dashboard>
-  <label>drop_indexed_fields</label>
+  <label>Drop indexed fields</label>
+  <row>
+    <panel>
+      <title>This chart is calculated via raw search for versatility</title>
+      <chart>
+        <search>
+          <query>index="ingest_eval_examples_*" sourcetype=drop_indexed_fields primary_key::* 
+| timechart sum(primary_value) as sum_primary</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>This chart is calculated via tstats for performance</title>
+      <chart>
+        <search>
+          <query>| tstats sum(primary_value) as sum_primary where index=ingest_eval_examples* sourcetype=drop_indexed_fields by _time span=1day</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>This table shows the indexed fields and the search time fields side by side</title>
+      <table>
+        <search>
+          <query>index="ingest_eval_examples_*" sourcetype=drop_indexed_fields primary_key::*
+| table _time primary_key primary_value repeated_field random_nonsense long_payload</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
 </dashboard>

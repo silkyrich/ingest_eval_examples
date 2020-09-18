@@ -28,5 +28,5 @@ With the introduction of `INGEST_EVAL` we can add an indexed field that contains
     # add the length of the _raw string to the event, this needs to be the last transform so we don't change the
     # length of _raw again once the value has been computed
     [add_raw_length_to_meta_field]
-    INGEST_EVAL= event_length=len(_raw)
+    INGEST_EVAL= _event_length=len(_raw)
 
