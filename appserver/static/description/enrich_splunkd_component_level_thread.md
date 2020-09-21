@@ -10,8 +10,9 @@ To aid the performance of searching the `splunkd` sourcetype we will use a `REGE
 ### Example data
 To demonstrate how `INGEST_EVAL` can resolve the issue this application generates some sample data. Notice how the file name contains the date, but the log file contains the time.
 
-    08:44:00 Splunk> See your world. Maybe wish you hadn’t.
-
+    # 09-21-2020 09:51:06.241 +0000 INFO  TailReader [10099 batchreader1] - Starting batchreader1 thread
+    # 09-21-2020 09:50:57.229 +0000 INFO  CMSlave [9659 MainThread] - starting heartbeat thread
+    # 09-21-2020 09:50:57.229 +0000 INFO  CMSlave - starting heartbeat thread
 
 ### Steps
 
