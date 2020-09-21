@@ -8,7 +8,7 @@ By default enrichment of the `splunkd` sourcetype is done at search time using s
 To aid the performance of searching the `splunkd` sourcetype we will use a `REGEX` transform to extract the fields `component`, `log_line`, `thread_name` and `thread_id` from the log files and write them into indexed fields during ingestion. This will increase the parsing costs at ingestion time, but will reduce searching costs when referencing the indexed fields.
 
 ### Example data
-To demonstrate how `INGEST_EVAL` can resolve the issue this application generates some sample data. Notice how the file name contains the date, but the log file contains the time.
+The following log lines are from a splunks instance and show both formats for splunkd log.
 
     # 09-21-2020 09:51:06.241 +0000 INFO  TailReader [10099 batchreader1] - Starting batchreader1 thread
     # 09-21-2020 09:50:57.229 +0000 INFO  CMSlave [9659 MainThread] - starting heartbeat thread
