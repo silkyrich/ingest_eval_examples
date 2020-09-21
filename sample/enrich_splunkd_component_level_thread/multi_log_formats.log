@@ -1,100 +1,100 @@
-17-09-2020 19:11:28.164 +0000 ERROR  TelemetryHandler [7290 FilesystemOpExecutorWorker-0] - splunk> More flexible than an Olympic gymnast. 
-17-09-2020 22:03:47.773 +0000 ERROR  TelemetryHandler  - Splunk> Take the sh out of IT. 
-17-09-2020 23:21:25.605 +0000 INFO  ApplicationManager  - Splunk> Australian for grep. 
-18-09-2020 00:41:44.404 +0000 INFO  DatabaseDirectoryManager  - splunk ML> Solve problems you didn't know you were about to have 
-18-09-2020 01:06:42.240 +0000 WARN  KVStoreBackupRestore [1793 SplunkdSpecificInitThread] - Splunk> See your world. Maybe wish you hadn’t. 
-18-09-2020 01:40:34.177 +0000 ERROR  DS_DC_Common  - splunk ML> Solve problems you didn't know you were about to have 
-18-09-2020 02:44:09.030 +0000 INFO  PubSubSvr [8070 cachemanagerUploadExecutorWorker-5] - Splunk> Australian for grep. 
-18-09-2020 02:48:53.724 +0000 DEBUG  ApplicationUpdater [6826 tailreader0] - Splunk> Like an F-18, bro. 
-18-09-2020 07:47:57.946 +0000 WARN  ApplicationLicense  - Splunk> Map. Reduce. Recycle. 
-18-09-2020 07:54:13.939 +0000 ERROR  ModularInputs  - Splunk> see the light before you tunnel
-18-09-2020 10:02:08.039 +0000 DEBUG  CMBundleMgr [5800 ReplicationDataReceiverThread] - Splunk> All batbelt. No tights. 
-18-09-2020 12:11:39.648 +0000 ERROR  ScheduledViewsReaper  - splunk> Finding disturbances in the Force before the Jedi Masters 
-18-09-2020 14:47:22.316 +0000 INFO  ServerRoles [5667 cachemanagerUploadExecutorWorker-3] - splunk> I gotta fever, and the only cure is MOAR LICENSE! 
-18-09-2020 16:33:08.550 +0000 ERROR  IndexerIf [4203 Killa] - splunk> We enjoy breaks more than Unions 
-18-09-2020 17:39:00.413 +0000 WARN  WorkloadManager [2971 typing_1] - splunk> I gotta fever, and the only cure is MOAR LICENSE! 
-18-09-2020 17:48:58.065 +0000 ERROR  TcpInputProc  - splunk> Finding disturbances in the Force before the Jedi Masters 
-18-09-2020 19:04:31.362 +0000 ERROR  CMBucketId [290 CMExecutorWorker-10] - splunk> this way: Run-D.M.C. 
-18-09-2020 19:21:52.887 +0000 ERROR  ClusterSlaveControlHandler  - Splunk> 4TW 
-18-09-2020 20:21:41.725 +0000 ERROR  CacheManager  - splunk> Finding disturbances in the Force before the Jedi Masters 
-18-09-2020 20:30:02.714 +0000 INFO  HotBucketRoller [9160 typing_1] - splunk> These are the droids you are looking for 
-18-09-2020 20:54:23.617 +0000 INFO  DS_DC_Common [9153 CMExecutorWorker-4] - splunk> I gotta fever, and the only cure is MOAR LICENSE! 
-18-09-2020 21:34:26.558 +0000 DEBUG  HotBucketRoller  - splunk> We enjoy breaks more than Unions 
-19-09-2020 01:56:03.220 +0000 ERROR  WatchedFile  - splunk> Finding disturbances in the Force before the Jedi Masters 
-19-09-2020 03:24:59.614 +0000 ERROR  ApplicationManager [3197 CMExecutorWorker-8] - Splunk> Finding your faults, just like mom. 
-19-09-2020 04:20:26.417 +0000 ERROR  IntrospectionGenerator:resource_usage  - Splunk> Be an IT superhero. Go home early. 
-19-09-2020 04:42:07.497 +0000 WARN  ProxyConfig  - Splunk> Now with more code! 
-19-09-2020 05:00:19.352 +0000 INFO  BucketMover  - splunk> More flexible than an Olympic gymnast. 
-19-09-2020 05:14:06.495 +0000 WARN  DSManager  - splunk> Caught me on the server - Wasn't me. 
-19-09-2020 05:34:32.124 +0000 DEBUG  TcpInputConfig  - Splunk> CSI: Logfiles. 
-19-09-2020 05:54:23.018 +0000 INFO  ApplicationManager [4004 CMExecutorWorker-9] - Splunk> The Notorious B.I.G. D.A.T.A. 
-19-09-2020 06:14:34.690 +0000 ERROR  CMBucketId  - splunk> this way: Run-D.M.C. 
-19-09-2020 06:42:08.186 +0000 INFO  CMHeartbeatThread  - splunk> The corkscrew for your vintage data. 
-19-09-2020 07:42:08.333 +0000 ERROR  UDPInputProcessor  - Splunk> Winning the War on Error 
-19-09-2020 08:38:01.304 +0000 WARN  HotDBManager  - splunk> The bran for your system 
-19-09-2020 09:33:05.476 +0000 INFO  IndexerIf [2377 CMExecutorWorker-7] - Splunk> Like an F-18, bro. 
-19-09-2020 10:33:33.469 +0000 INFO  ClusteringMgr [1023 ExecProcessorSchedulerThread] - splunk> The mars rover of the IT landfill. 
-19-09-2020 11:03:11.541 +0000 WARN  UDPInputProcessor [3167 HttpDedicatedIoThread-4] - splunk ML> Solve problems you didn't know you were about to have 
-19-09-2020 12:09:48.491 +0000 INFO  KeyManagerSearchPeers  - Splunk> data with destiny 
-19-09-2020 13:22:35.417 +0000 WARN  CMHeartbeatThread [1236 tailreader1] - splunk> Caught me on the server - Wasn't me. 
-19-09-2020 13:45:57.459 +0000 WARN  Rsa2FA [4877 cachemanagerUploadExecutorWorker-6] - splunk ML> Solve problems you didn't know you were about to have 
-19-09-2020 14:00:29.547 +0000 INFO  DS_DC_Common [25 cachemanagerUploadExecutorWorker-1] - Splunk> Be an IT superhero. Go home early. 
-19-09-2020 15:03:21.267 +0000 INFO  ApplicationManager  - Splunk> Needle. Haystack. Found. 
-19-09-2020 16:28:15.010 +0000 ERROR  SHClusterMgr [6112 AuditSearchExecutor] - Splunk> Take the sh out of IT. 
-19-09-2020 16:32:47.774 +0000 DEBUG  LMStackMgr [2883 HTTPDispatch] - splunk> Caught me on the server - Wasn't me. 
-19-09-2020 16:44:47.021 +0000 ERROR  CMSlave  - splunk> \\\. nuff said. 
-19-09-2020 18:30:44.242 +0000 INFO  CacheManager  - splunk> \\\. nuff said. 
-19-09-2020 18:54:48.614 +0000 ERROR  IndexerIf [9199 FilesystemOpExecutorWorker-0] - splunk> Chasing tail since 2003 
-19-09-2020 19:40:22.383 +0000 INFO  SpecFiles [6993 CallbackRunnerThread] - Splunk> see the light before you tunnel
-19-09-2020 20:02:23.557 +0000 WARN  MPool [3863 cachemanagerUploadExecutorWorker-8] - Splunk> Now with more code! 
-19-09-2020 20:10:39.398 +0000 DEBUG  PipelineComponent  - splunk> The corkscrew for your vintage data. 
-19-09-2020 20:41:31.702 +0000 ERROR  CMBucketId [2295 IndexerTPoolWorker-0] - splunk> The corkscrew for your vintage data. 
-19-09-2020 21:27:13.334 +0000 DEBUG  CMBundleMgr  - Splunk> Winning the War on Error 
-20-09-2020 00:19:58.045 +0000 ERROR  IndexerService [8096 HttpDedicatedIoThread-1] - splunk> Show me your logs 
-20-09-2020 01:01:31.250 +0000 ERROR  PipelineComponent  - Splunk> see the forest, and the trees 
-20-09-2020 03:39:16.710 +0000 INFO  ModularInputs [6137 cachemanagerUploadExecutorWorker-3] - splunk> The corkscrew for your vintage data. 
-20-09-2020 04:02:36.782 +0000 INFO  ClusterSlaveConfigReloader [5685 FilesystemOpExecutorWorker-0] - Splunk> I like big data and I cannot lie. 
-20-09-2020 04:53:20.725 +0000 ERROR  MetricSchemaProcessor [1360 cachemanagerUploadExecutorWorker-10] - splunk> Walking War Room!! 
-20-09-2020 05:43:05.696 +0000 DEBUG  DSManager [1329 ExecProcessorSchedulerThread] - Splunk> I like big data and I cannot lie. 
-20-09-2020 05:53:14.148 +0000 WARN  UDPInputProcessor  - splunk> Finding disturbances in the Force before the Jedi Masters 
-20-09-2020 06:57:37.192 +0000 DEBUG  MetricSchemaProcessor  - Splunk> Winning the War on Error 
-20-09-2020 08:25:50.888 +0000 ERROR  WorkloadManager [8851 FilesystemOpExecutorWorker-6] - Splunk> see the forest, and the trees 
-20-09-2020 08:39:46.414 +0000 ERROR  ShutdownHandler  - splunk> We line break for regular expressions 
-20-09-2020 08:48:58.031 +0000 INFO  CMRepJob [4244 cachemanagerUploadExecutorWorker-4] - splunk> \\\. nuff said. 
-20-09-2020 09:17:28.700 +0000 ERROR  MetricSchemaProcessor [6589 cachemanagerDownloadExecutorWorker-3] - Splunk> see the light before you tunnel
-20-09-2020 10:49:25.765 +0000 INFO  ClusterBundleValidator  - Splunk> Finding your faults, just like mom. 
-20-09-2020 10:52:39.249 +0000 WARN  ProxyConfig [6589 FilesystemOpExecutorWorker-7] - splunk> log, I am your father
-20-09-2020 11:07:55.557 +0000 ERROR  IndexerService [3813 journal-compress] - splunk> The mars rover of the IT landfill. 
-20-09-2020 11:29:03.122 +0000 WARN  NoahHeartbeat  - Splunk> see the light before you tunnel
-20-09-2020 12:11:01.173 +0000 ERROR  IndexerService [9739 FilesystemOpExecutorWorker-6] - Splunk> Map. Reduce. Recycle. 
-20-09-2020 12:25:27.001 +0000 ERROR  PubSubSvr  - splunk> Show me your logs 
-20-09-2020 12:27:31.763 +0000 WARN  CMHeartbeatThread [9701 tcp_0] - Splunk> The IT Search Engine. 
-20-09-2020 13:28:46.946 +0000 DEBUG  LMTracker [4798 CMExecutorWorker-9] - splunk> Chasing tail since 2003 
-20-09-2020 14:19:13.523 +0000 WARN  DeploymentServer [1846 AuditSearchExecutor] - Splunk> Needle. Haystack. Found. 
-20-09-2020 16:23:05.027 +0000 WARN  DeploymentServer  - splunk> We enjoy breaks more than Unions 
-20-09-2020 19:29:57.993 +0000 ERROR  WatchedFile  - Splunk> data with destiny 
-20-09-2020 19:56:41.083 +0000 INFO  DC:DeploymentClient [5217 HTTPDispatch] - Splunk> Needle. Haystack. Found. 
-20-09-2020 20:26:48.534 +0000 DEBUG  IndexerService [1037 CMNotifyThread] - Splunk> The Notorious B.I.G. D.A.T.A. 
-20-09-2020 21:07:06.383 +0000 WARN  HotDBManager [3955 indexerPipe_0] - splunk> Walking War Room!! 
-20-09-2020 21:29:36.030 +0000 WARN  PipeFlusher [868 IndexerTPoolWorker-0] - splunk> The mars rover of the IT landfill. 
-20-09-2020 23:24:18.080 +0000 ERROR  LicenseMgr  - Splunk> Like an F-18, bro. 
-20-09-2020 23:45:10.812 +0000 INFO  ApplicationManager  - Splunk> I like big data and I cannot lie. 
-21-09-2020 01:03:18.060 +0000 ERROR  ClusterSlaveControlHandler [862 CMSlaveShutdownThread] - splunk> I gotta fever, and the only cure is MOAR LICENSE! 
-21-09-2020 03:14:19.754 +0000 INFO  PipelineComponent  - Splunk> CSI: Logfiles. 
-21-09-2020 03:51:21.654 +0000 DEBUG  ServerConfig [7457 FilesystemOpExecutorWorker-2] - splunk> The bran for your system 
-21-09-2020 03:53:23.329 +0000 WARN  CMSlave [7578 cachemanagerDownloadExecutorWorker-6] - Splunk> data with destiny 
-21-09-2020 04:51:28.794 +0000 ERROR  ClientSessionsManager  - Splunk> Take the sh out of IT. 
-21-09-2020 06:32:58.891 +0000 WARN  MultiFactorAuthManager  - splunk> Finding your faults, just like mom. 
-21-09-2020 06:49:57.953 +0000 WARN  ApplicationUpdater [4352 cachemanagerUploadExecutorWorker-6] - splunk> Finding your faults, just like mom. 
-21-09-2020 09:16:16.977 +0000 INFO  BucketReplicator  - splunk> Digs deeper than a jealous spouse. 
-21-09-2020 09:37:55.579 +0000 ERROR  MPool  - Splunk> The Notorious B.I.G. D.A.T.A. 
-21-09-2020 10:06:16.837 +0000 WARN  ExecProcessor  - splunk> because ninjas are too busy 
-21-09-2020 10:58:31.414 +0000 DEBUG  HotDBManager [8933 CMExecutorWorker-7] - Splunk> Map. Reduce. Recycle. 
-21-09-2020 11:34:14.977 +0000 WARN  LMConfig  - Splunk> Winning the War on Error 
-21-09-2020 13:21:40.819 +0000 WARN  PipelineComponent  - splunk> Open a can of whooparse 
-21-09-2020 14:11:50.783 +0000 DEBUG  WatchedFile [9728 cachemanagerDownloadExecutorWorker-4] - Splunk> Needle. Haystack. Found. 
-21-09-2020 14:32:26.965 +0000 DEBUG  KVStoreBackupRestore [6665 CMNotifyThread] - splunk> The corkscrew for your vintage data. 
-21-09-2020 15:38:04.782 +0000 INFO  TailingProcessor [4855 BundleExecutorWorker-0] - splunk> \\\. nuff said. 
-21-09-2020 15:49:36.476 +0000 WARN  BundleJob  - splunk> Open a can of whooparse 
-21-09-2020 16:14:03.962 +0000 DEBUG  TcpOutputProc [4473 HttpDedicatedIoThread-4] - Splunk> All batbelt. No tights. 
-21-09-2020 16:30:46.780 +0000 INFO  ClusteringMgr  - Splunk> Ctrl + F1
+16-09-2020 20:44:45.881 +0000 ERROR  SHClusterMgr  - Splunk> The Notorious B.I.G. D.A.T.A. 
+16-09-2020 20:55:20.145 +0000 DEBUG  IndexerInit [764 cachemanagerUploadExecutorWorker-10] - splunk> this way: Run-D.M.C. 
+16-09-2020 22:33:19.039 +0000 ERROR  CMServiceThread  - splunk> Show me your logs 
+16-09-2020 23:45:12.245 +0000 DEBUG  RemoteQueueInputProcessor  - splunk> Rhymes with drunk 
+17-09-2020 00:45:47.602 +0000 DEBUG  CMReplicationRegistry  - splunk> because ninjas are too busy 
+17-09-2020 02:38:09.267 +0000 DEBUG  MPool  - Splunk> All batbelt. No tights. 
+17-09-2020 04:42:50.485 +0000 INFO  RemoteQueueInputProcessor [1164 CMExecutorWorker-0] - splunk> Digs deeper than a jealous spouse. 
+17-09-2020 05:29:19.676 +0000 ERROR  CMRepJob  - Splunk> data with destiny 
+17-09-2020 05:41:01.108 +0000 INFO  RemoteQueueInputProcessor [7852 FilesystemOpExecutorWorker-2] - Splunk> Finding your faults, just like mom. 
+17-09-2020 05:46:30.299 +0000 INFO  ModularInputs  - splunk> don't get caught up in the game of pwns 
+17-09-2020 06:35:12.081 +0000 WARN  SHClusterMgr  - splunk> Show me your logs 
+17-09-2020 06:40:03.423 +0000 ERROR  Rsa2FA  - Splunk> Ctrl + F1
+17-09-2020 07:01:00.950 +0000 INFO  SpecFiles [786 indexerPipe_1] - splunk> log, I am your father
+17-09-2020 07:38:07.866 +0000 DEBUG  ScheduledViewsReaper [8064 FilesystemOpExecutorWorker-4] - Splunk> Ctrl + F1
+17-09-2020 10:23:52.433 +0000 INFO  IndexProcessor [342 HttpDedicatedIoThread-3] - Splunk> Now with more code! 
+17-09-2020 11:32:02.990 +0000 DEBUG  IntrospectionGenerator:disk_objects  - splunk> Walking War Room!! 
+17-09-2020 13:12:16.357 +0000 WARN  UDPInputProcessor [7272 cachemanagerUploadExecutorWorker-3] - Splunk> Be an IT superhero. Go home early. 
+17-09-2020 14:06:41.983 +0000 ERROR  ClientSessionsManager  - Splunk> see the light before you tunnel
+17-09-2020 15:46:11.217 +0000 WARN  CMBucketId [7149 SchedulerThread] - splunk> Digs deeper than a jealous spouse. 
+17-09-2020 18:11:23.668 +0000 INFO  UDPInputProcessor  - Splunk> All batbelt. No tights. 
+17-09-2020 19:13:04.010 +0000 ERROR  ProxyConfig [3370 cachemanagerUploadExecutorWorker-5] - Splunk> Australian for grep. 
+17-09-2020 19:54:19.650 +0000 WARN  IndexerIf [6428 remotequeueinput_0] - Splunk> data with destiny 
+17-09-2020 21:42:56.601 +0000 INFO  CMHeartbeatThread [7337 tcp_0] - Splunk> All batbelt. No tights. 
+17-09-2020 21:43:10.912 +0000 WARN  Rsa2FA [8858 AppLicenseThread] - splunk> Open a can of whooparse 
+18-09-2020 00:55:51.827 +0000 INFO  DC:DeploymentClient [944 CMExecutorWorker-2] - splunk ML> Solve problems you didn't know you were about to have 
+18-09-2020 02:01:32.302 +0000 WARN  ApplicationManager [3605 FilesystemOpExecutorWorker-5] - Splunk> See your world. Maybe wish you hadn’t. 
+18-09-2020 02:03:19.435 +0000 WARN  IndexerInit  - Splunk> The IT Search Engine. 
+18-09-2020 02:36:54.236 +0000 WARN  IntrospectionGenerator:disk_objects [2023 BundleExecutorWorker-0] - splunk> These are the droids you are looking for 
+18-09-2020 03:52:31.207 +0000 DEBUG  MetricsProcessor [6517 cachemanagerUploadExecutorWorker-6] - splunk> Show me your logs 
+18-09-2020 04:07:57.759 +0000 INFO  ClusterBundleValidator  - Splunk> Ctrl + F1
+18-09-2020 07:37:48.233 +0000 ERROR  IndexerInit  - Splunk> I like big data and I cannot lie. 
+18-09-2020 08:34:55.471 +0000 WARN  ShutdownHandler [539 tailreader0] - splunk> We enjoy breaks more than Unions 
+18-09-2020 10:34:52.197 +0000 DEBUG  BucketReplicator  - splunk> IT like you mean it 
+18-09-2020 12:37:47.577 +0000 DEBUG  TcpInputConfig [1638 cachemanagerUploadExecutorWorker-7] - Splunk> see the light before you tunnel
+18-09-2020 13:07:50.340 +0000 DEBUG  LicenseMgr [5198 cachemanagerUploadExecutorWorker-7] - Splunk> 4TW 
+18-09-2020 15:35:47.592 +0000 DEBUG  BucketReplicator [8367 AppLicenseThread] - splunk> Open a can of whooparse 
+18-09-2020 17:36:13.890 +0000 DEBUG  DatabaseDirectoryManager  - Splunk> Winning the War on Error 
+18-09-2020 21:14:09.267 +0000 WARN  HotBucketRoller  - splunk> Rhymes with drunk 
+18-09-2020 22:17:18.666 +0000 DEBUG  KeyManagerSearchPeers [457 typing_0] - splunk> Chasing tail since 2003 
+19-09-2020 00:36:08.709 +0000 INFO  ShutdownHandler [4520 cachemanagerUploadExecutorWorker-0] - splunk> These are the droids you are looking for 
+19-09-2020 01:22:06.914 +0000 DEBUG  WatchedFile  - splunk> Chasing tail since 2003 
+19-09-2020 02:28:36.536 +0000 DEBUG  MPool  - Splunk> See your world. Maybe wish you hadn’t. 
+19-09-2020 03:07:11.579 +0000 ERROR  DatabaseDirectoryManager [8978 cachemanagerUploadExecutorWorker-9] - splunk> Rhymes with drunk 
+19-09-2020 03:16:49.638 +0000 ERROR  MetricAlertManager [7934 HTTPDispatch] - splunk> Caught me on the server - Wasn't me. 
+19-09-2020 05:04:20.067 +0000 INFO  CMReplicationRegistry  - Splunk> Needle. Haystack. Found. 
+19-09-2020 05:31:13.072 +0000 ERROR  PubSubSvr [8853 HttpDedicatedIoThread-4] - Splunk> Be an IT superhero. Go home early. 
+19-09-2020 05:48:44.411 +0000 INFO  KVStoreBackupRestore  - Splunk> Needle. Haystack. Found. 
+19-09-2020 05:56:37.138 +0000 INFO  ShutdownHandler  - splunk> Caught me on the server - Wasn't me. 
+19-09-2020 06:28:57.799 +0000 ERROR  CMBundleMgr  - Splunk> The Notorious B.I.G. D.A.T.A. 
+19-09-2020 08:44:37.019 +0000 ERROR  ExecProcessor  - Splunk> I like big data and I cannot lie. 
+19-09-2020 09:02:31.584 +0000 INFO  CMHeartbeatThread [3525 FilesystemOpExecutorWorker-5] - splunk> These are the droids you are looking for 
+19-09-2020 10:50:22.535 +0000 ERROR  PipeFlusher [2526 tcp_1] - splunk> Caught me on the server - Wasn't me. 
+19-09-2020 11:05:30.935 +0000 ERROR  CMBundleMgr [3590 IndexerTPoolWorker-0] - Splunk> See your world. Maybe wish you hadn’t. 
+19-09-2020 11:07:25.456 +0000 INFO  IndexerService  - splunk> \\\. nuff said. 
+19-09-2020 12:09:07.696 +0000 WARN  ScheduledViewsReaper  - Splunk> All batbelt. No tights. 
+19-09-2020 13:38:37.944 +0000 WARN  ProxyConfig [7860 CMHeartbeatThread] - Splunk> The IT Search Engine. 
+19-09-2020 14:32:26.353 +0000 DEBUG  DSManager [4246 CMExecutorWorker-9] - Splunk> See your world. Maybe wish you hadn’t. 
+19-09-2020 14:36:39.381 +0000 WARN  IntrospectionGenerator:resource_usage  - Splunk> Needle. Haystack. Found. 
+19-09-2020 17:54:38.506 +0000 INFO  KVStoreBackupRestore [8475 cachemanagerDownloadExecutorWorker-1] - splunk ML> Solve problems you didn't know you were about to have 
+19-09-2020 17:59:12.031 +0000 DEBUG  ScheduledViewsReaper [1332 MainTailingThread] - splunk> Finding your faults, just like mom. 
+19-09-2020 20:26:54.035 +0000 WARN  BucketReplicator [9799 CMUploadReplicatedBucketThread] - splunk> \\\. nuff said. 
+19-09-2020 21:04:42.691 +0000 WARN  DeploymentServer [5122 typing_0] - Splunk> data with destiny 
+19-09-2020 21:25:43.011 +0000 INFO  PubSubSvr [1911 cachemanagerUploadExecutorWorker-10] - Splunk> Like an F-18, bro. 
+19-09-2020 22:22:18.816 +0000 WARN  ApplicationLicense  - Splunk> Ctrl + F1
+20-09-2020 00:30:43.627 +0000 INFO  IndexerIf [9519 CMExecutorWorker-2] - splunk> All batbelt. No tights. 
+20-09-2020 01:27:00.344 +0000 WARN  BundlesSetup [2750 FilesystemOpExecutorWorker-4] - Splunk> see the light before you tunnel
+20-09-2020 01:51:41.614 +0000 WARN  CMServiceThread [1057 CMExecutorWorker-5] - splunk> Chasing tail since 2003 
+20-09-2020 02:07:42.859 +0000 WARN  PipeFlusher [3634 cachemanagerDownloadExecutorWorker-5] - splunk> These are the droids you are looking for 
+20-09-2020 02:32:45.071 +0000 ERROR  CMServiceThread  - splunk> We enjoy breaks more than Unions 
+20-09-2020 02:54:31.431 +0000 INFO  CertStorageProvider [5050 cachemanagerDownloadExecutorWorker-0] - Splunk> See your world. Maybe wish you hadn’t. 
+20-09-2020 03:18:48.640 +0000 INFO  DatabaseDirectoryManager [6087 IndexerService] - splunk> because ninjas are too busy 
+20-09-2020 03:51:17.631 +0000 INFO  ServerRoles [8987 SchedulerThread] - Splunk> Take the sh out of IT. 
+20-09-2020 04:38:34.410 +0000 DEBUG  ExecProcessor [3347 HTTPDispatch] - splunk> More flexible than an Olympic gymnast. 
+20-09-2020 11:18:23.673 +0000 DEBUG  StreamingBucketBuilder [5464 ExecProcessorSchedulerThread] - splunk> because ninjas are too busy 
+20-09-2020 11:53:37.640 +0000 DEBUG  IndexerIf  - Splunk> see the forest, and the trees 
+20-09-2020 12:26:22.043 +0000 ERROR  MetricAlertManager  - Splunk> see the forest, and the trees 
+20-09-2020 14:57:17.909 +0000 ERROR  TcpInputConfig  - Splunk> see the forest, and the trees 
+20-09-2020 16:09:01.317 +0000 INFO  BundleJob  - Splunk> 4TW 
+20-09-2020 19:46:00.713 +0000 WARN  IntrospectionGenerator:disk_objects [5700 tailreader0] - Splunk> The IT Search Engine. 
+20-09-2020 23:11:43.411 +0000 WARN  UiHttpListener  - splunk ML> Solve problems you didn't know you were about to have 
+21-09-2020 00:54:01.620 +0000 DEBUG  WatchedFile [8509 Shutdown] - splunk> Show me your logs 
+21-09-2020 01:25:33.391 +0000 DEBUG  BucketMover  - Splunk> see the forest, and the trees 
+21-09-2020 01:35:13.118 +0000 DEBUG  ModularInputs [5719 cachemanagerUploadExecutorWorker-7] - splunk> All batbelt. No tights. 
+21-09-2020 01:59:00.103 +0000 DEBUG  ExecProcessor [2469 batchreader1] - Splunk> Map. Reduce. Recycle. 
+21-09-2020 03:49:51.548 +0000 ERROR  ClusterSlaveConfigReloader  - splunk> log, I am your father
+21-09-2020 04:38:33.318 +0000 DEBUG  ClusteringMgr [2331 FilesystemOpExecutorWorker-2] - splunk> The bran for your system 
+21-09-2020 04:44:56.684 +0000 WARN  TcpOutputProc  - splunk> We enjoy breaks more than Unions 
+21-09-2020 05:02:03.632 +0000 ERROR  TcpOutputProc  - Splunk> 4TW 
+21-09-2020 05:58:34.521 +0000 WARN  ProxyConfig  - splunk> Digs deeper than a jealous spouse. 
+21-09-2020 10:58:27.874 +0000 WARN  MetricSchemaProcessor [1407 IndexerService] - splunk> Finding disturbances in the Force before the Jedi Masters 
+21-09-2020 11:49:44.041 +0000 ERROR  UDPInputProcessor  - Splunk> All batbelt. No tights. 
+21-09-2020 12:07:19.431 +0000 INFO  LMConfig [8305 SchedulerThread] - splunk> Digs deeper than a jealous spouse. 
+21-09-2020 12:46:09.987 +0000 WARN  TcpInputProc [8743 cachemanagerUploadExecutorWorker-4] - Splunk> Like an F-18, bro. 
+21-09-2020 15:12:53.279 +0000 WARN  BundlesSetup  - splunk> Open a can of whooparse 
+21-09-2020 16:42:35.712 +0000 INFO  TcpInputConfig [7812 cachemanagerDownloadExecutorWorker-8] - splunk> Show me your logs 
+21-09-2020 18:31:43.785 +0000 DEBUG  WorkloadManager  - Splunk> Like an F-18, bro. 
+21-09-2020 18:33:03.741 +0000 DEBUG  IndexProcessor [4884 cachemanagerUploadExecutorWorker-3] - Splunk> Ctrl + F1
+21-09-2020 18:50:17.556 +0000 ERROR  TcpInputConfig  - splunk> We line break for regular expressions 
+21-09-2020 18:56:14.682 +0000 ERROR  ClusterBundleValidator [7012 journal-compress] - splunk ML> Solve problems you didn't know you were about to have 
+21-09-2020 19:31:06.713 +0000 INFO  ServerConfig  - splunk> Caught me on the server - Wasn't me. 
