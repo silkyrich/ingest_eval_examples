@@ -1,1000 +1,1000 @@
-2020-09-08 19:15:37 average_kbps=0.9756670285605195 group=no_quotes stdev_kbps=0.45866348732096773 label='single quotes'
-2020-09-08 19:20:43 name='single quotes' label="double quotes" group="double quotes" sum_kbps=6010 value=5142
-2020-09-08 19:31:50 value=8828 sum_kbps=1286 stdev_kbps=0.32343355470832935 group=no_quotes name="double quotes"
-2020-09-08 19:50:23 label='single quotes' group="double quotes" stdev_kbps=0.576242706403632 sum_kbps=1053
-2020-09-08 19:59:15 name="double quotes" group=no_quotes sum_kbps=9584 average_kbps=0.5042378333121246
-2020-09-08 20:09:51 name='single quotes' label="double quotes"
-2020-09-08 20:15:46 group=no_quotes sum_kbps=4414 stdev_kbps=0.534491297611069 value=8456
-2020-09-08 20:16:17 stdev_kbps=0.3946856533449665 average_kbps=0.6800543914204294
-2020-09-08 20:22:57 sum_kbps=7896 label="double quotes" average_kbps=0.8539158318309489
-2020-09-08 20:33:37 value=2718 sum_kbps=9373 stdev_kbps=0.6910277889125214
-2020-09-08 21:12:10 name=no_quotes label="double quotes" stdev_kbps=0.8079746997508829 value=8435 average_kbps=0.9834161578910894
-2020-09-08 21:21:20 label=no_quotes sum_kbps=1950 stdev_kbps=0.8965570665205398 value=9972 name=no_quotes
-2020-09-08 21:23:56 sum_kbps=9004 label="double quotes" value=268 average_kbps=0.15465288414188438
-2020-09-08 21:24:50 value=5384 label=no_quotes average_kbps=0.2234656922946403
-2020-09-08 21:58:47 average_kbps=0.3749547343814331 stdev_kbps=0.6681310136796262
-2020-09-08 22:05:10 average_kbps=0.5473192643326643 sum_kbps=1057
-2020-09-08 22:10:16 group="double quotes" stdev_kbps=0.5954133303958271 average_kbps=0.8867536777313562
-2020-09-08 23:05:02 name=no_quotes group=no_quotes average_kbps=0.9515495542359267 sum_kbps=7130 stdev_kbps=0.6053127011794985
-2020-09-08 23:21:40 value=3994 name='single quotes' group="double quotes" stdev_kbps=0.8912432643535908
-2020-09-08 23:46:59 label="double quotes" sum_kbps=8396 average_kbps=0.013528041101769528 group=no_quotes name='single quotes'
-2020-09-09 00:06:02 stdev_kbps=0.5000856253656606 label=no_quotes sum_kbps=6327 group="double quotes"
-2020-09-09 00:17:15 group="double quotes" value=8049 average_kbps=0.4272071779150658 label='single quotes' sum_kbps=5153
-2020-09-09 00:26:06 sum_kbps=8533 value=2547 name="double quotes" stdev_kbps=0.6447435798421957
-2020-09-09 00:34:53 name='single quotes' average_kbps=0.11717246446940821
-2020-09-09 00:57:25 average_kbps=0.5302236045343642 sum_kbps=8639 stdev_kbps=0.267904461916443
-2020-09-09 00:59:32 label='single quotes' average_kbps=0.09153362789345532 value=7211
-2020-09-09 01:15:41 label='single quotes' sum_kbps=4290 value=8481 average_kbps=0.18484884949883384
-2020-09-09 01:19:49 name="double quotes" value=5994 label='single quotes' average_kbps=0.6014423839273267 stdev_kbps=0.9114739468699247
-2020-09-09 01:32:39 sum_kbps=5843 group="double quotes" name='single quotes'
-2020-09-09 04:03:45 group='single quotes' average_kbps=0.6274657840786844 value=9267 name='single quotes' label=no_quotes
-2020-09-09 04:16:03 average_kbps=0.42860055189414203 sum_kbps=2417 name="double quotes" label="double quotes" group=no_quotes
-2020-09-09 04:34:40 sum_kbps=9707 average_kbps=0.5712456236725548 label="double quotes" stdev_kbps=0.634684643909088 value=2920
-2020-09-09 05:34:35 name='single quotes' sum_kbps=1236 stdev_kbps=0.7139628362370004 average_kbps=0.5577824580293675 value=9853
-2020-09-09 05:42:48 sum_kbps=7609 value=2515 stdev_kbps=0.12614518742870595 group=no_quotes average_kbps=0.2046218709626102
-2020-09-09 05:50:04 name='single quotes' stdev_kbps=0.47485184037753103 average_kbps=0.1473386283080984
-2020-09-09 05:53:12 group="double quotes" value=1676
-2020-09-09 05:54:43 group=no_quotes sum_kbps=4172 stdev_kbps=0.41247371298135826
-2020-09-09 06:00:01 value=7928 sum_kbps=1398 name='single quotes' average_kbps=0.28633454082703913 stdev_kbps=0.23162114696803493
-2020-09-09 06:36:12 value=7356 average_kbps=0.42983017107336174
-2020-09-09 06:56:20 stdev_kbps=0.15923871929844735 name=no_quotes
-2020-09-09 06:59:31 stdev_kbps=0.095278624805339 average_kbps=0.23804693381396846 value=4790
-2020-09-09 07:00:33 name=no_quotes value=1556 group='single quotes'
-2020-09-09 07:16:48 name='single quotes' stdev_kbps=0.18798118620089888 average_kbps=0.5410413110806153
-2020-09-09 07:21:26 stdev_kbps=0.00403565542450246 name=no_quotes
-2020-09-09 07:31:36 value=8593 group=no_quotes
-2020-09-09 07:32:54 name='single quotes' value=1508 label="double quotes" stdev_kbps=0.7649723178548925
-2020-09-09 07:57:47 group=no_quotes stdev_kbps=0.03035392679450466 average_kbps=0.635327508189881 label=no_quotes sum_kbps=3302
-2020-09-09 07:57:47 stdev_kbps=0.07179495967775751 name="double quotes"
-2020-09-09 07:59:23 stdev_kbps=0.3476369160694577 sum_kbps=5377 value=1501 label='single quotes' name=no_quotes
-2020-09-09 08:27:17 value=8862 average_kbps=0.6860466481552883 sum_kbps=3710
-2020-09-09 08:28:04 stdev_kbps=0.3363527205675404 sum_kbps=5390 average_kbps=0.7599263465923338 name=no_quotes
-2020-09-09 08:49:42 sum_kbps=6127 stdev_kbps=0.5959745171037438 value=9295 label="double quotes" average_kbps=0.3145685894819178
-2020-09-09 08:50:13 sum_kbps=5516 average_kbps=0.7810898317040182
-2020-09-09 08:50:20 group="double quotes" stdev_kbps=0.3700792224389673
-2020-09-09 08:55:18 name=no_quotes average_kbps=0.9708517069129681 group='single quotes' sum_kbps=1127 label='single quotes'
-2020-09-09 09:00:42 value=7648 label='single quotes' stdev_kbps=0.2821984349579342
-2020-09-09 09:03:36 value=6534 group='single quotes' stdev_kbps=0.9453544484403527 label=no_quotes average_kbps=0.4911797379812709
-2020-09-09 09:32:48 value=1518 stdev_kbps=0.9975092774863291 group=no_quotes
-2020-09-09 09:42:38 sum_kbps=4487 group='single quotes' label='single quotes' average_kbps=0.657215490062548
-2020-09-09 09:45:05 value=8384 group="double quotes" average_kbps=0.34672747034810036
-2020-09-09 09:47:25 name="double quotes" value=8808 sum_kbps=4310 group='single quotes'
-2020-09-09 09:59:37 sum_kbps=8179 average_kbps=0.6153760215133335 value=8861
-2020-09-09 10:04:59 group='single quotes' stdev_kbps=0.21536934763085847 sum_kbps=4150
-2020-09-09 10:08:46 sum_kbps=6064 name=no_quotes label='single quotes' average_kbps=0.5942063352909951
-2020-09-09 10:09:41 group='single quotes' average_kbps=0.2841769156511915
-2020-09-09 10:23:30 average_kbps=0.5747548244903237 name="double quotes" stdev_kbps=0.5737928325758996 value=2095
-2020-09-09 10:34:28 average_kbps=0.4636635244129198 group="double quotes" value=8412 stdev_kbps=0.4758705394124919
-2020-09-09 10:38:52 value=4699 name="double quotes" sum_kbps=1064 stdev_kbps=0.7750863496120557
-2020-09-09 10:46:50 average_kbps=0.5574762500735087 name=no_quotes
-2020-09-09 10:57:41 value=3003 stdev_kbps=0.04396026424534272 sum_kbps=820 name="double quotes" label="double quotes"
-2020-09-09 11:12:46 value=4573 name=no_quotes sum_kbps=4226
-2020-09-09 11:22:34 name='single quotes' sum_kbps=3719 group='single quotes' label="double quotes"
-2020-09-09 11:25:48 group=no_quotes label=no_quotes stdev_kbps=0.13165845364588002 name="double quotes"
-2020-09-09 11:51:48 sum_kbps=9203 stdev_kbps=0.1965964968438737 name=no_quotes
-2020-09-09 12:00:16 label=no_quotes average_kbps=0.9584393236231507 sum_kbps=9403 group="double quotes"
-2020-09-09 12:18:48 stdev_kbps=0.5101440220977674 value=3100
-2020-09-09 13:19:46 name=no_quotes sum_kbps=3469
-2020-09-09 14:01:23 sum_kbps=7313 average_kbps=0.6807676735267068 name="double quotes"
-2020-09-09 15:08:18 sum_kbps=5001 stdev_kbps=0.9892692136069481 label="double quotes" group=no_quotes average_kbps=0.26954363387042235
-2020-09-09 15:43:49 group='single quotes' value=8231 label="double quotes" average_kbps=0.21368615605075114 name="double quotes"
-2020-09-09 15:50:14 group=no_quotes average_kbps=0.15472426100834735
-2020-09-09 16:01:41 average_kbps=0.023732966145790124 name='single quotes'
-2020-09-09 17:12:18 stdev_kbps=0.32823998902783746 sum_kbps=7796 label="double quotes" name="double quotes"
-2020-09-09 17:17:46 average_kbps=0.08606826630585052 group=no_quotes sum_kbps=201 name="double quotes" label='single quotes'
-2020-09-09 17:18:44 average_kbps=0.4858289870130599 name='single quotes' value=8678 stdev_kbps=0.8787062328462356 group='single quotes'
-2020-09-09 17:36:24 stdev_kbps=0.05813122108985347 value=3289
-2020-09-09 17:44:02 sum_kbps=9069 name='single quotes' average_kbps=0.8837143110854089
-2020-09-09 18:03:48 sum_kbps=605 stdev_kbps=0.9334918329807177 name=no_quotes
-2020-09-09 18:06:21 sum_kbps=2825 label='single quotes' value=6034 stdev_kbps=0.2270924741567546 group=no_quotes
-2020-09-09 18:35:25 stdev_kbps=0.5073752726052796 average_kbps=0.9942501412039336
-2020-09-09 18:37:08 value=5729 average_kbps=0.38456810641102235 name="double quotes" group=no_quotes sum_kbps=4303
-2020-09-09 18:38:57 group=no_quotes label=no_quotes name='single quotes' stdev_kbps=0.7097435420619964 value=8002
-2020-09-09 18:50:20 name=no_quotes stdev_kbps=0.5573741490869268
-2020-09-09 19:26:34 value=2105 sum_kbps=9313
-2020-09-09 19:53:12 sum_kbps=7885 average_kbps=0.2772671079771153
-2020-09-09 19:57:31 sum_kbps=3538 stdev_kbps=0.09276333464410602 value=181
-2020-09-09 20:04:38 sum_kbps=3635 name='single quotes'
-2020-09-09 20:10:06 average_kbps=0.3392588249875387 sum_kbps=8165 stdev_kbps=0.4905225459041137
-2020-09-09 20:28:39 stdev_kbps=0.9732240243612521 group="double quotes"
-2020-09-09 20:31:55 name=no_quotes average_kbps=0.16368830491492847
-2020-09-09 20:35:28 average_kbps=0.03510461732190895 sum_kbps=1792
-2020-09-09 20:45:49 sum_kbps=5608 stdev_kbps=0.692064801754532
-2020-09-09 21:23:25 group=no_quotes sum_kbps=9958 average_kbps=0.2009201992177243 stdev_kbps=0.16137612705598126
-2020-09-09 21:35:01 average_kbps=0.6923759496980564 value=2688 stdev_kbps=0.8309723866542124 label="double quotes" sum_kbps=2884
-2020-09-09 21:48:08 label=no_quotes value=9334 average_kbps=0.2197547069477661
-2020-09-09 21:48:44 stdev_kbps=0.07595806654346682 sum_kbps=5360 value=5062 name="double quotes"
-2020-09-09 22:00:38 group='single quotes' name=no_quotes
-2020-09-09 22:13:52 stdev_kbps=0.5880139882998546 name=no_quotes
-2020-09-09 22:27:46 sum_kbps=3644 name=no_quotes average_kbps=0.3653733179846608 group="double quotes" label='single quotes'
-2020-09-09 22:29:26 group='single quotes' average_kbps=0.6138867008559331 stdev_kbps=0.8471044814326295
-2020-09-09 22:31:23 name=no_quotes group="double quotes"
-2020-09-09 22:37:49 stdev_kbps=0.0983476543380275 label="double quotes"
-2020-09-09 22:38:52 average_kbps=0.37226615318750067 value=9413 sum_kbps=8888 name=no_quotes
-2020-09-09 22:39:25 group='single quotes' label='single quotes'
-2020-09-09 23:06:01 stdev_kbps=0.19737690786850481 group="double quotes" value=7048 name="double quotes" sum_kbps=4763
-2020-09-09 23:10:12 label=no_quotes sum_kbps=4790 average_kbps=0.2605112341260071
-2020-09-09 23:29:04 group='single quotes' value=1216 name="double quotes"
-2020-09-09 23:59:18 group='single quotes' name='single quotes'
-2020-09-10 00:09:44 average_kbps=0.8309236510444888 label='single quotes' name="double quotes" group=no_quotes
-2020-09-10 00:12:20 label=no_quotes average_kbps=0.14478552110468623
-2020-09-10 00:25:16 value=7599 stdev_kbps=0.8875827266273181 label="double quotes"
-2020-09-10 00:46:42 label='single quotes' group="double quotes"
-2020-09-10 01:27:11 name="double quotes" stdev_kbps=0.46904726739416014 label='single quotes'
-2020-09-10 01:29:43 group="double quotes" sum_kbps=8318
-2020-09-10 01:34:23 label=no_quotes sum_kbps=9265
-2020-09-10 02:09:00 value=720 label='single quotes' sum_kbps=9485
-2020-09-10 02:13:54 average_kbps=0.8006680878054444 value=9363 sum_kbps=4583 label=no_quotes
-2020-09-10 03:00:48 sum_kbps=8086 name='single quotes' label=no_quotes stdev_kbps=0.8472565835528152 value=5513
-2020-09-10 03:13:04 average_kbps=0.776331153935181 group='single quotes' stdev_kbps=0.2984097301313241
-2020-09-10 03:25:00 value=1463 label='single quotes' group='single quotes'
-2020-09-10 03:50:38 name="double quotes" value=9390 label='single quotes' sum_kbps=9185
-2020-09-10 04:43:15 average_kbps=0.3976745296149945 label='single quotes' name="double quotes" stdev_kbps=0.5249309120632656 group="double quotes"
-2020-09-10 04:45:26 average_kbps=0.6082214836707404 stdev_kbps=0.386867185809754 name=no_quotes sum_kbps=8159 value=1270
-2020-09-10 04:47:06 label="double quotes" value=2060 average_kbps=0.1704959989349598 sum_kbps=7184
-2020-09-10 05:29:13 name='single quotes' label='single quotes' average_kbps=0.6501176124863253 sum_kbps=1659
-2020-09-10 05:50:59 average_kbps=0.18535836846946196 group='single quotes' value=6227
-2020-09-10 05:53:51 label="double quotes" name='single quotes' sum_kbps=7976
-2020-09-10 06:22:03 stdev_kbps=0.28569589824894803 group=no_quotes
-2020-09-10 06:29:49 stdev_kbps=0.8579284239537384 sum_kbps=5506 group=no_quotes label="double quotes"
-2020-09-10 06:56:22 stdev_kbps=0.14606245257234662 sum_kbps=2043 group='single quotes' name="double quotes" average_kbps=0.39544832557351806
-2020-09-10 06:57:56 group='single quotes' stdev_kbps=0.6710846482913353 name="double quotes"
-2020-09-10 07:06:55 value=9895 sum_kbps=1821 label="double quotes" name=no_quotes
-2020-09-10 07:16:28 stdev_kbps=0.46654609516586587 value=1589 name='single quotes'
-2020-09-10 07:31:42 label='single quotes' average_kbps=0.5956911635485087 group='single quotes'
-2020-09-10 07:51:05 value=5700 label="double quotes" stdev_kbps=0.7379861305896737
-2020-09-10 08:13:26 name='single quotes' stdev_kbps=0.681958922557171
-2020-09-10 08:19:14 value=8825 stdev_kbps=0.8584867982045954 group='single quotes'
-2020-09-10 08:36:50 stdev_kbps=0.7392771567341154 sum_kbps=6278
-2020-09-10 08:45:52 average_kbps=0.3355373223480259 label='single quotes'
-2020-09-10 09:06:55 average_kbps=0.5149336353830966 name=no_quotes value=4732 group='single quotes' label=no_quotes
-2020-09-10 09:10:37 label="double quotes" group=no_quotes value=846 sum_kbps=5355
-2020-09-10 09:17:26 average_kbps=0.4452578186756496 value=1116 label="double quotes" group="double quotes" sum_kbps=4376
-2020-09-10 09:19:23 name=no_quotes sum_kbps=4224 label="double quotes" value=9256
-2020-09-10 09:41:20 group='single quotes' sum_kbps=321 label="double quotes"
-2020-09-10 10:27:54 name='single quotes' sum_kbps=4525 stdev_kbps=0.7901887860831015 label='single quotes' average_kbps=0.5261802696654652
-2020-09-10 10:49:27 sum_kbps=808 average_kbps=0.8946471452718042 group='single quotes'
-2020-09-10 10:50:48 stdev_kbps=0.776113389723181 average_kbps=0.20223420523078084 group=no_quotes
-2020-09-10 10:56:48 label="double quotes" value=75 average_kbps=0.8509581058240395
-2020-09-10 11:10:50 sum_kbps=974 group='single quotes'
-2020-09-10 11:12:55 average_kbps=0.34911725917815917 sum_kbps=7884 label='single quotes' group=no_quotes stdev_kbps=0.6729996968332344
-2020-09-10 11:14:40 stdev_kbps=0.3200006193977486 label=no_quotes
-2020-09-10 11:22:03 stdev_kbps=0.9021351126658438 name="double quotes" average_kbps=0.17330778425444382
-2020-09-10 11:35:45 label='single quotes' average_kbps=0.45557068192629757 sum_kbps=2083 stdev_kbps=0.6412125565147814
-2020-09-10 11:40:58 sum_kbps=9432 label=no_quotes stdev_kbps=0.5460287053594651
-2020-09-10 11:44:11 name="double quotes" sum_kbps=130 stdev_kbps=0.484016448093721 value=9455 average_kbps=0.19586878700092591
-2020-09-10 12:02:15 name=no_quotes label='single quotes'
-2020-09-10 12:13:08 sum_kbps=6489 stdev_kbps=0.9271920556432286
-2020-09-10 12:19:41 stdev_kbps=0.44143969204828626 group=no_quotes label=no_quotes name='single quotes' sum_kbps=1624
-2020-09-10 12:29:22 average_kbps=0.3261072723162479 group='single quotes'
-2020-09-10 12:30:35 group="double quotes" label=no_quotes
-2020-09-10 13:16:39 average_kbps=0.6340513322749376 stdev_kbps=0.28895601204192645 name="double quotes" value=3411
-2020-09-10 13:25:53 label=no_quotes stdev_kbps=0.2500077025707763 name=no_quotes
-2020-09-10 13:38:52 sum_kbps=8468 group=no_quotes stdev_kbps=0.9810690864347962
-2020-09-10 13:45:51 average_kbps=0.4382768856972138 group="double quotes"
-2020-09-10 13:56:27 group="double quotes" average_kbps=0.10189063791018438
-2020-09-10 14:24:04 group='single quotes' average_kbps=0.282420123353198 sum_kbps=8246 stdev_kbps=0.875571451830138 value=5503
-2020-09-10 14:35:05 average_kbps=0.3803141398314053 group="double quotes" name="double quotes"
-2020-09-10 14:56:57 value=7409 stdev_kbps=0.997315757490654
-2020-09-10 15:01:09 label="double quotes" value=4964 group=no_quotes
-2020-09-10 15:18:53 value=3915 sum_kbps=3222 average_kbps=0.476794397148931
-2020-09-10 15:49:37 average_kbps=0.4727573880075152 group='single quotes' name="double quotes" sum_kbps=1769 label='single quotes'
-2020-09-10 15:51:36 stdev_kbps=0.17754038144572504 sum_kbps=592 label='single quotes' average_kbps=0.10875138734789891 group=no_quotes
-2020-09-10 16:06:01 label=no_quotes sum_kbps=7277 average_kbps=0.06532700429061455 group="double quotes"
-2020-09-10 16:10:51 sum_kbps=648 average_kbps=0.9944461330012945 group=no_quotes
-2020-09-10 16:22:11 group=no_quotes average_kbps=0.3824336627494903 stdev_kbps=0.7976952337507723 sum_kbps=2203
-2020-09-10 16:48:37 average_kbps=0.6746283242003213 value=4461 group='single quotes' name="double quotes" label=no_quotes
-2020-09-10 16:54:57 label='single quotes' name='single quotes' group=no_quotes
-2020-09-10 17:02:03 value=2851 average_kbps=0.04740649493107951 group=no_quotes
-2020-09-10 17:20:17 name="double quotes" group=no_quotes sum_kbps=7382
-2020-09-10 17:23:43 label='single quotes' value=4513 sum_kbps=6630
-2020-09-10 17:34:56 stdev_kbps=0.571947850210562 group='single quotes' sum_kbps=9347 value=605 label=no_quotes
-2020-09-10 17:53:48 value=5819 stdev_kbps=0.3804731606870354
-2020-09-10 18:10:46 average_kbps=0.5891065726534347 name='single quotes' sum_kbps=3942 value=7217 label='single quotes'
-2020-09-10 18:47:05 stdev_kbps=0.10450770260194209 label="double quotes" group="double quotes" sum_kbps=5096
-2020-09-10 19:06:58 name=no_quotes group='single quotes' sum_kbps=9957
-2020-09-10 19:08:02 label=no_quotes average_kbps=0.05909647218206193 stdev_kbps=0.11694300812756264 group="double quotes" name=no_quotes
-2020-09-10 19:19:54 stdev_kbps=0.6436320423502812 group=no_quotes name=no_quotes
-2020-09-10 19:22:59 average_kbps=0.41138860286885703 stdev_kbps=0.6192997850830512
-2020-09-10 19:49:13 value=1005 average_kbps=0.9072813569019494 name=no_quotes
-2020-09-10 19:51:42 name=no_quotes group="double quotes" average_kbps=0.6334125553596424
-2020-09-10 21:02:30 value=8035 average_kbps=0.547475510890225 label=no_quotes
-2020-09-10 21:25:32 group="double quotes" sum_kbps=7780 name="double quotes"
-2020-09-10 22:10:11 value=6288 average_kbps=0.0035468311328572533 sum_kbps=2404
-2020-09-10 22:23:39 label=no_quotes sum_kbps=4056 average_kbps=0.6902707066132447
-2020-09-10 22:27:52 average_kbps=0.747356018814097 stdev_kbps=0.42569042094743603 value=2139
-2020-09-10 22:39:20 sum_kbps=7759 name="double quotes"
-2020-09-10 22:55:31 group=no_quotes label=no_quotes stdev_kbps=0.9408652271793696 average_kbps=0.6819407867751375
-2020-09-10 23:02:00 group="double quotes" label=no_quotes sum_kbps=3077 stdev_kbps=0.0031290900976584934 value=644
-2020-09-10 23:06:41 label=no_quotes stdev_kbps=0.7542673824410486 name=no_quotes group="double quotes"
-2020-09-10 23:09:12 stdev_kbps=0.9859438624989398 label=no_quotes group=no_quotes value=9228 name="double quotes"
-2020-09-10 23:15:47 group=no_quotes name='single quotes' stdev_kbps=0.8296775593899341
-2020-09-10 23:15:56 group=no_quotes label=no_quotes sum_kbps=3979 name='single quotes'
-2020-09-10 23:17:10 name="double quotes" average_kbps=0.48906105277646683 stdev_kbps=0.6126490819448766 label=no_quotes
-2020-09-10 23:19:55 sum_kbps=3512 average_kbps=0.3917977877292065 name=no_quotes
-2020-09-10 23:49:27 label=no_quotes average_kbps=0.18892330527729562 group="double quotes" value=3648
-2020-09-11 00:06:08 stdev_kbps=0.8467050384761872 name=no_quotes group=no_quotes label='single quotes' sum_kbps=6928
-2020-09-11 00:08:40 name="double quotes" value=6781 label="double quotes"
-2020-09-11 00:16:32 average_kbps=0.6831100837375547 sum_kbps=2543 value=1060 name=no_quotes
-2020-09-11 00:43:30 value=4637 average_kbps=0.5492858748652236 label=no_quotes name='single quotes' sum_kbps=5279
-2020-09-11 01:08:28 stdev_kbps=0.764010259567445 average_kbps=0.2607913043014799 value=2381 sum_kbps=958 group="double quotes"
-2020-09-11 01:13:01 average_kbps=0.38796913805970157 name="double quotes"
-2020-09-11 01:39:29 value=9538 group=no_quotes stdev_kbps=0.6515585213254975 name="double quotes"
-2020-09-11 01:43:46 value=8667 sum_kbps=176 average_kbps=0.083440046751323 stdev_kbps=0.310947283303752
-2020-09-11 02:01:29 label='single quotes' name=no_quotes
-2020-09-11 02:24:02 average_kbps=0.5870107519306474 name=no_quotes value=2864
-2020-09-11 03:14:08 name="double quotes" group=no_quotes label=no_quotes
-2020-09-11 03:32:14 name="double quotes" sum_kbps=1273 group=no_quotes value=1673 label="double quotes"
-2020-09-11 03:49:32 sum_kbps=8586 group='single quotes' name=no_quotes
-2020-09-11 03:59:59 stdev_kbps=0.9456621154533371 group=no_quotes value=4453
-2020-09-11 04:53:53 group=no_quotes stdev_kbps=0.832667719442823
-2020-09-11 05:00:04 sum_kbps=1256 label='single quotes' group=no_quotes name=no_quotes average_kbps=0.08081750937432874
-2020-09-11 05:03:23 group="double quotes" sum_kbps=922 name=no_quotes stdev_kbps=0.4159071450499783 label=no_quotes
-2020-09-11 05:25:37 label="double quotes" sum_kbps=3383 average_kbps=0.7336869749698153 group='single quotes'
-2020-09-11 05:34:15 group=no_quotes name='single quotes' value=9908 stdev_kbps=0.7028632734976722
-2020-09-11 05:35:16 name=no_quotes group='single quotes' stdev_kbps=0.5121373985473268 average_kbps=0.27957160166246986 label='single quotes'
-2020-09-11 05:40:15 stdev_kbps=0.12335538562030257 value=4500 label='single quotes' sum_kbps=689 name="double quotes"
-2020-09-11 05:50:05 name='single quotes' label="double quotes"
-2020-09-11 05:58:34 average_kbps=0.735348040417321 sum_kbps=5793
-2020-09-11 06:11:51 sum_kbps=7930 stdev_kbps=0.16805074448274115 average_kbps=0.02175476354123629 group='single quotes' name="double quotes"
-2020-09-11 06:41:09 stdev_kbps=0.5492135559238221 group=no_quotes
-2020-09-11 06:42:10 stdev_kbps=0.39558608378299576 average_kbps=0.9352426831380605 name='single quotes' sum_kbps=880
-2020-09-11 06:49:01 stdev_kbps=0.923915522035984 sum_kbps=5198
-2020-09-11 06:54:31 sum_kbps=4329 name=no_quotes average_kbps=0.3508691744871486 group=no_quotes
-2020-09-11 07:01:53 label="double quotes" sum_kbps=1360
-2020-09-11 07:29:20 sum_kbps=2840 stdev_kbps=0.7413548240355629 label='single quotes' average_kbps=0.6603612245494829 name='single quotes'
-2020-09-11 07:34:41 name='single quotes' stdev_kbps=0.6391672023389096 sum_kbps=9617 label='single quotes' value=7067
-2020-09-11 07:59:33 label="double quotes" value=7396 name='single quotes' group=no_quotes
-2020-09-11 08:10:53 average_kbps=0.14818685316088287 group=no_quotes
-2020-09-11 08:24:51 label=no_quotes stdev_kbps=0.9552950801259531
-2020-09-11 09:19:21 average_kbps=0.42927866662111414 stdev_kbps=0.6867213655957026
-2020-09-11 09:31:36 group='single quotes' name="double quotes" label='single quotes' sum_kbps=3143 value=1346
-2020-09-11 09:32:58 label=no_quotes value=4776 average_kbps=0.9136690192192347
-2020-09-11 09:58:07 average_kbps=0.2161108671156664 group='single quotes' stdev_kbps=0.1788845983073778 label=no_quotes
-2020-09-11 10:12:17 group=no_quotes value=9108 stdev_kbps=0.829041542656316 label="double quotes" sum_kbps=7842
-2020-09-11 10:31:50 label=no_quotes stdev_kbps=0.8404395434292651
-2020-09-11 10:37:09 name="double quotes" sum_kbps=6368 average_kbps=0.14854695049055722 value=6277
-2020-09-11 10:43:41 sum_kbps=351 name='single quotes' value=3562
-2020-09-11 11:04:17 value=1581 name='single quotes' sum_kbps=8154 group=no_quotes label=no_quotes
-2020-09-11 11:13:11 sum_kbps=3840 label=no_quotes
-2020-09-11 11:20:14 sum_kbps=8827 value=9915 average_kbps=0.7134106133829156 name=no_quotes
-2020-09-11 11:28:44 label="double quotes" sum_kbps=8574 average_kbps=0.9930459634655577
-2020-09-11 11:54:11 stdev_kbps=0.2716585895009035 sum_kbps=2872
-2020-09-11 12:04:54 average_kbps=0.7700461889160782 value=9023
-2020-09-11 12:15:24 label=no_quotes name=no_quotes group='single quotes' stdev_kbps=0.736635781653497 sum_kbps=8441
-2020-09-11 12:19:22 group="double quotes" value=8101 label='single quotes' stdev_kbps=0.5717159192813539
-2020-09-11 12:29:27 label='single quotes' average_kbps=0.4907550586547845 group='single quotes' stdev_kbps=0.8252191977855314
-2020-09-11 13:00:04 name="double quotes" stdev_kbps=0.44142696463093556 group=no_quotes label='single quotes' average_kbps=0.6001347539422348
-2020-09-11 13:35:57 average_kbps=0.01810271668297614 name='single quotes'
-2020-09-11 13:51:21 average_kbps=0.876847339384968 label='single quotes' value=8526 name="double quotes" group=no_quotes
-2020-09-11 13:55:49 label=no_quotes average_kbps=0.300789425213721 value=1732 name='single quotes' stdev_kbps=0.6585966618817503
-2020-09-11 14:48:22 label='single quotes' group=no_quotes sum_kbps=8023
-2020-09-11 14:53:13 average_kbps=0.8496807065565722 sum_kbps=8829 name='single quotes' label='single quotes' stdev_kbps=0.8222387373836723
-2020-09-11 15:06:05 stdev_kbps=0.07939440211245452 group='single quotes' label=no_quotes average_kbps=0.8837109495765921 name='single quotes'
-2020-09-11 15:31:01 value=4842 group='single quotes' sum_kbps=6548
-2020-09-11 15:43:56 value=6973 label=no_quotes stdev_kbps=0.8699207890494566 group='single quotes' sum_kbps=4579
-2020-09-11 15:47:07 group='single quotes' stdev_kbps=0.6849857576352827 sum_kbps=7888
-2020-09-11 15:49:36 sum_kbps=79 name="double quotes" label='single quotes' value=3906 average_kbps=0.9845773523334534
-2020-09-11 15:52:12 sum_kbps=597 average_kbps=0.8009451438567278 value=6906 stdev_kbps=0.8393660270868984
-2020-09-11 15:58:38 value=2876 average_kbps=0.8557635963868693 group=no_quotes name='single quotes'
-2020-09-11 16:03:50 label=no_quotes group="double quotes"
-2020-09-11 16:10:57 value=1201 sum_kbps=7797 name=no_quotes label='single quotes' group="double quotes"
-2020-09-11 16:15:00 group='single quotes' stdev_kbps=0.14423349151800957
-2020-09-11 16:37:04 name=no_quotes value=552 average_kbps=0.8521816796596652 label='single quotes' sum_kbps=1746
-2020-09-11 17:48:44 name=no_quotes label="double quotes" stdev_kbps=0.08370184678865256
-2020-09-11 18:03:23 name=no_quotes average_kbps=0.9439809477524157
-2020-09-11 18:20:03 value=4741 label='single quotes' name="double quotes" sum_kbps=2620 stdev_kbps=0.46912231611856503
-2020-09-11 18:32:26 value=6109 stdev_kbps=0.3490266279024892 sum_kbps=6378
-2020-09-11 18:53:11 sum_kbps=5236 value=9901
-2020-09-11 19:11:42 sum_kbps=911 average_kbps=0.6742961373423813 value=2199
-2020-09-11 19:28:51 group="double quotes" average_kbps=0.9680027420563637 stdev_kbps=0.08172536893503402 label=no_quotes
-2020-09-11 19:58:27 stdev_kbps=0.5160159809828985 label=no_quotes average_kbps=0.8501275944284852 name="double quotes" sum_kbps=735
-2020-09-11 20:16:36 sum_kbps=5445 value=2118 group="double quotes" average_kbps=0.551492636992977
-2020-09-11 20:30:22 name='single quotes' average_kbps=0.8258968020568295 group='single quotes'
-2020-09-11 20:40:30 name="double quotes" average_kbps=0.28154735570414846 group=no_quotes sum_kbps=3430
-2020-09-11 20:50:17 label='single quotes' stdev_kbps=0.37943227816882175 value=4562 group="double quotes"
-2020-09-11 21:09:07 stdev_kbps=0.5307299194977546 label="double quotes" sum_kbps=5557 value=3235
-2020-09-11 21:11:00 group='single quotes' name="double quotes" sum_kbps=5132 value=4860
-2020-09-11 21:25:52 name=no_quotes label="double quotes" value=7772 average_kbps=0.4888797259986215 stdev_kbps=0.8242822569513363
-2020-09-11 22:26:04 stdev_kbps=0.1108015748261223 name=no_quotes sum_kbps=5479 value=1680 group=no_quotes
-2020-09-11 22:45:25 sum_kbps=8659 name="double quotes" label='single quotes' value=4688
-2020-09-11 22:51:27 stdev_kbps=0.8748131246212211 sum_kbps=4849 average_kbps=0.06932013225348543 group=no_quotes value=9286
-2020-09-11 23:05:38 stdev_kbps=0.46688475614262204 average_kbps=0.07451463087637611 group=no_quotes
-2020-09-11 23:18:19 group='single quotes' label='single quotes'
-2020-09-11 23:44:23 sum_kbps=7957 value=272
-2020-09-11 23:46:08 stdev_kbps=0.0017624314906770078 name=no_quotes label='single quotes' value=9127 group="double quotes"
-2020-09-11 23:48:37 value=7159 name='single quotes' stdev_kbps=0.7218232009796602
-2020-09-11 23:53:11 label='single quotes' sum_kbps=9687 group=no_quotes name="double quotes"
-2020-09-12 00:28:41 label="double quotes" stdev_kbps=0.6575250470038143
-2020-09-12 01:05:27 label="double quotes" value=7583 average_kbps=0.06527107894942474 name=no_quotes sum_kbps=2589
-2020-09-12 01:06:22 stdev_kbps=0.5610545402283265 average_kbps=0.22926461589739155
-2020-09-12 01:34:20 stdev_kbps=0.3777426142980921 average_kbps=0.8697361258096558 name='single quotes' group='single quotes' label="double quotes"
-2020-09-12 01:43:04 label='single quotes' group=no_quotes sum_kbps=8392 value=2821 stdev_kbps=0.37297358865799635
-2020-09-12 02:19:44 name='single quotes' sum_kbps=6150 stdev_kbps=0.36186654985669986
-2020-09-12 02:53:30 group=no_quotes label=no_quotes
-2020-09-12 02:57:08 sum_kbps=2541 stdev_kbps=0.7856261094236169
-2020-09-12 03:17:09 label='single quotes' name=no_quotes stdev_kbps=0.17728619676861146 sum_kbps=7350 group='single quotes'
-2020-09-12 03:26:13 name='single quotes' average_kbps=0.8661685343068732 value=7341 sum_kbps=9735 stdev_kbps=0.22596782946630778
-2020-09-12 04:11:45 label='single quotes' sum_kbps=95 name="double quotes" group=no_quotes stdev_kbps=0.028959361732039945
-2020-09-12 04:17:14 name="double quotes" sum_kbps=776 average_kbps=0.3131150424856257
-2020-09-12 04:36:12 value=201 group=no_quotes
-2020-09-12 04:42:21 average_kbps=0.24251387044155148 group="double quotes"
-2020-09-12 04:45:19 group=no_quotes label="double quotes" name='single quotes' value=4967
-2020-09-12 04:58:47 name=no_quotes group="double quotes" sum_kbps=8999 value=1919
-2020-09-12 05:20:20 name="double quotes" label='single quotes' group=no_quotes average_kbps=0.49275485383046447
-2020-09-12 05:25:36 label='single quotes' group="double quotes"
-2020-09-12 05:42:04 label=no_quotes group="double quotes" name="double quotes" average_kbps=0.5204738398878923
-2020-09-12 05:42:52 stdev_kbps=0.4794718722764968 average_kbps=0.6656574400954489
-2020-09-12 06:04:16 label=no_quotes average_kbps=0.08605031507997085 group='single quotes'
-2020-09-12 06:06:50 value=4751 average_kbps=0.5641187626383145 sum_kbps=1586 label=no_quotes
-2020-09-12 06:07:13 stdev_kbps=0.040783430517580044 name='single quotes' group="double quotes" average_kbps=0.020283663121933748 label=no_quotes
-2020-09-12 06:08:46 label='single quotes' average_kbps=0.7545317040052065 stdev_kbps=0.20458956996911726 name=no_quotes value=7830
-2020-09-12 06:11:33 name='single quotes' stdev_kbps=0.5398844933280672 average_kbps=0.12235786664415549 sum_kbps=8333 group="double quotes"
-2020-09-12 06:26:25 stdev_kbps=0.2900191339448601 sum_kbps=208 average_kbps=0.08041126287114442
-2020-09-12 06:45:29 sum_kbps=8949 value=9777 stdev_kbps=0.3841267592744243
-2020-09-12 06:55:36 sum_kbps=4721 value=404 stdev_kbps=0.9011213316304767 average_kbps=0.9946933876546564
-2020-09-12 07:17:23 sum_kbps=7416 name="double quotes" label='single quotes'
-2020-09-12 07:39:08 label="double quotes" name=no_quotes average_kbps=0.9797283215668818 stdev_kbps=0.871485935561966 group='single quotes'
-2020-09-12 07:51:02 sum_kbps=1935 name=no_quotes label=no_quotes group=no_quotes stdev_kbps=0.9549233067363313
-2020-09-12 08:23:32 name="double quotes" sum_kbps=9977 value=7135 group="double quotes"
-2020-09-12 08:49:27 group=no_quotes sum_kbps=1667 value=4469 average_kbps=0.642238858619103
-2020-09-12 08:49:38 group='single quotes' value=4976 stdev_kbps=0.1968123409501119
-2020-09-12 08:56:54 stdev_kbps=0.8775434305434489 value=7844
-2020-09-12 09:16:09 label="double quotes" name="double quotes"
-2020-09-12 09:17:47 sum_kbps=9649 group="double quotes" label="double quotes" stdev_kbps=0.2543575523199606 name='single quotes'
-2020-09-12 09:20:30 name=no_quotes stdev_kbps=0.15092840178128886 value=6255 group="double quotes" label='single quotes'
-2020-09-12 09:32:42 stdev_kbps=0.8562343068657897 average_kbps=0.9734314946097345
-2020-09-12 09:38:46 sum_kbps=4014 label=no_quotes
-2020-09-12 09:59:38 group=no_quotes label=no_quotes name=no_quotes stdev_kbps=0.3880303360274432
-2020-09-12 10:10:29 sum_kbps=8504 name='single quotes'
-2020-09-12 10:43:21 name="double quotes" average_kbps=0.9921157900260271
-2020-09-12 10:59:19 value=9402 sum_kbps=1689 name=no_quotes average_kbps=0.363267876408509
-2020-09-12 11:16:35 label=no_quotes value=9452 group=no_quotes
-2020-09-12 11:28:57 name=no_quotes group="double quotes" average_kbps=0.24081527342765052 label=no_quotes
-2020-09-12 11:38:39 stdev_kbps=0.08694941234767262 group="double quotes" sum_kbps=2229 value=8910 label=no_quotes
-2020-09-12 12:02:18 label='single quotes' value=843 average_kbps=0.35355119570062943 stdev_kbps=0.021431280888639992
-2020-09-12 12:18:27 value=2618 name="double quotes" sum_kbps=349
-2020-09-12 12:33:27 sum_kbps=8792 label='single quotes' group="double quotes" stdev_kbps=0.22240519270689407 name=no_quotes
-2020-09-12 12:49:22 name='single quotes' stdev_kbps=0.6723316407750585 sum_kbps=7137
-2020-09-12 12:56:25 average_kbps=0.61408700385477 value=4717 label=no_quotes
-2020-09-12 13:00:28 sum_kbps=8003 label="double quotes" name="double quotes"
-2020-09-12 13:15:57 label='single quotes' value=7176 stdev_kbps=0.5498154094234236 group='single quotes' name=no_quotes
-2020-09-12 13:31:32 stdev_kbps=0.2253162206675775 name="double quotes" label=no_quotes group=no_quotes
-2020-09-12 13:35:40 average_kbps=0.1868429359981545 value=2133
-2020-09-12 13:42:21 label="double quotes" value=2009 sum_kbps=8612
-2020-09-12 14:08:45 sum_kbps=8183 name="double quotes"
-2020-09-12 14:20:05 sum_kbps=4408 group=no_quotes
-2020-09-12 14:20:42 sum_kbps=8306 group=no_quotes stdev_kbps=0.9398078730687681 label="double quotes" value=5120
-2020-09-12 14:23:15 stdev_kbps=0.8902651767999872 average_kbps=0.21266885482024533
-2020-09-12 14:39:12 average_kbps=0.5619701611419103 group='single quotes' name='single quotes' label='single quotes'
-2020-09-12 14:47:25 name='single quotes' label=no_quotes
-2020-09-12 14:57:05 sum_kbps=2053 group="double quotes" name="double quotes" value=9738 label="double quotes"
-2020-09-12 14:57:32 sum_kbps=3027 name='single quotes'
-2020-09-12 15:02:21 stdev_kbps=0.353473890856417 label="double quotes" group="double quotes"
-2020-09-12 15:05:04 sum_kbps=4158 name="double quotes" stdev_kbps=0.3630648522203057
-2020-09-12 15:37:24 average_kbps=0.6210492739933119 value=872
-2020-09-12 15:41:52 group=no_quotes label=no_quotes stdev_kbps=0.6500853489023001
-2020-09-12 16:00:35 group="double quotes" name='single quotes' label=no_quotes stdev_kbps=0.07985422132096365 sum_kbps=8756
-2020-09-12 16:14:16 sum_kbps=7443 label=no_quotes value=4510 group="double quotes"
-2020-09-12 16:15:54 value=2199 sum_kbps=5912 label='single quotes' name='single quotes' stdev_kbps=0.9262569024298154
-2020-09-12 16:25:58 sum_kbps=8970 stdev_kbps=0.06209533116522126
-2020-09-12 16:26:59 average_kbps=0.577333276412147 label="double quotes" value=4687 name="double quotes"
-2020-09-12 16:44:57 label='single quotes' group='single quotes' value=1721
-2020-09-12 16:53:29 stdev_kbps=0.4597253940214152 name='single quotes' label='single quotes' group='single quotes' value=7839
-2020-09-12 16:56:34 average_kbps=0.6314549490046145 group='single quotes' stdev_kbps=0.4893409596818509
-2020-09-12 16:57:44 stdev_kbps=0.41849189986384616 label="double quotes"
-2020-09-12 17:05:36 group="double quotes" name='single quotes' sum_kbps=6426 label="double quotes"
-2020-09-12 17:26:50 label="double quotes" stdev_kbps=0.5121727754703426
-2020-09-12 17:27:06 name="double quotes" label="double quotes" value=325
-2020-09-12 17:54:28 group=no_quotes sum_kbps=2245 stdev_kbps=0.7056967926923708 value=4337 name=no_quotes
-2020-09-12 18:29:47 average_kbps=0.31871155276149965 label="double quotes" name='single quotes' stdev_kbps=0.7493493082825026
-2020-09-12 18:30:23 label=no_quotes average_kbps=0.8425358268624519 sum_kbps=1866 name=no_quotes
-2020-09-12 18:31:59 group="double quotes" sum_kbps=4791 value=9055 stdev_kbps=0.2558608867381742 name='single quotes'
-2020-09-12 18:39:20 value=5244 average_kbps=0.016207260871804574
-2020-09-12 19:11:20 average_kbps=0.9337191446569187 label="double quotes" sum_kbps=9946 name='single quotes' group='single quotes'
-2020-09-12 19:18:10 value=4369 label='single quotes' name='single quotes' sum_kbps=8067
-2020-09-12 19:28:58 sum_kbps=1706 stdev_kbps=0.540709096236874 group='single quotes' label="double quotes" average_kbps=0.4897788407802417
-2020-09-12 19:30:39 name='single quotes' label=no_quotes value=6453 sum_kbps=9471
-2020-09-12 19:40:48 value=1070 label='single quotes' average_kbps=0.2883310987707185 name="double quotes"
-2020-09-12 19:47:40 sum_kbps=5836 stdev_kbps=0.9388203254991954 label="double quotes"
-2020-09-12 19:53:08 name=no_quotes value=3132 sum_kbps=4208 stdev_kbps=0.6194059068712077 label="double quotes"
-2020-09-12 20:16:35 label='single quotes' average_kbps=0.6121734346185 name="double quotes" group="double quotes"
-2020-09-12 20:21:36 label=no_quotes value=2584 stdev_kbps=0.9911953475131771 average_kbps=0.13468784825917623 name=no_quotes
-2020-09-12 20:35:38 sum_kbps=3440 stdev_kbps=0.2897829626276227 label='single quotes' average_kbps=0.39975193280780086
-2020-09-12 20:41:18 value=8329 sum_kbps=2096
-2020-09-12 20:44:07 label='single quotes' name='single quotes' average_kbps=0.43897367460433456 group='single quotes'
-2020-09-12 21:31:14 label=no_quotes group="double quotes" value=9334 name='single quotes'
-2020-09-12 21:35:27 average_kbps=0.22329102628379038 group="double quotes" value=8823
-2020-09-12 22:10:08 name=no_quotes sum_kbps=3830
-2020-09-12 22:31:05 sum_kbps=4026 group='single quotes'
-2020-09-12 22:31:07 name=no_quotes sum_kbps=618 stdev_kbps=0.8632542992186358 value=1294
-2020-09-12 22:33:04 average_kbps=0.993531781178188 value=8323 name='single quotes'
-2020-09-12 22:54:23 group="double quotes" stdev_kbps=0.42807893393132324 value=7106 name=no_quotes
-2020-09-12 22:56:02 average_kbps=0.15328475766191818 stdev_kbps=0.4332314505408158 group='single quotes' name=no_quotes
-2020-09-12 23:41:00 stdev_kbps=0.4381027215061384 name="double quotes" average_kbps=0.43848113008818534 label='single quotes'
-2020-09-13 00:00:24 sum_kbps=2644 value=3260 average_kbps=0.7487665650362738 group=no_quotes label=no_quotes
-2020-09-13 00:03:53 sum_kbps=1413 group='single quotes' average_kbps=0.3033118177458397
-2020-09-13 00:16:04 name=no_quotes value=3529 label=no_quotes group='single quotes' sum_kbps=1206
-2020-09-13 00:19:29 sum_kbps=3316 name=no_quotes
-2020-09-13 00:19:46 name='single quotes' label='single quotes'
-2020-09-13 01:02:56 sum_kbps=9578 average_kbps=0.4037691968051885 group='single quotes'
-2020-09-13 01:05:22 sum_kbps=8465 stdev_kbps=0.3313875596127074 value=9638 group=no_quotes
-2020-09-13 01:14:12 label='single quotes' average_kbps=0.6797456833793486 value=1181 stdev_kbps=0.01909330712844315
-2020-09-13 01:40:32 stdev_kbps=0.766233557615621 label=no_quotes sum_kbps=9477
-2020-09-13 01:41:10 stdev_kbps=0.3544066309362044 name=no_quotes sum_kbps=9636 value=6386 label='single quotes'
-2020-09-13 01:52:51 average_kbps=0.1778735377931423 value=1754 group=no_quotes label='single quotes' stdev_kbps=0.40158394484587345
-2020-09-13 02:00:52 label=no_quotes group="double quotes" name='single quotes'
-2020-09-13 02:03:42 sum_kbps=3432 stdev_kbps=0.6262053859559662 label='single quotes' average_kbps=0.8233423375560663
-2020-09-13 02:21:52 name='single quotes' group=no_quotes
-2020-09-13 02:31:19 value=1005 sum_kbps=8
-2020-09-13 03:03:43 label="double quotes" sum_kbps=8995
-2020-09-13 03:04:33 sum_kbps=741 average_kbps=0.5236589717226523
-2020-09-13 03:12:31 sum_kbps=2956 name='single quotes' average_kbps=0.6156586416590936
-2020-09-13 03:13:19 average_kbps=0.8027868334686488 group=no_quotes label="double quotes" sum_kbps=7977 name="double quotes"
-2020-09-13 03:22:54 value=7328 label=no_quotes sum_kbps=655
-2020-09-13 03:28:38 stdev_kbps=0.6129369341343823 sum_kbps=8959 value=8601 group='single quotes' average_kbps=0.20700002473237888
-2020-09-13 03:36:23 name="double quotes" value=7107 average_kbps=0.12099328115591246 stdev_kbps=0.912456655420911 label=no_quotes
-2020-09-13 03:41:48 group=no_quotes value=4769 sum_kbps=8245 stdev_kbps=0.47862606645335415
-2020-09-13 04:25:18 sum_kbps=6284 value=3005
-2020-09-13 04:48:50 name='single quotes' value=534 average_kbps=0.4297008060564733 stdev_kbps=0.9509102320414624
-2020-09-13 05:16:52 value=8177 name="double quotes" average_kbps=0.2659167827715113 stdev_kbps=0.7516959327319758
-2020-09-13 05:38:37 label='single quotes' name='single quotes' group="double quotes" sum_kbps=2521 value=7891
-2020-09-13 05:46:17 label='single quotes' group=no_quotes
-2020-09-13 05:52:03 group="double quotes" sum_kbps=3836 label=no_quotes name="double quotes" value=8804
-2020-09-13 05:52:41 sum_kbps=8621 stdev_kbps=0.09946661049054639 value=8968 name=no_quotes
-2020-09-13 05:55:31 label=no_quotes stdev_kbps=0.7817250875072663 value=7040 group=no_quotes
-2020-09-13 06:03:45 average_kbps=0.5244655039623214 value=2159
-2020-09-13 06:07:50 value=2773 average_kbps=0.6678837371758604
-2020-09-13 06:24:13 name='single quotes' sum_kbps=3005 stdev_kbps=0.24680898675316287 value=768 label='single quotes'
-2020-09-13 06:49:56 group="double quotes" sum_kbps=6116
-2020-09-13 06:55:04 name=no_quotes stdev_kbps=0.47058361778620683 group='single quotes' average_kbps=0.048561236926238704 label='single quotes'
-2020-09-13 07:08:26 group=no_quotes value=3907 average_kbps=0.857729260856516 name="double quotes" sum_kbps=165
-2020-09-13 07:18:56 stdev_kbps=0.50021915877231 group='single quotes' average_kbps=0.07439732731028759 name=no_quotes
-2020-09-13 07:24:08 stdev_kbps=0.8455451305762389 sum_kbps=2040 value=7343 group='single quotes' name='single quotes'
-2020-09-13 07:24:24 sum_kbps=1787 average_kbps=0.9779399103588321 stdev_kbps=0.13768216084853013 label=no_quotes value=5170
-2020-09-13 07:35:10 group="double quotes" stdev_kbps=0.29988140236294814 average_kbps=0.9493571937789979
-2020-09-13 07:41:43 stdev_kbps=0.47320916275321345 group='single quotes' value=7369 sum_kbps=981
-2020-09-13 07:42:23 value=42 average_kbps=0.049581718834273314 sum_kbps=7442 name="double quotes" group=no_quotes
-2020-09-13 07:49:35 stdev_kbps=0.30753942580047533 sum_kbps=760 value=5774 group="double quotes"
-2020-09-13 08:15:26 group=no_quotes value=3363 label='single quotes' average_kbps=0.1541152726734688 sum_kbps=2841
-2020-09-13 08:16:09 value=3028 label=no_quotes
-2020-09-13 08:32:49 label="double quotes" sum_kbps=5582 name=no_quotes stdev_kbps=0.3803493722027135 average_kbps=0.6586796352785809
-2020-09-13 08:44:26 stdev_kbps=0.7589625256871216 value=5705
-2020-09-13 09:16:38 group=no_quotes value=1413 label='single quotes' average_kbps=0.23654274312565027 name="double quotes"
-2020-09-13 09:33:12 value=3508 stdev_kbps=0.8257459506193209 label="double quotes" sum_kbps=283 name=no_quotes
-2020-09-13 09:35:49 sum_kbps=8691 name="double quotes" average_kbps=0.30420499433603054 stdev_kbps=0.7116507732058449 value=8078
-2020-09-13 09:38:16 average_kbps=0.18321368543613326 value=6867 label=no_quotes
-2020-09-13 10:06:48 average_kbps=0.9193265703322486 stdev_kbps=0.06715248586374944 label=no_quotes value=3656
-2020-09-13 10:20:10 label='single quotes' name="double quotes" value=6491 average_kbps=0.17178646800432607
-2020-09-13 10:34:33 average_kbps=0.27839651082547956 label=no_quotes value=9639 stdev_kbps=0.7366774052708803
-2020-09-13 10:34:57 stdev_kbps=0.9594571998889204 label=no_quotes
-2020-09-13 10:51:03 sum_kbps=1448 stdev_kbps=0.6928398063064207 average_kbps=0.5754507336715556 label=no_quotes
-2020-09-13 10:52:08 name=no_quotes sum_kbps=1788
-2020-09-13 10:54:29 name='single quotes' value=1017
-2020-09-13 11:19:35 group='single quotes' label="double quotes"
-2020-09-13 11:27:54 sum_kbps=3722 label='single quotes' value=295 name='single quotes'
-2020-09-13 11:31:08 sum_kbps=3750 average_kbps=0.05935258259124421 label="double quotes" name='single quotes'
-2020-09-13 11:40:03 label="double quotes" value=5350 name=no_quotes
-2020-09-13 11:45:05 label=no_quotes sum_kbps=6300 stdev_kbps=0.3748186774708986
-2020-09-13 12:01:51 average_kbps=0.8319292889924137 label="double quotes" stdev_kbps=0.550152998564693
-2020-09-13 12:12:38 stdev_kbps=0.07695122585865477 value=5314 group='single quotes' average_kbps=0.9935551542658803
-2020-09-13 12:20:14 label=no_quotes stdev_kbps=0.2877392749506258 average_kbps=0.3986400769783045
-2020-09-13 12:21:51 average_kbps=0.959796884639594 group="double quotes" label="double quotes"
-2020-09-13 12:25:01 name="double quotes" group="double quotes" sum_kbps=8504 label='single quotes'
-2020-09-13 12:29:43 label='single quotes' stdev_kbps=0.8616594851116436
-2020-09-13 12:59:44 sum_kbps=7767 value=4343 label="double quotes"
-2020-09-13 13:53:19 value=3737 label='single quotes' sum_kbps=6799 stdev_kbps=0.5193770806478026 average_kbps=0.40394987076827915
-2020-09-13 14:08:41 value=9143 label='single quotes' stdev_kbps=0.861325561439151 group='single quotes' name="double quotes"
-2020-09-13 14:24:50 sum_kbps=6641 label="double quotes" name='single quotes' stdev_kbps=0.507897225037553 value=359
-2020-09-13 14:25:03 sum_kbps=9332 label='single quotes'
-2020-09-13 14:47:24 label="double quotes" average_kbps=0.515569841301773 name=no_quotes
-2020-09-13 14:51:57 sum_kbps=6343 label="double quotes" value=8599 stdev_kbps=0.5569858359553476
-2020-09-13 15:16:30 label=no_quotes group=no_quotes sum_kbps=2316 name='single quotes' value=6491
-2020-09-13 15:30:30 average_kbps=0.7750809351370889 value=962 group=no_quotes stdev_kbps=0.9154570757917179 sum_kbps=7096
-2020-09-13 16:02:10 stdev_kbps=0.8748059100053176 average_kbps=0.9003438077385558 name='single quotes'
-2020-09-13 16:48:39 name=no_quotes sum_kbps=7608
-2020-09-13 16:49:31 name='single quotes' average_kbps=0.8095711634006362 label='single quotes' stdev_kbps=0.29104185120432746 value=48
-2020-09-13 17:34:37 sum_kbps=3557 name=no_quotes label="double quotes"
-2020-09-13 18:10:57 group="double quotes" stdev_kbps=0.521114237948835 value=6325
-2020-09-13 18:19:02 sum_kbps=8154 value=1590 label="double quotes" stdev_kbps=0.38121166192178035 name=no_quotes
-2020-09-13 18:22:11 name='single quotes' stdev_kbps=0.02997540079534522
-2020-09-13 18:24:26 group="double quotes" name="double quotes" average_kbps=0.6201132177199091 label='single quotes'
-2020-09-13 18:44:11 group="double quotes" label="double quotes" stdev_kbps=0.5890629441715186 average_kbps=0.987577735066527 name="double quotes"
-2020-09-13 19:05:19 name='single quotes' average_kbps=0.7106251771606473 sum_kbps=8771 stdev_kbps=0.8600970762365756
-2020-09-13 19:29:18 average_kbps=0.8542634392064687 label="double quotes" value=7606 name='single quotes' sum_kbps=8754
-2020-09-13 19:33:47 label='single quotes' group="double quotes" average_kbps=0.524779508141405 name='single quotes' stdev_kbps=0.716052723420335
-2020-09-13 19:45:33 name="double quotes" stdev_kbps=0.872947338625425 average_kbps=0.5821084961792086 value=357 sum_kbps=5612
-2020-09-13 19:52:23 group=no_quotes sum_kbps=6061
-2020-09-13 20:06:07 stdev_kbps=0.09259170025466923 label="double quotes"
-2020-09-13 20:10:39 value=450 name="double quotes" label='single quotes'
-2020-09-13 20:31:33 label=no_quotes sum_kbps=2115 stdev_kbps=0.08307705329392134 value=7295 average_kbps=0.30330337633822957
-2020-09-13 20:45:45 group="double quotes" value=9323
-2020-09-13 20:48:22 label='single quotes' value=8813 name='single quotes' group="double quotes"
-2020-09-13 20:53:36 name="double quotes" sum_kbps=7194 label="double quotes"
-2020-09-13 21:03:13 sum_kbps=4053 name=no_quotes value=8006
-2020-09-13 21:30:19 stdev_kbps=0.7192037729698958 value=7776 label=no_quotes group='single quotes'
-2020-09-13 21:39:08 name='single quotes' value=203 group='single quotes' label=no_quotes
-2020-09-13 21:58:53 sum_kbps=5545 average_kbps=0.4032228206364966 group=no_quotes name='single quotes'
-2020-09-13 22:14:32 stdev_kbps=0.6447877935099185 value=3184 name='single quotes' label="double quotes" group=no_quotes
-2020-09-13 22:43:42 name=no_quotes average_kbps=0.09355553371443848
-2020-09-13 22:46:36 name=no_quotes stdev_kbps=0.47019674133201017 value=2321
-2020-09-13 22:49:21 group='single quotes' label='single quotes' name=no_quotes stdev_kbps=0.9310793138679774 sum_kbps=2824
-2020-09-13 23:09:38 average_kbps=0.37458596825239554 stdev_kbps=0.5432233625701355 group='single quotes' sum_kbps=3206 value=4139
-2020-09-13 23:19:41 value=2657 label=no_quotes name='single quotes'
-2020-09-13 23:25:31 group="double quotes" sum_kbps=8966 name='single quotes' label=no_quotes
-2020-09-13 23:52:23 stdev_kbps=0.7674388161795339 label="double quotes" name="double quotes"
-2020-09-13 23:55:41 sum_kbps=9241 name='single quotes' stdev_kbps=0.7481578792383758 label="double quotes"
-2020-09-13 23:59:51 average_kbps=0.8763793183101131 value=6191
-2020-09-14 00:04:39 stdev_kbps=0.8181724865211322 average_kbps=0.02376318687819534
-2020-09-14 00:21:12 average_kbps=0.7232557752746263 value=4454
-2020-09-14 00:29:41 value=2442 sum_kbps=6173 name=no_quotes
-2020-09-14 00:32:01 average_kbps=0.13628082191815316 value=2701 sum_kbps=531 stdev_kbps=0.30396248714475615
-2020-09-14 00:48:42 value=3103 name="double quotes" group="double quotes"
-2020-09-14 00:52:11 group='single quotes' stdev_kbps=0.7637632550953755 label="double quotes" sum_kbps=4037 value=9035
-2020-09-14 00:59:27 group="double quotes" value=7866
-2020-09-14 01:11:37 name='single quotes' average_kbps=0.16449330077314794
-2020-09-14 01:13:20 group='single quotes' average_kbps=0.2508859494781779 label="double quotes" name='single quotes' value=7327
-2020-09-14 01:14:38 name='single quotes' sum_kbps=193 label='single quotes' stdev_kbps=0.12669907810478798 value=9493
-2020-09-14 01:16:09 name=no_quotes stdev_kbps=0.6123016806932206 value=2379 group=no_quotes sum_kbps=2852
-2020-09-14 01:33:25 group=no_quotes value=9816 sum_kbps=5608
-2020-09-14 01:36:50 label='single quotes' stdev_kbps=0.780818118772349 name="double quotes" sum_kbps=736
-2020-09-14 01:55:47 label=no_quotes group="double quotes" stdev_kbps=0.2880014652988655 sum_kbps=7917
-2020-09-14 02:02:21 label='single quotes' stdev_kbps=0.5989912076526962
-2020-09-14 02:04:11 average_kbps=0.01718125372797774 sum_kbps=9423
-2020-09-14 02:29:10 average_kbps=0.5528309284881195 sum_kbps=1320
-2020-09-14 02:50:03 name=no_quotes stdev_kbps=0.24563943195684101 value=5759 group='single quotes' label='single quotes'
-2020-09-14 03:03:30 sum_kbps=5809 average_kbps=0.5065488933020716
-2020-09-14 03:06:10 label="double quotes" group=no_quotes
-2020-09-14 03:06:22 stdev_kbps=0.7555230892183006 name=no_quotes sum_kbps=7469
-2020-09-14 03:08:24 average_kbps=0.708627607206251 sum_kbps=1219 group="double quotes"
-2020-09-14 03:18:30 group="double quotes" label="double quotes" name='single quotes' stdev_kbps=0.6964191663995624
-2020-09-14 03:21:10 value=1873 average_kbps=0.2881578049060264 group='single quotes'
-2020-09-14 03:22:03 label=no_quotes value=5824 stdev_kbps=0.3903881567483851 sum_kbps=9330
-2020-09-14 03:29:03 name='single quotes' stdev_kbps=0.10194526164276108
-2020-09-14 04:41:37 group=no_quotes average_kbps=0.35295915053576976
-2020-09-14 05:47:33 average_kbps=0.48943449352216173 label="double quotes"
-2020-09-14 06:00:07 average_kbps=0.07283528711825782 name="double quotes"
-2020-09-14 06:07:24 label='single quotes' value=7435 average_kbps=0.7019532922002305
-2020-09-14 06:40:35 sum_kbps=3709 group='single quotes' name=no_quotes value=3318 average_kbps=0.8128544352363509
-2020-09-14 07:46:58 average_kbps=0.2689100973523125 group='single quotes' name='single quotes' value=4648
-2020-09-14 07:59:35 name='single quotes' sum_kbps=7794
-2020-09-14 08:04:35 group=no_quotes value=6046
-2020-09-14 08:04:41 stdev_kbps=0.9095401024008802 average_kbps=0.4182942339378035 label='single quotes' value=7069
-2020-09-14 08:18:41 name="double quotes" average_kbps=0.28687264210073293 value=5655 stdev_kbps=0.8632207084387856 sum_kbps=8503
-2020-09-14 08:18:50 group=no_quotes average_kbps=0.7891671629629676 sum_kbps=6618
-2020-09-14 08:25:29 average_kbps=0.861193661758646 sum_kbps=7369 label=no_quotes
-2020-09-14 08:47:24 group=no_quotes name="double quotes" label='single quotes' sum_kbps=4542 stdev_kbps=0.3314169905730824
-2020-09-14 08:47:27 name='single quotes' label='single quotes' value=3140
-2020-09-14 09:00:26 sum_kbps=7165 label="double quotes" value=9062 stdev_kbps=0.3007714680972573
-2020-09-14 09:39:28 stdev_kbps=0.09086256130690229 value=6598 group=no_quotes average_kbps=0.15427947150847565
-2020-09-14 10:24:06 group="double quotes" value=4146 label="double quotes" name=no_quotes stdev_kbps=0.5859108613685079
-2020-09-14 10:24:59 average_kbps=0.41947744657094854 name='single quotes'
-2020-09-14 10:28:23 average_kbps=0.16570141684232986 sum_kbps=8030
-2020-09-14 11:36:18 sum_kbps=7283 average_kbps=0.3616532627407909 value=9399 name="double quotes" stdev_kbps=0.7039183846470225
-2020-09-14 11:41:17 name="double quotes" average_kbps=0.6556397606494843 label=no_quotes sum_kbps=6201
-2020-09-14 11:47:22 group='single quotes' name="double quotes"
-2020-09-14 11:52:00 label="double quotes" average_kbps=0.4967464557292457
-2020-09-14 11:55:11 average_kbps=0.8814385017400331 sum_kbps=4499 name=no_quotes
-2020-09-14 12:03:04 value=9220 stdev_kbps=0.5253279779488056 average_kbps=0.7651141886218463 sum_kbps=5269
-2020-09-14 12:04:19 value=7823 stdev_kbps=0.2844175832996291
-2020-09-14 12:05:18 group="double quotes" label='single quotes' stdev_kbps=0.8828031970664383 value=4739
-2020-09-14 12:56:41 stdev_kbps=0.39019598160253255 average_kbps=0.9605718141514462 label=no_quotes value=3336 name='single quotes'
-2020-09-14 12:58:23 name='single quotes' sum_kbps=2804
-2020-09-14 13:02:31 group="double quotes" sum_kbps=1748 stdev_kbps=0.4181117585204235 label='single quotes' name="double quotes"
-2020-09-14 13:09:36 average_kbps=0.7282935204347045 group="double quotes" label='single quotes' name='single quotes' stdev_kbps=0.9339726697597132
-2020-09-14 13:17:15 group=no_quotes name='single quotes' average_kbps=0.808814207790809 value=7616 sum_kbps=3865
-2020-09-14 13:45:44 label='single quotes' sum_kbps=704 stdev_kbps=0.20128174236587715 name=no_quotes group=no_quotes
-2020-09-14 14:20:08 value=3039 sum_kbps=2752 label="double quotes" name="double quotes"
-2020-09-14 14:33:30 name=no_quotes group='single quotes'
-2020-09-14 14:52:54 label=no_quotes stdev_kbps=0.5015988449278711 average_kbps=0.035767298394632 name="double quotes"
-2020-09-14 14:58:17 average_kbps=0.22294546033696905 name=no_quotes value=6553 stdev_kbps=0.873066388881951 label='single quotes'
-2020-09-14 15:33:38 group='single quotes' value=5406 stdev_kbps=0.2881024688328033 name=no_quotes
-2020-09-14 15:33:44 label=no_quotes group=no_quotes value=2801
-2020-09-14 15:54:10 stdev_kbps=0.44186316850852736 group='single quotes' sum_kbps=6005 average_kbps=0.8450190211178661
-2020-09-14 16:00:46 name='single quotes' sum_kbps=8327 value=6271 label='single quotes' average_kbps=0.6917064818628624
-2020-09-14 16:09:43 average_kbps=0.3656823814042477 stdev_kbps=0.13245632520829997
-2020-09-14 16:27:43 value=5531 average_kbps=0.8920165727620628 label="double quotes"
-2020-09-14 16:33:19 sum_kbps=6140 value=5407
-2020-09-14 16:35:57 label='single quotes' value=4488 name="double quotes" group=no_quotes sum_kbps=6327
-2020-09-14 17:25:09 label=no_quotes value=8409 name='single quotes'
-2020-09-14 17:57:01 average_kbps=0.8383719603723573 stdev_kbps=0.3131638557784606 sum_kbps=2165
-2020-09-14 18:28:23 value=7036 name='single quotes' average_kbps=0.896780169509253
-2020-09-14 18:42:42 label=no_quotes average_kbps=0.7106188416917294
-2020-09-14 18:48:17 name=no_quotes group="double quotes"
-2020-09-14 19:05:51 label="double quotes" stdev_kbps=0.058541631805862804 sum_kbps=2275
-2020-09-14 19:39:38 name='single quotes' value=5857 average_kbps=0.1942344137172488 sum_kbps=1164 stdev_kbps=0.9964785327962394
-2020-09-14 19:56:18 label='single quotes' group=no_quotes sum_kbps=3934 stdev_kbps=0.23102880972312623 average_kbps=0.14305472979116418
-2020-09-14 19:58:00 stdev_kbps=0.6649972457270293 label="double quotes" sum_kbps=8432 average_kbps=0.9625897046461155 value=9319
-2020-09-14 20:31:38 label="double quotes" stdev_kbps=0.5029321537407426
-2020-09-14 20:43:44 name="double quotes" stdev_kbps=0.2010400054010354 group='single quotes'
-2020-09-14 20:47:25 average_kbps=0.00666189764943681 name='single quotes' stdev_kbps=0.1207226824128117 sum_kbps=8327 value=1094
-2020-09-14 20:59:57 average_kbps=0.9695301804679881 name=no_quotes value=4812
-2020-09-14 21:02:16 average_kbps=0.10839052684263406 group='single quotes' value=3034
-2020-09-14 21:08:21 value=5564 group='single quotes' average_kbps=0.3285760545329942
-2020-09-14 21:12:38 stdev_kbps=0.4525291963766387 average_kbps=0.9269980427829811 value=2079
-2020-09-14 21:20:47 label='single quotes' name=no_quotes group='single quotes' average_kbps=0.10862307963807594
-2020-09-14 21:24:49 label=no_quotes sum_kbps=9293 group=no_quotes
-2020-09-14 22:42:06 name='single quotes' value=8407 sum_kbps=4233 stdev_kbps=0.8869782347270834 group='single quotes'
-2020-09-14 22:53:33 name='single quotes' label=no_quotes stdev_kbps=0.6505437181183386 group=no_quotes
-2020-09-14 23:22:36 average_kbps=0.44978290312997693 name='single quotes' group=no_quotes
-2020-09-14 23:24:36 name='single quotes' average_kbps=0.7687547251596871 label='single quotes'
-2020-09-14 23:36:55 name="double quotes" sum_kbps=7260 group='single quotes' average_kbps=0.9477271070901985 value=1995
-2020-09-14 23:37:19 stdev_kbps=0.10002841301476251 sum_kbps=4519 value=1734 group=no_quotes name=no_quotes
-2020-09-14 23:40:30 name="double quotes" average_kbps=0.11830770636530685 group='single quotes' label=no_quotes
-2020-09-14 23:59:04 stdev_kbps=0.22380175935378377 name="double quotes" sum_kbps=4748 label=no_quotes
-2020-09-15 00:29:33 average_kbps=0.2932180943086077 name=no_quotes label=no_quotes
-2020-09-15 01:02:03 label=no_quotes stdev_kbps=0.38290257581203246 group='single quotes'
-2020-09-15 01:05:27 value=1910 sum_kbps=378 name='single quotes'
-2020-09-15 01:08:22 group=no_quotes label='single quotes' average_kbps=0.2877343660318388
-2020-09-15 01:23:01 group='single quotes' stdev_kbps=0.09882535044931273 value=1404 name="double quotes"
-2020-09-15 01:27:17 name=no_quotes label='single quotes' group="double quotes" average_kbps=0.764983854479542 stdev_kbps=0.11785504453214068
-2020-09-15 01:40:24 sum_kbps=9376 label='single quotes'
-2020-09-15 02:10:20 stdev_kbps=0.9825266161605576 name='single quotes' sum_kbps=6020
-2020-09-15 02:10:39 average_kbps=0.9348121281003775 stdev_kbps=0.0861680783904254 group='single quotes'
-2020-09-15 02:43:05 sum_kbps=1826 average_kbps=0.9842616305305679 stdev_kbps=0.1094864372861688
-2020-09-15 03:18:08 value=3495 sum_kbps=6626 stdev_kbps=0.46279579549777006 average_kbps=0.012501930696084629 group="double quotes"
-2020-09-15 03:19:52 stdev_kbps=0.5542707790352633 label="double quotes"
-2020-09-15 03:56:38 name="double quotes" average_kbps=0.8309896310615746 stdev_kbps=0.8457611305421273 label="double quotes"
-2020-09-15 04:00:58 sum_kbps=2218 stdev_kbps=0.9039361873277454
-2020-09-15 04:11:31 label="double quotes" sum_kbps=372 name=no_quotes group="double quotes"
-2020-09-15 04:36:58 sum_kbps=5846 stdev_kbps=0.1241079375199371
-2020-09-15 04:42:42 label="double quotes" sum_kbps=2690
-2020-09-15 04:45:16 stdev_kbps=0.7981973932719917 group='single quotes'
-2020-09-15 04:47:08 name=no_quotes average_kbps=0.9081831239114709 sum_kbps=3672 value=2679
-2020-09-15 05:04:36 value=1718 average_kbps=0.8364937765343516 stdev_kbps=0.601668044402379
-2020-09-15 05:15:36 stdev_kbps=0.19147719104016425 sum_kbps=8512 name='single quotes' group='single quotes'
-2020-09-15 05:39:31 value=6235 sum_kbps=2038 name='single quotes' group=no_quotes
-2020-09-15 05:53:04 value=2802 sum_kbps=4987
-2020-09-15 05:53:30 value=4443 name=no_quotes sum_kbps=8407 label=no_quotes group='single quotes'
-2020-09-15 06:00:53 sum_kbps=2978 label='single quotes' group="double quotes" average_kbps=0.9126311597825175 name="double quotes"
-2020-09-15 06:17:24 value=2012 sum_kbps=8742 name="double quotes" group='single quotes' label=no_quotes
-2020-09-15 06:18:53 stdev_kbps=0.16438068621787938 label='single quotes' average_kbps=0.8979617428023687
-2020-09-15 06:19:07 value=5993 label=no_quotes group='single quotes' average_kbps=0.38733333877656884 sum_kbps=1169
-2020-09-15 06:20:00 average_kbps=0.18071043292308353 name="double quotes"
-2020-09-15 06:44:02 average_kbps=0.3255605656369598 value=5449 label="double quotes" group='single quotes'
-2020-09-15 07:05:36 group=no_quotes value=8882
-2020-09-15 07:05:41 sum_kbps=7728 name="double quotes" label="double quotes"
-2020-09-15 07:24:07 average_kbps=0.9257434465411927 name='single quotes' sum_kbps=582 stdev_kbps=0.09461532152191932
-2020-09-15 07:37:09 group="double quotes" value=1983 stdev_kbps=0.7516221085899396
-2020-09-15 07:52:38 group=no_quotes average_kbps=0.932415252549326 value=8786 name=no_quotes label='single quotes'
-2020-09-15 07:53:57 name='single quotes' stdev_kbps=0.37579343132724485
-2020-09-15 08:24:42 stdev_kbps=0.7211378033622303 label="double quotes" name=no_quotes
-2020-09-15 08:26:48 stdev_kbps=0.9244371691441203 sum_kbps=4798 label=no_quotes name="double quotes" average_kbps=0.7674132230789881
-2020-09-15 08:30:41 sum_kbps=222 name='single quotes' value=931 average_kbps=0.28038049979941837 stdev_kbps=0.18079645799697142
-2020-09-15 08:36:05 value=6808 sum_kbps=2220 stdev_kbps=0.6289431062152379
-2020-09-15 09:00:45 stdev_kbps=0.37955876648133935 name='single quotes'
-2020-09-15 09:09:49 stdev_kbps=0.7873795242055829 name='single quotes' sum_kbps=6586
-2020-09-15 09:10:42 average_kbps=0.18996594432594183 label='single quotes'
-2020-09-15 09:16:55 value=5263 name=no_quotes average_kbps=0.5907858927322515 group=no_quotes
-2020-09-15 09:17:42 stdev_kbps=0.0697442392703117 name='single quotes' value=8140
-2020-09-15 09:24:11 sum_kbps=832 name=no_quotes stdev_kbps=0.8406235506378971
-2020-09-15 10:48:46 group='single quotes' value=2214 average_kbps=0.2958307759328199
-2020-09-15 11:24:13 stdev_kbps=0.4550481002250987 average_kbps=0.6536645384718069 value=7990 name=no_quotes sum_kbps=3110
-2020-09-15 11:25:21 sum_kbps=6402 group=no_quotes stdev_kbps=0.2608620785236968
-2020-09-15 11:26:49 stdev_kbps=0.26139776975449003 average_kbps=0.3997265266412716 group=no_quotes label='single quotes'
-2020-09-15 11:31:19 average_kbps=0.17098762698131487 sum_kbps=6151 value=2142
-2020-09-15 11:40:24 label="double quotes" group="double quotes" name=no_quotes average_kbps=0.15262072257773196
-2020-09-15 12:01:39 value=6009 name=no_quotes
-2020-09-15 12:47:45 name='single quotes' group=no_quotes label="double quotes" average_kbps=0.7216783311939905
-2020-09-15 12:51:23 label="double quotes" group="double quotes" value=52
-2020-09-15 13:12:48 group='single quotes' average_kbps=0.9303120099744316 stdev_kbps=0.2717920217525046 name="double quotes"
-2020-09-15 13:39:50 sum_kbps=8375 value=9848
-2020-09-15 13:45:25 sum_kbps=3569 value=5067 average_kbps=0.9133615584335302 label="double quotes"
-2020-09-15 13:51:35 sum_kbps=3679 label=no_quotes value=8970
-2020-09-15 14:09:00 label="double quotes" sum_kbps=301 value=3071 average_kbps=0.1300352512140569 name="double quotes"
-2020-09-15 14:09:09 group="double quotes" average_kbps=0.329345098386589 label="double quotes"
-2020-09-15 14:16:34 label='single quotes' group='single quotes'
-2020-09-15 14:46:14 label="double quotes" name=no_quotes value=4798 stdev_kbps=0.6034105429544937
-2020-09-15 14:54:13 stdev_kbps=0.10066744549845097 sum_kbps=7911 name="double quotes" group=no_quotes
-2020-09-15 15:04:23 sum_kbps=4280 stdev_kbps=0.3177381194810005 value=161 group="double quotes"
-2020-09-15 15:07:38 group=no_quotes average_kbps=0.5318124557308265
-2020-09-15 15:43:33 sum_kbps=4911 stdev_kbps=0.3964078836501278 value=7257
-2020-09-15 15:49:51 label='single quotes' name="double quotes" group=no_quotes
-2020-09-15 15:53:36 sum_kbps=1672 name='single quotes' label='single quotes' average_kbps=0.9369389353170015 group='single quotes'
-2020-09-15 16:06:00 label="double quotes" name=no_quotes
-2020-09-15 16:29:57 value=6339 stdev_kbps=0.32010009291104036
-2020-09-15 16:52:49 average_kbps=0.7248994438709319 sum_kbps=3975 group='single quotes' label="double quotes"
-2020-09-15 16:59:48 stdev_kbps=0.9386376809742926 average_kbps=0.20185093432078316
-2020-09-15 17:02:51 group=no_quotes sum_kbps=1789 stdev_kbps=0.22152113440282684
-2020-09-15 17:29:11 label='single quotes' sum_kbps=3911 average_kbps=0.2856483662681838 stdev_kbps=0.10181502793031116 value=5080
-2020-09-15 17:33:02 average_kbps=0.7798000102803725 group=no_quotes name="double quotes"
-2020-09-15 17:41:43 group='single quotes' stdev_kbps=0.5434538024572145
-2020-09-15 18:01:19 value=3067 sum_kbps=744
-2020-09-15 18:12:45 label='single quotes' name=no_quotes stdev_kbps=0.05058017700981399 value=8884
-2020-09-15 18:16:22 label="double quotes" value=8134 sum_kbps=6246
-2020-09-15 18:21:07 stdev_kbps=0.492405092917905 label="double quotes" sum_kbps=6996
-2020-09-15 18:31:43 average_kbps=0.45026121521787343 group='single quotes' name="double quotes" value=448
-2020-09-15 18:45:52 sum_kbps=825 group='single quotes' label='single quotes' name=no_quotes
-2020-09-15 18:48:59 stdev_kbps=0.9874318882664723 label="double quotes"
-2020-09-15 19:11:18 sum_kbps=7841 value=9332 stdev_kbps=0.6527238133816075 name="double quotes"
-2020-09-15 20:17:18 value=1652 sum_kbps=8825 group=no_quotes label='single quotes'
-2020-09-15 20:42:20 average_kbps=0.5838535415597136 value=9418 label="double quotes"
-2020-09-15 20:46:11 sum_kbps=8886 value=9362 label="double quotes"
-2020-09-15 20:55:18 name=no_quotes group="double quotes" sum_kbps=8760
-2020-09-15 20:55:18 label="double quotes" stdev_kbps=0.48257042410433126
-2020-09-15 21:08:06 average_kbps=0.5813327570671756 label="double quotes"
-2020-09-15 21:10:59 name=no_quotes value=823 group=no_quotes stdev_kbps=0.5441907928533303
-2020-09-15 21:23:12 sum_kbps=81 name='single quotes'
-2020-09-15 21:48:53 average_kbps=0.5813237483276743 name=no_quotes stdev_kbps=0.7421609374470848 value=3563
-2020-09-15 22:07:12 sum_kbps=9107 label='single quotes' group='single quotes' stdev_kbps=0.9874314144680872 average_kbps=0.8458868414553221
-2020-09-15 22:12:33 stdev_kbps=0.36741592132221357 label=no_quotes average_kbps=0.7320039322853066
-2020-09-15 22:12:59 group=no_quotes average_kbps=0.08136283553287904 label="double quotes" name='single quotes'
-2020-09-15 22:20:11 label='single quotes' value=1665
-2020-09-15 22:20:27 stdev_kbps=0.5121654187621405 value=8130 name="double quotes"
-2020-09-15 22:21:01 stdev_kbps=0.5273508707444601 value=7534 average_kbps=0.15618724604045642 group=no_quotes
-2020-09-15 22:40:35 group=no_quotes stdev_kbps=0.27553220080725593
-2020-09-15 22:59:32 value=856 sum_kbps=5481 stdev_kbps=0.6129604364662369 average_kbps=0.718743246368236 name=no_quotes
-2020-09-15 23:02:49 sum_kbps=2997 group=no_quotes value=1044 stdev_kbps=0.09714410759281145 average_kbps=0.2263590367007542
-2020-09-15 23:42:54 group="double quotes" value=9635 stdev_kbps=0.8086566252123488
-2020-09-16 00:07:10 group='single quotes' sum_kbps=5824
-2020-09-16 00:07:44 group=no_quotes stdev_kbps=0.39794046536700034 value=611 average_kbps=0.7472725201441397
-2020-09-16 00:12:07 average_kbps=0.5056364769100694 group='single quotes' stdev_kbps=0.5689316394741603 name='single quotes' value=2011
-2020-09-16 00:14:43 stdev_kbps=0.776952357069603 average_kbps=0.6353665109314017
-2020-09-16 00:23:37 stdev_kbps=0.9931194948201902 group='single quotes' name="double quotes" label="double quotes" value=5613
-2020-09-16 01:10:03 label='single quotes' name='single quotes' group='single quotes' average_kbps=0.8059632143902963 sum_kbps=6491
-2020-09-16 01:14:24 group='single quotes' name=no_quotes
-2020-09-16 01:14:44 label="double quotes" group="double quotes"
-2020-09-16 01:30:22 average_kbps=0.25705553789916713 stdev_kbps=0.6224409922290178 group=no_quotes
-2020-09-16 01:41:17 label=no_quotes average_kbps=0.6482682200059163
-2020-09-16 01:42:33 stdev_kbps=0.3446598841830466 average_kbps=0.8242169354336714 value=5905 group='single quotes' name=no_quotes
-2020-09-16 01:47:33 name='single quotes' value=9837
-2020-09-16 01:55:14 group=no_quotes value=7042
-2020-09-16 02:17:37 value=6987 name="double quotes" stdev_kbps=0.3716331720925623 sum_kbps=3942 label='single quotes'
-2020-09-16 02:23:05 group=no_quotes label=no_quotes stdev_kbps=0.13716434399032873 average_kbps=0.506359721328759
-2020-09-16 02:48:06 average_kbps=0.633013910575979 sum_kbps=3995 name="double quotes"
-2020-09-16 02:48:51 label='single quotes' average_kbps=0.4453295610179857
-2020-09-16 03:03:32 name=no_quotes value=2123
-2020-09-16 03:23:30 group='single quotes' sum_kbps=2000 average_kbps=0.5859546607824347
-2020-09-16 03:31:04 name="double quotes" average_kbps=0.9530018166945874 stdev_kbps=0.32022676335783384 group="double quotes"
-2020-09-16 03:32:33 value=928 label="double quotes" stdev_kbps=0.020068756379259867 group='single quotes' average_kbps=0.604931791512191
-2020-09-16 03:34:27 name="double quotes" group='single quotes'
-2020-09-16 04:15:02 stdev_kbps=0.27126529218657724 label='single quotes'
-2020-09-16 04:24:12 value=6696 group=no_quotes
-2020-09-16 04:32:35 name=no_quotes stdev_kbps=0.6065219305147996
-2020-09-16 04:44:29 value=5887 name=no_quotes group="double quotes" sum_kbps=725
-2020-09-16 04:51:34 label=no_quotes name='single quotes' average_kbps=0.8710596631819688 value=5016 group='single quotes'
-2020-09-16 05:26:44 sum_kbps=6135 group=no_quotes
-2020-09-16 05:27:10 label="double quotes" stdev_kbps=0.7316367982278871
-2020-09-16 05:29:48 name="double quotes" group=no_quotes value=3194
-2020-09-16 05:54:52 label=no_quotes value=4700 group='single quotes' name="double quotes"
-2020-09-16 06:12:00 label="double quotes" value=16 average_kbps=0.26196095390014495
-2020-09-16 06:21:51 value=926 label='single quotes' group="double quotes" name="double quotes" stdev_kbps=0.09017572368890736
-2020-09-16 06:27:55 sum_kbps=4771 group='single quotes'
-2020-09-16 06:50:20 group="double quotes" value=7575
-2020-09-16 06:54:20 name="double quotes" value=9472 sum_kbps=2756
-2020-09-16 07:10:15 sum_kbps=4651 average_kbps=0.8305815897267372
-2020-09-16 07:34:29 average_kbps=0.21395200292544847 value=5373 stdev_kbps=0.40873524589436017
-2020-09-16 07:37:14 group='single quotes' value=3742 label="double quotes" sum_kbps=1488
-2020-09-16 07:50:03 stdev_kbps=0.9498181496543032 average_kbps=0.9467314237720029
-2020-09-16 08:02:49 average_kbps=0.5267582669943328 label='single quotes'
-2020-09-16 08:03:19 group=no_quotes average_kbps=0.7872875680900577 sum_kbps=4422 stdev_kbps=0.822285124497522
-2020-09-16 08:45:10 value=3990 stdev_kbps=0.8687814404536751 sum_kbps=1631 name=no_quotes group='single quotes'
-2020-09-16 08:49:42 value=7755 group="double quotes" sum_kbps=6247 stdev_kbps=0.4953019163567589
-2020-09-16 10:03:47 value=5891 sum_kbps=1556
-2020-09-16 10:17:29 label='single quotes' average_kbps=0.8681272394077453 group="double quotes" value=5624
-2020-09-16 10:18:45 value=5513 average_kbps=0.7033715259914629 group="double quotes"
-2020-09-16 10:21:59 sum_kbps=6876 label=no_quotes group='single quotes'
-2020-09-16 10:36:16 label="double quotes" average_kbps=0.10673338084660466
-2020-09-16 10:38:15 label="double quotes" group="double quotes" sum_kbps=1231
-2020-09-16 11:14:03 sum_kbps=7315 value=2455 name=no_quotes group='single quotes'
-2020-09-16 11:17:38 value=8387 sum_kbps=5856 average_kbps=0.8302887952522349 stdev_kbps=0.16791060802453806 name=no_quotes
-2020-09-16 11:25:03 sum_kbps=8630 value=4410 average_kbps=0.1607130024499216 stdev_kbps=0.6700561654270554 group='single quotes'
-2020-09-16 11:42:47 name=no_quotes stdev_kbps=0.5725989458954139 value=1610 average_kbps=0.8331982932594888
-2020-09-16 12:06:00 group='single quotes' name="double quotes" average_kbps=0.9280674283246453
-2020-09-16 12:34:53 value=286 name='single quotes'
-2020-09-16 12:50:47 average_kbps=0.8550560941649211 stdev_kbps=0.9406372990821595 label=no_quotes value=124 group=no_quotes
-2020-09-16 12:58:20 label=no_quotes name="double quotes" group="double quotes"
-2020-09-16 13:01:01 value=3585 label=no_quotes average_kbps=0.9857765059596376
-2020-09-16 13:19:18 group=no_quotes name="double quotes"
-2020-09-16 14:10:15 stdev_kbps=0.7087013788060179 sum_kbps=9362 label=no_quotes average_kbps=0.023340475444748043
-2020-09-16 14:19:02 label='single quotes' group=no_quotes sum_kbps=4493
-2020-09-16 14:20:44 label="double quotes" stdev_kbps=0.29800553473714697 group="double quotes" sum_kbps=8289 name=no_quotes
-2020-09-16 14:28:18 value=6212 name="double quotes" stdev_kbps=0.5907460491051209
-2020-09-16 14:37:08 sum_kbps=6388 value=1094 average_kbps=0.32929053765206984
-2020-09-16 14:54:09 label=no_quotes group=no_quotes name='single quotes'
-2020-09-16 15:06:31 stdev_kbps=0.6469806734661436 label="double quotes"
-2020-09-16 15:23:21 name="double quotes" value=4327 sum_kbps=434 label=no_quotes
-2020-09-16 15:34:51 label="double quotes" sum_kbps=8052 stdev_kbps=0.5148732535537169 value=4030 group="double quotes"
-2020-09-16 15:44:55 name=no_quotes group="double quotes" label='single quotes'
-2020-09-16 16:22:19 stdev_kbps=0.5351519864452289 value=9999 group='single quotes'
-2020-09-16 16:43:29 value=8589 group=no_quotes
-2020-09-16 17:05:04 average_kbps=0.6526837243522253 stdev_kbps=0.5810526452398848 value=6390 label="double quotes"
-2020-09-16 17:23:15 name="double quotes" group="double quotes" average_kbps=0.012207312906986623
-2020-09-16 17:42:26 label="double quotes" group="double quotes" average_kbps=0.5070963122194664 sum_kbps=1675 stdev_kbps=0.7474150746095054
-2020-09-16 17:48:13 average_kbps=0.5666344100953236 group=no_quotes stdev_kbps=0.35445915881880086 label=no_quotes
-2020-09-16 17:52:15 label="double quotes" average_kbps=0.22848267966839686 name="double quotes" stdev_kbps=0.6312717248223104 group="double quotes"
-2020-09-16 17:52:29 name='single quotes' group='single quotes'
-2020-09-16 17:54:36 average_kbps=0.3488384858684439 label=no_quotes stdev_kbps=0.39811379854582474 group='single quotes' sum_kbps=4325
-2020-09-16 17:57:26 label=no_quotes group="double quotes" stdev_kbps=0.9953213426187291 name='single quotes' sum_kbps=8861
-2020-09-16 18:09:24 stdev_kbps=0.7447532868775959 group="double quotes" average_kbps=0.5528867481295549 label='single quotes' name='single quotes'
-2020-09-16 18:46:53 average_kbps=0.3746224578664912 stdev_kbps=0.25426012293560196
-2020-09-16 18:58:09 value=885 name="double quotes" sum_kbps=4820
-2020-09-16 19:12:53 value=4286 sum_kbps=9014 stdev_kbps=0.35014978951301934
-2020-09-16 19:26:22 label='single quotes' stdev_kbps=0.6041637916958298
-2020-09-16 19:27:03 stdev_kbps=0.8634827447975563 value=6938 sum_kbps=5513
-2020-09-16 19:29:15 sum_kbps=8346 name=no_quotes label='single quotes'
-2020-09-16 19:59:58 group='single quotes' name="double quotes" sum_kbps=3647
-2020-09-16 20:23:59 label="double quotes" average_kbps=0.7807800641050946 stdev_kbps=0.7843937151028966 sum_kbps=3799 value=1225
-2020-09-16 20:40:23 stdev_kbps=0.7374061560065204 name="double quotes" sum_kbps=4747 average_kbps=0.9535555231307824
-2020-09-16 21:01:49 value=1226 stdev_kbps=0.9441589858238203 label='single quotes'
-2020-09-16 21:12:58 stdev_kbps=0.6693127867227522 name="double quotes" label='single quotes'
-2020-09-16 21:52:49 group="double quotes" sum_kbps=3607 name='single quotes' value=8404 stdev_kbps=0.38046484859371366
-2020-09-16 22:36:17 label=no_quotes name="double quotes" sum_kbps=8073 stdev_kbps=0.13601687704657706
-2020-09-16 22:48:14 value=7133 name="double quotes" average_kbps=0.7750402728614014
-2020-09-16 22:49:49 stdev_kbps=0.6408945133053215 sum_kbps=6750 name=no_quotes average_kbps=0.8960251708380373
-2020-09-16 23:05:07 stdev_kbps=0.38725135757027607 name=no_quotes sum_kbps=9654
-2020-09-16 23:19:07 stdev_kbps=0.24348278520147604 average_kbps=0.5535368382292665 sum_kbps=3646
-2020-09-16 23:27:16 average_kbps=0.33817975426197866 stdev_kbps=0.5091825467926688
-2020-09-16 23:39:56 average_kbps=0.5507440925089525 group='single quotes' stdev_kbps=0.14888389552076686 value=4442
-2020-09-17 00:09:31 average_kbps=0.2461029218781896 sum_kbps=4102
-2020-09-17 00:49:15 value=1915 group="double quotes" sum_kbps=7368 average_kbps=0.25066783558074157 name="double quotes"
-2020-09-17 00:51:01 group='single quotes' average_kbps=0.008696746891737162
-2020-09-17 01:31:18 value=8750 average_kbps=0.8812795646222502 group='single quotes' stdev_kbps=0.989350577031472 name='single quotes'
-2020-09-17 01:47:22 name="double quotes" stdev_kbps=0.5036996380729204 label='single quotes' value=4030 group='single quotes'
-2020-09-17 02:03:08 stdev_kbps=0.20281705651019 average_kbps=0.5868596883941558 group="double quotes" label=no_quotes
-2020-09-17 02:07:16 label=no_quotes name="double quotes"
-2020-09-17 02:27:12 group=no_quotes label="double quotes" name=no_quotes
-2020-09-17 02:35:53 group='single quotes' value=5365 sum_kbps=7881
-2020-09-17 02:37:29 value=1611 stdev_kbps=0.986841708623465
-2020-09-17 02:45:40 name="double quotes" group=no_quotes
-2020-09-17 03:02:08 value=5632 sum_kbps=951 group='single quotes' name=no_quotes label='single quotes'
-2020-09-17 03:15:25 label='single quotes' value=5476 stdev_kbps=0.6937760435343093 average_kbps=0.19213777207991656 name="double quotes"
-2020-09-17 03:15:56 label=no_quotes average_kbps=0.35257698415386074 name="double quotes"
-2020-09-17 03:27:15 average_kbps=0.4892879621949161 stdev_kbps=0.07302542064164341 name=no_quotes value=5280 group='single quotes'
-2020-09-17 03:55:29 name='single quotes' sum_kbps=855 value=9456
-2020-09-17 03:58:57 sum_kbps=184 average_kbps=0.7762986252617657 stdev_kbps=0.635230317622898
-2020-09-17 04:11:18 stdev_kbps=0.9741977187678399 average_kbps=0.03268064473696808 group=no_quotes value=8513 sum_kbps=7656
-2020-09-17 04:59:34 name=no_quotes value=1654
-2020-09-17 05:33:55 label=no_quotes average_kbps=0.3490574653984194 group=no_quotes
-2020-09-17 05:47:29 sum_kbps=2303 stdev_kbps=0.10156117825443423 label='single quotes' average_kbps=0.9837532989551532
-2020-09-17 06:05:26 label=no_quotes name=no_quotes
-2020-09-17 06:13:14 name='single quotes' label=no_quotes sum_kbps=8098 value=3750 group="double quotes"
-2020-09-17 06:36:53 stdev_kbps=0.013365414672305898 value=8844 average_kbps=0.06883415772776535 label='single quotes'
-2020-09-17 06:39:31 value=4235 average_kbps=0.0879514791119731
-2020-09-17 06:52:50 label="double quotes" group="double quotes" average_kbps=0.6746412588988202
-2020-09-17 07:04:05 sum_kbps=6931 value=2800
-2020-09-17 07:14:14 label='single quotes' value=8580 stdev_kbps=0.7419627363923927
-2020-09-17 07:19:37 label='single quotes' average_kbps=0.9112609663659897 name='single quotes' group='single quotes' sum_kbps=7302
-2020-09-17 07:24:42 label=no_quotes value=3856 name='single quotes'
-2020-09-17 07:49:56 group=no_quotes sum_kbps=5588 average_kbps=0.8705351514369636 stdev_kbps=0.28723683101509423 value=2355
-2020-09-17 08:02:19 group='single quotes' stdev_kbps=0.20718646799136342
-2020-09-17 08:06:52 stdev_kbps=0.06500993629747764 name="double quotes" group="double quotes" average_kbps=0.16505352586350375
-2020-09-17 08:24:10 group="double quotes" value=7598 stdev_kbps=0.10212063651564329 label=no_quotes average_kbps=0.3406634010802312
-2020-09-17 08:26:04 average_kbps=0.862016358953328 label="double quotes" sum_kbps=8823
-2020-09-17 08:30:28 value=3520 label="double quotes" sum_kbps=7705 name=no_quotes stdev_kbps=0.8709904413823977
-2020-09-17 08:48:14 average_kbps=0.5756721837547841 value=2674
-2020-09-17 09:00:13 average_kbps=0.6943890041864479 group="double quotes" value=5870 sum_kbps=9938 stdev_kbps=0.3650716938575028
-2020-09-17 09:07:18 sum_kbps=137 average_kbps=0.27146959208923316 group='single quotes' name=no_quotes label="double quotes"
-2020-09-17 09:14:30 label="double quotes" name='single quotes' sum_kbps=2416 group="double quotes" average_kbps=0.7709091354221234
-2020-09-17 09:22:00 label=no_quotes stdev_kbps=0.13770645864403952
-2020-09-17 09:27:07 value=2859 label='single quotes' average_kbps=0.6417043922977099
-2020-09-17 09:37:05 stdev_kbps=0.7481587165154124 name="double quotes" average_kbps=0.44573460633917505 group='single quotes' label=no_quotes
-2020-09-17 10:06:16 label="double quotes" sum_kbps=2405 group="double quotes"
-2020-09-17 10:19:16 value=3656 group=no_quotes label=no_quotes
-2020-09-17 10:44:08 group="double quotes" value=4523 sum_kbps=2600 label=no_quotes
-2020-09-17 11:50:03 group=no_quotes sum_kbps=1843 average_kbps=0.7323768491456664 label="double quotes"
-2020-09-17 11:52:55 label="double quotes" group="double quotes" name="double quotes" sum_kbps=7734
-2020-09-17 11:57:04 average_kbps=0.08525403295968914 stdev_kbps=0.14885745979371579 label=no_quotes sum_kbps=3299
-2020-09-17 13:26:01 sum_kbps=8601 name="double quotes" stdev_kbps=0.3084954272020122 average_kbps=0.8883642516674278
-2020-09-17 13:30:58 group=no_quotes sum_kbps=4450 average_kbps=0.5835126928521149 name="double quotes"
-2020-09-17 13:33:14 sum_kbps=6390 average_kbps=0.5343364154706238 value=9089
-2020-09-17 13:45:09 stdev_kbps=0.3711496027157206 average_kbps=0.20233663649107214
-2020-09-17 13:58:24 sum_kbps=6999 group='single quotes' average_kbps=0.4840653784653842 label="double quotes" value=3014
-2020-09-17 14:44:21 group='single quotes' label='single quotes' stdev_kbps=0.7343330597420896
-2020-09-17 14:52:08 sum_kbps=238 value=2534 stdev_kbps=0.035007478282823246 group='single quotes' average_kbps=0.9384792701840663
-2020-09-17 15:26:30 stdev_kbps=0.4269369843951546 name="double quotes" label="double quotes" group="double quotes"
-2020-09-17 15:29:11 average_kbps=0.23600424350629 name="double quotes" label=no_quotes
-2020-09-17 15:35:27 name=no_quotes label='single quotes'
-2020-09-17 15:54:48 stdev_kbps=0.8968803819919566 sum_kbps=2572
-2020-09-17 15:59:36 label='single quotes' sum_kbps=7066 value=3213
-2020-09-17 16:06:47 stdev_kbps=0.709098653907439 sum_kbps=2857 value=6396 average_kbps=0.8316799090175412 label="double quotes"
-2020-09-17 16:20:07 stdev_kbps=0.959240970501955 group='single quotes' label='single quotes' name=no_quotes average_kbps=0.9147651217646245
-2020-09-17 16:20:11 name='single quotes' value=9163 group="double quotes" stdev_kbps=0.2881391292336606 sum_kbps=5292
-2020-09-17 16:35:49 stdev_kbps=0.05307198304509697 name=no_quotes
-2020-09-17 16:40:35 stdev_kbps=0.793282642914894 value=8219 sum_kbps=9853
-2020-09-17 16:46:46 group='single quotes' sum_kbps=9633
-2020-09-17 16:48:39 value=9972 label=no_quotes stdev_kbps=0.08873826934788642
-2020-09-17 16:50:29 sum_kbps=9201 stdev_kbps=0.35038089833571595 label='single quotes'
-2020-09-17 17:35:56 group='single quotes' sum_kbps=859 stdev_kbps=0.6172469575177459 value=2414 average_kbps=0.9681852205295339
-2020-09-17 17:46:11 sum_kbps=3759 value=7952
-2020-09-17 17:47:07 group=no_quotes value=1955 average_kbps=0.3465208470764536 label="double quotes"
-2020-09-17 17:54:50 group="double quotes" name="double quotes" stdev_kbps=0.148020627641251 sum_kbps=4113
-2020-09-17 17:55:39 group=no_quotes average_kbps=0.2011582152628002 value=5525 name="double quotes"
-2020-09-17 18:11:06 group=no_quotes value=3310 label='single quotes' sum_kbps=9959 stdev_kbps=0.46722287619988434
-2020-09-17 18:22:28 value=3510 label="double quotes" average_kbps=0.5766200392934623 name="double quotes"
-2020-09-17 18:28:48 average_kbps=0.5768612399061166 group="double quotes" value=2283
-2020-09-17 19:16:31 sum_kbps=5554 label=no_quotes
-2020-09-17 19:36:48 average_kbps=0.23748481883418304 group="double quotes" label=no_quotes
-2020-09-17 19:42:53 label=no_quotes average_kbps=0.9155758049119336 name="double quotes" sum_kbps=4328
-2020-09-17 20:36:00 average_kbps=0.01129740821531433 name=no_quotes stdev_kbps=0.5749489046829462 group="double quotes"
-2020-09-17 20:58:24 label="double quotes" stdev_kbps=0.26099638622663157 sum_kbps=2564
-2020-09-17 21:07:31 stdev_kbps=0.9476951461396502 value=8113 name="double quotes" sum_kbps=1469 group='single quotes'
-2020-09-17 21:23:53 stdev_kbps=0.8359325337182973 label=no_quotes
-2020-09-17 21:24:34 average_kbps=0.5276963817803569 group='single quotes' value=4484 name='single quotes'
-2020-09-17 22:43:20 value=6478 stdev_kbps=0.405697371530057
-2020-09-17 22:49:52 name='single quotes' label="double quotes" sum_kbps=3187 average_kbps=0.31384389333176954 stdev_kbps=0.8764822875921432
-2020-09-17 22:52:20 label='single quotes' group="double quotes" name=no_quotes sum_kbps=4839 value=7683
-2020-09-17 22:53:39 stdev_kbps=0.38589891679910726 name='single quotes'
-2020-09-17 22:56:09 label=no_quotes value=3398
-2020-09-17 23:24:08 name=no_quotes stdev_kbps=0.19189659375274415 value=6637 label="double quotes"
-2020-09-17 23:37:57 label="double quotes" stdev_kbps=0.4963154132574955 name=no_quotes average_kbps=0.10250915188799603
-2020-09-17 23:44:10 stdev_kbps=0.7591137595531885 average_kbps=0.722894536827798 label='single quotes' value=7529 sum_kbps=4230
-2020-09-18 00:02:22 group="double quotes" sum_kbps=8105 average_kbps=0.9258836393958061
-2020-09-18 00:05:14 name=no_quotes stdev_kbps=0.44729474561429106 value=2996
-2020-09-18 00:05:15 label="double quotes" name='single quotes' stdev_kbps=0.1896437051605966 value=1884
-2020-09-18 00:07:59 average_kbps=0.10581705590900636 value=5733
-2020-09-18 00:19:46 stdev_kbps=0.8635515007264021 average_kbps=0.5141975591013452
-2020-09-18 00:32:44 stdev_kbps=0.6344656653659777 group="double quotes"
-2020-09-18 00:36:20 label='single quotes' stdev_kbps=0.5110091364121209 value=2767
-2020-09-18 00:58:49 group=no_quotes label=no_quotes
-2020-09-18 02:43:02 label='single quotes' average_kbps=0.8599555814687304 value=1477
-2020-09-18 03:20:40 group=no_quotes stdev_kbps=0.7128482939218973 name="double quotes" sum_kbps=191
-2020-09-18 03:26:13 label='single quotes' average_kbps=0.8624300846852793
-2020-09-18 03:39:48 stdev_kbps=0.10091539540620098 label='single quotes'
-2020-09-18 03:48:58 label=no_quotes sum_kbps=5263 group='single quotes' stdev_kbps=0.3435609243452541 value=6780
-2020-09-18 03:52:00 average_kbps=0.3073111726268084 sum_kbps=3446 name='single quotes' group=no_quotes label='single quotes'
-2020-09-18 04:03:58 stdev_kbps=0.5714418697326882 value=2878 group='single quotes' name='single quotes'
-2020-09-18 04:13:40 value=720 average_kbps=0.32329557540254494
-2020-09-18 04:15:57 average_kbps=0.9777510309163033 label='single quotes' sum_kbps=6316 name=no_quotes
-2020-09-18 04:24:05 label="double quotes" group="double quotes"
-2020-09-18 04:54:36 sum_kbps=1324 group=no_quotes
-2020-09-18 04:56:54 group="double quotes" name="double quotes" average_kbps=0.8187447524694826 value=9167
-2020-09-18 05:39:06 stdev_kbps=0.462544754471217 label=no_quotes
-2020-09-18 05:47:50 value=4903 average_kbps=0.12536098583629562
-2020-09-18 06:20:46 value=5682 name="double quotes" stdev_kbps=0.8125427192427094 sum_kbps=2687 label='single quotes'
-2020-09-18 07:02:18 label='single quotes' sum_kbps=4875 value=8132
-2020-09-18 07:56:50 value=4898 group="double quotes" label=no_quotes stdev_kbps=0.14451296175167616
-2020-09-18 08:12:49 stdev_kbps=0.44400555044493284 group=no_quotes
-2020-09-18 08:13:32 value=7442 label="double quotes" name="double quotes" stdev_kbps=0.019186256789264666 sum_kbps=7918
-2020-09-18 08:39:22 name='single quotes' average_kbps=0.18831231061014764 sum_kbps=5306 value=815 group=no_quotes
-2020-09-18 08:58:51 label="double quotes" average_kbps=0.21531557141884727 stdev_kbps=0.8644714461185582
-2020-09-18 09:02:05 sum_kbps=3393 group='single quotes' value=7730 label='single quotes'
-2020-09-18 09:14:24 stdev_kbps=0.3924240579391065 group='single quotes' average_kbps=0.5983001455623049 value=2120
-2020-09-18 09:22:38 average_kbps=0.4380561287027478 stdev_kbps=0.2948579735826834 name='single quotes' sum_kbps=4798 value=740
-2020-09-18 09:25:02 average_kbps=0.2788578974321013 sum_kbps=9260 name='single quotes' group=no_quotes
-2020-09-18 09:25:03 label="double quotes" value=8679 name='single quotes' sum_kbps=3595 stdev_kbps=0.18099339581977503
-2020-09-18 09:40:01 group='single quotes' stdev_kbps=0.005963201018738817 name='single quotes'
-2020-09-18 09:59:34 name=no_quotes value=3325 group=no_quotes label=no_quotes stdev_kbps=0.5601304868953937
-2020-09-18 10:06:02 value=8759 average_kbps=0.7813174002052559 stdev_kbps=0.244826706346553 label="double quotes"
-2020-09-18 10:24:49 group="double quotes" average_kbps=0.6218547437380783 label='single quotes' value=3640 sum_kbps=4622
-2020-09-18 10:31:54 sum_kbps=6055 group='single quotes' label="double quotes"
-2020-09-18 10:32:26 sum_kbps=7356 label='single quotes' value=4447 group=no_quotes average_kbps=0.8122960178611036
-2020-09-18 10:44:39 label=no_quotes name='single quotes' value=2952 average_kbps=0.5103563639298525 stdev_kbps=0.4708734880982718
-2020-09-18 11:05:12 group='single quotes' label='single quotes' stdev_kbps=0.04512764356979537 average_kbps=0.866427247341744
-2020-09-18 11:17:30 sum_kbps=4032 average_kbps=0.7644485393137779 value=8838
-2020-09-18 11:25:21 value=3106 group='single quotes'
-2020-09-18 11:57:39 sum_kbps=3900 group='single quotes' average_kbps=0.9269085862854852 stdev_kbps=0.12666278458566682
-2020-09-18 12:05:30 name=no_quotes group='single quotes'
-2020-09-18 12:13:24 label="double quotes" stdev_kbps=0.671478935506962 group='single quotes'
-2020-09-18 12:39:52 group='single quotes' sum_kbps=2354 value=8399 label='single quotes' average_kbps=0.14801108090351256
-2020-09-18 12:40:53 value=2190 average_kbps=0.7939670368975831
-2020-09-18 12:58:13 stdev_kbps=0.026773561446459704 name="double quotes" average_kbps=0.9731221306314213 label=no_quotes sum_kbps=9177
-2020-09-18 13:01:59 average_kbps=0.011737507676719106 value=1870 label='single quotes' stdev_kbps=0.37576091718788773 group='single quotes'
-2020-09-18 13:21:23 name='single quotes' value=3208 average_kbps=0.9101134503815944 group=no_quotes
-2020-09-18 13:25:20 value=6539 name='single quotes' label="double quotes" average_kbps=0.08418299739600521
-2020-09-18 13:26:50 sum_kbps=5693 group=no_quotes stdev_kbps=0.327450014666965 label="double quotes" average_kbps=0.11782887637280193
-2020-09-18 13:49:21 average_kbps=0.043647165952118705 stdev_kbps=0.9093800101203967 name=no_quotes value=9479 sum_kbps=7391
-2020-09-18 13:59:57 group="double quotes" average_kbps=0.0902600491527844
-2020-09-18 14:20:34 average_kbps=0.7008558707943553 name="double quotes" group='single quotes' label=no_quotes
-2020-09-18 14:39:23 sum_kbps=1205 value=1689
-2020-09-18 15:13:02 average_kbps=0.5687927977749806 sum_kbps=7931 value=5721 group=no_quotes name=no_quotes
-2020-09-18 15:41:42 sum_kbps=1851 average_kbps=0.16435202837702412 label=no_quotes
-2020-09-18 15:54:12 average_kbps=0.736994208957996 group='single quotes' label=no_quotes sum_kbps=9512
-2020-09-18 15:59:49 label=no_quotes stdev_kbps=0.4636535880126309 value=8196
-2020-09-18 16:01:23 sum_kbps=6076 group=no_quotes value=6619 label=no_quotes stdev_kbps=0.16465178520579404
-2020-09-18 16:04:31 value=7854 group="double quotes" stdev_kbps=0.535097476011567
-2020-09-18 16:24:33 stdev_kbps=0.2891761887308556 group=no_quotes label=no_quotes sum_kbps=7241
-2020-09-18 16:25:09 sum_kbps=3513 group='single quotes' value=6177 average_kbps=0.9727132817337684 stdev_kbps=0.036049193534780866
-2020-09-18 16:33:15 name=no_quotes sum_kbps=7968 label="double quotes" value=5544
-2020-09-18 17:04:38 name=no_quotes sum_kbps=9342
-2020-09-18 17:16:13 group='single quotes' value=6838
-2020-09-18 17:29:33 sum_kbps=9119 average_kbps=0.22596066366401613
-2020-09-18 17:47:40 label=no_quotes group='single quotes' name="double quotes" stdev_kbps=0.9720935372725872 average_kbps=0.28560366082594957
-2020-09-18 17:51:20 average_kbps=0.7736944857635544 value=6870 stdev_kbps=0.6538187919423075 name='single quotes' label="double quotes"
-2020-09-18 18:32:12 average_kbps=0.6629493055829002 name='single quotes' sum_kbps=6809 group=no_quotes label="double quotes"
-2020-09-18 18:42:30 value=4027 label=no_quotes group='single quotes' average_kbps=0.717849893914497
-2020-09-18 18:45:50 name='single quotes' value=8435
-2020-09-18 18:47:26 name='single quotes' sum_kbps=1167
-2020-09-18 18:49:49 stdev_kbps=0.37905205025649025 sum_kbps=4556 average_kbps=0.09285501127796914 value=9160 name="double quotes"
-2020-09-18 18:51:23 group="double quotes" average_kbps=0.5537949087807805 label='single quotes' stdev_kbps=0.5479252975946
-2020-09-18 19:11:35 average_kbps=0.5258320214870713 name="double quotes" stdev_kbps=0.4180717021740803 label=no_quotes group=no_quotes
+2020-09-11 20:01:31 value=8005 name='single quotes' sum_kbps=419 average_kbps=0.5688599122906456
+2020-09-11 20:30:14 average_kbps=0.02846756098211578 stdev_kbps=0.3000224630345656
+2020-09-11 20:45:09 name=no_quotes stdev_kbps=0.5549034499023182 value=6011 label="double quotes" sum_kbps=7277
+2020-09-11 20:45:26 label='single quotes' average_kbps=0.7169577675904091
+2020-09-11 20:45:31 value=5912 sum_kbps=8622
+2020-09-11 20:50:18 label=no_quotes sum_kbps=2838 name=no_quotes value=6369
+2020-09-11 20:53:38 stdev_kbps=0.2565884522826911 sum_kbps=9032 name="double quotes" average_kbps=0.23015577360769968 value=8824
+2020-09-11 20:58:34 name="double quotes" group=no_quotes
+2020-09-11 21:10:50 average_kbps=0.4981077562517917 stdev_kbps=0.5326289636510897 name=no_quotes
+2020-09-11 21:12:00 label=no_quotes group='single quotes'
+2020-09-11 21:12:24 value=4407 average_kbps=0.40353743017050725
+2020-09-11 22:25:25 label='single quotes' value=5837 name='single quotes' sum_kbps=9052 average_kbps=0.20664421809262312
+2020-09-11 22:31:41 sum_kbps=172 stdev_kbps=0.13056077979898018 average_kbps=0.8750889777845468
+2020-09-11 22:52:43 stdev_kbps=0.5300494304152136 label="double quotes" value=8811
+2020-09-11 23:01:59 average_kbps=0.5395431728899703 sum_kbps=2871 value=206
+2020-09-11 23:21:39 average_kbps=0.7060917645453854 name='single quotes'
+2020-09-11 23:21:57 value=7861 average_kbps=0.29382022966776733 label='single quotes' name="double quotes" sum_kbps=7132
+2020-09-11 23:25:37 label=no_quotes stdev_kbps=0.6460163982484481 name=no_quotes average_kbps=0.4114936362773538 group='single quotes'
+2020-09-11 23:27:36 value=40 label=no_quotes sum_kbps=3
+2020-09-11 23:37:52 average_kbps=0.09009433992251825 group='single quotes'
+2020-09-11 23:47:43 average_kbps=0.8214898323774602 stdev_kbps=0.8344582272731687 group="double quotes"
+2020-09-11 23:49:38 group=no_quotes average_kbps=0.1591174347866765 stdev_kbps=0.7304735083301687
+2020-09-11 23:50:10 name="double quotes" sum_kbps=9588
+2020-09-11 23:50:25 group='single quotes' sum_kbps=6681 label="double quotes"
+2020-09-12 00:12:06 value=2572 average_kbps=0.5827667593026978 group="double quotes" name=no_quotes
+2020-09-12 01:11:26 sum_kbps=5349 name="double quotes" label="double quotes"
+2020-09-12 01:14:34 stdev_kbps=0.798174538937827 value=6736 name=no_quotes
+2020-09-12 01:19:07 name="double quotes" stdev_kbps=0.4032886671995437 sum_kbps=7814 group="double quotes"
+2020-09-12 01:28:47 stdev_kbps=0.8146924936848364 average_kbps=0.38099019665568246
+2020-09-12 01:29:38 group="double quotes" stdev_kbps=0.6147021892158042 label='single quotes'
+2020-09-12 01:36:36 label="double quotes" value=9354
+2020-09-12 02:10:07 average_kbps=0.15357685100360918 label='single quotes'
+2020-09-12 02:10:16 value=818 group=no_quotes
+2020-09-12 02:11:37 stdev_kbps=0.749765851941041 value=5827 group="double quotes" name=no_quotes average_kbps=0.3061808823911156
+2020-09-12 02:29:04 label='single quotes' average_kbps=0.8251734435773671 sum_kbps=5194 name='single quotes'
+2020-09-12 02:50:39 value=3073 stdev_kbps=0.6719202928121946 average_kbps=0.9040474699070432
+2020-09-12 03:16:45 sum_kbps=1168 label='single quotes' value=8991 name='single quotes'
+2020-09-12 03:28:40 name='single quotes' sum_kbps=7905 stdev_kbps=0.9203155920684633 value=8339
+2020-09-12 04:04:16 sum_kbps=617 average_kbps=0.7978798800429435 name="double quotes" stdev_kbps=0.7751236003303252 value=9046
+2020-09-12 04:16:29 sum_kbps=2706 average_kbps=0.07552115031939421 stdev_kbps=0.34253214942206756 name="double quotes" value=4413
+2020-09-12 04:39:04 sum_kbps=1443 average_kbps=0.8936262029188332 label='single quotes'
+2020-09-12 04:56:47 name=no_quotes value=2068 average_kbps=0.2227566187101766 stdev_kbps=0.5256589126952244
+2020-09-12 05:09:40 stdev_kbps=0.3745759632189827 label="double quotes" group="double quotes" average_kbps=0.3508235331954801
+2020-09-12 05:25:31 sum_kbps=9283 average_kbps=0.7566418446015839
+2020-09-12 05:27:30 value=68 average_kbps=0.06745791338815954 sum_kbps=2410 stdev_kbps=0.3174911059433604 name='single quotes'
+2020-09-12 06:08:11 label='single quotes' value=8936 stdev_kbps=0.38030285992045687 sum_kbps=7984 group=no_quotes
+2020-09-12 06:10:54 stdev_kbps=0.18305641595908073 group="double quotes" name="double quotes"
+2020-09-12 06:28:58 label="double quotes" sum_kbps=6444 name='single quotes' value=8372 stdev_kbps=0.9121465557159267
+2020-09-12 06:41:17 stdev_kbps=0.12158853990438578 sum_kbps=414 group="double quotes" value=3335
+2020-09-12 06:55:53 name="double quotes" value=4729
+2020-09-12 07:00:07 sum_kbps=2535 name="double quotes" group="double quotes" value=9275 label='single quotes'
+2020-09-12 07:04:10 value=9344 group='single quotes'
+2020-09-12 07:04:39 group="double quotes" sum_kbps=814
+2020-09-12 07:08:30 stdev_kbps=0.8583163938359732 average_kbps=0.5585167668009289 label=no_quotes
+2020-09-12 07:22:11 group="double quotes" value=2429 sum_kbps=8530 label=no_quotes average_kbps=0.9480108321917129
+2020-09-12 07:27:23 stdev_kbps=0.12280158292203891 group=no_quotes label="double quotes" name=no_quotes sum_kbps=8614
+2020-09-12 07:30:34 sum_kbps=6330 value=7276
+2020-09-12 07:31:50 group=no_quotes average_kbps=0.9707090537904067
+2020-09-12 08:26:47 sum_kbps=6399 stdev_kbps=0.02764725089102371
+2020-09-12 08:29:25 label=no_quotes value=9959 name=no_quotes group="double quotes"
+2020-09-12 08:41:56 value=4620 average_kbps=0.3903210973061937 stdev_kbps=0.9162016531498672
+2020-09-12 08:59:48 label="double quotes" stdev_kbps=0.18828488330834192 sum_kbps=9536 value=3649
+2020-09-12 09:02:46 average_kbps=0.3757496004186385 label=no_quotes stdev_kbps=0.5348797163956337
+2020-09-12 09:04:45 stdev_kbps=0.7290135404529312 label='single quotes' value=6163
+2020-09-12 09:23:22 average_kbps=0.778744404243883 label="double quotes" value=9639 stdev_kbps=0.10947777376898848 name=no_quotes
+2020-09-12 09:41:49 group='single quotes' name='single quotes' sum_kbps=666
+2020-09-12 09:53:22 name="double quotes" average_kbps=0.13346873778141144 group='single quotes' sum_kbps=4908 label=no_quotes
+2020-09-12 09:54:09 group='single quotes' name='single quotes'
+2020-09-12 09:56:31 group="double quotes" name='single quotes' average_kbps=0.06751081647571555
+2020-09-12 09:57:46 average_kbps=0.22364324246296174 name='single quotes' value=4285 group="double quotes"
+2020-09-12 10:00:50 value=6814 stdev_kbps=0.788614116960742 group=no_quotes
+2020-09-12 10:13:35 sum_kbps=7977 stdev_kbps=0.542809034616697
+2020-09-12 10:15:03 group='single quotes' stdev_kbps=0.707662674815969 average_kbps=0.19191291582679149
+2020-09-12 10:17:58 group="double quotes" label="double quotes" average_kbps=0.2576302575343101 stdev_kbps=0.8953281629071302
+2020-09-12 10:34:46 average_kbps=0.4146424110921062 group=no_quotes
+2020-09-12 10:44:03 stdev_kbps=0.8614987921575349 sum_kbps=4596 value=9860 name='single quotes' label='single quotes'
+2020-09-12 11:18:12 stdev_kbps=0.7581233607900253 label=no_quotes
+2020-09-12 11:23:21 stdev_kbps=0.0032244922405827436 name="double quotes"
+2020-09-12 11:46:32 label=no_quotes group=no_quotes average_kbps=0.06310548043487885
+2020-09-12 11:54:44 value=4676 group='single quotes' average_kbps=0.7186942843226428 sum_kbps=1140 label='single quotes'
+2020-09-12 12:04:17 label="double quotes" average_kbps=0.8692777831005795
+2020-09-12 12:11:36 average_kbps=0.1531221780666494 sum_kbps=9671 label='single quotes' name="double quotes"
+2020-09-12 12:19:31 sum_kbps=9019 name="double quotes" stdev_kbps=0.5045672537892172 group="double quotes" label='single quotes'
+2020-09-12 12:41:33 stdev_kbps=0.2977382867618773 name=no_quotes
+2020-09-12 13:28:15 name=no_quotes label=no_quotes stdev_kbps=0.08312234670477137
+2020-09-12 13:39:15 value=7621 name=no_quotes group='single quotes' average_kbps=0.9480997707601232 label="double quotes"
+2020-09-12 14:20:38 group='single quotes' sum_kbps=4677
+2020-09-12 14:40:52 group='single quotes' stdev_kbps=0.9899835357117657 sum_kbps=1158 name="double quotes"
+2020-09-12 14:55:05 label="double quotes" average_kbps=0.09309045491552714 sum_kbps=2980 value=6784 name="double quotes"
+2020-09-12 14:58:56 sum_kbps=5316 name='single quotes' stdev_kbps=0.24960564327204415 value=1025
+2020-09-12 15:44:57 group=no_quotes label='single quotes' average_kbps=0.21365484719335748 stdev_kbps=0.13196012296884974
+2020-09-12 16:00:13 name=no_quotes average_kbps=0.056026373307562105
+2020-09-12 16:03:28 stdev_kbps=0.7925681053448324 name=no_quotes average_kbps=0.3376981335122974 sum_kbps=8729
+2020-09-12 16:27:13 group='single quotes' value=4052 label=no_quotes
+2020-09-12 16:40:11 label=no_quotes value=4480 group=no_quotes sum_kbps=3258 name="double quotes"
+2020-09-12 16:42:04 sum_kbps=3739 value=7746 label="double quotes" stdev_kbps=0.49610201332943193
+2020-09-12 17:06:32 name='single quotes' average_kbps=0.3229825399888753
+2020-09-12 17:30:24 value=2998 label='single quotes' sum_kbps=453 name='single quotes'
+2020-09-12 17:30:45 sum_kbps=7173 stdev_kbps=0.008578890685922436 group="double quotes" name="double quotes" average_kbps=0.4843264615834142
+2020-09-12 17:44:43 group='single quotes' average_kbps=0.5100450563586306 value=4733 name="double quotes" sum_kbps=6860
+2020-09-12 17:59:13 group=no_quotes average_kbps=0.33574224121873775 stdev_kbps=0.1873733545683579 value=7882
+2020-09-12 18:25:59 sum_kbps=923 group="double quotes" stdev_kbps=0.8983530623113257 name='single quotes' average_kbps=0.9772440979865773
+2020-09-12 19:39:38 group="double quotes" label="double quotes"
+2020-09-12 19:42:27 value=7320 average_kbps=0.22449517633174287
+2020-09-12 19:53:06 sum_kbps=5238 group=no_quotes value=243
+2020-09-12 21:23:25 label=no_quotes stdev_kbps=0.5651342588377578 value=7508 name=no_quotes sum_kbps=1482
+2020-09-12 21:29:22 name='single quotes' label="double quotes" value=2117
+2020-09-12 21:40:25 average_kbps=0.493006323054615 name='single quotes' label='single quotes'
+2020-09-12 21:48:43 group='single quotes' stdev_kbps=0.38862183299145425 value=9489 label='single quotes' average_kbps=0.6256886799997962
+2020-09-12 21:55:02 sum_kbps=8655 name=no_quotes average_kbps=0.9526877418544771 group="double quotes" label=no_quotes
+2020-09-12 23:08:51 sum_kbps=4338 group="double quotes" value=2341 stdev_kbps=0.49462293330535867 label="double quotes"
+2020-09-12 23:12:42 group=no_quotes average_kbps=0.7191726709909265
+2020-09-12 23:17:38 value=1645 stdev_kbps=0.405079808867037 label=no_quotes name=no_quotes
+2020-09-12 23:18:49 value=3046 label=no_quotes stdev_kbps=0.2844602335598566 group=no_quotes average_kbps=0.48617989466293987
+2020-09-12 23:37:22 label='single quotes' group='single quotes'
+2020-09-12 23:44:59 stdev_kbps=0.9133050685629271 label=no_quotes value=8655
+2020-09-13 00:04:11 label=no_quotes name=no_quotes value=9020 stdev_kbps=0.3341933300370442
+2020-09-13 00:16:02 name='single quotes' stdev_kbps=0.04464028031776146 value=1961 group='single quotes' sum_kbps=8350
+2020-09-13 00:41:37 stdev_kbps=0.9263891248291446 value=6805 sum_kbps=5334 name='single quotes' label='single quotes'
+2020-09-13 00:48:13 label=no_quotes sum_kbps=5078 name='single quotes'
+2020-09-13 00:56:18 value=3589 group="double quotes" stdev_kbps=0.8487826510963171
+2020-09-13 00:59:39 stdev_kbps=0.6424791116745716 label='single quotes' average_kbps=0.04596711476321658 group=no_quotes
+2020-09-13 01:08:25 value=891 stdev_kbps=0.712078577575291 label=no_quotes average_kbps=0.8736247149961576 sum_kbps=9363
+2020-09-13 01:25:35 group="double quotes" label=no_quotes stdev_kbps=0.2665389006474702 average_kbps=0.4133311891439603
+2020-09-13 01:28:54 average_kbps=0.36619795963858015 stdev_kbps=0.7419937823404558 label=no_quotes
+2020-09-13 01:36:06 name=no_quotes value=6263 label="double quotes" group=no_quotes average_kbps=0.9173628227774738
+2020-09-13 01:43:48 group='single quotes' label="double quotes" average_kbps=0.6238584322611919
+2020-09-13 01:59:37 average_kbps=0.22068956807526197 group="double quotes" value=206 label=no_quotes name=no_quotes
+2020-09-13 02:25:15 stdev_kbps=0.5295409996149496 sum_kbps=8857
+2020-09-13 02:37:41 average_kbps=0.7544301494116763 group=no_quotes name=no_quotes
+2020-09-13 02:44:01 sum_kbps=2298 name="double quotes" label='single quotes' group=no_quotes
+2020-09-13 03:14:58 label=no_quotes sum_kbps=2185 value=5870 name=no_quotes
+2020-09-13 03:40:15 sum_kbps=6214 value=3138
+2020-09-13 03:46:08 value=9197 name='single quotes' group="double quotes"
+2020-09-13 04:56:13 stdev_kbps=0.8227238151315656 value=9643 group=no_quotes
+2020-09-13 05:00:16 value=4236 group="double quotes" name=no_quotes
+2020-09-13 05:12:34 stdev_kbps=0.6230179819530945 label="double quotes" average_kbps=0.8840502581277818 value=7731
+2020-09-13 05:49:47 average_kbps=0.8846015857447422 label='single quotes' value=2071 stdev_kbps=0.5383920056399192 group="double quotes"
+2020-09-13 05:50:32 value=8576 group=no_quotes
+2020-09-13 05:55:15 sum_kbps=4685 value=6408
+2020-09-13 06:30:09 label='single quotes' average_kbps=0.6011337828179509 stdev_kbps=0.9006311903029571 value=4645
+2020-09-13 06:33:00 value=3341 average_kbps=0.41396425808255866 stdev_kbps=0.8567006233931452
+2020-09-13 06:45:59 sum_kbps=8850 value=7038
+2020-09-13 06:52:02 value=30 name=no_quotes sum_kbps=1597 stdev_kbps=0.24805415084708116
+2020-09-13 06:56:36 label="double quotes" average_kbps=0.6581517579625856 name=no_quotes
+2020-09-13 06:58:47 stdev_kbps=0.4518713015212744 group='single quotes' average_kbps=0.8957681622498143 value=3402 label="double quotes"
+2020-09-13 07:14:52 sum_kbps=4063 name='single quotes' value=2894
+2020-09-13 07:17:32 group='single quotes' label="double quotes" stdev_kbps=0.909618753889427 value=7579
+2020-09-13 07:29:12 value=6949 sum_kbps=4286 name=no_quotes stdev_kbps=0.0070290168737086045
+2020-09-13 07:32:34 group=no_quotes stdev_kbps=0.2070713307819746 sum_kbps=1988 name=no_quotes label='single quotes'
+2020-09-13 07:44:16 group=no_quotes sum_kbps=5882 average_kbps=0.1716462176765725
+2020-09-13 07:49:56 label='single quotes' sum_kbps=9698 stdev_kbps=0.01009557438659725 name="double quotes"
+2020-09-13 07:59:53 label=no_quotes name="double quotes" average_kbps=0.21832764694823203
+2020-09-13 08:09:34 name=no_quotes average_kbps=0.9427975357911467 label=no_quotes stdev_kbps=0.721477421125335 value=5489
+2020-09-13 08:16:25 average_kbps=0.32490362632292136 sum_kbps=7429 group="double quotes" value=7219
+2020-09-13 08:27:58 stdev_kbps=0.22334583169289257 average_kbps=0.5487485496300941 sum_kbps=6038
+2020-09-13 08:30:36 group="double quotes" average_kbps=0.7614638634942934 name='single quotes'
+2020-09-13 08:42:49 sum_kbps=3600 label='single quotes' group="double quotes"
+2020-09-13 08:53:05 sum_kbps=8534 average_kbps=0.5663638490259915 name='single quotes' label=no_quotes
+2020-09-13 08:57:47 value=1923 group='single quotes'
+2020-09-13 08:59:29 value=8008 stdev_kbps=0.674468796944017 label="double quotes" name=no_quotes group=no_quotes
+2020-09-13 09:01:51 stdev_kbps=0.06645241625087228 average_kbps=0.41396791525966314 label=no_quotes value=3235
+2020-09-13 09:05:15 sum_kbps=4495 group='single quotes' stdev_kbps=0.5809658730801808 label='single quotes'
+2020-09-13 09:27:00 name='single quotes' average_kbps=0.5460865282065382
+2020-09-13 09:37:58 name='single quotes' average_kbps=0.26829505265637643 stdev_kbps=0.3431869354150583 value=8795 group=no_quotes
+2020-09-13 09:42:27 average_kbps=0.8337491759008915 group=no_quotes sum_kbps=2045 label=no_quotes stdev_kbps=0.20449531314359015
+2020-09-13 10:02:26 sum_kbps=3563 group=no_quotes stdev_kbps=0.890486913376161 value=2364 label="double quotes"
+2020-09-13 10:40:03 average_kbps=0.6112448299596975 group=no_quotes
+2020-09-13 10:42:37 name='single quotes' sum_kbps=1435 average_kbps=0.06072224206264587 label="double quotes"
+2020-09-13 10:48:59 average_kbps=0.2762219836659112 stdev_kbps=0.9056003267691229
+2020-09-13 10:51:24 name=no_quotes sum_kbps=1299 stdev_kbps=0.5696394536752226 value=8830
+2020-09-13 11:16:15 value=469 label='single quotes' name=no_quotes
+2020-09-13 11:20:40 stdev_kbps=0.6179144564987729 group='single quotes' value=1659
+2020-09-13 11:38:25 sum_kbps=9470 name=no_quotes label="double quotes" value=3352 group='single quotes'
+2020-09-13 11:39:17 name='single quotes' average_kbps=0.4220533252919949 stdev_kbps=0.04714636656542226
+2020-09-13 11:44:08 value=4609 stdev_kbps=0.0896468855153123 sum_kbps=3358
+2020-09-13 12:17:57 average_kbps=0.59165479451113 label='single quotes' stdev_kbps=0.38809326774306696 value=1937
+2020-09-13 12:39:21 sum_kbps=6804 average_kbps=0.13836059658802524 value=37
+2020-09-13 13:14:20 average_kbps=0.9114429117244961 stdev_kbps=0.6898186132322023 label='single quotes' group=no_quotes
+2020-09-13 13:18:20 label="double quotes" average_kbps=0.9185135705016411 name="double quotes"
+2020-09-13 13:23:30 sum_kbps=9752 value=5287
+2020-09-13 13:34:50 sum_kbps=8621 group="double quotes"
+2020-09-13 14:27:54 group="double quotes" name="double quotes" value=7950
+2020-09-13 14:49:09 stdev_kbps=0.40939605425474823 value=2572
+2020-09-13 15:01:31 sum_kbps=6286 average_kbps=0.9574421020568422
+2020-09-13 15:31:28 label="double quotes" group='single quotes'
+2020-09-13 15:55:55 label='single quotes' value=4616
+2020-09-13 16:10:21 stdev_kbps=0.49996776261431486 group="double quotes" average_kbps=0.788285815008061
+2020-09-13 16:50:40 label="double quotes" group="double quotes" average_kbps=0.721278531345136
+2020-09-13 16:51:16 value=8439 stdev_kbps=0.18525649513976594 sum_kbps=4811 label=no_quotes group="double quotes"
+2020-09-13 16:56:50 value=4703 label="double quotes" sum_kbps=6711 average_kbps=0.8585140095595942 stdev_kbps=0.22580604445531594
+2020-09-13 17:05:08 name='single quotes' stdev_kbps=0.7145835282230609 label='single quotes' sum_kbps=2140 value=9960
+2020-09-13 17:05:24 value=4081 label=no_quotes average_kbps=0.28016797232399737 sum_kbps=9216
+2020-09-13 17:13:54 sum_kbps=6013 average_kbps=0.21159406857717267 name='single quotes' label="double quotes" value=5932
+2020-09-13 17:38:04 value=1342 label="double quotes" sum_kbps=7717 name="double quotes" group='single quotes'
+2020-09-13 17:44:56 label="double quotes" sum_kbps=5267 stdev_kbps=0.27170462794331374
+2020-09-13 17:52:32 average_kbps=0.39512157052774566 value=9902
+2020-09-13 17:59:33 label='single quotes' value=4497 sum_kbps=7457 average_kbps=0.03808819766423455
+2020-09-13 18:27:13 sum_kbps=9917 group="double quotes" average_kbps=0.2897687839974802 label=no_quotes
+2020-09-13 18:39:20 stdev_kbps=0.26639617082256073 label="double quotes" sum_kbps=6349
+2020-09-13 18:39:35 stdev_kbps=0.5863775724305192 value=8081 name=no_quotes
+2020-09-13 18:56:46 name=no_quotes group="double quotes" stdev_kbps=0.045687772932986204
+2020-09-13 19:23:19 label='single quotes' stdev_kbps=0.18131993034715943 average_kbps=0.2767036129801058 sum_kbps=7961
+2020-09-13 19:27:08 group=no_quotes stdev_kbps=0.9353014835694782 average_kbps=0.07287912449517286
+2020-09-13 19:32:29 name='single quotes' label=no_quotes value=4818 stdev_kbps=0.13987637407750542
+2020-09-13 20:07:27 name="double quotes" sum_kbps=3350 average_kbps=0.07614384238402905 label='single quotes' group="double quotes"
+2020-09-13 20:08:51 label="double quotes" average_kbps=0.6015704102222744
+2020-09-13 20:25:37 name='single quotes' average_kbps=0.04759097200914175 label="double quotes" value=4167 stdev_kbps=0.8041256876268029
+2020-09-13 20:39:14 stdev_kbps=0.8742536461954779 name="double quotes" average_kbps=0.17981517548104575
+2020-09-13 20:58:32 average_kbps=0.08493177817458764 stdev_kbps=0.8637514521421772 label='single quotes' value=1616
+2020-09-13 21:06:14 label=no_quotes group=no_quotes
+2020-09-13 22:00:19 sum_kbps=2140 stdev_kbps=0.8264943010860596
+2020-09-13 22:02:15 group=no_quotes value=6106
+2020-09-13 22:03:53 group="double quotes" sum_kbps=5522 stdev_kbps=0.07829112805857952
+2020-09-13 22:22:07 group="double quotes" label="double quotes" stdev_kbps=0.18611950433341584
+2020-09-13 22:23:40 stdev_kbps=0.508730996787157 group="double quotes" name=no_quotes
+2020-09-13 22:29:47 label=no_quotes stdev_kbps=0.5512660280791649
+2020-09-13 22:39:41 stdev_kbps=0.8602302838048299 name='single quotes' average_kbps=0.6337742403715988 value=6021 label="double quotes"
+2020-09-13 22:41:47 group=no_quotes sum_kbps=2835 stdev_kbps=0.47782487524353534
+2020-09-13 22:45:24 sum_kbps=4738 group=no_quotes value=4748 name="double quotes" stdev_kbps=0.741721288336928
+2020-09-13 22:50:53 average_kbps=0.380869958455588 value=701 group="double quotes" stdev_kbps=0.2879220928178785
+2020-09-13 22:57:18 average_kbps=0.4928691114451029 name=no_quotes sum_kbps=589 stdev_kbps=0.5235181215502893 group="double quotes"
+2020-09-13 23:00:21 name=no_quotes sum_kbps=8664 stdev_kbps=0.6651415908384894
+2020-09-13 23:48:30 name="double quotes" value=4879 group="double quotes"
+2020-09-14 00:00:26 average_kbps=0.02571959219404163 sum_kbps=4130
+2020-09-14 00:28:51 label='single quotes' average_kbps=0.6906802335067124 value=6113 name='single quotes'
+2020-09-14 00:30:59 value=4458 sum_kbps=7395 group='single quotes' label=no_quotes stdev_kbps=0.2519771925237765
+2020-09-14 00:47:30 sum_kbps=3897 average_kbps=0.5240142790198036 value=6988 group="double quotes"
+2020-09-14 00:54:09 stdev_kbps=0.180368601530157 label="double quotes"
+2020-09-14 00:55:49 average_kbps=0.018783314538262874 label='single quotes' name='single quotes' group=no_quotes
+2020-09-14 01:25:52 stdev_kbps=0.8328362232411102 label="double quotes" value=7859
+2020-09-14 01:29:18 name="double quotes" sum_kbps=1214
+2020-09-14 01:59:41 value=5848 group="double quotes" label='single quotes' stdev_kbps=0.28856585681764946
+2020-09-14 02:02:27 label=no_quotes sum_kbps=7302 name="double quotes" group=no_quotes average_kbps=0.9046587535109
+2020-09-14 02:55:26 average_kbps=0.31479044997760264 group="double quotes" value=9926 stdev_kbps=0.3573322042547903
+2020-09-14 03:02:40 average_kbps=0.6723605011413121 group="double quotes" stdev_kbps=0.3854440754643066 sum_kbps=3228
+2020-09-14 03:49:48 group=no_quotes sum_kbps=2014 average_kbps=0.048425395436956564 name=no_quotes
+2020-09-14 03:55:48 value=7679 stdev_kbps=0.8759356969461923
+2020-09-14 04:11:17 label='single quotes' group=no_quotes value=4312 sum_kbps=5363
+2020-09-14 04:19:27 sum_kbps=1600 group='single quotes' stdev_kbps=0.9947659453380333 label=no_quotes
+2020-09-14 04:29:33 average_kbps=0.005389951841058838 stdev_kbps=0.4077746286839602 sum_kbps=9565 value=6211 label=no_quotes
+2020-09-14 04:43:20 label='single quotes' average_kbps=0.8672648319404176
+2020-09-14 04:57:58 label=no_quotes stdev_kbps=0.8519363234065809
+2020-09-14 05:21:23 average_kbps=0.10813582968975621 sum_kbps=7526 label="double quotes" value=8951
+2020-09-14 05:43:57 group=no_quotes label="double quotes"
+2020-09-14 05:56:50 average_kbps=0.12247057689377261 label=no_quotes name='single quotes'
+2020-09-14 06:01:40 label="double quotes" group='single quotes' stdev_kbps=0.2503009893642739 average_kbps=0.8851330861086417 name="double quotes"
+2020-09-14 06:29:34 label='single quotes' value=1132 name=no_quotes group=no_quotes
+2020-09-14 06:40:20 stdev_kbps=0.2750282502559852 value=1322 group='single quotes' average_kbps=0.9827875755768923
+2020-09-14 07:16:30 name=no_quotes label='single quotes' group=no_quotes sum_kbps=8532
+2020-09-14 07:18:52 name='single quotes' group=no_quotes value=2790 sum_kbps=1377
+2020-09-14 07:26:45 average_kbps=0.39355534252042734 value=8653 label='single quotes'
+2020-09-14 07:37:25 average_kbps=0.0744572170202763 label="double quotes" name=no_quotes group="double quotes" stdev_kbps=0.29864429778685364
+2020-09-14 07:44:24 value=3405 sum_kbps=6230 name='single quotes' average_kbps=0.6419938366010373
+2020-09-14 08:05:49 group=no_quotes label='single quotes' stdev_kbps=0.18281144837561447 value=186
+2020-09-14 08:33:33 label=no_quotes stdev_kbps=0.6609714039884912 group='single quotes' value=9919
+2020-09-14 08:37:42 sum_kbps=8887 average_kbps=0.04149709360060916 label="double quotes" stdev_kbps=0.7463987219132628
+2020-09-14 08:48:50 name='single quotes' stdev_kbps=0.8831971346415964 label=no_quotes
+2020-09-14 08:51:17 stdev_kbps=0.4003607805062236 sum_kbps=7716 value=8224 average_kbps=0.9366753515097416 group="double quotes"
+2020-09-14 09:05:52 value=822 label='single quotes' group='single quotes' average_kbps=0.003446756796991024
+2020-09-14 09:13:47 stdev_kbps=0.8357045390857305 average_kbps=0.10335264533927813 sum_kbps=5627 value=50 group='single quotes'
+2020-09-14 09:33:33 name=no_quotes label=no_quotes group=no_quotes average_kbps=0.2666355496362106
+2020-09-14 09:36:15 average_kbps=0.4341122618443508 value=4323 label='single quotes' sum_kbps=1234 group="double quotes"
+2020-09-14 09:44:27 average_kbps=0.8192075219006527 name="double quotes" stdev_kbps=0.2357187155387278 sum_kbps=2883 group="double quotes"
+2020-09-14 09:52:16 average_kbps=0.04785020337307855 stdev_kbps=0.7120095531443905 group=no_quotes name="double quotes" label="double quotes"
+2020-09-14 10:02:54 group='single quotes' sum_kbps=3068
+2020-09-14 10:05:40 label='single quotes' name="double quotes" value=1409
+2020-09-14 10:19:23 name=no_quotes stdev_kbps=0.13581983695393962
+2020-09-14 10:42:44 stdev_kbps=0.6484427875912063 average_kbps=0.7380900148582247 value=4213 group='single quotes' name=no_quotes
+2020-09-14 10:47:14 name="double quotes" average_kbps=0.7034867404199096
+2020-09-14 11:16:48 average_kbps=0.12604577943230177 stdev_kbps=0.7197419827234977 sum_kbps=2413 label=no_quotes value=580
+2020-09-14 11:20:30 stdev_kbps=0.20901207017661516 average_kbps=0.09210786883384292 sum_kbps=8906
+2020-09-14 11:25:44 sum_kbps=1461 label=no_quotes average_kbps=0.427603800633384 stdev_kbps=0.5320246585652113
+2020-09-14 11:46:16 value=8266 group="double quotes" label='single quotes' average_kbps=0.6647544593680467 name='single quotes'
+2020-09-14 11:49:04 value=2154 label=no_quotes sum_kbps=3049
+2020-09-14 12:11:42 name='single quotes' stdev_kbps=0.860287818550166 sum_kbps=3375 average_kbps=0.15452079057680312
+2020-09-14 12:15:58 stdev_kbps=0.5718532977910228 value=7846 name='single quotes'
+2020-09-14 12:25:34 sum_kbps=9991 average_kbps=0.9758962984323015 stdev_kbps=0.9945577913002974 name=no_quotes value=9659
+2020-09-14 13:29:41 sum_kbps=6612 stdev_kbps=0.926249321035144 group=no_quotes name=no_quotes label='single quotes'
+2020-09-14 13:37:02 label=no_quotes group="double quotes"
+2020-09-14 13:58:32 name='single quotes' label='single quotes' sum_kbps=1261 average_kbps=0.19199933013508064 group=no_quotes
+2020-09-14 15:09:27 stdev_kbps=0.5356645247946291 value=1306
+2020-09-14 15:11:18 value=8056 sum_kbps=8552
+2020-09-14 15:28:29 name=no_quotes group='single quotes' label="double quotes" average_kbps=0.7022145095484781
+2020-09-14 15:36:54 name='single quotes' average_kbps=0.7517441391315054 stdev_kbps=0.22819365996816854
+2020-09-14 16:24:56 group="double quotes" sum_kbps=3181 label="double quotes" value=6872
+2020-09-14 16:48:51 value=1425 average_kbps=0.7185843635443395 sum_kbps=2148
+2020-09-14 16:53:04 stdev_kbps=0.8361893390641112 value=6880 group="double quotes" name='single quotes' label="double quotes"
+2020-09-14 16:54:33 label='single quotes' sum_kbps=6372 group='single quotes' value=1591 average_kbps=0.19582805130041658
+2020-09-14 17:04:56 name=no_quotes group=no_quotes sum_kbps=4161 stdev_kbps=0.3336631592940138 label=no_quotes
+2020-09-14 17:11:27 label='single quotes' value=6651 stdev_kbps=0.4121672695704376 sum_kbps=9134 average_kbps=0.5263273411530893
+2020-09-14 17:16:21 average_kbps=0.7231808107003035 stdev_kbps=0.3493108774724081 group='single quotes'
+2020-09-14 17:44:45 name=no_quotes group='single quotes' label='single quotes' sum_kbps=9360 stdev_kbps=0.8250388072337473
+2020-09-14 18:02:07 stdev_kbps=0.5010306264331097 name=no_quotes average_kbps=0.07762834124273821 value=9940 label='single quotes'
+2020-09-14 18:56:14 value=2092 group=no_quotes stdev_kbps=0.678611409443888 sum_kbps=7671 average_kbps=0.5716935667838261
+2020-09-14 18:58:45 sum_kbps=7509 stdev_kbps=0.829870156143721 name='single quotes'
+2020-09-14 19:30:52 stdev_kbps=0.5774859347748347 sum_kbps=6053 group=no_quotes average_kbps=0.07383195591488934
+2020-09-14 19:51:28 name=no_quotes average_kbps=0.7285547367526195 group=no_quotes label="double quotes"
+2020-09-14 19:53:31 sum_kbps=1165 value=4893 label='single quotes' name=no_quotes
+2020-09-14 20:16:09 name='single quotes' average_kbps=0.6088868900964992 sum_kbps=9555 stdev_kbps=0.010610097421515308 value=6432
+2020-09-14 20:22:41 average_kbps=0.6559189653107486 group='single quotes' label="double quotes"
+2020-09-14 20:23:20 name=no_quotes value=602
+2020-09-14 20:36:10 stdev_kbps=0.9462805970101031 name="double quotes" value=4734 sum_kbps=4250 label='single quotes'
+2020-09-14 20:37:30 average_kbps=0.8393739707302899 sum_kbps=2242 value=6033 stdev_kbps=0.4010188299353533 name='single quotes'
+2020-09-14 20:50:20 group="double quotes" stdev_kbps=0.7192632524092631 name=no_quotes sum_kbps=7108 value=5483
+2020-09-14 21:30:12 name='single quotes' stdev_kbps=0.779028528129915 value=1163 average_kbps=0.5740223455001014 group='single quotes'
+2020-09-14 21:39:27 value=9536 name="double quotes" stdev_kbps=0.7845377165628779 average_kbps=0.9991282740331832
+2020-09-14 21:42:33 label=no_quotes stdev_kbps=0.9075732345365161 sum_kbps=6713 value=9675
+2020-09-14 22:05:42 stdev_kbps=0.0806663610694357 value=4965 average_kbps=0.7435950894586524
+2020-09-14 22:29:50 sum_kbps=4161 stdev_kbps=0.5089919643595031 label="double quotes" group=no_quotes
+2020-09-14 23:16:25 stdev_kbps=0.6650286941398105 label=no_quotes average_kbps=0.8226169375807687
+2020-09-14 23:26:50 label=no_quotes sum_kbps=5803 group="double quotes" average_kbps=0.7725219318471808
+2020-09-14 23:34:33 stdev_kbps=0.4802522573679999 sum_kbps=2314 name="double quotes"
+2020-09-14 23:54:07 value=1696 stdev_kbps=0.7894554498827182 name="double quotes" group=no_quotes average_kbps=0.5230776589763305
+2020-09-14 23:59:51 group='single quotes' value=5074 stdev_kbps=0.8765888043674449 name=no_quotes
+2020-09-15 00:09:00 value=2714 average_kbps=0.40652738543491285 stdev_kbps=0.9731506882426009
+2020-09-15 00:23:52 stdev_kbps=0.9060317939900862 name='single quotes' value=3930 label="double quotes" group="double quotes"
+2020-09-15 00:47:31 value=5953 stdev_kbps=0.7847870316348708 label='single quotes' group=no_quotes
+2020-09-15 01:22:42 name="double quotes" stdev_kbps=0.8609914662548406 sum_kbps=6537 group=no_quotes label="double quotes"
+2020-09-15 01:56:30 value=9715 name=no_quotes sum_kbps=7599 label='single quotes'
+2020-09-15 02:04:54 stdev_kbps=0.8212328591870595 name='single quotes'
+2020-09-15 02:19:52 average_kbps=0.8953779297632773 name=no_quotes label='single quotes' group='single quotes' stdev_kbps=0.2887864981507301
+2020-09-15 02:22:25 average_kbps=0.5126269271992171 stdev_kbps=0.6296657981661334
+2020-09-15 02:25:03 value=3531 stdev_kbps=0.3085840378667425 label="double quotes" sum_kbps=5851
+2020-09-15 03:00:37 average_kbps=0.3058262010389151 group=no_quotes
+2020-09-15 03:24:32 name='single quotes' group='single quotes' stdev_kbps=0.8505091672031362 value=9569
+2020-09-15 03:25:02 value=5487 average_kbps=0.4642222199116076 group="double quotes" sum_kbps=2709 stdev_kbps=0.6069356316680442
+2020-09-15 03:29:05 sum_kbps=9534 value=9539 group="double quotes" label='single quotes' stdev_kbps=0.5136478069343959
+2020-09-15 03:42:43 value=7813 group=no_quotes stdev_kbps=0.2799273222116262
+2020-09-15 03:48:45 label="double quotes" sum_kbps=6089 name='single quotes'
+2020-09-15 03:49:36 stdev_kbps=0.24584434314370063 average_kbps=0.7250103396834989 name="double quotes" value=6477 label=no_quotes
+2020-09-15 04:12:45 average_kbps=0.6003579470954337 group="double quotes"
+2020-09-15 04:12:53 stdev_kbps=0.5758526581303212 value=5331
+2020-09-15 04:15:14 stdev_kbps=0.4067172841407378 label="double quotes" average_kbps=0.33058468632794136 value=5233
+2020-09-15 04:22:11 average_kbps=0.4616968661721378 stdev_kbps=0.6742071288962808
+2020-09-15 04:34:42 value=1015 group='single quotes' average_kbps=0.14499203612516542 stdev_kbps=0.9161696087358356 label="double quotes"
+2020-09-15 04:38:14 value=7572 stdev_kbps=0.6258057250714224 name='single quotes'
+2020-09-15 04:47:10 sum_kbps=4237 stdev_kbps=0.3887427365290126 group=no_quotes value=5056
+2020-09-15 04:58:53 label='single quotes' sum_kbps=9194 group=no_quotes stdev_kbps=0.744932405810191 value=5644
+2020-09-15 05:01:00 sum_kbps=4544 value=5003 average_kbps=0.3278247544334837 group="double quotes" label=no_quotes
+2020-09-15 05:04:59 average_kbps=0.7036490262932309 label='single quotes'
+2020-09-15 05:11:22 name="double quotes" group=no_quotes average_kbps=0.9128535105155622 label='single quotes'
+2020-09-15 05:15:34 name="double quotes" sum_kbps=8120 label=no_quotes value=1479 stdev_kbps=0.0068357101322570335
+2020-09-15 05:20:53 value=2577 stdev_kbps=0.6421506772121038 label='single quotes'
+2020-09-15 05:26:17 stdev_kbps=0.9277491749821907 name=no_quotes
+2020-09-15 05:38:42 value=9054 average_kbps=0.5886715979989903 label="double quotes"
+2020-09-15 05:40:33 name='single quotes' group='single quotes' stdev_kbps=0.8480044230869141 label='single quotes' value=7459
+2020-09-15 05:43:29 average_kbps=0.31935360541981295 label='single quotes' stdev_kbps=0.857822952949722 sum_kbps=7771
+2020-09-15 05:50:29 stdev_kbps=0.56539697674743 label="double quotes" value=3503 average_kbps=0.4665783917771368
+2020-09-15 05:56:29 name="double quotes" stdev_kbps=0.9043503860224875
+2020-09-15 05:59:00 name="double quotes" sum_kbps=370 value=3682 stdev_kbps=0.2676663655152981 average_kbps=0.7317079802203801
+2020-09-15 06:02:11 value=3701 name='single quotes'
+2020-09-15 06:05:11 name='single quotes' value=2142 label="double quotes" group='single quotes' sum_kbps=5545
+2020-09-15 06:15:14 value=6649 average_kbps=0.8217112020737897 sum_kbps=8546 name="double quotes"
+2020-09-15 06:44:20 average_kbps=0.2541728058554744 sum_kbps=2788 name='single quotes' label='single quotes'
+2020-09-15 07:00:22 group=no_quotes label="double quotes" value=6192 stdev_kbps=0.8385655414495372
+2020-09-15 07:01:16 sum_kbps=9165 label="double quotes"
+2020-09-15 07:07:38 label='single quotes' group="double quotes"
+2020-09-15 08:19:29 group="double quotes" label=no_quotes name="double quotes" stdev_kbps=0.9518996960996801
+2020-09-15 08:55:27 sum_kbps=2952 stdev_kbps=0.40044909565996745
+2020-09-15 09:05:11 value=789 stdev_kbps=0.08884725976819419
+2020-09-15 09:16:10 label=no_quotes stdev_kbps=0.5694260890562416 sum_kbps=5208
+2020-09-15 09:21:06 name='single quotes' group=no_quotes value=2318 label="double quotes" sum_kbps=8898
+2020-09-15 09:24:51 value=5669 average_kbps=0.19704855187185977 name='single quotes' group="double quotes"
+2020-09-15 09:42:16 label="double quotes" stdev_kbps=0.2536655685784306 name="double quotes" value=703
+2020-09-15 09:53:55 stdev_kbps=0.5683833198930053 average_kbps=0.49080373695332413 label="double quotes" value=7599
+2020-09-15 09:58:40 sum_kbps=163 label=no_quotes value=2961
+2020-09-15 10:09:28 stdev_kbps=0.9512201440131106 label='single quotes' average_kbps=0.22537275516840183 group="double quotes"
+2020-09-15 10:29:00 group=no_quotes value=3940 name='single quotes'
+2020-09-15 10:35:08 name="double quotes" group=no_quotes
+2020-09-15 10:52:19 average_kbps=0.7924976923037603 name=no_quotes
+2020-09-15 10:59:53 label=no_quotes group='single quotes' name="double quotes"
+2020-09-15 11:00:25 group="double quotes" average_kbps=0.6474883655913891 sum_kbps=2033 stdev_kbps=0.07042164815500873
+2020-09-15 11:07:43 average_kbps=0.315112830028493 label="double quotes" stdev_kbps=0.40669724535551033 name=no_quotes
+2020-09-15 11:40:42 average_kbps=0.08615050548734848 sum_kbps=4530 value=5811 group=no_quotes stdev_kbps=0.632335505708225
+2020-09-15 11:50:53 sum_kbps=1514 value=6249 average_kbps=0.6988685514237623 name="double quotes" stdev_kbps=0.6638516887480607
+2020-09-15 11:51:46 group="double quotes" average_kbps=0.5941573090450754 label="double quotes" stdev_kbps=0.5157842533795761 name='single quotes'
+2020-09-15 12:02:33 group='single quotes' average_kbps=0.1597783230901757 value=6236
+2020-09-15 12:09:50 group="double quotes" sum_kbps=6573
+2020-09-15 12:14:08 group=no_quotes average_kbps=0.5443767498242466
+2020-09-15 12:45:09 sum_kbps=7538 average_kbps=0.7717236879148229 stdev_kbps=0.47174759257607146
+2020-09-15 13:00:31 average_kbps=0.0021791963378580137 name='single quotes' stdev_kbps=0.8712550277804799
+2020-09-15 13:19:33 stdev_kbps=0.612242000905585 value=6088 sum_kbps=56 label="double quotes"
+2020-09-15 13:36:30 stdev_kbps=0.43834787714048096 average_kbps=0.4501821411707905 name="double quotes"
+2020-09-15 13:37:01 sum_kbps=5411 stdev_kbps=0.7222353071468484 value=7623
+2020-09-15 14:31:16 stdev_kbps=0.9480769368134266 name=no_quotes
+2020-09-15 14:44:34 group=no_quotes value=3368
+2020-09-15 15:06:58 group="double quotes" value=7593
+2020-09-15 15:15:43 value=6177 group="double quotes" name='single quotes' average_kbps=0.2469449560712602 label="double quotes"
+2020-09-15 15:16:51 stdev_kbps=0.02829508318590168 sum_kbps=3618 average_kbps=0.2171184524892572
+2020-09-15 15:20:05 stdev_kbps=0.011859138980171102 value=7513 group='single quotes' name=no_quotes label="double quotes"
+2020-09-15 15:28:26 value=5834 name='single quotes' label="double quotes" average_kbps=0.35363196499478267 sum_kbps=8787
+2020-09-15 15:39:29 average_kbps=0.31546383631039754 value=8031 name='single quotes'
+2020-09-15 16:22:40 value=3536 sum_kbps=3440
+2020-09-15 16:40:35 group=no_quotes value=3129 average_kbps=0.13360229434456017 stdev_kbps=0.11156047069285002 sum_kbps=8244
+2020-09-15 16:48:12 value=718 stdev_kbps=0.4153214074335779 average_kbps=0.48978329215523386 name="double quotes" group="double quotes"
+2020-09-15 16:53:33 sum_kbps=6803 value=4009 group="double quotes"
+2020-09-15 17:06:32 name='single quotes' stdev_kbps=0.5386213060431632 group=no_quotes sum_kbps=7686
+2020-09-15 17:41:35 label='single quotes' sum_kbps=9026 value=9251 average_kbps=0.39360033023703955
+2020-09-15 17:46:55 value=6774 group=no_quotes name='single quotes'
+2020-09-15 17:53:21 stdev_kbps=0.5378762815471214 label=no_quotes name='single quotes' value=9254 average_kbps=0.1377546000312696
+2020-09-15 17:54:25 label="double quotes" value=1281 stdev_kbps=0.16845322451286981 sum_kbps=7928
+2020-09-15 18:00:26 stdev_kbps=0.7749081515567441 group="double quotes"
+2020-09-15 18:11:06 name='single quotes' sum_kbps=1405
+2020-09-15 18:19:59 value=434 stdev_kbps=0.6844422208623896 group=no_quotes
+2020-09-15 18:38:06 sum_kbps=4087 name='single quotes' label='single quotes' stdev_kbps=0.36015118729099593
+2020-09-15 19:03:30 value=9290 stdev_kbps=0.7721516895060049 label='single quotes' group="double quotes"
+2020-09-15 19:06:05 average_kbps=0.07339150013116102 sum_kbps=2005 label='single quotes'
+2020-09-15 19:14:51 name=no_quotes average_kbps=0.17705520651627604 stdev_kbps=0.7312330382958656
+2020-09-15 19:22:41 value=8041 stdev_kbps=0.1453835385959874
+2020-09-15 19:48:00 stdev_kbps=0.4693625452619691 name=no_quotes
+2020-09-15 19:57:32 sum_kbps=7335 label='single quotes'
+2020-09-15 19:57:54 value=4575 stdev_kbps=0.17045055444004364 name="double quotes" label='single quotes'
+2020-09-15 20:06:56 label="double quotes" value=8906 group=no_quotes name=no_quotes
+2020-09-15 20:35:54 group="double quotes" value=366 sum_kbps=4672
+2020-09-15 20:48:22 group="double quotes" sum_kbps=8286 value=7759 average_kbps=0.20847311213191178
+2020-09-15 20:58:45 value=2005 name=no_quotes average_kbps=0.28110623681565516 group='single quotes'
+2020-09-15 21:05:41 stdev_kbps=0.5764665785564417 name=no_quotes label='single quotes'
+2020-09-15 21:12:46 label="double quotes" group='single quotes' name="double quotes" sum_kbps=7965
+2020-09-15 21:14:33 group='single quotes' name='single quotes' sum_kbps=3419 label='single quotes'
+2020-09-15 21:14:41 group=no_quotes stdev_kbps=0.8961355384372439 value=9119 name=no_quotes label=no_quotes
+2020-09-15 21:23:44 label=no_quotes sum_kbps=1191 name="double quotes" group="double quotes"
+2020-09-15 21:46:59 value=4778 sum_kbps=5357 average_kbps=0.5228507319119643 group="double quotes"
+2020-09-15 22:08:51 group="double quotes" sum_kbps=1068 stdev_kbps=0.30019989717822904 label='single quotes'
+2020-09-15 22:10:24 group=no_quotes value=7894 label='single quotes' sum_kbps=330 stdev_kbps=0.3917735118876635
+2020-09-15 22:12:48 stdev_kbps=0.8109286124811791 average_kbps=0.36791744807406146 group=no_quotes
+2020-09-15 22:37:22 sum_kbps=9302 value=2831 average_kbps=0.7595740679028613 stdev_kbps=0.13159066154861288 label="double quotes"
+2020-09-15 23:21:18 label=no_quotes group="double quotes" stdev_kbps=0.25138517433047214
+2020-09-15 23:28:04 average_kbps=0.5892316585322213 group='single quotes' label="double quotes"
+2020-09-15 23:42:26 label=no_quotes group="double quotes" value=2097
+2020-09-16 00:06:42 group='single quotes' stdev_kbps=0.06568702969153395 value=7993
+2020-09-16 00:21:15 sum_kbps=3922 average_kbps=0.07027120138401788
+2020-09-16 00:37:00 name='single quotes' group=no_quotes
+2020-09-16 00:39:01 name='single quotes' sum_kbps=9372 average_kbps=0.015224805534493346
+2020-09-16 00:58:10 name='single quotes' average_kbps=0.897590439766894 group='single quotes'
+2020-09-16 01:01:48 stdev_kbps=0.026785103058269533 average_kbps=0.08125290153912024 value=2959 label="double quotes"
+2020-09-16 01:19:39 average_kbps=0.021639660079338374 group="double quotes" name="double quotes" sum_kbps=7646 label='single quotes'
+2020-09-16 01:31:54 sum_kbps=689 value=8448 group="double quotes"
+2020-09-16 01:36:29 name="double quotes" stdev_kbps=0.7651196068494711
+2020-09-16 01:43:54 label="double quotes" group='single quotes' stdev_kbps=0.8067018517113698 sum_kbps=4565 average_kbps=0.6683020774449973
+2020-09-16 02:02:06 stdev_kbps=0.7520519758783714 sum_kbps=5990 average_kbps=0.703385486302392 label='single quotes' value=929
+2020-09-16 02:12:43 group="double quotes" name=no_quotes label='single quotes' average_kbps=0.7156747264677809
+2020-09-16 02:25:58 sum_kbps=2005 average_kbps=0.4319425919210025 group='single quotes'
+2020-09-16 02:31:00 average_kbps=0.056413852928404284 value=3717 sum_kbps=6590
+2020-09-16 02:48:17 group=no_quotes sum_kbps=3671
+2020-09-16 02:48:22 group='single quotes' average_kbps=0.45771321278457955 stdev_kbps=0.04391662110523786 sum_kbps=3197 label='single quotes'
+2020-09-16 03:06:53 label="double quotes" value=7256 average_kbps=0.5365065272278401 stdev_kbps=0.024245211227408747 name="double quotes"
+2020-09-16 03:28:07 group="double quotes" stdev_kbps=0.34698749906649007 name=no_quotes sum_kbps=6040
+2020-09-16 03:37:22 value=9651 label='single quotes' sum_kbps=789 group="double quotes" stdev_kbps=0.6060717586231851
+2020-09-16 03:47:54 label="double quotes" average_kbps=0.9849076904932562 name=no_quotes value=3282 sum_kbps=3114
+2020-09-16 04:12:15 label=no_quotes sum_kbps=4582 name="double quotes"
+2020-09-16 04:39:07 stdev_kbps=0.46437697711936554 name="double quotes" average_kbps=0.10199462609285936 label='single quotes'
+2020-09-16 04:40:57 average_kbps=0.15174313251270122 group="double quotes" stdev_kbps=0.8659022369683896 sum_kbps=3052 label=no_quotes
+2020-09-16 04:47:30 sum_kbps=1217 stdev_kbps=0.3730825378849816 value=1295 average_kbps=0.30885577490342375
+2020-09-16 05:41:46 value=1673 group='single quotes' stdev_kbps=0.598150719362371 name=no_quotes
+2020-09-16 05:53:41 name=no_quotes value=1601 group="double quotes"
+2020-09-16 06:17:03 stdev_kbps=0.4095746035100283 group="double quotes"
+2020-09-16 07:04:48 label='single quotes' stdev_kbps=0.4065312380609596
+2020-09-16 07:28:48 stdev_kbps=0.5698561149879259 sum_kbps=7164 name=no_quotes average_kbps=0.9831503958088299 label=no_quotes
+2020-09-16 07:29:05 sum_kbps=415 stdev_kbps=0.3106831639305102 average_kbps=0.3651143615760051 name=no_quotes
+2020-09-16 07:36:28 stdev_kbps=0.7494877439486533 group=no_quotes sum_kbps=7921
+2020-09-16 07:36:33 group=no_quotes stdev_kbps=0.43124873437343336 name="double quotes" value=8685 sum_kbps=1341
+2020-09-16 07:48:02 average_kbps=0.8927313270454137 group="double quotes" stdev_kbps=0.6751042695135923 label='single quotes' name="double quotes"
+2020-09-16 08:12:26 value=9603 average_kbps=0.9272367104434562 stdev_kbps=0.2569909846604076
+2020-09-16 09:09:44 average_kbps=0.356119973820475 stdev_kbps=0.41201056673235414 group=no_quotes
+2020-09-16 09:30:32 name='single quotes' sum_kbps=7822 label='single quotes' value=2760 stdev_kbps=0.02714104369165482
+2020-09-16 09:30:39 value=3494 sum_kbps=9900
+2020-09-16 09:48:07 sum_kbps=9503 value=6240 average_kbps=0.2458172926092278 name=no_quotes group=no_quotes
+2020-09-16 09:56:10 average_kbps=0.24629442800218604 group=no_quotes value=4447 name="double quotes" stdev_kbps=0.575164448736514
+2020-09-16 10:09:58 label='single quotes' stdev_kbps=0.04596040948652913
+2020-09-16 10:46:43 stdev_kbps=0.11450631417483326 value=454 average_kbps=0.21243258310149438
+2020-09-16 10:49:38 name=no_quotes value=775 sum_kbps=5585 label=no_quotes
+2020-09-16 10:51:58 sum_kbps=5535 group='single quotes' name='single quotes'
+2020-09-16 11:09:07 value=7820 stdev_kbps=0.33457169704819456 sum_kbps=1956 average_kbps=0.341408599966351
+2020-09-16 11:31:21 stdev_kbps=0.02064911225309285 average_kbps=0.46794415768547704 group="double quotes"
+2020-09-16 11:35:54 value=3521 average_kbps=0.6291295927968256
+2020-09-16 11:37:24 sum_kbps=6808 average_kbps=0.5447801287251967 stdev_kbps=0.528522679418139 value=31 label='single quotes'
+2020-09-16 12:17:25 stdev_kbps=0.11686161904647985 name="double quotes" label=no_quotes value=6299 sum_kbps=4648
+2020-09-16 12:32:27 sum_kbps=3448 stdev_kbps=0.36658573267592065
+2020-09-16 12:37:05 average_kbps=0.7328855713282474 sum_kbps=2286 label="double quotes" value=7231 group='single quotes'
+2020-09-16 13:09:32 sum_kbps=6787 average_kbps=0.012092497191561136
+2020-09-16 13:37:19 group=no_quotes name=no_quotes sum_kbps=2449 stdev_kbps=0.2087543278967895 label=no_quotes
+2020-09-16 14:16:01 group="double quotes" average_kbps=0.1538880865659621 value=8554 name='single quotes' label="double quotes"
+2020-09-16 14:37:50 average_kbps=0.057658759317365305 group='single quotes'
+2020-09-16 14:40:50 label="double quotes" stdev_kbps=0.04581895185545415 average_kbps=0.5189533409245668 name="double quotes"
+2020-09-16 15:13:57 sum_kbps=6569 stdev_kbps=0.8201026841781925 average_kbps=0.790662098503102
+2020-09-16 15:31:40 average_kbps=0.27649413425546476 group="double quotes"
+2020-09-16 15:36:22 label=no_quotes group="double quotes"
+2020-09-16 15:36:48 average_kbps=0.9637269117631057 label="double quotes" stdev_kbps=0.09840622283241907 sum_kbps=5822
+2020-09-16 15:42:53 label='single quotes' group=no_quotes average_kbps=0.4524694684762163 stdev_kbps=0.3753613955424919 value=5403
+2020-09-16 16:10:46 sum_kbps=3197 average_kbps=0.8543828778127655 value=3682
+2020-09-16 16:12:53 group=no_quotes sum_kbps=2335
+2020-09-16 16:24:26 name='single quotes' average_kbps=0.7171512400865756 value=2637 sum_kbps=9682 group='single quotes'
+2020-09-16 16:36:20 sum_kbps=8515 value=7598
+2020-09-16 16:40:55 group="double quotes" sum_kbps=850 value=3698 label='single quotes' name="double quotes"
+2020-09-16 16:41:17 group="double quotes" label='single quotes' average_kbps=0.2728742160377986 value=680
+2020-09-16 16:53:27 group=no_quotes stdev_kbps=0.5394843845214935 label="double quotes" average_kbps=0.543468191992576
+2020-09-16 17:07:27 name="double quotes" value=6568 stdev_kbps=0.1231879446674159
+2020-09-16 17:09:53 name=no_quotes label=no_quotes
+2020-09-16 17:50:59 label='single quotes' average_kbps=0.533624007008124 name=no_quotes sum_kbps=573
+2020-09-16 17:52:43 sum_kbps=8673 name='single quotes' value=6094
+2020-09-16 18:16:29 sum_kbps=9908 label=no_quotes
+2020-09-16 18:25:49 sum_kbps=5328 label='single quotes' value=7765 stdev_kbps=0.5375259918001071
+2020-09-16 18:59:10 value=5915 name="double quotes" label='single quotes' sum_kbps=1491
+2020-09-16 19:06:01 stdev_kbps=0.5394459807300366 sum_kbps=9791 name="double quotes"
+2020-09-16 19:16:47 value=504 sum_kbps=4541 label=no_quotes name='single quotes'
+2020-09-16 19:22:18 label='single quotes' group="double quotes" sum_kbps=4056
+2020-09-16 19:39:57 value=616 sum_kbps=641 stdev_kbps=0.07874491197308431 average_kbps=0.924463608099786
+2020-09-16 20:06:08 label='single quotes' value=4417 stdev_kbps=0.3896314336195308 group='single quotes'
+2020-09-16 20:17:19 average_kbps=0.34654376077085636 sum_kbps=3512
+2020-09-16 20:55:04 average_kbps=0.8458706345906227 label="double quotes" name=no_quotes sum_kbps=7795
+2020-09-16 21:05:53 sum_kbps=5477 stdev_kbps=0.9412051586973411 name="double quotes" group="double quotes"
+2020-09-16 21:26:08 group="double quotes" average_kbps=0.07327682470517993 value=7175
+2020-09-16 21:27:34 group="double quotes" name=no_quotes
+2020-09-16 21:35:46 average_kbps=0.594314062193792 value=2099 name="double quotes" group='single quotes'
+2020-09-16 21:43:23 group=no_quotes stdev_kbps=0.3439406196290985
+2020-09-16 22:29:08 value=7443 label='single quotes'
+2020-09-16 22:32:59 name='single quotes' group='single quotes' sum_kbps=9740 label='single quotes' value=5845
+2020-09-16 22:38:36 value=9042 stdev_kbps=0.38497300228395415 average_kbps=0.6388481268858972 group='single quotes'
+2020-09-16 22:44:25 group='single quotes' label='single quotes'
+2020-09-16 22:49:41 label="double quotes" name=no_quotes value=7679 stdev_kbps=0.2809018594279571 group=no_quotes
+2020-09-16 23:25:41 average_kbps=0.9701455662682216 group=no_quotes name='single quotes'
+2020-09-16 23:34:39 label=no_quotes value=6276 group=no_quotes sum_kbps=2663 average_kbps=0.8015833422591783
+2020-09-16 23:38:51 stdev_kbps=0.4481747257996145 group='single quotes'
+2020-09-17 00:02:49 sum_kbps=8822 name="double quotes" stdev_kbps=0.7947031640832212 group='single quotes'
+2020-09-17 00:12:41 sum_kbps=9113 group='single quotes' value=8511 name="double quotes"
+2020-09-17 00:12:51 name='single quotes' label=no_quotes
+2020-09-17 00:23:48 label=no_quotes name='single quotes'
+2020-09-17 00:24:39 label='single quotes' group=no_quotes average_kbps=0.10190757236117365
+2020-09-17 00:25:35 value=620 group="double quotes" name='single quotes' sum_kbps=9711
+2020-09-17 00:35:28 value=3342 stdev_kbps=0.3800314410673261 sum_kbps=9191 group=no_quotes
+2020-09-17 00:35:30 average_kbps=0.7203516860492911 stdev_kbps=0.6607152306150571 sum_kbps=3565
+2020-09-17 00:40:15 value=5295 name="double quotes"
+2020-09-17 01:24:50 average_kbps=0.9063401404668139 value=4877 label="double quotes" name="double quotes" group=no_quotes
+2020-09-17 02:03:21 stdev_kbps=0.14801900378474175 label="double quotes"
+2020-09-17 02:07:53 name=no_quotes value=112
+2020-09-17 02:15:39 sum_kbps=6687 group=no_quotes stdev_kbps=0.3982182218387259 label=no_quotes
+2020-09-17 03:05:33 stdev_kbps=0.7780556439023131 name="double quotes" label=no_quotes
+2020-09-17 03:10:10 stdev_kbps=0.6991482245765015 name='single quotes'
+2020-09-17 03:25:14 stdev_kbps=0.6813699289886077 sum_kbps=7707 label=no_quotes
+2020-09-17 03:42:25 group='single quotes' stdev_kbps=0.607140387754174 label=no_quotes
+2020-09-17 03:57:14 group="double quotes" sum_kbps=6706 name="double quotes" average_kbps=0.5121854496215796
+2020-09-17 04:02:21 value=3247 group=no_quotes sum_kbps=3778 label="double quotes" average_kbps=0.744024368318572
+2020-09-17 04:17:23 average_kbps=0.9737399632611926 name=no_quotes group=no_quotes
+2020-09-17 04:28:08 average_kbps=0.004103698422027957 label="double quotes" sum_kbps=2807
+2020-09-17 04:32:11 average_kbps=0.3788438947399704 stdev_kbps=0.6495598701477144
+2020-09-17 04:56:53 stdev_kbps=0.8870278471094538 value=2110 group='single quotes'
+2020-09-17 04:57:56 average_kbps=0.09585331692161303 value=8748 sum_kbps=6838
+2020-09-17 05:05:41 stdev_kbps=0.3781968311724736 value=6580
+2020-09-17 05:49:35 stdev_kbps=0.9493362766747324 name=no_quotes group=no_quotes
+2020-09-17 06:00:49 name='single quotes' average_kbps=0.32915532577098416 label='single quotes'
+2020-09-17 06:10:00 stdev_kbps=0.6866121238404252 average_kbps=0.0013619933442706733 sum_kbps=9329
+2020-09-17 06:20:24 stdev_kbps=0.9415775034000824 group=no_quotes sum_kbps=5328
+2020-09-17 06:35:10 label="double quotes" stdev_kbps=0.6616595501169795 name='single quotes' average_kbps=0.14745008613700472 group='single quotes'
+2020-09-17 06:42:29 value=2662 sum_kbps=9881 name=no_quotes label=no_quotes stdev_kbps=0.9422204344384696
+2020-09-17 06:50:04 name=no_quotes stdev_kbps=0.8599851694483542 value=383 group=no_quotes
+2020-09-17 07:12:51 sum_kbps=9709 name=no_quotes value=2857 group='single quotes'
+2020-09-17 07:15:41 label="double quotes" sum_kbps=6099 value=6985 average_kbps=0.35566929264558134 name="double quotes"
+2020-09-17 07:29:57 name=no_quotes label='single quotes' group="double quotes" sum_kbps=2834
+2020-09-17 07:32:13 average_kbps=0.608547104872638 sum_kbps=4097 stdev_kbps=0.06235823424072673
+2020-09-17 07:36:54 sum_kbps=8155 name='single quotes' stdev_kbps=0.6268100057067332 average_kbps=0.19062202494632519
+2020-09-17 07:45:12 average_kbps=0.00799439644648059 sum_kbps=1868
+2020-09-17 07:52:22 sum_kbps=7417 group="double quotes"
+2020-09-17 08:02:55 group='single quotes' stdev_kbps=0.7897922823845496 name='single quotes'
+2020-09-17 08:16:09 sum_kbps=5327 name=no_quotes
+2020-09-17 08:19:41 average_kbps=0.7268586788343618 group=no_quotes sum_kbps=1151 label='single quotes' stdev_kbps=0.5231122355550858
+2020-09-17 08:34:31 sum_kbps=9176 name='single quotes' label=no_quotes
+2020-09-17 08:54:52 sum_kbps=7308 name='single quotes' label='single quotes' stdev_kbps=0.8528979628925055
+2020-09-17 09:01:16 sum_kbps=7521 label="double quotes"
+2020-09-17 09:15:03 label='single quotes' group="double quotes"
+2020-09-17 09:20:53 average_kbps=0.9445093762762475 name='single quotes' group=no_quotes
+2020-09-17 09:36:07 sum_kbps=8004 stdev_kbps=0.778940397451904 group='single quotes' value=1980 average_kbps=0.7459357439607279
+2020-09-17 09:38:30 group=no_quotes value=880 average_kbps=0.9363531209274344
+2020-09-17 09:58:10 stdev_kbps=0.2801138993507174 group='single quotes' name='single quotes' value=7277
+2020-09-17 10:00:06 value=3114 sum_kbps=6393 average_kbps=0.8837039288649872 label=no_quotes stdev_kbps=0.8407799755076603
+2020-09-17 10:00:19 stdev_kbps=0.989182270052334 label="double quotes" value=1302 sum_kbps=2140
+2020-09-17 10:03:25 sum_kbps=6481 average_kbps=0.256035664322372 label="double quotes" name="double quotes"
+2020-09-17 10:08:01 label='single quotes' sum_kbps=5884 average_kbps=0.11571593659212065 stdev_kbps=0.13613524264080523
+2020-09-17 10:08:56 value=7787 average_kbps=0.45235310997953404 name='single quotes' sum_kbps=7340 stdev_kbps=0.7245120252962384
+2020-09-17 10:21:11 stdev_kbps=0.06768149729008133 label="double quotes" value=7123 group=no_quotes name="double quotes"
+2020-09-17 10:32:49 label="double quotes" value=7515 group='single quotes' name="double quotes" stdev_kbps=0.8965664849831629
+2020-09-17 11:03:09 group='single quotes' label="double quotes"
+2020-09-17 11:26:26 value=4035 name="double quotes" sum_kbps=482 label=no_quotes group='single quotes'
+2020-09-17 11:27:34 sum_kbps=2149 group='single quotes'
+2020-09-17 12:23:31 average_kbps=0.24974831229967276 name="double quotes" sum_kbps=126 label='single quotes' value=9616
+2020-09-17 12:37:31 stdev_kbps=0.7635556593824437 group="double quotes"
+2020-09-17 12:48:07 stdev_kbps=0.006289363224536104 average_kbps=0.7376640552781143 label=no_quotes group="double quotes"
+2020-09-17 13:15:21 value=9396 average_kbps=0.39725870687435616 group="double quotes" name='single quotes'
+2020-09-17 13:17:42 average_kbps=0.42750137830911683 label=no_quotes stdev_kbps=0.07850697975316911
+2020-09-17 13:37:56 label='single quotes' stdev_kbps=0.5765734474081164 name="double quotes" group="double quotes" sum_kbps=7533
+2020-09-17 13:39:30 average_kbps=0.6300305710040726 stdev_kbps=0.8661595371444654 value=7177 label='single quotes'
+2020-09-17 13:41:43 group='single quotes' label=no_quotes
+2020-09-17 13:58:08 stdev_kbps=0.8808365409529366 value=5799
+2020-09-17 14:12:15 stdev_kbps=0.2426849048045444 label='single quotes'
+2020-09-17 14:43:05 sum_kbps=52 average_kbps=0.3964023033623404 stdev_kbps=0.18218673404458763
+2020-09-17 14:54:38 group='single quotes' label=no_quotes sum_kbps=8729 value=5065
+2020-09-17 15:05:36 average_kbps=0.9970499409343362 stdev_kbps=0.9948317660381343
+2020-09-17 15:06:17 name="double quotes" group=no_quotes
+2020-09-17 15:08:04 name=no_quotes group="double quotes" sum_kbps=9503 label='single quotes' stdev_kbps=0.6471195634294253
+2020-09-17 15:17:03 group=no_quotes sum_kbps=9226 stdev_kbps=0.28194520710734916 label="double quotes" value=9785
+2020-09-17 15:18:37 name=no_quotes value=1140 label="double quotes"
+2020-09-17 15:48:42 label=no_quotes average_kbps=0.48528837448971807
+2020-09-17 15:51:02 stdev_kbps=0.24187708649078943 value=4452 average_kbps=0.5532963285204101 label=no_quotes group=no_quotes
+2020-09-17 16:21:32 name="double quotes" sum_kbps=9766 group="double quotes" label="double quotes" average_kbps=0.34988988374145624
+2020-09-17 16:21:33 stdev_kbps=0.41689332998225537 average_kbps=0.4365574056901349 group="double quotes"
+2020-09-17 16:28:14 stdev_kbps=0.6144231236825978 sum_kbps=8222 average_kbps=0.6803320726054194
+2020-09-17 16:29:48 value=2491 average_kbps=0.4903174542270615 label=no_quotes
+2020-09-17 16:57:45 group='single quotes' value=4253 sum_kbps=3714 label="double quotes"
+2020-09-17 17:25:45 group='single quotes' name=no_quotes label="double quotes"
+2020-09-17 17:29:04 label='single quotes' sum_kbps=2159
+2020-09-17 17:38:50 sum_kbps=2041 label='single quotes' value=5944 group="double quotes"
+2020-09-17 17:39:10 group="double quotes" sum_kbps=6063 value=8564 average_kbps=0.40669533433851013
+2020-09-17 18:47:43 average_kbps=0.9628145496401512 group='single quotes' label='single quotes'
+2020-09-17 19:13:46 group='single quotes' name=no_quotes average_kbps=0.1406942104137453 sum_kbps=5157 label='single quotes'
+2020-09-17 19:40:33 group='single quotes' average_kbps=0.22597686727889965 value=4653 sum_kbps=9656 name="double quotes"
+2020-09-17 19:43:53 stdev_kbps=0.9733520289528397 name=no_quotes
+2020-09-17 19:51:22 label="double quotes" value=3142 name="double quotes" stdev_kbps=0.748270398716856 sum_kbps=611
+2020-09-17 19:57:09 group='single quotes' name='single quotes'
+2020-09-17 20:17:12 label=no_quotes name='single quotes'
+2020-09-17 21:17:21 label="double quotes" average_kbps=0.9591671108179468 value=7501 name="double quotes" sum_kbps=3310
+2020-09-17 21:49:28 value=1252 group=no_quotes
+2020-09-17 22:10:32 label=no_quotes stdev_kbps=0.9266076555138
+2020-09-17 22:20:34 average_kbps=0.9360686884736187 label="double quotes"
+2020-09-17 22:34:27 group='single quotes' name='single quotes'
+2020-09-17 22:38:40 sum_kbps=3189 name=no_quotes
+2020-09-17 22:46:55 name=no_quotes value=2694 sum_kbps=174 stdev_kbps=0.9059531971958782 label='single quotes'
+2020-09-17 23:13:24 label=no_quotes stdev_kbps=0.9008976202966095
+2020-09-18 00:06:28 group='single quotes' sum_kbps=8416 average_kbps=0.6440869968331185 stdev_kbps=0.935374171486754
+2020-09-18 00:09:03 sum_kbps=9181 label=no_quotes name="double quotes"
+2020-09-18 00:12:04 average_kbps=0.321447445475194 sum_kbps=421 group="double quotes" name=no_quotes
+2020-09-18 00:19:45 value=4597 stdev_kbps=0.08714943845886036 average_kbps=0.5141229906649885 group="double quotes"
+2020-09-18 00:34:30 name="double quotes" label="double quotes" average_kbps=0.24494176187694838 sum_kbps=4782 stdev_kbps=0.9251862310017547
+2020-09-18 01:12:04 label=no_quotes average_kbps=0.36260566126873695 sum_kbps=52 group='single quotes' value=9388
+2020-09-18 01:50:49 group=no_quotes label=no_quotes stdev_kbps=0.953752222816321 sum_kbps=6490
+2020-09-18 02:32:53 sum_kbps=406 name="double quotes" group=no_quotes stdev_kbps=0.027120889037347884
+2020-09-18 02:40:57 value=3742 average_kbps=0.9778770066619739
+2020-09-18 02:48:05 name=no_quotes value=3820
+2020-09-18 02:58:00 average_kbps=0.3039851920433887 sum_kbps=358 label='single quotes' stdev_kbps=0.18903119462581464 name=no_quotes
+2020-09-18 03:27:10 value=673 label=no_quotes average_kbps=0.9593371626407611
+2020-09-18 03:49:34 sum_kbps=8139 average_kbps=0.24461186184668116
+2020-09-18 04:06:59 name="double quotes" sum_kbps=225 average_kbps=0.6290855953056808 label="double quotes" value=4189
+2020-09-18 04:19:36 sum_kbps=246 value=3437
+2020-09-18 04:30:16 group='single quotes' stdev_kbps=0.1416981718147473 name="double quotes" average_kbps=0.364664076611506 label='single quotes'
+2020-09-18 04:38:47 sum_kbps=3783 value=2357
+2020-09-18 05:00:51 name='single quotes' group=no_quotes
+2020-09-18 05:52:06 value=9736 name='single quotes' group='single quotes'
+2020-09-18 05:54:25 value=1020 group="double quotes"
+2020-09-18 06:20:53 name=no_quotes stdev_kbps=0.19208005607836265 value=706 label="double quotes"
+2020-09-18 06:26:11 name="double quotes" label='single quotes' stdev_kbps=0.2029435822752581
+2020-09-18 06:36:49 label=no_quotes stdev_kbps=0.619901872231792 sum_kbps=8207 value=5654
+2020-09-18 06:52:22 name="double quotes" value=4722 label="double quotes" sum_kbps=8177
+2020-09-18 06:55:10 average_kbps=0.34857385654471484 stdev_kbps=0.23494727295051032 value=5913 group="double quotes"
+2020-09-18 07:05:02 group=no_quotes label='single quotes' average_kbps=0.8599446479052717 sum_kbps=1356
+2020-09-18 07:48:27 value=4709 group='single quotes' sum_kbps=4185
+2020-09-18 07:49:57 stdev_kbps=0.6769824649298729 average_kbps=0.685803577263123 name=no_quotes
+2020-09-18 08:07:11 name='single quotes' average_kbps=0.6114428158612886
+2020-09-18 08:14:35 stdev_kbps=0.08832710790527665 name="double quotes" label="double quotes" average_kbps=0.8547722286156322
+2020-09-18 08:28:57 average_kbps=0.9801540332208406 stdev_kbps=0.6225139884936064 name=no_quotes group=no_quotes sum_kbps=7336
+2020-09-18 08:31:11 sum_kbps=6868 label='single quotes' value=2866 name="double quotes" group=no_quotes
+2020-09-18 09:14:07 sum_kbps=6438 stdev_kbps=0.005731536016379324 name=no_quotes
+2020-09-18 09:35:10 group=no_quotes stdev_kbps=0.6369201962884035 average_kbps=0.1237189814410643
+2020-09-18 09:45:40 stdev_kbps=0.4520175745489514 label='single quotes' group='single quotes'
+2020-09-18 09:53:33 name=no_quotes stdev_kbps=0.853256906169301 sum_kbps=8826
+2020-09-18 10:07:48 value=6024 sum_kbps=5884 name=no_quotes
+2020-09-18 10:17:40 label="double quotes" sum_kbps=6234 value=9026 group='single quotes' name="double quotes"
+2020-09-18 10:32:10 label=no_quotes average_kbps=0.23559890973823405 stdev_kbps=0.1306190303681377
+2020-09-18 10:34:43 group="double quotes" label="double quotes" average_kbps=0.2723202804898318
+2020-09-18 10:48:00 name="double quotes" sum_kbps=628 group=no_quotes stdev_kbps=0.8322809502921188 value=1340
+2020-09-18 10:59:55 name='single quotes' stdev_kbps=0.745846414017141 sum_kbps=5377 group=no_quotes label="double quotes"
+2020-09-18 11:15:24 name='single quotes' value=5395 group=no_quotes average_kbps=0.9612957638206845 stdev_kbps=0.7414889437516929
+2020-09-18 11:31:19 group='single quotes' sum_kbps=8134 name='single quotes' average_kbps=0.9481486194866906
+2020-09-18 11:38:35 group="double quotes" stdev_kbps=0.7821343229183079 sum_kbps=681
+2020-09-18 11:42:28 sum_kbps=694 group=no_quotes stdev_kbps=0.7906588661574304
+2020-09-18 11:43:57 group='single quotes' stdev_kbps=0.9993465673113744 label='single quotes'
+2020-09-18 12:05:41 value=1319 group=no_quotes stdev_kbps=0.8854322771390781
+2020-09-18 12:34:51 name=no_quotes group=no_quotes value=7080
+2020-09-18 12:59:33 sum_kbps=5331 stdev_kbps=0.42874159348576135 group='single quotes'
+2020-09-18 13:21:31 group='single quotes' average_kbps=0.980064677663884
+2020-09-18 13:51:08 name="double quotes" average_kbps=0.5699382447515081 label="double quotes"
+2020-09-18 13:52:04 average_kbps=0.9525976889409139 value=2758 stdev_kbps=0.8862396478866561 sum_kbps=618
+2020-09-18 14:06:42 value=2732 sum_kbps=1236 stdev_kbps=0.011989583309377716 average_kbps=0.12389955500629979 group='single quotes'
+2020-09-18 14:35:25 label="double quotes" value=3993 average_kbps=0.7985994461788528
+2020-09-18 14:36:16 value=7842 name="double quotes"
+2020-09-18 15:02:17 name="double quotes" average_kbps=0.7218504691712413
+2020-09-18 15:26:59 label="double quotes" sum_kbps=7634 stdev_kbps=0.04740677613000388
+2020-09-18 15:33:54 name='single quotes' average_kbps=0.6337746077700861 stdev_kbps=0.5783427831538106
+2020-09-18 16:18:26 name='single quotes' average_kbps=0.513188439896875 sum_kbps=3473 stdev_kbps=0.875145235681896 label='single quotes'
+2020-09-18 16:19:51 sum_kbps=2889 group=no_quotes label='single quotes' name="double quotes"
+2020-09-18 16:22:18 value=2716 group='single quotes' stdev_kbps=0.8483542708770013
+2020-09-18 16:24:05 value=9781 label='single quotes' average_kbps=0.11113404979090091 group="double quotes"
+2020-09-18 16:25:51 group=no_quotes name=no_quotes label=no_quotes
+2020-09-18 16:36:54 group="double quotes" average_kbps=0.9834713751997582 label=no_quotes value=5655 name='single quotes'
+2020-09-18 16:48:22 name='single quotes' value=8561 sum_kbps=9236
+2020-09-18 16:55:07 stdev_kbps=0.8841756626925876 group="double quotes" name='single quotes'
+2020-09-18 16:56:26 sum_kbps=5885 average_kbps=0.8834039977965705 label='single quotes' value=5273
+2020-09-18 17:02:40 group=no_quotes label='single quotes' sum_kbps=1553
+2020-09-18 17:03:42 group='single quotes' stdev_kbps=0.30000761454783764 average_kbps=0.770373486562532
+2020-09-18 17:08:33 label=no_quotes stdev_kbps=0.8997764030224442 value=2368
+2020-09-18 17:12:10 average_kbps=0.7949705968876466 label="double quotes" group=no_quotes
+2020-09-18 17:31:08 name="double quotes" group="double quotes" label="double quotes"
+2020-09-18 17:33:28 sum_kbps=9765 name=no_quotes value=9347 label="double quotes" average_kbps=0.954078414961684
+2020-09-18 17:55:24 value=380 stdev_kbps=0.04431609357758981 label='single quotes' sum_kbps=6875
+2020-09-18 18:10:19 sum_kbps=3138 name='single quotes' label=no_quotes stdev_kbps=0.3734831712541278
+2020-09-18 18:21:06 label='single quotes' name="double quotes"
+2020-09-18 18:50:42 value=5820 sum_kbps=7104 label="double quotes" name=no_quotes
+2020-09-18 18:58:38 stdev_kbps=0.9675524346243903 average_kbps=0.6373126825909806 value=6207 label='single quotes' name="double quotes"
+2020-09-18 19:01:11 name=no_quotes group=no_quotes sum_kbps=6493 stdev_kbps=0.0572155295036737 average_kbps=0.9610339322776266
+2020-09-18 19:01:24 average_kbps=0.7525585191045622 name=no_quotes label="double quotes" stdev_kbps=0.6727674418769701
+2020-09-18 19:19:51 name='single quotes' value=8091 average_kbps=0.02299571373003506 label="double quotes" stdev_kbps=0.11915090390601601
+2020-09-18 19:33:02 group=no_quotes value=4170 name="double quotes" label='single quotes' stdev_kbps=0.537327871302597
+2020-09-18 19:44:36 group=no_quotes label="double quotes"
+2020-09-18 19:58:29 average_kbps=0.7134011141098658 sum_kbps=1146 group="double quotes" stdev_kbps=0.010807790788900595 name='single quotes'
+2020-09-18 20:19:42 sum_kbps=3069 group="double quotes"
+2020-09-18 20:30:16 label="double quotes" stdev_kbps=0.9574349369891817
+2020-09-18 20:44:32 stdev_kbps=0.3651773214520857 name=no_quotes average_kbps=0.23649937553983502 sum_kbps=1294 value=6778
+2020-09-18 20:53:01 name='single quotes' label=no_quotes
+2020-09-18 21:16:05 value=8329 stdev_kbps=0.29279141996812164 group="double quotes" sum_kbps=6167 average_kbps=0.21687292627155097
+2020-09-18 21:22:15 value=2881 group='single quotes' stdev_kbps=0.5235708557645256 sum_kbps=356
+2020-09-18 21:23:35 stdev_kbps=0.6189929119657732 name='single quotes' sum_kbps=1568 average_kbps=0.7305120506761118 group='single quotes'
+2020-09-18 21:49:41 group=no_quotes stdev_kbps=0.017494559793183484
+2020-09-18 22:22:52 sum_kbps=3148 average_kbps=0.8922031641250359 stdev_kbps=0.2213316869616183
+2020-09-18 22:32:53 label=no_quotes sum_kbps=7003 name=no_quotes average_kbps=0.5577891434228568
+2020-09-18 23:02:29 stdev_kbps=0.5816892621685553 label=no_quotes sum_kbps=7221
+2020-09-18 23:14:26 stdev_kbps=0.42618993693246854 average_kbps=0.5990192994329088 value=1111
+2020-09-18 23:19:10 group='single quotes' average_kbps=0.2212121718666602 name=no_quotes value=8536
+2020-09-18 23:32:51 value=6867 average_kbps=0.539882489321195 group="double quotes" label='single quotes' stdev_kbps=0.24623573421535583
+2020-09-18 23:38:54 stdev_kbps=0.6465268988068598 label='single quotes'
+2020-09-18 23:52:46 label=no_quotes group=no_quotes
+2020-09-18 23:58:11 label='single quotes' value=631
+2020-09-18 23:58:21 stdev_kbps=0.34604842809421466 name=no_quotes label='single quotes' value=3278 group=no_quotes
+2020-09-19 00:14:29 name=no_quotes group='single quotes'
+2020-09-19 00:17:42 name=no_quotes label="double quotes"
+2020-09-19 02:02:04 sum_kbps=4079 value=6002 average_kbps=0.15811733317036147
+2020-09-19 02:17:39 value=9319 label=no_quotes group=no_quotes sum_kbps=6102 stdev_kbps=0.26859923771500704
+2020-09-19 02:40:43 label='single quotes' stdev_kbps=0.5098063132917645 sum_kbps=4992
+2020-09-19 03:04:36 value=5070 label='single quotes' group=no_quotes name="double quotes" sum_kbps=76
+2020-09-19 03:33:42 average_kbps=0.5533040500667268 name="double quotes" stdev_kbps=0.9228244822776455
+2020-09-19 03:37:23 sum_kbps=407 name=no_quotes
+2020-09-19 04:24:39 average_kbps=0.2941522396097018 sum_kbps=6161 group="double quotes"
+2020-09-19 04:25:02 sum_kbps=3752 average_kbps=0.27601554697324393 stdev_kbps=0.8714984769908861
+2020-09-19 04:29:59 name='single quotes' label="double quotes" sum_kbps=6112 average_kbps=0.3420443186330038
+2020-09-19 04:30:00 stdev_kbps=0.025839807945142956 sum_kbps=6879
+2020-09-19 04:30:56 sum_kbps=8155 average_kbps=0.5086336846935945 name='single quotes'
+2020-09-19 05:02:28 stdev_kbps=0.5549536508725603 value=5557 name="double quotes" label=no_quotes
+2020-09-19 05:04:22 average_kbps=0.3998538527493367 label='single quotes'
+2020-09-19 05:28:12 average_kbps=0.7297101789915531 label=no_quotes group='single quotes' sum_kbps=3353 value=9099
+2020-09-19 05:30:03 stdev_kbps=0.37655792029722046 name="double quotes" average_kbps=0.7354540075045083 label="double quotes"
+2020-09-19 05:33:45 label="double quotes" stdev_kbps=0.5069557508856163
+2020-09-19 05:35:59 group=no_quotes label="double quotes" sum_kbps=4442
+2020-09-19 05:52:59 value=1058 average_kbps=0.456894674174256
+2020-09-19 06:07:30 stdev_kbps=0.8012236690669701 group='single quotes' sum_kbps=6678 name="double quotes" label='single quotes'
+2020-09-19 06:25:52 sum_kbps=6139 name='single quotes' label=no_quotes group=no_quotes stdev_kbps=0.7648509132061749
+2020-09-19 06:42:33 sum_kbps=6212 value=9035 name='single quotes' average_kbps=0.3583505718917983 label=no_quotes
+2020-09-19 07:04:18 label="double quotes" sum_kbps=5481 name="double quotes" stdev_kbps=0.4633659872229067
+2020-09-19 07:04:22 group='single quotes' average_kbps=0.7881788746008437
+2020-09-19 07:09:55 group="double quotes" stdev_kbps=0.9005392275497466 value=1523 name=no_quotes average_kbps=0.4768573968333336
+2020-09-19 07:10:55 name="double quotes" group=no_quotes
+2020-09-19 07:26:55 label=no_quotes sum_kbps=3735 average_kbps=0.11774100729456405 group="double quotes" name=no_quotes
+2020-09-19 07:29:42 stdev_kbps=0.20987046096993267 name='single quotes' sum_kbps=1894
+2020-09-19 07:52:51 value=2409 stdev_kbps=0.34239360154983756
+2020-09-19 07:55:19 stdev_kbps=0.6044619721169228 label="double quotes" average_kbps=0.2944675955336429
+2020-09-19 07:55:26 group=no_quotes value=5149 sum_kbps=4224 stdev_kbps=0.34438490141160927 average_kbps=0.5022344638118965
+2020-09-19 08:10:25 label="double quotes" value=1133 stdev_kbps=0.6895223544679622 average_kbps=0.6140051774156277 name=no_quotes
+2020-09-19 09:01:40 stdev_kbps=0.6570823173635585 group='single quotes' average_kbps=0.8933907760182358
+2020-09-19 09:04:08 name=no_quotes stdev_kbps=0.15663545003277546 average_kbps=0.979256887504916 sum_kbps=9735
+2020-09-19 09:13:41 value=7317 name=no_quotes average_kbps=0.22509733518104502
+2020-09-19 09:20:29 label=no_quotes group='single quotes' name='single quotes' sum_kbps=7235 value=4580
+2020-09-19 09:26:14 name=no_quotes group="double quotes" label="double quotes" average_kbps=0.5480057975723011 value=5655
+2020-09-19 09:42:06 label=no_quotes average_kbps=0.873161302401345 name=no_quotes
+2020-09-19 09:47:49 label="double quotes" value=9111
+2020-09-19 09:54:17 sum_kbps=8004 label="double quotes"
+2020-09-19 10:33:38 sum_kbps=2879 value=3835 name=no_quotes group=no_quotes stdev_kbps=0.9562188314975254
+2020-09-19 11:15:12 stdev_kbps=0.5634653150831246 value=2751 sum_kbps=7241 average_kbps=0.5351183528671245 name='single quotes'
+2020-09-19 11:33:57 stdev_kbps=0.7645607313322309 group="double quotes" value=3297 average_kbps=0.6177333421873871 label='single quotes'
+2020-09-19 11:41:04 sum_kbps=9506 value=5074 label=no_quotes average_kbps=0.3747954169339406
+2020-09-19 12:05:25 stdev_kbps=0.700671912164975 sum_kbps=4796 label=no_quotes
+2020-09-19 12:46:00 average_kbps=0.20500446746974732 stdev_kbps=0.6888925085613343 value=5156 group='single quotes' name=no_quotes
+2020-09-19 12:46:36 name=no_quotes label="double quotes" value=3134 average_kbps=0.08292019628026992
+2020-09-19 13:15:01 label=no_quotes value=1339 group='single quotes' sum_kbps=5133 stdev_kbps=0.5387581488118296
+2020-09-19 13:34:20 name='single quotes' label=no_quotes group=no_quotes sum_kbps=223
+2020-09-19 13:35:30 sum_kbps=211 value=9473 label=no_quotes
+2020-09-19 13:41:31 sum_kbps=7428 label='single quotes'
+2020-09-19 14:08:45 average_kbps=0.012546288485169366 stdev_kbps=0.5567306306589822 name="double quotes" value=6673 label='single quotes'
+2020-09-19 14:09:43 stdev_kbps=0.7115942175601744 name='single quotes'
+2020-09-19 14:22:29 average_kbps=0.343693438407374 label=no_quotes name='single quotes' stdev_kbps=0.34342134498143484 value=4036
+2020-09-19 14:27:42 stdev_kbps=0.46028271319299896 name='single quotes' value=2650 label='single quotes'
+2020-09-19 14:44:28 value=9899 average_kbps=0.6087153830085043
+2020-09-19 15:16:53 average_kbps=0.28440397663212025 label='single quotes' name=no_quotes
+2020-09-19 15:43:31 value=977 name="double quotes"
+2020-09-19 16:08:02 value=7738 group=no_quotes average_kbps=0.0006843980298699703 label=no_quotes stdev_kbps=0.7187526647900704
+2020-09-19 16:14:02 label="double quotes" name=no_quotes
+2020-09-19 16:28:43 value=1010 average_kbps=0.4015722304231979 group='single quotes' label="double quotes"
+2020-09-19 16:41:57 average_kbps=0.7826297742248309 sum_kbps=6592 name='single quotes' stdev_kbps=0.23391723653722696 label="double quotes"
+2020-09-19 17:10:49 stdev_kbps=0.2828146555938357 name=no_quotes
+2020-09-19 17:18:51 average_kbps=0.776358815120997 sum_kbps=5256 name=no_quotes
+2020-09-19 17:19:38 value=1460 name='single quotes'
+2020-09-19 17:47:30 label='single quotes' name=no_quotes group=no_quotes
+2020-09-19 17:52:25 label="double quotes" value=3504 average_kbps=0.014723565270382655 sum_kbps=116 name="double quotes"
+2020-09-19 18:01:02 group="double quotes" name='single quotes'
+2020-09-19 18:22:13 sum_kbps=1893 group="double quotes"
+2020-09-19 18:37:08 name='single quotes' average_kbps=0.09742079496584855 value=8613 stdev_kbps=0.31511486454846527
+2020-09-19 18:46:57 name="double quotes" average_kbps=0.8963885387845673 label='single quotes' sum_kbps=7526 stdev_kbps=0.8947467212614859
+2020-09-19 18:49:20 average_kbps=0.5381209278782226 name="double quotes" sum_kbps=8493 stdev_kbps=0.4628265140732414 group="double quotes"
+2020-09-19 19:00:29 sum_kbps=8266 stdev_kbps=0.6832914297843782 average_kbps=0.5916606105717653 group="double quotes" value=4982
+2020-09-19 19:03:14 value=8293 name=no_quotes group='single quotes' average_kbps=0.7857238416433134 label='single quotes'
+2020-09-19 19:20:36 average_kbps=0.12424123297256573 label="double quotes" value=1843 group=no_quotes name=no_quotes
+2020-09-19 19:22:17 group=no_quotes average_kbps=0.035452473917043426 value=7144 name=no_quotes
+2020-09-19 19:40:57 group="double quotes" name=no_quotes value=485
+2020-09-19 19:44:58 sum_kbps=5727 name='single quotes' average_kbps=0.43946642206055264 stdev_kbps=0.8814589698611358 group="double quotes"
+2020-09-19 19:49:15 name=no_quotes label=no_quotes group="double quotes"
+2020-09-19 20:06:50 group="double quotes" label='single quotes' value=6734
+2020-09-19 20:24:22 group='single quotes' average_kbps=0.12232176267452777 value=3502
+2020-09-19 20:47:12 value=749 stdev_kbps=0.8378782837314919 group="double quotes" average_kbps=0.8753876772368931 name='single quotes'
+2020-09-19 20:56:15 stdev_kbps=0.5085225693498234 name="double quotes" average_kbps=0.7885995548006945 sum_kbps=8132
+2020-09-19 21:04:24 group="double quotes" stdev_kbps=0.27099880201585924 label='single quotes' name=no_quotes value=7889
+2020-09-19 21:14:13 name="double quotes" label="double quotes" group=no_quotes
+2020-09-19 21:18:03 sum_kbps=2511 stdev_kbps=0.8610348928353616
+2020-09-19 21:26:34 sum_kbps=969 name="double quotes" value=5527 average_kbps=0.35559285567517385
+2020-09-19 22:43:57 label="double quotes" average_kbps=0.8400914228489597 stdev_kbps=0.3835056935295045 sum_kbps=5894
+2020-09-19 23:00:43 stdev_kbps=0.6622478935871973 value=8795 average_kbps=0.26110318727767756 group=no_quotes label=no_quotes
+2020-09-19 23:08:55 value=4100 stdev_kbps=0.24851688623464763 name='single quotes' sum_kbps=2762 average_kbps=0.622855199141886
+2020-09-19 23:24:48 name="double quotes" group=no_quotes average_kbps=0.5798251669164064 label=no_quotes
+2020-09-19 23:32:29 stdev_kbps=0.038492840574885334 label="double quotes" group='single quotes' value=4050
+2020-09-19 23:37:55 sum_kbps=5174 label="double quotes"
+2020-09-19 23:42:42 value=9678 name=no_quotes stdev_kbps=0.8668049394869075 average_kbps=0.27498564032339534 label="double quotes"
+2020-09-20 00:58:50 group=no_quotes average_kbps=0.38221939130566374
+2020-09-20 01:01:09 sum_kbps=242 name='single quotes' group='single quotes'
+2020-09-20 02:21:49 stdev_kbps=0.2298904682719859 name='single quotes' sum_kbps=8716 label=no_quotes
+2020-09-20 02:27:44 name=no_quotes average_kbps=0.47943908505628674
+2020-09-20 02:51:34 name="double quotes" stdev_kbps=0.16217600759072592 average_kbps=0.2649813774054577
+2020-09-20 02:53:40 average_kbps=0.9194804867168235 value=3031 label="double quotes" sum_kbps=8971
+2020-09-20 03:05:21 label="double quotes" value=2427 name=no_quotes average_kbps=0.752112147458973 stdev_kbps=0.8742721014390419
+2020-09-20 03:09:57 value=8676 name=no_quotes average_kbps=0.4214797506222958 stdev_kbps=0.555547965659053 group=no_quotes
+2020-09-20 03:39:16 value=8364 sum_kbps=2855 name=no_quotes
+2020-09-20 03:57:46 group=no_quotes sum_kbps=5792 stdev_kbps=0.7844609119513246
+2020-09-20 04:14:09 stdev_kbps=0.8144688075971811 average_kbps=0.537039985708813 value=9247 group=no_quotes label='single quotes'
+2020-09-20 04:21:24 stdev_kbps=0.009755399897072414 group="double quotes" sum_kbps=2151 average_kbps=0.016346753926173907
+2020-09-20 04:51:39 value=6775 average_kbps=0.9965092097832976 label=no_quotes
+2020-09-20 05:32:04 value=4581 label="double quotes" name=no_quotes sum_kbps=6475 average_kbps=0.5601866254762714
+2020-09-20 05:32:43 average_kbps=0.2699852744744987 sum_kbps=7614 group='single quotes' name=no_quotes stdev_kbps=0.11014815293424929
+2020-09-20 05:52:11 group='single quotes' label=no_quotes stdev_kbps=0.09638700534017808 sum_kbps=7521
+2020-09-20 05:56:07 label=no_quotes name=no_quotes sum_kbps=2814 value=3395 average_kbps=0.13302598317879732
+2020-09-20 06:05:12 name='single quotes' value=396 label='single quotes'
+2020-09-20 06:29:45 label="double quotes" name='single quotes' value=3314 average_kbps=0.035356919145534293 stdev_kbps=0.06859184122888495
+2020-09-20 06:39:31 name='single quotes' average_kbps=0.4901813501275565 value=8323
+2020-09-20 07:12:31 stdev_kbps=0.5851851038767034 label="double quotes" group='single quotes'
+2020-09-20 07:38:44 sum_kbps=4055 average_kbps=0.0909369935760026 stdev_kbps=0.8051509284138985 group=no_quotes
+2020-09-20 07:54:49 label=no_quotes group='single quotes' value=1052 name=no_quotes stdev_kbps=0.46028766126570264
+2020-09-20 08:15:57 group="double quotes" average_kbps=0.7727505341096017
+2020-09-20 08:32:30 average_kbps=0.20452669633541787 value=9953 name="double quotes" stdev_kbps=0.8317171326147483 sum_kbps=4023
+2020-09-20 08:45:48 group=no_quotes label=no_quotes value=2244 average_kbps=0.08990353219671099 name="double quotes"
+2020-09-20 08:57:41 stdev_kbps=0.9842587819436446 average_kbps=0.46504545330650515 sum_kbps=3040
+2020-09-20 09:04:23 group="double quotes" name='single quotes'
+2020-09-20 09:05:29 value=1681 name="double quotes" label=no_quotes average_kbps=0.2332797830235327
+2020-09-20 09:09:06 label=no_quotes value=2606 stdev_kbps=0.9657396501596973 sum_kbps=5217 average_kbps=0.08506793874310348
+2020-09-20 09:29:39 stdev_kbps=0.8046159908933683 group=no_quotes name="double quotes" average_kbps=0.6185587147110994 label="double quotes"
+2020-09-20 09:31:11 value=2242 name=no_quotes label=no_quotes sum_kbps=8932 stdev_kbps=0.2984261670937618
+2020-09-20 09:38:12 stdev_kbps=0.7941675593137136 value=3423
+2020-09-20 09:38:25 group=no_quotes name=no_quotes
+2020-09-20 10:21:27 name='single quotes' value=9970 average_kbps=0.5680485328668714
+2020-09-20 10:26:54 sum_kbps=5985 average_kbps=0.030686785907969583 group=no_quotes
+2020-09-20 10:28:01 label=no_quotes stdev_kbps=0.8914411720084459 name='single quotes' average_kbps=0.5289182644991888
+2020-09-20 10:53:15 stdev_kbps=0.9806409827638851 label=no_quotes
+2020-09-20 11:03:52 stdev_kbps=0.4461060970887283 label="double quotes" group=no_quotes average_kbps=0.26717699704809184
+2020-09-20 11:22:41 label="double quotes" stdev_kbps=0.6555210277718237 group=no_quotes sum_kbps=2464 name='single quotes'
+2020-09-20 11:26:58 value=1551 stdev_kbps=0.4506912598057895 group="double quotes" sum_kbps=173 average_kbps=0.004107122484049097
+2020-09-20 11:40:24 group=no_quotes sum_kbps=2363 value=4344 label="double quotes" average_kbps=0.16412162314986745
+2020-09-20 11:56:33 label=no_quotes sum_kbps=6155 name="double quotes"
+2020-09-20 11:58:17 stdev_kbps=0.7313691260024202 value=2687 group="double quotes"
+2020-09-20 12:34:33 average_kbps=0.09223005766479908 group=no_quotes
+2020-09-20 13:05:06 name=no_quotes value=4577 group="double quotes" label=no_quotes average_kbps=0.9849436686123255
+2020-09-20 13:05:38 value=6438 sum_kbps=8534 average_kbps=0.7793867348054623 name=no_quotes
+2020-09-20 13:50:20 value=2751 name="double quotes" stdev_kbps=0.8716095240324625
+2020-09-20 14:09:53 average_kbps=0.7201610930349109 sum_kbps=9419
+2020-09-20 14:29:22 group=no_quotes stdev_kbps=0.4934111293114902 average_kbps=0.7488688652166411
+2020-09-20 15:10:21 average_kbps=0.9013367882095741 label="double quotes"
+2020-09-20 15:11:01 name="double quotes" sum_kbps=5413 group='single quotes' stdev_kbps=0.020469049886785884 average_kbps=0.5723717830608169
+2020-09-20 15:18:13 value=9715 group="double quotes"
+2020-09-20 15:37:23 value=4760 group="double quotes" sum_kbps=2765 name=no_quotes
+2020-09-20 15:54:04 stdev_kbps=0.007221640365076221 average_kbps=0.10810471628381368 name=no_quotes value=8708 label="double quotes"
+2020-09-20 16:08:37 average_kbps=0.9360823166587636 name=no_quotes
+2020-09-20 16:22:53 group=no_quotes average_kbps=0.03654758139986247 name=no_quotes label="double quotes"
+2020-09-20 16:42:46 value=3129 sum_kbps=2954 name='single quotes' average_kbps=0.9444724316867689
+2020-09-20 16:48:15 value=2892 average_kbps=0.6057350377309046 sum_kbps=2663
+2020-09-20 17:15:49 average_kbps=0.4371941349351415 sum_kbps=6673
+2020-09-20 17:33:00 group='single quotes' label="double quotes"
+2020-09-20 18:04:06 stdev_kbps=0.22970508519002242 label='single quotes' average_kbps=0.6124184750341052 value=4006 sum_kbps=5138
+2020-09-20 18:17:37 label="double quotes" name=no_quotes sum_kbps=226 average_kbps=0.4144401045283067
+2020-09-20 18:25:47 value=9694 name=no_quotes
+2020-09-20 18:40:08 stdev_kbps=0.2197840563890754 average_kbps=0.21018989448852288 value=2612 label=no_quotes
+2020-09-20 19:00:23 group="double quotes" average_kbps=0.5384464666861691 stdev_kbps=0.7852723319849664
+2020-09-20 19:02:00 label=no_quotes group='single quotes' name="double quotes"
+2020-09-20 19:04:23 value=6772 stdev_kbps=0.10367867447278578 label='single quotes' name="double quotes" sum_kbps=3862
+2020-09-20 19:14:16 name='single quotes' value=124
+2020-09-20 19:30:37 name='single quotes' value=1550 group='single quotes' sum_kbps=1113 label=no_quotes
+2020-09-20 19:32:34 name=no_quotes value=5108 sum_kbps=3320 group=no_quotes
+2020-09-20 19:55:13 label="double quotes" name=no_quotes group=no_quotes
+2020-09-20 19:55:57 value=1053 stdev_kbps=0.09960466226297082 sum_kbps=3370
+2020-09-20 20:02:50 group=no_quotes average_kbps=0.9529536345011016
+2020-09-20 20:09:12 name=no_quotes value=7803 average_kbps=0.8545711067238034 sum_kbps=3426
+2020-09-20 20:25:37 stdev_kbps=0.7042493678944053 label='single quotes' sum_kbps=8432 group="double quotes"
+2020-09-20 20:31:11 sum_kbps=2767 name='single quotes'
+2020-09-20 21:40:05 stdev_kbps=0.7956359110531557 label=no_quotes average_kbps=0.11230123272721904 name=no_quotes value=1196
+2020-09-20 22:12:56 sum_kbps=5032 name="double quotes" label="double quotes" stdev_kbps=0.2700803052044467 average_kbps=0.214533497621196
+2020-09-20 22:34:38 value=1314 name='single quotes' sum_kbps=9848 stdev_kbps=0.5095377854816002 group='single quotes'
+2020-09-20 22:42:28 average_kbps=0.8589301601807896 value=492 name='single quotes' label='single quotes'
+2020-09-20 22:58:20 stdev_kbps=0.13293285836901114 name=no_quotes
+2020-09-20 22:58:28 value=4349 sum_kbps=8656 average_kbps=0.4594307574329113 name="double quotes" group="double quotes"
+2020-09-20 22:58:33 sum_kbps=5314 stdev_kbps=0.19285716565478417 average_kbps=0.47791700695358763
+2020-09-20 23:28:07 sum_kbps=2381 name='single quotes'
+2020-09-20 23:35:30 value=6724 average_kbps=0.4487533298449259 label='single quotes' sum_kbps=2756 group='single quotes'
+2020-09-20 23:42:45 sum_kbps=9313 name=no_quotes label='single quotes' average_kbps=0.9607236367523342 stdev_kbps=0.8572165813755336
+2020-09-20 23:43:50 group='single quotes' label=no_quotes
+2020-09-20 23:54:32 average_kbps=0.08060300441022639 sum_kbps=4680
+2020-09-20 23:59:35 label="double quotes" value=3960 sum_kbps=2975
+2020-09-20 23:59:39 group='single quotes' average_kbps=0.9764432090460441 value=5315 stdev_kbps=0.38529443889950177 label=no_quotes
+2020-09-21 00:01:21 group="double quotes" name='single quotes' average_kbps=0.7491863441936625
+2020-09-21 00:07:58 average_kbps=0.7288369453059002 name='single quotes' stdev_kbps=0.9444905241997035 value=8534 sum_kbps=1950
+2020-09-21 00:40:31 sum_kbps=4894 name="double quotes"
+2020-09-21 01:16:42 value=6364 label="double quotes"
+2020-09-21 01:28:59 value=1334 average_kbps=0.2581867870416761
+2020-09-21 01:30:41 average_kbps=0.9935832255832889 name="double quotes" label="double quotes"
+2020-09-21 01:39:16 sum_kbps=2564 label='single quotes' name=no_quotes group='single quotes' stdev_kbps=0.17597214043988896
+2020-09-21 01:48:39 stdev_kbps=0.9386212558306772 name='single quotes' value=1051 group=no_quotes average_kbps=0.9605395218544888
+2020-09-21 02:03:06 average_kbps=0.38235448376415704 sum_kbps=8428 group="double quotes" name="double quotes" stdev_kbps=0.002066332706996077
+2020-09-21 02:07:23 average_kbps=0.7780654327128087 sum_kbps=9483
+2020-09-21 02:09:14 name='single quotes' average_kbps=0.5846711159988544 value=6201
+2020-09-21 02:23:53 name=no_quotes average_kbps=0.3898646315478449 group='single quotes' stdev_kbps=0.4308062102913589 sum_kbps=4812
+2020-09-21 02:28:07 label='single quotes' stdev_kbps=0.015716290968312063 average_kbps=0.41242588143754766 name='single quotes' value=8667
+2020-09-21 02:40:11 value=9641 label=no_quotes stdev_kbps=0.5108877286127455 group="double quotes" name="double quotes"
+2020-09-21 02:43:31 stdev_kbps=0.46539123361897705 average_kbps=0.7093101480061145 group="double quotes" sum_kbps=3885 label="double quotes"
+2020-09-21 02:52:05 label=no_quotes group="double quotes"
+2020-09-21 02:57:33 average_kbps=0.8074122996048261 stdev_kbps=0.20681893075912317
+2020-09-21 04:08:13 name='single quotes' label="double quotes" value=8573 group='single quotes'
+2020-09-21 04:14:42 sum_kbps=6201 average_kbps=0.9319673438449962
+2020-09-21 04:28:10 value=8475 sum_kbps=2913
+2020-09-21 04:49:10 sum_kbps=6320 stdev_kbps=0.783083668977155 average_kbps=0.5093326079012193 value=7314
+2020-09-21 05:00:45 sum_kbps=8161 group='single quotes' name="double quotes" value=5307 stdev_kbps=0.5424387481921265
+2020-09-21 05:05:23 group=no_quotes label="double quotes" stdev_kbps=0.7086277863828817
+2020-09-21 05:42:06 average_kbps=0.9764182828603101 value=4416
+2020-09-21 05:47:48 group="double quotes" sum_kbps=9599 average_kbps=0.03791173348971022 label=no_quotes
+2020-09-21 05:58:25 group='single quotes' stdev_kbps=0.33562839305026326
+2020-09-21 06:12:08 group=no_quotes sum_kbps=9926
+2020-09-21 06:45:17 group='single quotes' name=no_quotes value=5055 average_kbps=0.9219674720775297
+2020-09-21 06:47:01 sum_kbps=2295 value=5342 group=no_quotes average_kbps=0.835983084656796
+2020-09-21 07:01:12 label=no_quotes stdev_kbps=0.7827147155819373
+2020-09-21 07:03:53 group="double quotes" average_kbps=0.5473652577832882
+2020-09-21 07:05:10 stdev_kbps=0.7362847455691509 sum_kbps=5650 average_kbps=0.8132358627709957
+2020-09-21 07:18:35 stdev_kbps=0.3788866275123277 name=no_quotes sum_kbps=2253
+2020-09-21 08:00:37 sum_kbps=6285 group=no_quotes name=no_quotes stdev_kbps=0.05797357891750754
+2020-09-21 08:32:09 group='single quotes' label='single quotes' sum_kbps=1066 stdev_kbps=0.7049580293843458 average_kbps=0.1046714631647675
+2020-09-21 08:35:27 stdev_kbps=0.8643226906166939 sum_kbps=8383
+2020-09-21 08:37:09 stdev_kbps=0.946659027985567 average_kbps=0.8681907047669646
+2020-09-21 08:40:45 name='single quotes' average_kbps=0.14326867275251243 sum_kbps=5294
+2020-09-21 09:05:05 group="double quotes" stdev_kbps=0.7678038472797322 name='single quotes' label="double quotes"
+2020-09-21 09:08:14 stdev_kbps=0.9184293217081836 value=5920
+2020-09-21 09:15:43 stdev_kbps=0.05317795579843454 group='single quotes'
+2020-09-21 09:18:06 average_kbps=0.33400368378635326 stdev_kbps=0.4486615353491339 group=no_quotes name=no_quotes sum_kbps=6734
+2020-09-21 09:18:26 group=no_quotes name="double quotes" sum_kbps=3137 label='single quotes'
+2020-09-21 09:33:51 average_kbps=0.3355677336773274 name='single quotes' group="double quotes"
+2020-09-21 09:57:55 average_kbps=0.9540027121041739 value=1786
+2020-09-21 10:11:12 label='single quotes' average_kbps=0.6989832583744963 name="double quotes" value=273 sum_kbps=1092
+2020-09-21 10:52:48 stdev_kbps=0.20690712883592133 label="double quotes" name="double quotes" sum_kbps=6967
+2020-09-21 11:11:48 sum_kbps=5038 label=no_quotes
+2020-09-21 11:48:32 stdev_kbps=0.5000958520281547 group=no_quotes average_kbps=0.2791115337987665 label=no_quotes name='single quotes'
+2020-09-21 11:51:49 name='single quotes' label='single quotes' group=no_quotes stdev_kbps=0.5909510789424941
+2020-09-21 12:10:27 sum_kbps=6183 name='single quotes'
+2020-09-21 12:20:38 name=no_quotes group='single quotes' value=6480 average_kbps=0.5363888233319198 stdev_kbps=0.11623618160175742
+2020-09-21 12:29:53 value=7292 stdev_kbps=0.7041830436635902
+2020-09-21 12:40:33 average_kbps=0.5564785537985876 stdev_kbps=0.5924373341365914
+2020-09-21 12:43:08 stdev_kbps=0.7720553997520367 value=7752 sum_kbps=6777 name='single quotes'
+2020-09-21 12:53:35 stdev_kbps=0.9065859233390466 value=8009 label='single quotes'
+2020-09-21 13:00:06 group='single quotes' label="double quotes" sum_kbps=737
+2020-09-21 13:33:51 stdev_kbps=0.4508803285704288 value=2099 label='single quotes' average_kbps=0.9015436198606568
+2020-09-21 13:39:52 sum_kbps=4442 stdev_kbps=0.1236527657186216 value=5322 group="double quotes" label="double quotes"
+2020-09-21 14:09:57 sum_kbps=1283 label='single quotes' average_kbps=0.3070257755148794 name="double quotes" value=2303
+2020-09-21 14:14:02 value=5635 sum_kbps=6358 label='single quotes' stdev_kbps=0.6560934382388939
+2020-09-21 14:22:52 group='single quotes' average_kbps=0.26633478569710267
+2020-09-21 14:23:21 label="double quotes" average_kbps=0.6303278619194237 value=8258 name=no_quotes
+2020-09-21 14:24:24 group="double quotes" value=7293 average_kbps=0.1353324613039587 name="double quotes" sum_kbps=3691
+2020-09-21 14:32:36 stdev_kbps=0.44790080963065326 name=no_quotes
+2020-09-21 14:55:38 group='single quotes' value=423
+2020-09-21 15:01:42 label='single quotes' name='single quotes' average_kbps=0.2919866099038988 group="double quotes" stdev_kbps=0.17402720074570877
+2020-09-21 15:04:05 sum_kbps=1842 value=1091 group=no_quotes label="double quotes"
+2020-09-21 15:06:36 label=no_quotes stdev_kbps=0.19969869770596582 name=no_quotes sum_kbps=3425
+2020-09-21 15:26:54 group="double quotes" stdev_kbps=0.9012884220453288 value=2301
+2020-09-21 15:32:47 name=no_quotes group="double quotes" average_kbps=0.16435938949714113 sum_kbps=8767 label="double quotes"
+2020-09-21 15:44:10 sum_kbps=4002 average_kbps=0.38212214238390907 name=no_quotes value=2234 label=no_quotes
+2020-09-21 16:17:30 name=no_quotes average_kbps=0.26261332825501127
+2020-09-21 16:38:29 name=no_quotes value=2691 label='single quotes' sum_kbps=7188 group="double quotes"
+2020-09-21 16:57:12 label="double quotes" sum_kbps=5991 group="double quotes" stdev_kbps=0.7930035055120015 name='single quotes'
+2020-09-21 16:57:51 name='single quotes' label=no_quotes
+2020-09-21 17:19:15 value=4672 stdev_kbps=0.4266672435381661 group="double quotes" label=no_quotes
+2020-09-21 17:56:32 name=no_quotes stdev_kbps=0.9445843903973761
+2020-09-21 18:30:21 label=no_quotes value=4066
+2020-09-21 18:31:58 group='single quotes' value=2532 sum_kbps=9945
+2020-09-21 18:39:32 label='single quotes' sum_kbps=2113 average_kbps=0.8218542447068515
+2020-09-21 18:56:22 label="double quotes" stdev_kbps=0.0314557522977007
+2020-09-21 19:27:29 value=5495 name=no_quotes label='single quotes' average_kbps=0.2998987133521951 sum_kbps=6619
+2020-09-21 19:46:44 average_kbps=0.7474237721396918 sum_kbps=2440 name='single quotes'
