@@ -73,8 +73,8 @@
 },
 {
     "id": "enrich_splunkd_access_log",
-    "title" : "Enrich splunkd_accesslog",
-    "short-description" : "Enrich splunkd_accesss logs with indexed fields to extract URL and REST parameters",
+    "title" : "Enrich splunkd_access.log",
+    "short-description" : "Enrich splunkd_accesss logs with indexed fields to extract ip, wait time, URL and REST parameters",
     "category" : "Platform extension"
 }
 ]
