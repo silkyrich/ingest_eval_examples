@@ -67,8 +67,14 @@
 },
 {
     "id": "enrich_splunkd_component_level_thread",
-    "title" : "Enrich splunkd logging",
+    "title" : "Enrich splunkd.log",
     "short-description" : "Enrich splunkd logs with indexed fields to extract log_level, component, and thread info",
+    "category" : "Platform extension"
+},
+{
+    "id": "enrich_splunkd_access_log",
+    "title" : "Enrich splunkd_accesslog",
+    "short-description" : "Enrich splunkd_accesss logs with indexed fields to extract URL and REST parameters",
     "category" : "Platform extension"
 }
 ]
