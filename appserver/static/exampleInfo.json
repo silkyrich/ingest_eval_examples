@@ -54,12 +54,6 @@
     "category" : "Utilities"
 },
 {
-    "id": "data_estimation",
-    "title" : "Data estimation pipeline",
-    "short-description" : "Ingesting sources can blow your license. This examples shows how you can assess data volumes in metrics before indexing",
-    "category" : "Utilities"
-},
-{
     "id": "split_forwarding",
     "title" : "Split splunk forwarding",
     "short-description" : "Splunk can send about 20MB/s per pipeline, and this can staturate ingestion on an indexer. This example shows how you can use INGEST_EVAL and routing groups to split pipeline output across multiple TCP streams",
