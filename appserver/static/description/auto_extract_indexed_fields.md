@@ -69,36 +69,22 @@ This application creates a log file for us to test and apply the method to.
 ### props.conf
 
     # This sourcetype is an example for how we can use REPEAT_MATCH and regex to automatically extract fields from log files
-    [indexed_log]
+    [auto_extract_indexed_fields]
     TIME_PREFIX = ^
     TIME_FORMAT = %Y-%m-%d %H:%M:%S
     SHOULD_LINEMERGE=false
     LINE_BREAKER=([\n\r]+)
-    TRANSFORMS-extract_indexed_fields=regex_extract_doubled_quoted_av_pairs, regex_extract_single_quoted_av_pairs, regex_extract_unquoted_av_pairs
+    # because we are creating indexed fields we can disable the major breakers
+    SEGMENTATION = search
+    TRANSFORMS-extract_indexed_fields=auto_extract_indexed_fields-univeral
 
 
 ### transforms.conf
 
-    # this regex finds single quoted attribute value pairs, ie the form a=b, and appends them to _meta
-    [regex_extract_unquoted_av_pairs]
+    # this regex finds unquote quoted attribute value pairs, ie the form a=b, and appends them to _meta
+    [auto_extract_indexed_fields-univeral]
     SOURCE_KEY = _raw
-    REGEX = \s([a-zA-Z][a-zA-Z0-9_-]+)=([^\s"',]+)
+    REGEX = \s([a-zA-Z][a-zA-Z0-9_-]+)=(?:"([^"]+)"|'([^']+)'|([^\s"',]+))
     REPEAT_MATCH=true
-    FORMAT = $1::"$2"
-    WRITE_META = true
-
-    # this regex finds single quoted attribute value pairs, ie the form a='b', and appends them to _meta
-    [regex_extract_single_quoted_av_pairs]
-    SOURCE_KEY = _raw
-    REGEX = \s([a-zA-Z0-9_-]+)='([^']+)'
-    REPEAT_MATCH=true
-    FORMAT = $1::"$2"
-    WRITE_META = true
-
-    # this regex finds single quoted attribute value pairs, ie the form a="b", and appends them to _meta
-    [regex_extract_doubled_quoted_av_pairs]
-    SOURCE_KEY = _raw
-    REGEX = \s([a-zA-Z][a-zA-Z0-9_-]+)="([^"]+)"
-    REPEAT_MATCH=true
-    FORMAT = $1::"$2" 
+    FORMAT = $1::"$2$3$4"
     WRITE_META = true

@@ -45,14 +45,14 @@
       <title>Detailed volume over time</title>
       <chart>
         <search id="base">
-          <query>| tstats sum(event_length) as total_ingestion 
+          <query>| tstats sum(_event_length) as total_ingestion 
     where index=* 
     by _time $selected_field$ $selected_span$ 
 | xyseries _time $selected_field$ total_ingestion</query>
           <earliest>$time.earliest$</earliest>
           <latest>$time.latest$</latest>
         </search>
-        <option name="charting.chart">area</option>
+        <option name="charting.chart">column</option>
         <option name="charting.chart.stackMode">stacked</option>
         <option name="charting.drilldown">none</option>
         <option name="refresh.display">progressbar</option>

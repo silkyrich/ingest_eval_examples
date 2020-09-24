@@ -20,8 +20,8 @@ modtime = 1600363017.410080000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1599752300.362882000
+version = 8.0.6
+modtime = 1600960818.305373000
 
 [views/auto_extract_indexed_fields]
 access = read : [ * ], write : [ * ]
