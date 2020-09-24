@@ -5,7 +5,7 @@
       <event>
         <title>Example data loaded into Splunk, note the timestamp is in raw, but the date is in the source field</title>
         <search>
-          <query>index=ingest_eval_examples_* sourcetype=compound_date_time</query>
+          <query>index=ingest_eval_examples_* sourcetype=compound_datetimes</query>
           <earliest>0</earliest>
           <latest></latest>
         </search>

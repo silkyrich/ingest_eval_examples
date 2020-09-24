@@ -18,6 +18,7 @@
   <row>
     <panel>
       <chart>
+        <title>This search is written using tstats</title>
         <search>
           <query>| tstats sum(sum_kbps) as sum_kbps 
     where index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields 
@@ -31,6 +32,36 @@
         <option name="charting.drilldown">none</option>
         <option name="refresh.display">progressbar</option>
       </chart>
+    </panel>
+    <panel>
+      <chart>
+        <title>This search is written using _raw search</title>
+        <search>
+          <query>index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields 
+| where isnotnull(group) AND isnotnull(name) 
+| chart sum(sum_kbps) as sum_kbps 
+    by group name</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <event>
+        <title>Source events</title>
+        <search>
+          <query>index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="list.drilldown">none</option>
+      </event>
     </panel>
   </row>
 </form>

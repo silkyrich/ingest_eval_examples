@@ -6,8 +6,8 @@ modtime = 1600184477.058100000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1600359586.824380000
+version = 8.0.6
+modtime = 1600956477.159068000
 
 [views/split_forwarding]
 access = read : [ * ], write : [ * ]
@@ -28,14 +28,14 @@ access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 8.0.6
-modtime = 1600452899.424415000
+modtime = 1600956811.311486000
 
 [views/compound_datetimes]
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1599752543.554755000
+version = 8.0.6
+modtime = 1600956449.274499000
 
 [views/data_estimation]
 access = read : [ * ], write : [ * ]

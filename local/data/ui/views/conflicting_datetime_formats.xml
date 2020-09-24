@@ -1,11 +1,11 @@
 <form>
   <label>Conflicting date formats</label>
   <fieldset submitButton="false">
-    <input type="time" token="field1">
+    <input type="time" token="time">
       <label></label>
       <default>
-        <earliest>-24h@h</earliest>
-        <latest>now</latest>
+        <earliest>0</earliest>
+        <latest></latest>
       </default>
     </input>
   </fieldset>
@@ -15,9 +15,9 @@
       <event>
         <title>Note how multiple timestamps have been normalized</title>
         <search id="base">
-          <query>index=ingest_eval_examples* sourcetype=demutliplexed_datetime_formats</query>
-          <earliest>0</earliest>
-          <latest></latest>
+          <query>index=ingest_eval_examples* sourcetype=conflicting_datetime_formats</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
         </search>
         <option name="list.drilldown">none</option>
         <option name="refresh.display">progressbar</option>
