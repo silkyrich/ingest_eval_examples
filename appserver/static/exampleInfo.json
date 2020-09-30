@@ -37,7 +37,7 @@
 },
 {
     "id": "mask_data_and_map",
-    "title" : "Advanced Masking data with SHA1",
+    "title" : "Advanced Masking of Data with SHA1",
     "short-description" : "Some log files contain sensitive data that should be hidden from users. This example shows how you can replace senstive data in your log message while creating a reverse map using INGEST_EVAL and CLONE_SOURCETYPE",
     "category" : "Security"
 },
@@ -51,30 +51,43 @@
     "id": "load_into_indexes",
     "title" : "Export and import data",
     "short-description" : "It is sometimes useful to export snippets of data from one Spunk instance and load that into another. This examples shows how we can build a simple export import tool for loading data into Splunk using REGEX and INGEST_EVAL",
-    "category" : "Utilities"
+    "category" : "Platform extension"
 },
 {
     "id": "split_forwarding",
     "title" : "Split splunk forwarding",
     "short-description" : "Splunk can send about 20MB/s per pipeline, and this can staturate ingestion on an indexer. This example shows how you can use INGEST_EVAL and routing groups to split pipeline output across multiple TCP streams",
-    "category" : "Utilities"
+    "category" : "Complex forwarding"
 },
 {
     "id": "enrich_splunkd_component_level_thread",
     "title" : "Enrich splunkd.log",
     "short-description" : "Enrich splunkd logs with indexed fields to extract log_level, component, and thread info",
-    "category" : "Platform extension"
+    "category" : "Enrichment"
 },
 {
     "id": "enrich_splunkd_access_log",
     "title" : "Enrich splunkd_access.log",
     "short-description" : "Enrich splunkd_accesss logs with indexed fields to extract ip, wait time, URL and REST parameters",
-    "category" : "Platform extension"
+    "category" : "Enrichment"
 },
 {
     "id": "shard_data_with_splitbyindexkeys",
     "title" : "Shard data with splitByIndexKeys",
     "short-description" : "How to group like data together in buckets to improve the performance of bucket elimintation",
     "category" : "Platform extension"
+},
+{
+    "id": "data_estimation_pipeline",
+    "title" : "Measure ingestion costs before onboarding",
+    "short-description" : "How to build a data estimation pipeline for measuring data ingestion rates coming into Splunk",
+    "category" : "Platform extension"
+},
+{
+    "id": "selective_routing",
+    "title" : "Selective routing",
+    "short-description" : "Use CLONE_SOURCETYPE to have fine grain policies when forwarding to multiple targets.",
+    "category" : "Complex forwarding"
 }
+
 ]
