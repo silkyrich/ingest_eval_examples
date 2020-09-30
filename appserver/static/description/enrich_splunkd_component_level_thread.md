@@ -35,7 +35,7 @@ The following log lines are from a splunks instance and show both formats for sp
     [enrich_splunkd_component_level_thread-extract_log_level_etc]
     SOURCE_KEY = _raw
     WRITE_META = true
-    REGEX = ^\d\d\-\d\d-\d{4}\s\d\d:\d\d\:\d\d\.\d{0,6}\s\+|-\d{4}\s(INFO|DEBUG|ERROR|WARN|DEBUG)\s+(\S+)\s(?:\[(\d+)\s(\S+)\])?
+REGEX = ^\d\d\-\d\d-\d{4}\s\d\d:\d\d\:\d\d\.\d{0,6}\s[+\-]\d{4}\s(INFO|DEBUG|ERROR|WARN|DEBUG)\s+(\S+)\s(?:\[(\d+)\s(\S+)\])?
     FORMAT = log_level::$1 component::$2 thread_id::$3 thread_name::$4 
 
     [enrich_splunkd_component_level_thread-drop_null_thread_info]

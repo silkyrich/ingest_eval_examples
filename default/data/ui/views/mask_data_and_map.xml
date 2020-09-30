@@ -1,3 +1,31 @@
 <dashboard>
   <label>mask_data_and_map</label>
+  <row>
+    <panel>
+      <table>
+        <title>This _raw search shows us the annoymised data</title>
+        <search>
+          <query>index=ingest_eval_examples_2 sourcetype=mask_data_and_map
+| table _raw</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+    <panel>
+      <table>
+        <title>This _raw search shows us the mapping from encoded to encoded</title>
+        <search>
+          <query>index="ingest_eval_examples_2" sourcetype=mask_data_and_map-map
+| table _time email_address email_address_encoded password_encoded password</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
 </dashboard>

@@ -28,7 +28,7 @@ access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 8.0.6
-modtime = 1600956811.311486000
+modtime = 1601462746.127435000
 
 [views/compound_datetimes]
 access = read : [ * ], write : [ * ]
@@ -62,15 +62,15 @@ modtime = 1600165902.067864000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1599829531.114249000
+version = 8.0.6
+modtime = 1601476003.570948000
 
 [views/mask_data_and_map]
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1599638134.762137000
+version = 8.0.6
+modtime = 1601482525.440754000
 
 [indexes/test]
 owner = admin

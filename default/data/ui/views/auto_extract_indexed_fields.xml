@@ -8,24 +8,29 @@
         <latest></latest>
       </default>
     </input>
-    <input type="dropdown" token="selected">
+    <input type="dropdown" token="selected_field">
       <label>Select numeric field</label>
       <choice value="average_kbps">average_kbps</choice>
       <choice value="stdev_kbps">stdev_kbps</choice>
       <choice value="value">value</choice>
+      <default>average_kbps</default>
     </input>
   </fieldset>
   <row>
     <panel>
+      <title>This search is written using tstats</title>
       <chart>
-        <title>This search is written using tstats</title>
+        <title>Completed in $tstats_duration$ seconds</title>
         <search>
-          <query>| tstats sum(sum_kbps) as sum_kbps 
+          <query>| tstats sum($selected_field$) as $selected_field$ 
     where index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields 
     by group name
-| xyseries group name sum_kbps</query>
+| xyseries group name $selected_field$</query>
           <earliest>$time.earliest$</earliest>
           <latest>$time.latest$</latest>
+          <done>
+            <set token="tstats_duration">$job.runDuration$</set>
+          </done>
         </search>
         <option name="charting.chart">column</option>
         <option name="charting.chart.stackMode">stacked</option>
@@ -34,15 +39,19 @@
       </chart>
     </panel>
     <panel>
+      <title>This search is written using _raw search</title>
       <chart>
-        <title>This search is written using _raw search</title>
+        <title>Completed in $raw_search_duration$ seconds</title>
         <search>
           <query>index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields 
 | where isnotnull(group) AND isnotnull(name) 
-| chart sum(sum_kbps) as sum_kbps 
+| chart sum($selected_field$) as $selected_field$ 
     by group name</query>
           <earliest>$time.earliest$</earliest>
           <latest>$time.latest$</latest>
+          <done>
+            <set token="raw_search_duration">$job.runDuration$</set>
+          </done>
         </search>
         <option name="charting.chart">column</option>
         <option name="charting.chart.stackMode">stacked</option>

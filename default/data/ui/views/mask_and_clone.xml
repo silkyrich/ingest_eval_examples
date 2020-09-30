@@ -1,3 +1,29 @@
 <dashboard>
   <label>mask_and_clone</label>
+  <row>
+    <panel>
+      <title>The orignal event with the user name and password clearly visible</title>
+      <event>
+        <search>
+          <query>index="ingest_eval_examples_1" sourcetype=mask_and_clone</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+    <panel>
+      <title>The cloned event with the user name and password selectively masked</title>
+      <event>
+        <search>
+          <query>index="ingest_eval_examples_2" sourcetype=mask_and_clone</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
 </dashboard>
