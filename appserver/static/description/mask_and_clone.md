@@ -1,12 +1,11 @@
 # Problem description
-
-.
+Some data contains private or secret information like user names and passwords that it is inappropiate for all eyes to see. Under these circumstances data needs to be hidden from users. However this we may still need to keep the orginal data for other reasons. Splunk doesn't allow for selective masking at point of search. 
 
 ## Existing Solutions
-.
+Currently we are only able to use SED or REGEX commands to change the `_raw` string, however this is dificult to implement. 
 
 ## Proposed Solution
-.
+It is possible to implement this solution using entirely using the `INGEST_EVAL` and `replace()`, but in the interests of  
 
 ###  Example log line
 
