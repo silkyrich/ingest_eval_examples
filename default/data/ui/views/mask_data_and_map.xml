@@ -5,7 +5,7 @@
       <title>Annoymised data is being stored in ingest_eval_examples_2</title>
       <table>
         <search>
-          <query>index=ingest_eval_examples_2 sourcetype=mask_data_and_map
+          <query>index=ingest_eval_examples_1 sourcetype=mask_data_and_map
 | table _raw</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
