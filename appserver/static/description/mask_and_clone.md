@@ -2,14 +2,14 @@
 Some data contains private or secret information like user names and passwords that it is inappropiate for all eyes to see. Under these circumstances data needs to be hidden from users. However this we may still need to keep the orginal data for other reasons. Splunk doesn't allow for selective masking at point of search. 
 
 ## Existing Solutions
-Currently we are only able to use SED or REGEX commands to change the `_raw` string, however this is dificult to implement. 
+Splunk documentation a section on how to [Anonymize data|https://docs.splunk.com/Documentation/Splunk/8.0.6/Data/Anonymizedata]. However this is destructive to the orignal event and the ability to see the orginal event is lost. 
 
 ## Proposed Solution
-It is possible to implement this solution using entirely using the `INGEST_EVAL` and `replace()`, but in the interests of  
+`CLONE_SOURCETYPE` offers us the abilty to create two copies of the event and treat them differently. It is possible to implement this solution using entirely using the `INGEST_EVAL` and `replace()`, but in the interests of using the simplist tool for the job and likely the most efficent due, we will use SEDCMD to implement the usecase. Rather than obterate 
 
 ###  Example log line
 
-    09-18-2020 10:02:11.793 +0100 INFO  LicenseUsage - type=Usage s="my_host" st="m_sourcetype" h="my_host" o="" idx="default" i="18F9C3EA-EBB2-497C-801A-098D0C52F9E2" pool="auto_generated_pool_enterprise" b=2034451 poolsz=53687091200
+    23:16:25 20-09-23 my email_address=julian@wikileaks.com and my terrible password="onetimepassword"
 
 ### The steps performed to process data
 
