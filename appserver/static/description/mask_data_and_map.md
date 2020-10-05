@@ -1,12 +1,13 @@
 # Problem description
 
-.
+Some data contains private or secret information like user names and passwords that it is inappropiate for all eyes to see. Under these circumstances data needs to be hidden from those users, for instance 1st line support. However this we may still need to keep the orginal data for other reasons, for higher security level users. Splunk doesn't allow for selective masking at point of search, which is a significant challenge for any unstructured data system.
 
 ## Existing Solutions
-.
+Splunk documentation a section on how to [Anonymize data|https://docs.splunk.com/Documentation/Splunk/8.0.6/Data/Anonymizedata]. However this is destructive to the orignal event and the ability to see the orginal event is lost. 
+
 
 ## Proposed Solution
-.
+This problem has been addressed in the example [mask and map|mask_and_map], this solution works but it results in double ingestion costs and the semi masking of email addresses isn't great. This solution also uses `CLONE_SOURCETYPE` to create another version of the event, but in this instance we will use a hashing algorithm to encode both the user and the password. The cloned event will have indexed fields to hold a map to undo the map. We can then combine the events to undo the map effeciently at search time. This approach allows for some cool functionality that could not be implemented with a lookup.
 
 ###  Example log line
 
@@ -14,6 +15,7 @@
 
 ### The steps performed to process data
 
+1. We intercept the data under the `mask_data_and_map` sourcetype, before we clone the event we need to do some work
 1. 
 
 #### props.conf
