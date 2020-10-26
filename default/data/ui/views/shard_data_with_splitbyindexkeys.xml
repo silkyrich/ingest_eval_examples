@@ -1,0 +1,18 @@
+<dashboard>
+  <label>Shard data with splitByIndexKeys</label>
+  <row>
+    <panel>
+      <title>How source and source type have been mapped into buckets</title>
+      <table>
+        <search>
+          <query>index=shard_data_with_splitbyindexkeys | stats values(source) values(sourcetype) by _bkt
+| rename _bkt as bucket</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

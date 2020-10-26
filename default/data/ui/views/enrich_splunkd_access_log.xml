@@ -1,0 +1,31 @@
+<dashboard>
+  <label>Enrich splunkd_access.log</label>
+  <row>
+    <panel>
+      <title>The events as they are seen in search</title>
+      <event>
+        <search>
+          <query>index=ingest_eval_examples* sourcetype=enrich_splunkd_access_log</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="count">2</option>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+    <panel>
+      <title>Computation on events via tstats</title>
+      <table>
+        <search>
+          <query>| tstats max(response_time_ms) where index=ingest_eval_examples* sourcetype=enrich_splunkd_access_log by user http_type
+| xyseries user http_type max(response_time_ms)</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

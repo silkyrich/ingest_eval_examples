@@ -85,3 +85,11 @@ modtime = 1600374282.463267000
 [views/metricify_license]
 version = 8.0.6
 modtime = 1600450599.170354000
+
+[views/shard_data_with_splitbyindexkeys]
+version = 8.1.0
+modtime = 1603719424.034538000
+
+[views/enrich_splunkd_access_log]
+version = 8.1.0
+modtime = 1603720686.575090000
