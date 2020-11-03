@@ -1,0 +1,4 @@
+{
+    "python.dataScience.jupyterServerURI": "local",
+    "python.pythonPath": "/usr/local/bin/python3.8"
+}

@@ -88,6 +88,12 @@
     "title" : "Selective routing",
     "short-description" : "Use CLONE_SOURCETYPE to have fine grain policies when forwarding to multiple targets.",
     "category" : "Complex forwarding"
+},
+{
+    "id": "name_clash",
+    "title" : "Resolving naming clashes",
+    "short-description" : "Sources like zoom meeting data can overloads Splunk reserved names like 'host'",
+    "category" : "Enrichment"
 }
 
 ]
