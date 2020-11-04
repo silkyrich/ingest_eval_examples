@@ -93,3 +93,10 @@ modtime = 1603719424.034538000
 [views/enrich_splunkd_access_log]
 version = 8.1.0
 modtime = 1603720686.575090000
+
+[views/extended_documentation]
+access = read : [ * ], write : [ * ]
+export = none
+owner = rmorgan
+version = 8.1.0
+modtime = 1604502735.740460000

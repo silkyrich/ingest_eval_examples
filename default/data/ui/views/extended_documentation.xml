@@ -1,0 +1,259 @@
+<dashboard>
+  <label>extended documentation</label>
+
+<row><panel><html>
+  
+  <h1 id="ingest_evalextendeddocumentation">INGEST_EVAL Extended Documentation</h1>
+
+<p>The public facing <a href="https://docs.splunk.com/Documentation/Splunk/8.1.0/Data/IngestEval#Examples">documentation</a>  on <code>INGEST_EVAL</code> does not 
+include all the details mentioned in our internal developer documentation. In particular it doesn't mention details on how <code>_time</code>, 
+how to handle <code>multi-value</code> fields or how to debigulate between <code>pipelineData</code> fields. This documentation is adapted from internal notes exchanged between developers and is presented as is.</p>
+
+<hr />
+
+<h1 id="ingesttimetransformsviatransformsconf">ingest-time transforms via transforms.conf</h1>
+
+<p>Here is a snippet of what a configuration looks like for props and transforms when using regex transforms and is well documented 
+in <a href="https://docs.splunk.com/Documentation/Splunk/8.1.0/Data/Configureindex-timefieldextraction#Define_additional_indexed_fields">Getting Data In</a></p>
+
+<p>Data streams are targeted via <code>sourcetype</code>, <code>host</code> or <code>source</code> in <code>props.conf</code> which can optionally apply transforms to that stream. 
+For instance, in the example below we have configured the sourcetype <code>mysourcetype</code> to have two regex transforms applied to it, <code>regex1</code> and <code>regex2</code> which are 
+defined in <code>transforms.conf</code></p>
+
+<h2 id="propsconf">props.conf</h2>
+
+<pre><code>[mysourcetype] 
+TRANSFORMS-foo=regex1,regex2
+</code></pre>
+
+<h2 id="transformsconf">transforms.conf</h2>
+
+<pre><code>[regex1] 
+REGEX=^foo-([A-Z]*) 
+FORMAT= foo::$1
+
+[regex2] 
+REGEX=bar-([0-9]*)$ 
+FORMAT=bar::$2
+</code></pre>
+
+<hr />
+
+<h1 id="whatsnew">What's New?</h1>
+
+<p>Some ingest-time transformations are hard or impossible using regexes alone. For example, regex transforms don’t help much for metrics 
+normalisation. Reusing the existing power of the search-time <code>| eval</code> operator makes some of these very simple to write. </p>
+
+<ul>
+<li>An ingest-time <code>INGEST_EVAL</code> is simply another type of transforms.conf stanza</li>
+
+<li>The evaluations to run are selected in the exact same way in props.conf</li>
+
+<li>Regex-based and <code>INGEST_EVAL</code>-based transforms can be combined in any order!</li>
+</ul>
+
+<p>Additionally, it gives savvy developers more direct control of index-time fields than they had before. A developer can control exactly 
+how an index time field will be stored in the journal. We’ll see examples of this later</p>
+
+<h2 id="exampleofaningest_evaltransformstanza">Example of an INGEST_EVAL transform stanza:</h2>
+
+<pre><code>[eval1]
+INGEST_EVAL= field3=length(_raw)*2
+</code></pre>
+
+<p>The evaluation language is identical to the search-time <code>INGEST_EVAL</code> command, so refer to our documentation on <a href="https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Eval"><code>| eval</code></a> 
+for further details.</p>
+
+<h2 id="multievalsupport">Multi-Eval support</h2>
+
+<p>Just like on the search-time <a href="https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Eval"><code>| eval</code></a> command, multiple comma-separated expressions can be chained:</p>
+
+<pre><code>[eval2]
+INGEST_EVAL= field4=_time, field5=field4+1
+</code></pre>
+
+<hr />
+
+<h1 id="definingvariablenames">Defining Variable Names</h1>
+
+<p>Most of the common <code>PipelineData</code> keys that transforms.conf normally operates on (<code>_raw</code>, <code>index</code>, <code>queue</code>, ...) can be read or written directly:</p>
+
+<pre><code>INGEST_EVAL= index=“split_“+substr(sha1(_raw),1,1)
+INGEST_EVAL= queue=if(random()%3==0,”nullQueue”,”indexQueue”)
+</code></pre>
+
+<p>Also, several search-time variables work as expected (<code>source</code>, <code>sourcetype</code>, <code>host</code>, ...)</p>
+
+<pre><code>INGEST_EVAL= queue=if(linecount&gt;100,”nullQueue”,”indexerQueue”)
+INGEST_EVAL= sourcetype=if(substr(_raw,1,1)==“#”,”comment”,sourcetype)
+</code></pre>
+
+<p>But by default, variables refer to index-time fields. This is the same place that a regex-based transform writes its output 
+(in the familiar
+<code>key::value</code> form). These are also known as <code>_meta</code> fields because of where they are stored internally to <code>PipelineData</code></p>
+
+<p>For example these two transforms create equivalent results:</p>
+
+<pre><code>[x1]
+REGEX=.* 
+FORMAT=fieldname::3
+
+[x2]
+INGEST_EVAL= fieldname=1+2
+</code></pre>
+
+<p>This normally just “does what you want”, but the decision about whether a variable is a <code>PipelineData</code> key or a <code>indextime</code> field can also be overridden by using eval’s dollar-sign format</p>
+
+<pre><code>INGEST_EVAL= $field:myfield$=length($pd:_raw$)
+</code></pre>
+
+<p>Again, normally this verbosity isn’t needed — whether a variable is an indextime field or not is clear from context.</p>
+
+<hr />
+
+<h1 id="handlingthe_timefield">Handling the <code>_time</code> field</h1>
+
+<p>As an aside: <code>_time</code> works like at search-time (i.e. includes subseconds) </p>
+
+<pre><code>INGEST_EVAL= until_sec=ciel(_time)-_time
+</code></pre>
+
+<p>However, the <code>PipelineData</code> time doesn’t have the subseconds-part included yet, and that can be manipulated via <code>$pd:_time$</code></p>
+
+<pre><code>INGEST_EVAL= $pd:_time$=1500000000+(random()%100000)
+</code></pre>
+
+<hr />
+
+<h1 id="multivalueindexedfields">Multivalue indexed fields</h1>
+
+<p>Index-time fields can have multiple values.
+These can be created similarly to search-time multival fields. </p>
+
+<p>Here is another example of functional equivalency between <code>regex</code> and <code>INGEST_EVAL</code> transforms</p>
+
+<pre><code>[multi1]
+REGEX=.*
+FORMAT=x::a x::b x::c
+
+[multi2]
+INGEST_EVAL= x=mvappend(“a”,”b”,”c”)
+</code></pre>
+
+<p>However, by default when reading an eval field, only the first value is used: This can be overridden by using <code>$mv:field$</code></p>
+
+<pre><code>mvjoin(x,”.”) =&gt; “a” 
+
+mvjoin($mv:x$,”.”) =&gt; “a.b.c"
+</code></pre>
+
+<p>This may seem odd at first, but multi value fields are a rarely-used feature, and fetching only the first value is much more efficient</p>
+
+<p>Just as with regex-based transforms, by default an eval-based transform creates a new <code>indextime</code> field</p>
+
+<pre><code>INGEST_EVAL= z=10, z=z+1
+</code></pre>
+
+<p>Produces <code>z::10 z::11</code></p>
+
+<p>This can be changed by using <code>:=</code> as the assignment operator:</p>
+
+<pre><code>INGEST_EVAL= z=10, z:=z+1
+</code></pre>
+
+<p>Produces <code>z::11</code></p>
+
+<p>Note that there is a slight performance penalty, so it’s best to only do this when it’s possible the field already exists.</p>
+
+<p>This <code>:=</code> format can also be used to remove an existing index-time field:</p>
+
+<pre><code class="[remove-xyz]  language-[remove-xyz] ">INGEST_EVAL= xyz:=null()
+</code></pre>
+
+<hr />
+
+<h1 id="anoteontypes">A note on types</h1>
+
+<p>Internally (both in RAM and on disk) an <code>indextime</code> field can hold its value in multiple ways: a string, an integer, several floating-point representations
+With regex-based transforms the developer had no control over this; they were essentially always strings
+Only internal code (like metrics) could really take advantage of other value types</p>
+
+<p>With <code>INGEST_EVAL</code> based transforms, each evaluation can optionally control the type an <code>indextime</code> field will be stored in. Some simple examples:</p>
+
+<pre><code>INGEST_EVAL= field_a[int]=length(_raw) 
+INGEST_EVAL= field_a[float]:=log(field_a)
+</code></pre>
+
+<p>For floating-point numbers, you can also specify that the number of significant digits of the calculation must be kept by adding <code>-sf</code> to the type:</p>
+
+<pre><code>INGEST_EVAL= a[float-sf]=b*1.35
+</code></pre>
+
+<p>Also a less precise (but smaller) encoding is available as <code>float32</code>/<code>float32-sf</code> </p>
+
+<pre><code>INGEST_EVAL= bits_per_second[float32]=bytes_per_second*8
+</code></pre>
+
+<p>This can be used to trim the size of metrics data, for instance. Even an existing field can have its type changed:</p>
+
+<pre><code>INGEST_EVAL= myfield[float32]:=myfield
+</code></pre>
+
+<p>By default, a sane result type is chosen from the expression
+i.e. a numeric result will be stored as a number, a string as a string, a multi value as a series of strings, etc
+So for most cases, specifying an explicit type is not needed.</p>
+
+<hr />
+
+<h1 id="highcardinalitystringsawarning">High-cardinality strings - a warning</h1>
+
+<p>The <code>indextime</code> field system was originally built to handle two use cases:</p>
+
+<ol>
+<li>Low-cardinality “tags” on events (“date_month::july”) </li>
+
+<li>Substrings extracted from <code>_raw</code> via CSV or JSON parsing</li>
+</ol>
+
+<p>This means in our on-disk index format, strings can take one of two formats:</p>
+
+<ol>
+<li>A single integer referring to a value stored in Strings.data</li>
+
+<li>A pair of integers describing the offset of the string inside <code>_raw</code> and its <code>length</code> (with some small tweaks to allow CSV/JSON quoting)</li>
+</ol>
+
+<p>•    This means that high-cardinality string values that don’t originate as part of <code>_raw</code> can be very inefficient, both for indexing and searchtime!
+(None of this is new, just something to keep in mind)</p>
+
+<h2 id="examples">Examples:</h2>
+
+<p>Here are some examples around cardinality of strings when applied to indexed fields.</p>
+
+<h3 id="goodlowcardinalitystring">Good - Low cardinality string</h3>
+
+<pre><code>INGEST_EVAL= sev=if(val&gt;100,”RED”,if(val&gt;50,”YELLOW”,”GREEN”))
+</code></pre>
+
+<h3 id="goodwecandetectthattheresultisa_rawsubstring">Good - We can detect that the result is a _raw substring!</h3>
+
+<pre><code>INGEST_EVAL= col3=substr(_raw,20,10)
+</code></pre>
+
+<h3 id="badthestorageenginedoesntcurrentlyhaveawayofstoringthishighcardinalityfieldefficiently">BAD! - The storage engine doesn’t currently have a way of storing this high-cardinality field efficiently</h3>
+
+<pre><code>INGEST_EVAL= hash=sha1(_raw)
+</code></pre>
+
+<h3 id="badhighprecisionnumberscreatemorecardinality">BAD! - High precision numbers create more cardinality</h3>
+
+<pre><code>INGEST_EVAL= number=random()
+</code></pre>
+
+<h3 id="goodlowprecisionnumbershavereducedcardinality">Good - Low precision numbers have reduced cardinality</h3>
+
+<pre><code>INGEST_EVAL= number=round(random(),5)
+</code></pre>
+  
+</html></panel></row>
+</dashboard>
