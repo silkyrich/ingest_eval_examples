@@ -74,7 +74,3 @@ Splunk> Ask me everything.
 Splunk> $bin/splunk help
 Splunk> When you bring data to Everything anything is possible
 Splunk> I like Big Data and I cannot lie.
-
-
-
-
