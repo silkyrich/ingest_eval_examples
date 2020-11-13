@@ -4,7 +4,6 @@ The throughput of a single pipeline is about 20MB/s dependant on CPU etc. Many f
 ## Existing solution
 This issues is normally resolved by adding more pipelines to the forwarder sending data. Also the features autoLBVolume and / or lowering the autoLBFrequency. However these solutions fail when the input source cannot be mapped across multiple pipelines. In this instance increasing pipelines or switching does not help
 
-
 # Proposed solution
 For parsed events, i.e. those that are going through a HWF we can use event routing and INGEST_EVAL to randomly direct events to multiple output stanzas. In this instance we will use two output groups.
 

@@ -92,7 +92,7 @@
     {
         "id": "json_docker",
         "title" : "Loading json-docker logs",
-        "short-description" : "Some sources use a json logging format, for example docker. These need to pre-processed before ingestion to maximise value",
+        "short-description" : "Some sources use a json logging format which we can pre-processed before ingestion to maximise it search performance",
         "category" : "Enrichment"
     },
     {
