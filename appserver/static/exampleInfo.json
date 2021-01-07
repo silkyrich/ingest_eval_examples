@@ -96,10 +96,10 @@
         "category" : "Enrichment"
     },
     {
-        "id": "name_clash",
-        "title" : "Resolving naming clashes",
-        "short-description" : "Sources like zoom meeting data can overloads Splunk reserved names like 'host'",
+        "id": "find_ip_addresses",
+        "title" : "Find IP addresses",
+        "short-description" : "Use REGEX to find likely looking IP addresses and write them into indexed fields",
         "category" : "Enrichment"
-    }
+    } 
 ]
     

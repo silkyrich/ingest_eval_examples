@@ -100,3 +100,7 @@ export = none
 owner = rmorgan
 version = 8.1.0
 modtime = 1604502735.740460000
+
+[views/enrich_splunkd_component_level_thread]
+version = 8.1.0
+modtime = 1605629150.158178000

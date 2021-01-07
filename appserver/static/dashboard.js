@@ -88,40 +88,15 @@ require([
                     });
                 }
 
-
-
-
                 var sourceFileModels = new Backbone.Collection();
-
-                 // Add custom scripts to the viewer
-                 var customScripts = root.attr('script');
-                 if (customScripts) {
-                     _(customScripts.split(',')).chain().map($.trim).each(function(script) {
-                         var codeModel = new Backbone.Model({
-                             name: script,
-                             url: '/static/app/' + APP + '/' + sample_data
-                         });
-                         sourceFileModels.add(codeModel);
-                         $.ajax({
-                             url: SplunkUtil.make_url('/static/app/' + APP + '/' + script),
-                             dataType: 'text',
-                             success: function(source) {
-                                 codeModel.set('content', source);
-                             },
-                             error: function() {
-                             }
-                         });
-                     });
-                 }
-                 
-                 
 /*
+
                 sourceFileModels.add({
                     name: view.entry.get('name') + '.xml',
                     content: view.entry.content.get('eai:data')
                 });
 
-                 // Add custom scripts to the viewer
+                // Add custom scripts to the viewer
                 var customScripts = root.attr('script');
                 if (customScripts) {
                     _(customScripts.split(',')).chain().map($.trim).each(function(script) {
@@ -178,8 +153,7 @@ require([
                             $('.main-section-body.dashboard-body').prepend($(banner));
                         }
                     });
-                } */
-
+                }
                 // Load additional source files from examplesInfo.json
                 if(model.has('sourceFiles')) {
                     _(model.get('sourceFiles')).each(function(link){
@@ -201,7 +175,7 @@ require([
                         });
                     });
                 }
-
+      */      
                 // Create the source code viewer
                 var footer = $('#footer');
                 var SourceViewerEl = $('<div/>');
@@ -217,6 +191,8 @@ require([
                     el: SourceViewerEl
                 }).render();
                 $('.main-section-body.dashboard-body').css('min-height', '100px');
+
+
             });
         });
     });

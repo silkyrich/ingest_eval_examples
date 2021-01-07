@@ -56,13 +56,7 @@ This application creates a log file for us to test and apply the method to.
 
 1. Extract time and line break as normal
 1. Disable `MAJOR_BREAKERS` by using the `segmentation=search` option to save space
-1. Apply the regex to extract attribute value pairs in the form `attribute=value`
-    1. Append `attribute::"value"` to `_meta`
-    1. Repeat the match until EOL
-1. Apply the regex to extract attribute value pairs in the form `attribute="value"`
-    1. Append `attribute::"value"` to `_meta`
-    1. Repeat the match until EOL
-1. Apply the regex to extract attribute value pairs in the form `attribute='value'`
+1. Apply the regex to extract attribute value pairs in the form `attribute=value` or `attribute="value"` or `attribute='value'`
     1. Append `attribute::"value"` to `_meta`
     1. Repeat the match until EOL
 
