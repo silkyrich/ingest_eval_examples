@@ -1,3 +1,34 @@
-<dashboard>
+<form>
   <label>Enrich splunkd log</label>
-</dashboard>
+  <fieldset submitButton="false">
+    <input type="dropdown" token="selected_component">
+      <label>Select component</label>
+      <choice value="*">*</choice>
+      <default>*</default>
+      <prefix>component::</prefix>
+      <fieldForLabel>label</fieldForLabel>
+      <fieldForValue>component</fieldForValue>
+      <search>
+        <query>index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread 
+| stats count by component 
+| sort - count
+| eval label=component." (".count.")"</query>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </search>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <event>
+        <search>
+          <query>index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
+</form>

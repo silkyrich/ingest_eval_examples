@@ -18,8 +18,8 @@
       <event>
         <search>
           <query>index="ingest_eval_examples_2" sourcetype=mask_and_clone</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
+          <earliest>0</earliest>
+          <latest></latest>
         </search>
         <option name="list.drilldown">none</option>
         <option name="refresh.display">progressbar</option>

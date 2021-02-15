@@ -2,26 +2,26 @@
   <label>Advanced Masking of Data with SHA1</label>
   <row>
     <panel>
-      <title>Annoymised data is being stored in ingest_eval_examples_2</title>
+      <title>Annoymised data that is visable to all users</title>
       <table>
         <search>
-          <query>index=ingest_eval_examples_1 sourcetype=mask_data_and_map
+          <query>index=ingest_eval_examples_* sourcetype=mask_data_and_map
 | table _raw</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
+          <earliest>0</earliest>
+          <latest></latest>
         </search>
         <option name="drilldown">none</option>
         <option name="refresh.display">progressbar</option>
       </table>
     </panel>
     <panel>
-      <title>The translation table is held in ingest_eval_examples_1</title>
+      <title>The translation table is visable to security users</title>
       <table>
         <search>
           <query>index="ingest_eval_examples_2" sourcetype=mask_data_and_map-map 
 | table _time email_address email_address_decoded password password_decoded</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
+          <earliest>0</earliest>
+          <latest></latest>
         </search>
         <option name="drilldown">none</option>
         <option name="refresh.display">progressbar</option>
@@ -40,8 +40,8 @@
     values(email_address_decoded) as email_address_decoded
     by _time password email_address
 | table _time _raw email_address_decoded password_decoded</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
+          <earliest>0</earliest>
+          <latest></latest>
         </search>
         <option name="drilldown">none</option>
         <option name="refresh.display">progressbar</option>

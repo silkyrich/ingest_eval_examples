@@ -11,12 +11,32 @@ This problem has been addressed in the example [mask and map|mask_and_map], this
 
 ###  Example log line
 
-    09-18-2020 10:02:11.793 +0100 INFO  LicenseUsage - type=Usage s="my_host" st="m_sourcetype" h="my_host" o="" idx="default" i="18F9C3EA-EBB2-497C-801A-098D0C52F9E2" pool="auto_generated_pool_enterprise" b=2034451 poolsz=53687091200
+    23:16:25 20-09-23 my email_address=julian@wikileaks.com and my terrible password="onetimepassword"
 
 ### The steps performed to process data
 
 1. We intercept the data under the `mask_data_and_map` sourcetype, before we clone the event we need to do some work
-1. 
+   1. Extract the email address using a regex transform and store the email address as an indexed field
+   2. Extract the password using a regex transform and store the password as an indexed field 
+2. We create encoded versions of the indexed fields for password and email address
+   1. We compute the hash on the email field but only keep the first 10 charactors so that the event doesn't become excessively long `substr(sha1(email_address),0,10)` 
+   2. We compute the hash of the password AND email field, this means that it is not possible to search for users using the same password, i.e. the hash is scoped the email address. Yet we are able to see if the user has changed their password
+3. We clone the event ...
+   1. ... with the original 
+      1. We update the `_raw` string using the `replace` function to swap the unencoded values with the new encoded ones
+      2. We remove the encoded and unencoded indexed fields 
+   2. ... with the cloned event 
+      1. We replace the `_raw` string with a single charactor to reduce licensing
+      2. We keep the indexed fields which become the translation
+
+When we search the event we are able to efficently match the encoded log line and the mapping because they appear at the same moment in time.
+
+    index=ingest_eval_examples* sourcetype=mask_data_and_map-map OR sourcetype=mask_data_and_map
+    | stats values(eval(if(_raw!=".",_raw,NULL))) as _raw 
+        values(password_decoded) as password_decoded
+        values(email_address_decoded) as email_address_decoded
+        by _time password email_address
+    | table _time _raw email_address_decoded password_decoded
 
 #### props.conf
 
@@ -26,7 +46,7 @@ This problem has been addressed in the example [mask and map|mask_and_map], this
     TIME_FORMAT = %H:%M:%S %y-%m-%d
     SHOULD_LINEMERGE=false
     LINE_BREAKER=([\n\r]+)
-    TRANSFORMS-apply-masking=shared-drop_useless_time_fields, mask_data_and_map-extract_email, mask_data_and_map-extract_password, mask_data_and_map-encode_email_and_password, mask_data_and_map-clone, mask_data_and_map-apply_hashes
+    TRANSFORMS-apply-masking=mask_data_and_map-extract_email, mask_data_and_map-extract_password, mask_data_and_map-encode_email_and_password, mask_data_and_map-clone, mask_data_and_map-apply_hashes
 
     # Take the cloned event, transform to a map and send to a different index
     [mask_data_and_map-clone]

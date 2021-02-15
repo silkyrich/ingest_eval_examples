@@ -62,15 +62,15 @@ modtime = 1600165902.067864000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.6
-modtime = 1601476003.570948000
+version = 8.1.0
+modtime = 1613396117.165379000
 
 [views/mask_data_and_map]
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.6
-modtime = 1601559530.861593000
+version = 8.1.0
+modtime = 1613401547.503047000
 
 [indexes/test]
 owner = admin

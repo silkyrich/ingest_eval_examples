@@ -12,7 +12,7 @@ For example we take our search `index=something 10.20.30.1` and add the referenc
 
 This application creates a log file for us to test and apply the method to. We include obvious invalid IP addresses so that we can try to exclude them.
 
-#### may_contain_ips
+#### `may_contain_ips`
 
     05-01-2021 13:28:25 dest=166.138.75.176.208.89 130.237.248.205 259.225.273.220 dest=253.248.199.201
     05-01-2021 13:28:28 dest=21.162.239.136
