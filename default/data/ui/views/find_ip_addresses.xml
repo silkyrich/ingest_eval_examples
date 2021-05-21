@@ -1,0 +1,24 @@
+<form>
+  <label>Find IP addresses</label>
+  <fieldset submitButton="false">
+    <input type="text" token="ip_filter">
+      <label>Wildcard search IP addresses</label>
+      <default>*</default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Example events containing IP addresses, the _raw string includes delibarately malformed IP addresses to challenge the REGEX</title>
+      <table>
+        <search>
+          <query>index="ingest_eval_examples_*" sourcetype="find_ip_addresses" ip::$ip_filter$
+| table _raw ip</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</form>

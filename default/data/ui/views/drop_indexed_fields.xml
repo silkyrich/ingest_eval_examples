@@ -6,7 +6,7 @@
       <chart>
         <search>
           <query>index="ingest_eval_examples_*" sourcetype=drop_indexed_fields primary_key::* 
-| timechart sum(primary_value) as sum_primary</query>
+| timechart span=1d sum(primary_value) as sum_primary</query>
           <earliest>0</earliest>
           <latest></latest>
         </search>

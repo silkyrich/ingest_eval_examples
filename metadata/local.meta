@@ -48,8 +48,8 @@ modtime = 1599638093.757743000
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
-version = 8.0.5
-modtime = 1600359104.572043000
+version = 8.2.0
+modtime = 1621519448.067471000
 
 [views/load_into_indexes]
 access = read : [ * ], write : [ * ]
@@ -104,3 +104,13 @@ modtime = 1604502735.740460000
 [views/enrich_splunkd_component_level_thread]
 version = 8.1.0
 modtime = 1605629150.158178000
+
+[views/debug_ingestion]
+owner = admin
+version = 8.2.0
+modtime = 1621512860.857009000
+
+[views/find_ip_addresses]
+owner = admin
+version = 8.2.0
+modtime = 1621603685.505212000

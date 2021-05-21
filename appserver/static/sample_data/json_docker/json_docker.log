@@ -1,10 +1,1000 @@
-{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-01-02T18:48:38990240023Z"}
-{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-01-03T13:52:42979616391Z"}
-{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stderr","time":"2021-01-04T03:27:38770850375Z"}
-{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-01-04T06:33:1692079245Z"}
-{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-01-04T15:40:5621346838Z"}
-{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-01-05T11:57:54923518920Z"}
-{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-01-05T12:59:19476863865Z"}
-{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-01-06T17:05:2242364688Z"}
-{"log":"Splunk> 4TW ","stream":"stderr","time":"2021-01-06T19:39:22590518099Z"}
-{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-01-07T00:06:34654415609Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-15T13:46:5754808830Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-15T13:54:543349711Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-15T14:01:21590368302Z"}
+{"log":"splunk> log, I am your father","stream":"stdout","time":"2021-05-15T14:03:33928023587Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stderr","time":"2021-05-15T14:10:02745406770Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stdout","time":"2021-05-15T14:36:03281485724Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-05-15T14:47:52643788569Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-15T14:50:44164203448Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-15T14:52:30600574734Z"}
+{"log":"Splunk> Cloud control","stream":"stderr","time":"2021-05-15T15:13:2112719743Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-15T15:35:02765811749Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-15T15:43:54878622275Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-15T15:59:49691512643Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-15T16:04:18162274278Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stderr","time":"2021-05-15T16:11:03285514673Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-15T16:18:48397071741Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-15T16:19:24414748332Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-15T16:20:56191080448Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stderr","time":"2021-05-15T16:29:41616399125Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-15T16:31:06793508739Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-15T16:35:36554173707Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-15T16:42:52316079921Z"}
+{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-05-15T16:43:56540940618Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-15T16:57:09429606955Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-15T17:00:00569458086Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-15T17:19:22132472347Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-15T17:20:25219212161Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stdout","time":"2021-05-15T17:20:53888800216Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-15T17:41:36468796219Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-15T17:50:0680618602Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stdout","time":"2021-05-15T17:59:51881295370Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-15T18:04:57179859186Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stdout","time":"2021-05-15T18:24:44569207613Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-15T18:41:29221181695Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stdout","time":"2021-05-15T18:43:58208635253Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-15T18:45:58217015128Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stdout","time":"2021-05-15T18:51:52548525446Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-15T18:57:4886901318Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-15T18:57:53888606209Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-15T19:04:21537426891Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-15T19:05:07322940195Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-15T19:10:47702761487Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-15T19:26:42937792464Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-15T19:30:10953885375Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-15T19:42:39334638803Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-15T19:47:27672362513Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-15T19:54:05867919563Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-15T20:00:27320213932Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-15T20:18:23788595558Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-15T20:24:42517083792Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-15T20:30:0113979661Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-05-15T20:43:5824547305Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stderr","time":"2021-05-15T20:54:16432973540Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-15T20:57:18544224404Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-15T20:58:22648903283Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-15T21:00:14653137006Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-15T21:00:37724057759Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-15T21:05:52733487732Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-15T21:08:09898874601Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-15T21:30:55441450318Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stderr","time":"2021-05-15T21:42:02686016721Z"}
+{"log":"Splunk> Drop your breaches","stream":"stderr","time":"2021-05-15T21:46:5313235092Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-15T21:50:07285603827Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-15T21:52:42867935294Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-15T21:53:49390764636Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-15T21:57:05305946222Z"}
+{"log":"Splunk> Ask me everything.","stream":"stderr","time":"2021-05-15T22:06:24589700494Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-15T22:08:20599351686Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-15T22:08:21880689716Z"}
+{"log":"Splunk> Dark Mode","stream":"stdout","time":"2021-05-15T22:08:47986026841Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-15T22:19:55968313637Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-15T22:27:48622905521Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stderr","time":"2021-05-15T22:36:53266681231Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-15T22:46:20544451497Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-15T23:03:44122346316Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-15T23:17:54987152261Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stderr","time":"2021-05-15T23:18:17455744969Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-15T23:20:13186280884Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-15T23:20:23402093577Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stdout","time":"2021-05-15T23:34:20835037106Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-15T23:34:43653047234Z"}
+{"log":"splunk> IT like you mean it ","stream":"stdout","time":"2021-05-15T23:35:24908466242Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-15T23:42:3920088377Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-15T23:49:0091877523Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-15T23:49:41500499823Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-16T00:00:00195348494Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stdout","time":"2021-05-16T00:09:51902259500Z"}
+{"log":"Splunk> Machine watchable","stream":"stderr","time":"2021-05-16T00:14:46170807981Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-16T00:15:08981086285Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-16T00:24:12126693517Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stdout","time":"2021-05-16T00:46:16610990230Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stdout","time":"2021-05-16T00:51:38141907521Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stderr","time":"2021-05-16T00:58:42362657327Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-16T01:04:3686207253Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-16T01:09:5035544083Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-16T01:22:11526635447Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-16T01:23:50633709077Z"}
+{"log":"Splunk> IoTee.","stream":"stderr","time":"2021-05-16T01:34:22804524457Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-16T01:48:00683463659Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-16T02:20:03240304509Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-16T02:20:51296409193Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stdout","time":"2021-05-16T02:54:36936712496Z"}
+{"log":"Splunk> Looking for trouble","stream":"stderr","time":"2021-05-16T03:03:0369115068Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-16T03:03:53898419825Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-16T03:04:18965701627Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stdout","time":"2021-05-16T03:17:56626828471Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-16T03:23:18736967527Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-16T03:25:07392264870Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-16T03:28:54171177707Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-16T03:39:09405067591Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-16T04:01:15767570590Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-16T04:08:36295690746Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-16T04:44:46379440220Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-16T04:45:01224648800Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-05-16T05:05:10640692383Z"}
+{"log":"splunk> log, I am your father","stream":"stdout","time":"2021-05-16T05:16:36121012533Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-16T05:18:59437454181Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-16T05:48:06620218306Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-16T06:02:51396632923Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-16T06:08:02826866147Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-16T06:11:2798692125Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stderr","time":"2021-05-16T06:11:57632684249Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-16T06:14:33183987784Z"}
+{"log":"Splunk> Ask me everything.","stream":"stderr","time":"2021-05-16T06:26:51656547529Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-16T06:28:43180870369Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-16T06:29:42857787844Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-16T06:36:58831309806Z"}
+{"log":"Splunk> Let my people know.","stream":"stdout","time":"2021-05-16T07:16:42678359Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-16T07:19:17920830295Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-16T07:31:35352931389Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-16T07:38:37388508726Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-16T07:40:04206775846Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stderr","time":"2021-05-16T07:59:07213078094Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-16T07:59:38160106979Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-16T07:59:50934115936Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-05-16T08:15:56807076944Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-16T08:17:30609865646Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-16T08:19:47127463831Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-16T08:36:01661821779Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-16T08:40:48830486461Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-16T08:48:00205275471Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-16T08:48:1616427200Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-16T08:52:51691057208Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-16T09:12:10826287253Z"}
+{"log":"Splunk> Machine watchable","stream":"stderr","time":"2021-05-16T09:12:53695471091Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-16T09:19:08613096722Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-16T09:20:21357229691Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stdout","time":"2021-05-16T09:34:52229121382Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-16T09:37:52460860681Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-16T09:41:50288436613Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stderr","time":"2021-05-16T09:47:11205465160Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-16T09:49:57219623827Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stdout","time":"2021-05-16T09:52:48218705307Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-16T09:55:18927158366Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-16T10:10:51542257539Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-16T10:14:51107164405Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-16T10:18:18249376373Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-16T10:25:4585514863Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-16T10:30:59688328662Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-05-16T10:44:04206345443Z"}
+{"log":"Splunk> Can you SPL?","stream":"stderr","time":"2021-05-16T10:58:08941397032Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-16T11:03:01417310761Z"}
+{"log":"splunk> log, I am your father","stream":"stdout","time":"2021-05-16T12:00:31184748964Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-16T12:09:26518907036Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-16T12:15:2948372364Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stderr","time":"2021-05-16T12:28:57218469262Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stdout","time":"2021-05-16T12:33:55554125891Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-16T12:44:34631423602Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-16T12:49:24869513162Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-16T12:56:02838973033Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-16T12:57:39597529753Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-16T13:08:01673696575Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stdout","time":"2021-05-16T13:26:13241374570Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-16T13:43:36625505144Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-16T14:00:3210322271Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stdout","time":"2021-05-16T14:14:42502183944Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-16T14:16:40694246629Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-16T14:18:12774480271Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stdout","time":"2021-05-16T14:40:34345527619Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-16T14:40:52691418945Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stderr","time":"2021-05-16T14:55:08755619291Z"}
+{"log":"Splunk> Dark Mode","stream":"stderr","time":"2021-05-16T14:57:51245360477Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stdout","time":"2021-05-16T15:16:4797670882Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stdout","time":"2021-05-16T15:16:53903618294Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-16T15:20:47882105498Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-16T15:31:44533370971Z"}
+{"log":"Splunk> 4TW ","stream":"stderr","time":"2021-05-16T15:33:28148124888Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-16T15:40:33267027967Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-16T15:49:43671382189Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stdout","time":"2021-05-16T15:50:15188509251Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-16T16:08:04292829701Z"}
+{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-05-16T16:16:50162502903Z"}
+{"log":"Splunk> Let my people know.","stream":"stdout","time":"2021-05-16T16:32:43489791894Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-16T17:03:03627168944Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-16T17:11:11980443844Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-16T17:15:37160027702Z"}
+{"log":"Splunk> IoTee.","stream":"stderr","time":"2021-05-16T17:16:21347089384Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-16T17:20:17541169394Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-16T17:21:48652573685Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-16T17:33:3785869495Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-16T17:40:53744201183Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-16T17:57:06628506288Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stdout","time":"2021-05-16T17:59:56464620665Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stderr","time":"2021-05-16T18:04:55697852454Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-16T18:14:18925977310Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-16T18:17:58847597855Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-16T18:21:50232715279Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-16T18:22:01761542796Z"}
+{"log":"splunk> Show me your logs ","stream":"stdout","time":"2021-05-16T18:44:19634393068Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-16T18:48:25134173701Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stderr","time":"2021-05-16T19:02:11174011687Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-16T19:09:47749930728Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-16T19:14:44736908530Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stdout","time":"2021-05-16T19:22:48432010767Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-16T19:23:53704564866Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-16T19:24:29864528935Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-16T19:39:4246410550Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-16T19:41:2593649630Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-16T19:47:0912247266Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-16T19:50:45957326422Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-16T19:53:41818778313Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stdout","time":"2021-05-16T20:00:12759290956Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-16T20:08:40161748197Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-16T20:11:12876280750Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-16T20:16:36590112139Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-16T20:18:38155351942Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-16T20:31:48496955953Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-16T20:32:23684084417Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stdout","time":"2021-05-16T20:41:57202542540Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-16T20:43:25581998581Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-16T20:55:29822527960Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-16T21:03:44872093662Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stderr","time":"2021-05-16T21:08:20555299984Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-16T21:13:25775877385Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-16T21:20:13477102212Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stderr","time":"2021-05-16T21:34:19805331067Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-16T21:46:30178747530Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-16T21:51:18728214126Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stderr","time":"2021-05-16T21:54:5492296346Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stdout","time":"2021-05-16T21:59:14425714207Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-16T22:02:04811335822Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-16T22:24:16721886526Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-16T22:30:55311434593Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-16T22:34:26870725787Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-16T22:45:19321583813Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-16T22:59:10650821215Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-16T23:05:09694245710Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-16T23:05:50360820204Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-16T23:08:22817445246Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-16T23:17:42125386229Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stdout","time":"2021-05-16T23:19:34258212891Z"}
+{"log":"splunk> IT like you mean it ","stream":"stdout","time":"2021-05-16T23:27:18883743907Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-16T23:29:56833238060Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-16T23:30:17983625304Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stderr","time":"2021-05-16T23:35:08813994710Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-16T23:38:07947703096Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-17T00:15:10877787850Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-17T00:25:34579766996Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-17T00:28:58381228381Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-17T00:35:18475219766Z"}
+{"log":"Splunk> Can you SPL?","stream":"stdout","time":"2021-05-17T00:38:48325416559Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-17T01:03:5727503989Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-17T01:10:39515671667Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-17T01:10:39494534303Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-17T01:22:04470795875Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stderr","time":"2021-05-17T01:40:26816513920Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-17T01:49:11302349644Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-17T01:50:20935919320Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-17T01:50:30615607348Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-17T01:59:08450244749Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-17T02:03:16940858521Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-17T02:07:40421390634Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-17T02:09:10681054274Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-17T02:25:19241561765Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-17T02:44:27823252200Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-17T02:45:46770941654Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stdout","time":"2021-05-17T02:45:56144412748Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stdout","time":"2021-05-17T02:54:15501872474Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-17T02:55:07943685680Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-17T02:57:49959122762Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stderr","time":"2021-05-17T03:12:4725872580Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-17T03:41:31622902380Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-17T03:50:40704453816Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-17T04:00:56716160872Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stderr","time":"2021-05-17T04:05:15746264423Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-17T04:10:37467086701Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-17T04:11:07819326580Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-05-17T04:17:15532373713Z"}
+{"log":"Splunk> Ask me everything.","stream":"stdout","time":"2021-05-17T04:17:22141707534Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-17T04:28:50619964462Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-17T04:34:5774557559Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-17T04:36:5054229211Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stderr","time":"2021-05-17T04:41:11147364690Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-17T04:43:07629797007Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-17T04:43:50942495879Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stderr","time":"2021-05-17T04:54:38964917100Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stderr","time":"2021-05-17T04:55:16368007873Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stderr","time":"2021-05-17T05:00:52242320030Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-17T05:05:27334859494Z"}
+{"log":"Splunk> Dark Mode","stream":"stdout","time":"2021-05-17T05:13:18741062621Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-17T05:51:30430008808Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-17T05:53:37832291028Z"}
+{"log":"Splunk> Cloud control","stream":"stdout","time":"2021-05-17T05:56:54329983282Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-17T06:00:37309041026Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-17T06:00:59506817057Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stdout","time":"2021-05-17T06:08:58724716727Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-17T06:31:53138980446Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-17T06:42:07956696606Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stderr","time":"2021-05-17T06:45:21643002130Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-17T06:47:45812394916Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-17T06:51:41728615057Z"}
+{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-05-17T06:54:00173453598Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-17T07:05:17741415077Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-17T07:14:25988154616Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-17T07:18:58718440804Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-17T07:22:01266451708Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stderr","time":"2021-05-17T07:25:4878435007Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-17T07:27:28399917452Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-17T07:36:0753217154Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stderr","time":"2021-05-17T07:40:57190684055Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stderr","time":"2021-05-17T07:55:32600712018Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stderr","time":"2021-05-17T07:56:44677163657Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-17T07:57:19398363913Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stdout","time":"2021-05-17T07:57:32649144983Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-17T07:58:17483708437Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-17T08:18:17826645707Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-17T08:22:53787100452Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-17T08:34:46455066639Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-17T08:41:31924390792Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stdout","time":"2021-05-17T08:49:09917584721Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-17T08:50:39341324557Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-17T09:00:23572819172Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-17T09:12:17675136528Z"}
+{"log":"Splunk> Cloud control","stream":"stderr","time":"2021-05-17T09:14:18554152451Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-17T09:33:22558578339Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-17T09:35:13691808544Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-17T09:42:27847417125Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-17T09:47:43441629211Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-17T09:51:07873857585Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stderr","time":"2021-05-17T09:51:51961722786Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-17T09:58:2244782704Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-17T10:05:00179917372Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-17T10:07:3150713425Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stdout","time":"2021-05-17T10:12:17901875689Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-17T10:17:19900876136Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-17T10:33:2117716110Z"}
+{"log":"Splunk> Cloud control","stream":"stdout","time":"2021-05-17T10:35:47469067819Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-17T10:38:26513795630Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-05-17T10:44:32953446825Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-05-17T10:48:49282281174Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-17T10:50:41931425772Z"}
+{"log":"Splunk> Looking for trouble","stream":"stderr","time":"2021-05-17T11:09:08597025613Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-17T11:27:30877126607Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-17T11:33:00168274320Z"}
+{"log":"splunk> IT like you mean it ","stream":"stdout","time":"2021-05-17T11:38:53601253025Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-17T11:39:2948322325Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stderr","time":"2021-05-17T11:49:08729450017Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-17T12:18:34893094202Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stderr","time":"2021-05-17T12:20:01109554560Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-17T12:21:22507463805Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-17T12:21:449487305Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-17T12:26:04652358366Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stderr","time":"2021-05-17T12:44:14136056772Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stderr","time":"2021-05-17T13:00:20570575621Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-17T13:02:40886902275Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-17T13:11:22791711667Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stderr","time":"2021-05-17T13:16:03562053772Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stderr","time":"2021-05-17T13:26:31455770753Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-17T13:30:13377712050Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stdout","time":"2021-05-17T13:30:54134466183Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-05-17T13:31:02206819407Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-17T13:35:58176576590Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-17T13:37:15542409948Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-17T13:40:06384930752Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-17T13:41:54653276495Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-17T13:53:29608321557Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-17T13:56:43211213140Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-17T13:58:44450871482Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-17T14:02:55321549919Z"}
+{"log":"Splunk> Dark Mode","stream":"stdout","time":"2021-05-17T14:05:01155584693Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-17T14:06:53387102468Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stdout","time":"2021-05-17T14:14:14579941533Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-17T14:20:36678270062Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-17T14:24:03452445106Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-17T14:33:56488045920Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-17T14:39:37315958426Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stderr","time":"2021-05-17T14:51:07434379120Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-17T14:55:15810485459Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-17T15:01:361958238Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-17T15:14:232703175Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-17T15:15:2260469878Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-17T15:15:25449154701Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-17T15:27:46961693965Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-17T15:35:52545114290Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-17T15:37:20831205430Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-17T15:45:34935944678Z"}
+{"log":"Splunk> Ask me everything.","stream":"stderr","time":"2021-05-17T16:07:58436880018Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stdout","time":"2021-05-17T16:15:23798791079Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-17T16:16:02591746725Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-17T16:18:59455106800Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-17T16:21:15728635919Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stdout","time":"2021-05-17T16:27:07664062913Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stderr","time":"2021-05-17T16:32:37700110439Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-17T16:47:45419844633Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-17T16:55:29628445447Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-17T17:00:12505486448Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-05-17T17:14:50765298326Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-17T17:20:24367378964Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-17T17:30:31871906555Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-17T17:36:1189820672Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-17T17:37:26849560146Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-17T17:38:33810122222Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-17T17:42:41866736834Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-17T17:54:3181112139Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stderr","time":"2021-05-17T17:58:46647959443Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-17T18:10:06480677933Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-17T18:17:27450541972Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stderr","time":"2021-05-17T18:17:55625732746Z"}
+{"log":"Splunk> Let my people know.","stream":"stdout","time":"2021-05-17T18:27:12704121252Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-05-17T18:31:32157487440Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stdout","time":"2021-05-17T18:33:1847832296Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-17T18:38:42766765570Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-17T18:40:56241226605Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-17T18:43:4198072367Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-05-17T18:47:51853070536Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-17T18:53:16272174644Z"}
+{"log":"splunk> Show me your logs ","stream":"stdout","time":"2021-05-17T18:58:44423072996Z"}
+{"log":"Splunk> Ask me everything.","stream":"stdout","time":"2021-05-17T18:59:20752706689Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-17T19:04:46232255750Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-17T19:06:27722680296Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-17T19:09:04582708808Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-17T19:11:34941471162Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-17T19:19:09761572778Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-17T19:21:45259373049Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-17T19:30:59545693401Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-17T19:39:07923490664Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-17T19:46:42452892015Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-17T19:53:59392450730Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-17T20:19:4573789574Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stdout","time":"2021-05-17T20:21:41538261249Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-17T20:25:4428463397Z"}
+{"log":"Splunk> Counter errorism","stream":"stderr","time":"2021-05-17T20:34:25957014784Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-17T21:05:33673117302Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-17T21:31:48204116985Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stderr","time":"2021-05-17T21:35:35327244586Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-17T21:40:1030429171Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-17T22:01:37976102144Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-17T22:22:12449664558Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-17T22:26:05755403741Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-17T22:31:04992318674Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-17T22:36:3050379022Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-17T22:42:21967527850Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-17T22:47:39749520339Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-17T22:56:22936360693Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-17T22:57:22752200449Z"}
+{"log":"Splunk> Can you SPL?","stream":"stdout","time":"2021-05-17T23:05:43710534721Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stdout","time":"2021-05-17T23:13:39364564002Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-17T23:16:00778484165Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stdout","time":"2021-05-17T23:19:27418332515Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-17T23:27:37150092887Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-17T23:51:25553890741Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-18T00:00:3053306504Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-18T00:03:2595737463Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-18T00:15:15354395542Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-18T00:24:50209111401Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-18T00:41:36293071643Z"}
+{"log":"Splunk> 4TW ","stream":"stderr","time":"2021-05-18T00:41:41144338703Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-18T00:42:09859387275Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stderr","time":"2021-05-18T00:45:08763755026Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-05-18T00:45:25690576133Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-18T00:47:19677842637Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-18T00:55:47484816799Z"}
+{"log":"Splunk> Can you SPL?","stream":"stderr","time":"2021-05-18T01:06:1972954634Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T01:11:33494747939Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T01:24:48479068475Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-18T01:56:36325039078Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-18T02:08:46931193384Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-18T02:14:5430612725Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-18T02:22:43711208431Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-18T02:25:21255209989Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-18T02:29:55471141561Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stdout","time":"2021-05-18T02:38:41960181090Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-18T02:53:30350053683Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stderr","time":"2021-05-18T02:56:20987049922Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stdout","time":"2021-05-18T02:58:31303947920Z"}
+{"log":"Splunk> Ask me everything.","stream":"stdout","time":"2021-05-18T03:01:47887112147Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stderr","time":"2021-05-18T03:12:47132323672Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-18T03:13:37189539233Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-18T03:13:45330163763Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-18T03:19:25529199556Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stderr","time":"2021-05-18T03:50:27560292687Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stdout","time":"2021-05-18T04:18:50445509003Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-18T04:36:12496256212Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-18T04:40:21672996028Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-18T04:52:48182132858Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-05-18T05:02:16169493620Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-18T05:02:3644359081Z"}
+{"log":"Splunk> Looking for trouble","stream":"stdout","time":"2021-05-18T05:07:35655715218Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stderr","time":"2021-05-18T05:10:36136980711Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-18T05:13:03888251378Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-18T05:14:11919549686Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-18T05:16:28776155223Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-18T05:17:4932506028Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-18T05:25:28906144429Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stdout","time":"2021-05-18T05:27:51127216427Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-18T05:29:4556919205Z"}
+{"log":"splunk> IT like you mean it ","stream":"stdout","time":"2021-05-18T05:30:41231051304Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-18T05:30:53856304126Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stdout","time":"2021-05-18T05:42:16425982449Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-18T05:45:26962347155Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stdout","time":"2021-05-18T05:47:20807684034Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T05:49:15888439946Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stderr","time":"2021-05-18T05:52:28542923244Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-18T06:21:44620819597Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-18T06:22:113796073Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-18T06:30:40310132972Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-18T06:39:44106209662Z"}
+{"log":"Splunk> Looking for trouble","stream":"stderr","time":"2021-05-18T06:47:5597011659Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-18T06:52:23588547993Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-18T07:04:54849100813Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-18T07:15:30471098631Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-18T07:17:23891922833Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-18T07:41:02715123295Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-18T07:50:5025904477Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stderr","time":"2021-05-18T07:56:07106787884Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-18T08:10:42809384831Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-18T08:14:48123278994Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-18T08:18:41596807233Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stdout","time":"2021-05-18T08:26:54441690593Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-18T08:42:18776984814Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-18T08:45:3977323403Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-18T08:53:33774680575Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-18T09:26:01808451222Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-18T09:42:19687131464Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stderr","time":"2021-05-18T09:43:41350350962Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T09:45:39171266837Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-18T09:49:35710817443Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-18T09:58:36495396190Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T09:59:15810903128Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-18T10:05:34793571114Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-18T10:12:48158966976Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stderr","time":"2021-05-18T10:34:241413328Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T10:34:47375825435Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stderr","time":"2021-05-18T10:35:26942326236Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-18T10:53:0880126732Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T10:55:28488832673Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-05-18T11:07:43307010506Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-18T11:17:3231101223Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-18T11:20:32643278320Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T11:32:01490135642Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stdout","time":"2021-05-18T11:33:37546392264Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T11:40:32272487551Z"}
+{"log":"Splunk> Now with more code! ","stream":"stdout","time":"2021-05-18T11:42:18713873683Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-18T11:46:49701006235Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-18T11:55:17678948344Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-18T12:04:35352055064Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-18T12:04:57231277210Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-18T12:14:51140367962Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-18T12:19:07310955381Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-18T12:19:22529210280Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-18T12:22:3415260252Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-18T12:45:41325698425Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-18T12:52:47679865466Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-18T13:12:32227664623Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stdout","time":"2021-05-18T13:17:41936925825Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-18T13:33:28990687075Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stderr","time":"2021-05-18T13:33:48633208274Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-18T14:21:39313378852Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-18T14:36:43865710056Z"}
+{"log":"Splunk> Dark Mode","stream":"stderr","time":"2021-05-18T14:47:28321931395Z"}
+{"log":"Splunk> Can you SPL?","stream":"stderr","time":"2021-05-18T14:48:06443392264Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-18T15:01:24628441625Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stdout","time":"2021-05-18T15:03:54990775951Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stderr","time":"2021-05-18T15:11:30467214289Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stderr","time":"2021-05-18T15:11:56259105111Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-18T15:18:15734005766Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-18T15:19:23804194599Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stdout","time":"2021-05-18T15:21:35336064307Z"}
+{"log":"Splunk> Looking for trouble","stream":"stdout","time":"2021-05-18T15:26:35656816577Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-18T15:43:10153619595Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-18T15:57:08430181061Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-18T16:10:0979684574Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stderr","time":"2021-05-18T16:12:00357180778Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-18T16:12:06605707726Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-18T16:15:441026279Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-18T16:17:48515388085Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-18T16:23:10595234319Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-18T16:32:4920547788Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-18T16:35:53941541337Z"}
+{"log":"Splunk> IoTee.","stream":"stderr","time":"2021-05-18T16:49:58754438868Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-18T17:02:45396834136Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stdout","time":"2021-05-18T17:02:59761281182Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-18T17:11:32431359814Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-18T17:39:0048127481Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-18T17:44:27381647618Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-18T18:04:40600152584Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-18T18:09:07797600409Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-18T18:19:46464339272Z"}
+{"log":"Splunk> Cloud control","stream":"stderr","time":"2021-05-18T18:21:5786550035Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-18T18:50:20815057042Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-18T18:58:33314405632Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stdout","time":"2021-05-18T19:11:56545741949Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-18T19:19:43912459871Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stderr","time":"2021-05-18T19:19:53481294405Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-18T19:57:51154037554Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-18T19:59:35591278905Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stderr","time":"2021-05-18T20:00:41510131244Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-18T20:05:0827129101Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-18T20:08:1389749894Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stdout","time":"2021-05-18T20:26:13923620022Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-18T20:44:01309743469Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-18T20:45:57344479870Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-18T20:48:01485935154Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-18T20:52:31517593800Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-18T20:58:09149363423Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-18T20:59:20358489535Z"}
+{"log":"Splunk> Looking for trouble","stream":"stderr","time":"2021-05-18T21:04:15450720675Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stderr","time":"2021-05-18T21:08:34558557096Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stderr","time":"2021-05-18T21:12:03733595145Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-18T21:12:21625119441Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-18T21:13:20706875224Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stdout","time":"2021-05-18T21:31:37182175269Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-18T21:34:12357097977Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-18T21:37:31285728291Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-18T21:46:29385142437Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-05-18T21:47:20118712065Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-18T21:47:41231278977Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stderr","time":"2021-05-18T22:00:49100538089Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-18T22:06:45814451255Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stdout","time":"2021-05-18T22:07:35824925288Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-18T22:13:32629166192Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-18T22:24:16231456262Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stdout","time":"2021-05-18T22:25:28208903426Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-18T22:25:30741799381Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stderr","time":"2021-05-18T22:27:47397711796Z"}
+{"log":"Splunk> The Notorious B.I.G. D.A.T.A. ","stream":"stderr","time":"2021-05-18T22:39:47749030894Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-18T22:42:2877540193Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-18T22:45:11979807873Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-18T23:13:11781321935Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stderr","time":"2021-05-18T23:17:05194126454Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-18T23:39:40528080726Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-18T23:40:18789215229Z"}
+{"log":"Splunk> Take the sh out of IT. ","stream":"stderr","time":"2021-05-18T23:44:03790455706Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-18T23:47:46396936521Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-18T23:48:52646385795Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-19T00:02:15929109378Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-19T00:03:21369695907Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-19T00:16:1527305458Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-19T00:51:50586229511Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T00:53:23670608980Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-19T00:54:11537656252Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-19T00:58:14155063788Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stderr","time":"2021-05-19T01:07:56564045740Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-19T01:11:23859424289Z"}
+{"log":"Splunk> Cloud control","stream":"stderr","time":"2021-05-19T01:12:13655438449Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-19T01:28:37652687374Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-19T01:30:02215014700Z"}
+{"log":"splunk> log, I am your father","stream":"stdout","time":"2021-05-19T01:34:5824329713Z"}
+{"log":"Splunk> Finding your faults, just like mom.","stream":"stdout","time":"2021-05-19T01:36:55849656910Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stderr","time":"2021-05-19T01:45:35844621589Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T02:02:58370614087Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-19T02:21:4494151168Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stdout","time":"2021-05-19T02:23:00913059063Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-19T02:31:56391603321Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-19T02:33:03874894357Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-19T02:38:42107476683Z"}
+{"log":"splunk> log, I am your father","stream":"stderr","time":"2021-05-19T02:46:42802546546Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-19T02:46:47553153205Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-19T02:52:49175541079Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-19T03:16:32332451025Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-19T03:21:29117396649Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-19T03:22:36487367850Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stdout","time":"2021-05-19T03:30:28952139889Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-19T03:31:04735982768Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-19T03:43:23162002266Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stderr","time":"2021-05-19T03:43:34986394515Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-19T03:48:55864746137Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-19T03:49:15724314783Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stdout","time":"2021-05-19T03:51:02828580681Z"}
+{"log":"Splunk> Looking for trouble","stream":"stdout","time":"2021-05-19T04:06:36107490041Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-19T04:08:26155173017Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-19T04:10:59746971008Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-19T04:12:26161695508Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-19T04:21:37888361556Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stdout","time":"2021-05-19T04:22:18293340282Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-19T04:25:41178178361Z"}
+{"log":"Splunk> The end of meh-trics","stream":"stderr","time":"2021-05-19T04:33:57746950985Z"}
+{"log":"splunk> These are the droids you are looking for ","stream":"stderr","time":"2021-05-19T04:38:05388483645Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-19T04:40:2647029165Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-19T04:41:15298006232Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-19T04:41:26837070620Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T04:51:40206408500Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-19T05:06:22624430801Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-19T05:07:34740495611Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-19T05:10:25240393926Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-19T05:11:15164805229Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-19T05:15:39908371384Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stderr","time":"2021-05-19T05:22:43355694100Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stderr","time":"2021-05-19T05:27:00119185103Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-19T05:27:09615417419Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T05:28:01383854341Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T05:41:30956084059Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-19T05:45:06928517863Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-19T05:46:45362769595Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-19T05:55:5494462449Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-19T05:56:01622265632Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-19T06:11:18558524032Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-19T06:12:57623437512Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stdout","time":"2021-05-19T06:25:19787602557Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T06:31:53587544289Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T06:35:59588779104Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-19T06:44:28308687946Z"}
+{"log":"Splunk> 4TW ","stream":"stderr","time":"2021-05-19T06:52:10484990001Z"}
+{"log":"Splunk> More brain, less surgery","stream":"stdout","time":"2021-05-19T06:55:36577367701Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-19T06:55:49931667509Z"}
+{"log":"Splunk> Counter errorism","stream":"stderr","time":"2021-05-19T07:03:23913543183Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-19T07:07:12865027352Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-19T07:09:2794560758Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-19T07:09:4867966078Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-19T07:12:45370494760Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-19T07:15:21934689931Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-19T07:17:07164620218Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-19T07:20:24494672588Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-19T07:27:43834488732Z"}
+{"log":"Splunk> Drop your breaches","stream":"stderr","time":"2021-05-19T07:28:59362687873Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-19T07:32:50668829029Z"}
+{"log":"Splunk> IoTee.","stream":"stdout","time":"2021-05-19T07:35:26303477558Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-19T07:35:37404303317Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-19T07:36:44839573871Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stderr","time":"2021-05-19T07:39:41645315673Z"}
+{"log":"Splunk> Drop your breaches","stream":"stdout","time":"2021-05-19T07:46:25490430919Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stdout","time":"2021-05-19T07:59:13347923816Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T07:59:17495674296Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stdout","time":"2021-05-19T08:00:51372990020Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stderr","time":"2021-05-19T08:13:4821457280Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-19T08:19:28438506588Z"}
+{"log":"Splunk> Let my people know.","stream":"stderr","time":"2021-05-19T08:26:32299146634Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T08:33:44346287005Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-19T08:37:29837796135Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stdout","time":"2021-05-19T08:44:51131164337Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-19T08:44:5884138781Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stderr","time":"2021-05-19T08:45:53512779320Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-19T08:45:57501668045Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-19T08:52:04959845481Z"}
+{"log":"Splunk> Dark Mode","stream":"stdout","time":"2021-05-19T08:56:59717382228Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T09:00:25203748675Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-19T09:04:1178377386Z"}
+{"log":"Splunk> Dark Mode","stream":"stdout","time":"2021-05-19T09:05:42358741781Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stderr","time":"2021-05-19T09:06:31537459917Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-19T09:08:30844464021Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-19T09:08:37272923773Z"}
+{"log":"Splunk> Drop your breaches","stream":"stderr","time":"2021-05-19T09:18:155348273Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-19T09:31:29300639108Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stderr","time":"2021-05-19T09:57:56228237718Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-19T10:06:01582117847Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-19T10:12:18612294719Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-19T10:14:02820220723Z"}
+{"log":"Splunk> The IT Search Engine. ","stream":"stdout","time":"2021-05-19T10:18:13803789738Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-19T10:18:24273181315Z"}
+{"log":"splunk> IT like you mean it ","stream":"stdout","time":"2021-05-19T10:19:47717380525Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-19T10:26:53237387873Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stdout","time":"2021-05-19T10:48:58925140429Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-19T10:51:06435607751Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-19T10:56:27986744840Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-19T11:00:14796761738Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-19T11:00:44513113466Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stdout","time":"2021-05-19T11:04:58951066441Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-19T11:10:07261651153Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-19T11:11:56385340519Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stderr","time":"2021-05-19T11:21:58352626359Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-19T11:23:0852066262Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-19T11:26:08390566975Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-19T11:27:0189556761Z"}
+{"log":"Splunk> Ask me everything.","stream":"stderr","time":"2021-05-19T11:28:22182644387Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stderr","time":"2021-05-19T11:29:59989563589Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-19T11:32:20589522687Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-19T11:52:09736169542Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stdout","time":"2021-05-19T12:02:44658424766Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-19T12:06:38121356224Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stderr","time":"2021-05-19T12:12:37308392867Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-19T12:29:32769555166Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stderr","time":"2021-05-19T12:36:06757332349Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-19T12:38:27164629314Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-19T12:44:23450671534Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-19T13:04:12479733727Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-19T13:09:40620562699Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-19T13:12:16288656750Z"}
+{"log":"splunk> Show me your logs ","stream":"stdout","time":"2021-05-19T13:27:47970445025Z"}
+{"log":"splunk> Show me your logs ","stream":"stdout","time":"2021-05-19T13:30:45625813349Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-19T13:34:25918102553Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stderr","time":"2021-05-19T13:39:03479926293Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-19T13:46:36936456143Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-19T13:50:45851437461Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-19T14:10:53208333773Z"}
+{"log":"Splunk> Counter errorism","stream":"stderr","time":"2021-05-19T14:12:23684997109Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stderr","time":"2021-05-19T14:16:43840896861Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-19T14:20:53381629066Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-19T14:26:43110776754Z"}
+{"log":"Splunk> Stop chasing your tail -f","stream":"stdout","time":"2021-05-19T14:33:38430034033Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-19T14:37:09165763016Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-19T14:39:15750344545Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stderr","time":"2021-05-19T14:52:51688246391Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-19T15:06:26477974716Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-19T15:08:35960135075Z"}
+{"log":"Splunk> Let my people know.","stream":"stdout","time":"2021-05-19T15:17:38584391715Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-19T15:19:1830980799Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stderr","time":"2021-05-19T15:30:30800416918Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stderr","time":"2021-05-19T15:49:36354028370Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stdout","time":"2021-05-19T15:50:21921666411Z"}
+{"log":"Splunk> Dark Mode","stream":"stderr","time":"2021-05-19T15:51:23254230792Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-19T15:57:16550192643Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-19T16:00:08949703160Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stderr","time":"2021-05-19T16:09:2123718766Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stderr","time":"2021-05-19T16:17:18851384709Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stdout","time":"2021-05-19T16:20:3779636106Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-19T16:21:44618789438Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-19T16:23:14443916403Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-19T16:28:12941111837Z"}
+{"log":"Splunk> Can you SPL?","stream":"stderr","time":"2021-05-19T16:28:27275578545Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T16:33:5666263186Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-19T16:34:40566354150Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-19T16:36:4244235051Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-19T16:42:35901831216Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-19T16:47:38439628098Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-19T16:47:52498403573Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-19T16:53:07572882370Z"}
+{"log":"Splunk> Now with more code! ","stream":"stderr","time":"2021-05-19T17:17:46159448466Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-19T17:33:49709445467Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-19T17:36:2527240335Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-19T17:56:2720874771Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stderr","time":"2021-05-19T18:02:06605973850Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-19T18:02:36958778449Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-19T18:02:49144490825Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-19T18:02:57560282460Z"}
+{"log":"Splunk> Dark Mode","stream":"stderr","time":"2021-05-19T18:11:0212589626Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-19T18:11:45720397498Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stderr","time":"2021-05-19T18:16:4581155591Z"}
+{"log":"Splunk> Needle. Haystack. Found. ","stream":"stdout","time":"2021-05-19T18:19:57521268364Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stderr","time":"2021-05-19T18:23:00408625185Z"}
+{"log":"splunk> don't get caught up in the game of pwns ","stream":"stdout","time":"2021-05-19T18:44:05566197734Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stdout","time":"2021-05-19T18:46:37418446617Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stdout","time":"2021-05-19T18:49:55267718536Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-19T18:58:56524803996Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stdout","time":"2021-05-19T19:04:14722486808Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stderr","time":"2021-05-19T19:05:04561616637Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-19T19:12:20707895229Z"}
+{"log":"Splunk> Counter errorism","stream":"stderr","time":"2021-05-19T19:17:20880286661Z"}
+{"log":"Splunk> Can you SPL?","stream":"stdout","time":"2021-05-19T19:44:34952918831Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-19T19:49:48374165539Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-19T19:50:1260524823Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-19T20:04:08952339148Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-19T20:07:37894735494Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-19T20:09:23300392746Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stdout","time":"2021-05-19T20:10:55233360822Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-19T20:11:14698393841Z"}
+{"log":"Splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-19T20:12:12865658280Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-19T20:18:05266008866Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-19T20:29:14389836283Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-19T20:32:21885510521Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-19T20:43:42106649761Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-19T20:54:37296437141Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-19T20:56:35325648380Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-19T20:59:03142202550Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stderr","time":"2021-05-19T21:13:20764512952Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-19T21:18:27485667540Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-19T21:26:36363240607Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-19T21:31:2744636399Z"}
+{"log":"Splunk> Find your Achilles' heel, before a Trojan does.","stream":"stdout","time":"2021-05-19T21:42:54145470755Z"}
+{"log":"Splunk> Don't be a SOAR loser","stream":"stdout","time":"2021-05-19T21:44:40462154499Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-19T21:55:37893906198Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-19T21:56:4720969116Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stdout","time":"2021-05-19T22:03:31357081004Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-19T22:04:00502801591Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-19T22:06:33760124226Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-19T22:22:08907352697Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stderr","time":"2021-05-19T22:35:49144980671Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stderr","time":"2021-05-19T22:40:26815926923Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stderr","time":"2021-05-19T22:46:06986094253Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-19T22:50:14715026093Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stderr","time":"2021-05-19T22:55:17363379841Z"}
+{"log":"splunk> Chasing tail since 2003 ","stream":"stderr","time":"2021-05-19T23:07:13301853387Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-19T23:08:59415647992Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stdout","time":"2021-05-19T23:11:53955629780Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-19T23:16:36391215517Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-19T23:16:46157298961Z"}
+{"log":"Splunk> See your world. Maybe wish you hadn’t. ","stream":"stderr","time":"2021-05-19T23:17:36663826668Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stdout","time":"2021-05-19T23:32:26185133118Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-19T23:45:0535298055Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-19T23:48:48749613122Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-20T00:02:3381505723Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-20T00:04:57867841522Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-20T00:17:57800976694Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stdout","time":"2021-05-20T00:29:13472553990Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-20T00:32:04498847207Z"}
+{"log":"Splunk> Looking for trouble","stream":"stdout","time":"2021-05-20T00:42:50331527629Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-20T01:15:42588276712Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stdout","time":"2021-05-20T01:19:16402330037Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-20T01:25:15476621691Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-20T01:29:4453447197Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-20T01:41:24741789461Z"}
+{"log":"Splunk> data with destiny ","stream":"stderr","time":"2021-05-20T01:44:18870755530Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-20T02:00:39916545653Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stdout","time":"2021-05-20T02:01:26200927760Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-20T02:09:05169612577Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-20T02:10:55709962672Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-20T02:11:39192830635Z"}
+{"log":"Splunk> Map. Reduce. Recycle. ","stream":"stdout","time":"2021-05-20T02:13:54796190710Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-20T02:18:34328918978Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stderr","time":"2021-05-20T02:21:59780259806Z"}
+{"log":"Splunk> Ask me everything.","stream":"stderr","time":"2021-05-20T02:36:35946701477Z"}
+{"log":"Splunk> see the forest, and the trees ","stream":"stdout","time":"2021-05-20T02:40:33426528851Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stdout","time":"2021-05-20T02:41:36235431112Z"}
+{"log":"Splunk> datamodels > dating models","stream":"stderr","time":"2021-05-20T02:41:55975949002Z"}
+{"log":"Splunk> Ask me everything.","stream":"stdout","time":"2021-05-20T02:53:58566812818Z"}
+{"log":"splunk> \\\. nuff said. ","stream":"stderr","time":"2021-05-20T03:05:01685396900Z"}
+{"log":"Splunk> Winning the War on Error ","stream":"stdout","time":"2021-05-20T03:08:41994471141Z"}
+{"log":"Splunk> data with destiny ","stream":"stdout","time":"2021-05-20T03:09:33189872502Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stderr","time":"2021-05-20T03:12:18999125030Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stdout","time":"2021-05-20T03:13:35636753310Z"}
+{"log":"Splunk> Looking for trouble","stream":"stderr","time":"2021-05-20T03:26:03525147682Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-20T03:27:00259476536Z"}
+{"log":"splunk> We line break for regular expressions ","stream":"stderr","time":"2021-05-20T03:32:11578197948Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-20T03:35:38713183488Z"}
+{"log":"Splunk> Australian for grep. ","stream":"stdout","time":"2021-05-20T03:41:39362759487Z"}
+{"log":"splunk> All batbelt. No tights. ","stream":"stderr","time":"2021-05-20T03:51:10986124834Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-20T03:55:022862986Z"}
+{"log":"splunk> Show me your logs ","stream":"stderr","time":"2021-05-20T03:55:13879776197Z"}
+{"log":"Splunk> See your world, Mabye you wish you hadn'tail","stream":"stderr","time":"2021-05-20T04:04:13502356582Z"}
+{"log":"Splunk> Counter errorism","stream":"stdout","time":"2021-05-20T04:05:07408949225Z"}
+{"log":"splunk> The bran for your system ","stream":"stderr","time":"2021-05-20T04:07:07826759839Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-20T04:13:02172343508Z"}
+{"log":"Splunk> see the light before you tunnel","stream":"stdout","time":"2021-05-20T04:40:1112185764Z"}
+{"log":"Splunk> Machine watchable","stream":"stderr","time":"2021-05-20T04:40:59513639628Z"}
+{"log":"Splunk> Cloud control","stream":"stderr","time":"2021-05-20T04:55:17244113535Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-20T04:56:19386967765Z"}
+{"log":"splunk> The bran for your system ","stream":"stdout","time":"2021-05-20T05:08:02622916115Z"}
+{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-05-20T05:23:2715237479Z"}
+{"log":"Splunk> Drop your breaches","stream":"stderr","time":"2021-05-20T05:23:38713237168Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-20T05:33:0457070736Z"}
+{"log":"Splunk> Take the sh out of IT","stream":"stderr","time":"2021-05-20T05:42:35537925385Z"}
+{"log":"Splunk> A petabyte of data is a terrible thing to waste.","stream":"stdout","time":"2021-05-20T05:49:4374878771Z"}
+{"log":"Splunk> I like Big Data and I cannot lie.","stream":"stdout","time":"2021-05-20T05:54:43331863499Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stdout","time":"2021-05-20T05:56:45639421703Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-20T06:01:34556053087Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stdout","time":"2021-05-20T06:10:33335680839Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stdout","time":"2021-05-20T06:14:03491197721Z"}
+{"log":"Splunk> Beause Ninjas are too busy.","stream":"stdout","time":"2021-05-20T06:23:00811722514Z"}
+{"log":"splunk> Show me your logs ","stream":"stdout","time":"2021-05-20T06:38:07172761457Z"}
+{"log":"Splunk> Machine watchable","stream":"stderr","time":"2021-05-20T06:40:11805888336Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stdout","time":"2021-05-20T06:42:52330568112Z"}
+{"log":"Splunk> $bin/splunk help","stream":"stderr","time":"2021-05-20T06:47:13294736271Z"}
+{"log":"splunk> I gotta fever, and the only cure is MOAR LICENSE! ","stream":"stdout","time":"2021-05-20T06:59:30681509522Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-20T07:04:44916401611Z"}
+{"log":"Splunk> Cloud control","stream":"stdout","time":"2021-05-20T07:05:28234398538Z"}
+{"log":"splunk> We enjoy breaks more than Unions ","stream":"stderr","time":"2021-05-20T07:07:27689106594Z"}
+{"log":"splunk> More flexible than an Olympic gymnast. ","stream":"stdout","time":"2021-05-20T07:16:08866472752Z"}
+{"log":"splunk> Open a can of whooparse ","stream":"stderr","time":"2021-05-20T07:20:39626934042Z"}
+{"log":"splunk> Digs deeper than a jealous spouse. ","stream":"stderr","time":"2021-05-20T07:21:5543126999Z"}
+{"log":"Splunk> IoTee.","stream":"stderr","time":"2021-05-20T07:28:09155682829Z"}
+{"log":"Splunk> You bet your sweet SaaS","stream":"stdout","time":"2021-05-20T07:30:2738049115Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stdout","time":"2021-05-20T07:48:14426609707Z"}
+{"log":"Splunk> I like big data and I cannot lie. ","stream":"stderr","time":"2021-05-20T07:49:58736504496Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stderr","time":"2021-05-20T07:50:18717731860Z"}
+{"log":"Splunk> IoTee.","stream":"stderr","time":"2021-05-20T08:00:42911352957Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-20T08:14:32838427443Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stderr","time":"2021-05-20T08:15:36355468440Z"}
+{"log":"Splunk> Counter errorism","stream":"stderr","time":"2021-05-20T08:39:58813398771Z"}
+{"log":"Splunk> See the forest "and" the trees.","stream":"stdout","time":"2021-05-20T08:55:54366422012Z"}
+{"log":"splunk> IT like you mean it ","stream":"stderr","time":"2021-05-20T08:58:23580206974Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-20T09:00:43215890232Z"}
+{"log":"Splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-20T09:03:22655999808Z"}
+{"log":"splunk> Finding disturbances in the Force before the Jedi Masters ","stream":"stdout","time":"2021-05-20T09:21:04694153342Z"}
+{"log":"Splunk> I'm ESXi and I know it","stream":"stderr","time":"2021-05-20T09:25:29852957740Z"}
+{"log":"splunk ML> Solve problems you didn't know you were about to have ","stream":"stdout","time":"2021-05-20T09:33:13863309806Z"}
+{"log":"Splunk> Be an IT superhero. Go home early. ","stream":"stderr","time":"2021-05-20T09:34:03782956711Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-20T09:44:25870803574Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stdout","time":"2021-05-20T09:56:45811312379Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-20T10:11:27257447081Z"}
+{"log":"splunk> The mars rover of the IT landfill. ","stream":"stdout","time":"2021-05-20T10:13:15323974617Z"}
+{"log":"splunk> this way: Run-D.M.C. ","stream":"stdout","time":"2021-05-20T10:16:27647464771Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-20T10:21:55210284355Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stderr","time":"2021-05-20T10:45:10488808616Z"}
+{"log":"splunk> Caught me on the server - Wasn't me. ","stream":"stdout","time":"2021-05-20T10:53:17878601803Z"}
+{"log":"splunk> because ninjas are too busy ","stream":"stderr","time":"2021-05-20T10:56:42953650539Z"}
+{"log":"splunk> Rhymes with drunk ","stream":"stdout","time":"2021-05-20T11:10:13353930693Z"}
+{"log":"Splunk> When you bring data to Everything anything is possible","stream":"stderr","time":"2021-05-20T11:12:28676706749Z"}
+{"log":"Splunk> Log. I am your farther","stream":"stdout","time":"2021-05-20T11:51:07191083318Z"}
+{"log":"splunk> Walking War Room!! ","stream":"stderr","time":"2021-05-20T11:58:36788688669Z"}
+{"log":"Splunk> Like an F-18, bro. ","stream":"stdout","time":"2021-05-20T11:58:5772108676Z"}
+{"log":"splunk> Finding your faults, just like mom. ","stream":"stdout","time":"2021-05-20T12:03:59818118167Z"}
+{"log":"Splunk> Ctrl + F1","stream":"stderr","time":"2021-05-20T12:15:0029222962Z"}
+{"log":"Splunk> Run DMC and make it less tricky.","stream":"stderr","time":"2021-05-20T12:47:08144513354Z"}
+{"log":"Splunk> Because you can't always blame Canada","stream":"stderr","time":"2021-05-20T12:54:25915139261Z"}
+{"log":"Splunk> CSI: Logfiles. ","stream":"stderr","time":"2021-05-20T13:08:2882768756Z"}
+{"log":"splunk> The corkscrew for your vintage data. ","stream":"stdout","time":"2021-05-20T13:08:34436387123Z"}
+{"log":"Splunk> Weapon of a Security Warrior.","stream":"stderr","time":"2021-05-20T13:09:46855569691Z"}
+{"log":"Splunk> Its not a | line problem.","stream":"stdout","time":"2021-05-20T13:11:4137928564Z"}
+{"log":"Splunk> Machine watchable","stream":"stdout","time":"2021-05-20T13:17:43697891261Z"}
+{"log":"Splunk> Dark Mode","stream":"stderr","time":"2021-05-20T13:29:37254999646Z"}
+{"log":"Splunk> 4TW ","stream":"stdout","time":"2021-05-20T13:31:44380076331Z"}
