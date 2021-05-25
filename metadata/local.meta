@@ -114,3 +114,10 @@ modtime = 1621512860.857009000
 owner = admin
 version = 8.2.0
 modtime = 1621603685.505212000
+
+[inputs/http%3A%2F%2Fjson_indexed_ingestion]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = admin
+version = 8.2.0
+modtime = 1621609967.667490000
