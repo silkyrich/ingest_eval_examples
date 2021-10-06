@@ -1,18 +1,114 @@
 <form>
   <label>Find IP addresses</label>
-  <fieldset submitButton="false">
-    <input type="text" token="ip_filter">
-      <label>Wildcard search IP addresses</label>
-      <default>*</default>
-    </input>
-  </fieldset>
+  <fieldset submitButton="false"></fieldset>
   <row>
     <panel>
       <title>Example events containing IP addresses, the _raw string includes delibarately malformed IP addresses to challenge the REGEX</title>
       <table>
         <search>
-          <query>index="ingest_eval_examples_*" sourcetype="find_ip_addresses" ip::$ip_filter$
+          <query>index="ingest_eval_examples_*" sourcetype="find_ip_addresses"
+| head 10000
 | table _raw ip</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Number of records in index</title>
+      <single>
+        <search>
+          <query>| tstats count as events where index="ingest_eval_examples_*" sourcetype="find_ip_addresses"</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Number of unique IP addresses found</title>
+      <single>
+        <title>Number of IPs</title>
+        <search>
+          <query>| tstats dc(ip) as events where index="ingest_eval_examples_*" sourcetype="find_ip_addresses"</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <input type="time" token="time">
+        <label></label>
+        <default>
+          <earliest>0</earliest>
+          <latest></latest>
+        </default>
+      </input>
+      <input type="text" token="ip_filter">
+        <label>Wildcard search IP addresses</label>
+        <default>*</default>
+        <fieldForLabel>ip</fieldForLabel>
+        <fieldForValue>ip</fieldForValue>
+      </input>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <event>
+        <title>Performance raw search with ip via schema on the fly</title>
+        <search>
+          <done>
+            <set token="normal_search">$job.sid$</set>
+          </done>
+          <query>index="ingest_eval_examples_*" sourcetype="find_ip_addresses" $ip_filter$
+| head 100000</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+    <panel>
+      <event>
+        <title>Performance raw search with ip via indexed fields</title>
+        <search>
+          <done>
+            <set token="indexed_fields">$job.sid$</set>
+          </done>
+          <query>index="ingest_eval_examples_*" sourcetype="find_ip_addresses" ip::$ip_filter$ 
+| head 100000</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="list.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </event>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Performance raw search with ip via indexed fields</title>
+        <search>
+          <query>| union 
+    [| rest /services/search/jobs/$indexed_fields$ 
+    | table eventCount scanCount searchTotalEliminatedBucketsCount searchTotalBucketsCount runDuration 
+    | eval search_type="indexed_field"] 
+    [| rest /services/search/jobs/$normal_search$ 
+    | table eventCount scanCount searchTotalEliminatedBucketsCount searchTotalBucketsCount runDuration 
+    | eval search_type="normal_search"] 
+| eval localised_buckets=(searchTotalBucketsCount-searchTotalEliminatedBucketsCount),
+    schema_on_the_fly_elmination=round(100*(scanCount-eventCount)/scanCount,2),
+    runDuration=round(runDuration,2)
+| table search_type *</query>
           <earliest>0</earliest>
           <latest></latest>
         </search>

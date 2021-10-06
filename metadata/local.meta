@@ -112,8 +112,8 @@ modtime = 1621512860.857009000
 
 [views/find_ip_addresses]
 owner = admin
-version = 8.2.0
-modtime = 1621603685.505212000
+version = 8.2.1
+modtime = 1632926274.563402000
 
 [inputs/http%3A%2F%2Fjson_indexed_ingestion]
 access = read : [ admin ], write : [ admin ]
