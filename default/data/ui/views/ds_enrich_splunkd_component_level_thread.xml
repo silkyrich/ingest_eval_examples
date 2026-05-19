@@ -1,4 +1,3 @@
-
 <dashboard version="2" theme="light">
     <label>Enrich splunkd log</label>
     <description></description>
@@ -7,28 +6,15 @@
 	"title": "Enrich splunkd log",
 	"description": "",
 	"inputs": {
-		"input_KtlHhgqi": {
+		"input_component": {
 			"context": {
-				"formattedConfig": {
-					"number": {
-						"prefix": ""
-					}
-				},
+				"formattedConfig": {"number": {"prefix": ""}},
 				"formattedStatics": "> statics | formatByType(formattedConfig)",
 				"label": "> primary | seriesByName(\"label\") | renameSeries(\"label\") | formatByType(formattedConfig)",
-				"statics": [
-					[
-						"*"
-					],
-					[
-						"*"
-					]
-				],
+				"statics": [["*"], ["*"]],
 				"value": "> primary | seriesByName(\"component\") | renameSeries(\"value\") | formatByType(formattedConfig)"
 			},
-			"dataSources": {
-				"primary": "ds_W5sUieUj"
-			},
+			"dataSources": {"primary": "ds_component_list"},
 			"options": {
 				"defaultValue": "*",
 				"items": "> frame(label, value) | prepend(formattedStatics) | objects()",
@@ -41,149 +27,138 @@
 	},
 	"defaults": {
 		"dataSources": {
-			"ds.search": {
-				"options": {
-					"queryParameters": {}
-				}
-			},
-			"ds.spl2": {
-				"options": {
-					"queryParameters": {}
-				}
-			}
+			"ds.search": {"options": {"queryParameters": {}}},
+			"ds.spl2":   {"options": {"queryParameters": {}}}
 		},
-		"visualizations": {
-			"global": {
-				"showProgressBar": true
-			}
-		}
+		"visualizations": {"global": {"showProgressBar": true}}
 	},
 	"visualizations": {
-		"viz_9hsKoMfi": {
+		"viz_kpi_events": {
+			"type": "splunk.singlevalue",
+			"dataSources": {"primary": "ds_kpi_events"},
 			"options": {
-				"markdown": "# Problem statment\nEvery Splunk component generates numerous log files including `metrics.log`, `splunkd.log`, `health.log` and more. These log files all share the same sourcetype `splunkd` and this is written to the index `_internal`. This index is normally in the top largest indexes on any Splunk platform and the contents are vital to monitoring and debugging splunk. In later releases `thread_name` and `thread_id` has been added to logging from `splunkd.log`. Because of its size searching the `_internal` index is expensive and slow.\n\n## Existing solution\nBy default enrichment of the `splunkd` sourcetype is done at search time using schema on the fly. This highly efficent if you are not searching that index as you save parsing costs at point of ingestion. However at point of searching this is expensive and time consuming.\n\n## Proposed Solution\nTo aid the performance of searching the `splunkd` sourcetype we will use a `REGEX` transform to extract the fields `component`, `log_line`, `thread_name` and `thread_id` from the log files and write them into indexed fields during ingestion. This will increase the parsing costs at ingestion time, but will reduce searching costs when referencing the indexed fields.\n\n### Example data\nThe following log lines are from a splunks instance and show both formats for splunkd log.\n\n    # 09-21-2020 09:51:06.241 +0000 INFO  TailReader [10099 batchreader1] - Starting batchreader1 thread\n    # 09-21-2020 09:50:57.229 +0000 INFO  CMSlave [9659 MainThread] - starting heartbeat thread\n    # 09-21-2020 09:50:57.229 +0000 INFO  CMSlave - starting heartbeat thread\n\n### Steps\n\n1. We start with a `REGEX` extraction to extract the fields `component`, `log_line`, `thread_name` and `thread_id`\n1. The fields `thread_name` and `thread_id` are optional which will create empty indexed fields\n1. We use INGEST_EVAL to remove the indexed fields `thread_name` and `thread_id` when they were empty\n1. While indexing the log line extracting the tokens, we use a custom segementation option to drop the time and date, and we stop the generation of major breakers (use the dynamic indexed fields pattern for this sourcetype)\n\n### props.conf\n\n    # this transform applies a REGEX transform to extract the log_level, the component and thread name and if is it there\n    [enrich_splunkd_component_level_thread]\n    TIME_PREFIX = ^\n    TIME_FORMAT = %m-%d-%Y %H:%M:%S.%l %z\n    SHOULD_LINEMERGE=false\n    LINE_BREAKER=([\\n\\r]+)\n    TRANSFORMS-enrich-splunkd-log_level = enrich_splunkd_component_level_thread-extract_log_level_etc, enrich_splunkd_component_level_thread-drop_null_thread_info\n\n### transforms.conf\n\n    [enrich_splunkd_component_level_thread-extract_log_level_etc]\n    SOURCE_KEY = _raw\n    WRITE_META = true\nREGEX = ^\\d\\d\\-\\d\\d-\\d{4}\\s\\d\\d:\\d\\d\\:\\d\\d\\.\\d{0,6}\\s[+\\-]\\d{4}\\s(INFO|DEBUG|ERROR|WARN|DEBUG)\\s+(\\S+)\\s(?:\\[(\\d+)\\s(\\S+)\\])?\n    FORMAT = log_level::$1 component::$2 thread_id::$3 thread_name::$4 \n\n    [enrich_splunkd_component_level_thread-drop_null_thread_info]\n    INGEST_EVAL = thread_id:=if(thread_id=\"\",null(),thread_id), thread_name:=if(thread_name=\"\",null(),thread_name)\n    \n### Segmentors.conf\n\n    # This stanza has been built to disable major breakers and to not index the date time portion\n    # of the event. Together they dramatically reduce the number of tokens generated by this source, which reduces\n    # the bloat in tsidx\n    [enrich_splunkd_component_level_thread]\n    FILTER = ^\\d\\d-\\d\\d-\\d{4}\\s\\d\\d:\\d\\d:\\d\\d\\.\\d\\d\\d [-+]\\d{4} (.*)$\n    INTERMEDIATE_MAJORS = false\n    MAJOR = [ ] < > ( ) { } | ! ; , ' \" \\n \\r \\s \\t & ? + %21 %26 %2526 %3B %7C %20 %2B %3D -- %2520 %5D %5B %3A %0A %2C %28 %29 / : = @ . - $ # % \\\\ _\n    MINOR = "
+				"backgroundColor": "transparent",
+				"majorFontSize": 42
 			},
-			"type": "splunk.markdown"
+			"title": "Events indexed"
 		},
-		"viz_lUxfc0dH": {
-			"dataSources": {
-				"fieldsummary": "ds_VGH9n6rB",
-				"primary": "ds_UxePH5tt"
-			},
+		"viz_kpi_components": {
+			"type": "splunk.singlevalue",
+			"dataSources": {"primary": "ds_kpi_components"},
 			"options": {
-				"list.drilldown": "none"
+				"backgroundColor": "transparent",
+				"majorFontSize": 42
 			},
+			"title": "Distinct components"
+		},
+		"viz_narrative": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem statement\nEvery Splunk component generates numerous log files including `metrics.log`, `splunkd.log`, `health.log` and more. These log files all share the same sourcetype `splunkd` and this is written to the index `_internal`. This index is normally in the top largest indexes on any Splunk platform and the contents are vital to monitoring and debugging splunk. In later releases `thread_name` and `thread_id` has been added to logging from `splunkd.log`. Because of its size searching the `_internal` index is expensive and slow.\n\n## Existing solution\nBy default enrichment of the `splunkd` sourcetype is done at search time using schema on the fly. This is highly efficient if you are not searching that index as you save parsing costs at point of ingestion. However at point of searching this is expensive and time consuming.\n\n## Proposed solution\nTo aid the performance of searching the `splunkd` sourcetype we use a `REGEX` transform to extract the fields `component`, `log_line`, `thread_name` and `thread_id` from the log files and write them into indexed fields during ingestion. This increases the parsing cost at ingestion time, but reduces searching costs when referencing the indexed fields.\n\n## Example data\nThe following log lines are from a splunk instance and show both formats for splunkd log.\n\n```text\n09-21-2020 09:51:06.241 +0000 INFO  TailReader [10099 batchreader1] - Starting batchreader1 thread\n09-21-2020 09:50:57.229 +0000 INFO  CMSlave [9659 MainThread] - starting heartbeat thread\n09-21-2020 09:50:57.229 +0000 INFO  CMSlave - starting heartbeat thread\n```\n\n## Steps\n\n1. Start with a `REGEX` extraction to extract the fields `component`, `log_line`, `thread_name` and `thread_id`.\n2. The fields `thread_name` and `thread_id` are optional which will create empty indexed fields.\n3. Use `INGEST_EVAL` to remove the indexed fields `thread_name` and `thread_id` when they are empty.\n4. While indexing the log line and extracting the tokens, use a custom segmentation option to drop the time and date, and stop the generation of major breakers (the dynamic indexed-fields pattern for this sourcetype).\n"
+			}
+		},
+		"viz_props": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### props.conf\n\nApplies the regex transform and the segmentation tweak for this sourcetype.\n\n```ini\n[enrich_splunkd_component_level_thread]\nTIME_PREFIX = ^\nTIME_FORMAT = %m-%d-%Y %H:%M:%S.%l %z\nSHOULD_LINEMERGE = false\nLINE_BREAKER = ([\\n\\r]+)\nTRANSFORMS-enrich-splunkd-log_level = \\\n    enrich_splunkd_component_level_thread-extract_log_level_etc, \\\n    enrich_splunkd_component_level_thread-drop_null_thread_info\n```\n"
+			}
+		},
+		"viz_transforms": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### transforms.conf\n\nThe `extract` transform writes the parsed fields to `_meta`; the `drop_null` transform clears empty thread fields so they aren't indexed.\n\n```ini\n[enrich_splunkd_component_level_thread-extract_log_level_etc]\nSOURCE_KEY = _raw\nWRITE_META = true\nREGEX = ^\\d\\d-\\d\\d-\\d{4}\\s\\d\\d:\\d\\d:\\d\\d\\.\\d{0,6}\\s[+\\-]\\d{4}\\s(INFO|DEBUG|ERROR|WARN)\\s+(\\S+)\\s(?:\\[(\\d+)\\s(\\S+)\\])?\nFORMAT = log_level::$1 component::$2 thread_id::$3 thread_name::$4\n\n[enrich_splunkd_component_level_thread-drop_null_thread_info]\nINGEST_EVAL = thread_id:=if(thread_id=\"\",null(),thread_id), \\\n              thread_name:=if(thread_name=\"\",null(),thread_name)\n```\n"
+			}
+		},
+		"viz_segmenters": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### segmenters.conf\n\nDisables major breakers and skips indexing the date/time portion of the event. Together these dramatically reduce token bloat in tsidx for this sourcetype.\n\n```ini\n[enrich_splunkd_component_level_thread]\nFILTER = ^\\d\\d-\\d\\d-\\d{4}\\s\\d\\d:\\d\\d:\\d\\d\\.\\d\\d\\d [-+]\\d{4} (.*)$\nINTERMEDIATE_MAJORS = false\nMAJOR = [ ] < > ( ) { } | ! ; , ' \" \\n \\r \\s \\t & ? + \\\n        %21 %26 %2526 %3B %7C %20 %2B %3D -- %2520 %5D %5B \\\n        %3A %0A %2C %28 %29 / : = @ . - $ # % \\\\ _\nMINOR =\n```\n"
+			}
+		},
+		"viz_events": {
+			"type": "splunk.events",
+			"dataSources": {
+				"primary": "ds_events",
+				"fieldsummary": "ds_events_fieldsummary"
+			},
+			"options": {"list.drilldown": "none"},
 			"showProgressBar": true,
-			"type": "splunk.events"
+			"title": "Sample events"
 		},
-		"viz_zKOtw4RX": {
-			"dataSources": {
-				"primary": "ds_UxePH5tt"
+		"viz_component_chart": {
+			"type": "splunk.column",
+			"dataSources": {"primary": "ds_events"},
+			"options": {
+				"legendTruncation": "ellipsisMiddle"
 			},
-			"type": "splunk.column"
+			"title": "Event counts by component"
 		}
 	},
 	"dataSources": {
-		"ds_UxePH5tt": {
-			"name": "Events 1 search",
+		"ds_events": {
+			"name": "Events search",
+			"type": "ds.search",
 			"options": {
 				"query": "index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread",
-				"queryParameters": {
-					"earliest": "0",
-					"latest": ""
-				}
-			},
-			"type": "ds.search"
+				"queryParameters": {"earliest": "0", "latest": ""}
+			}
 		},
-		"ds_VGH9n6rB": {
-			"name": "Events 2 search",
+		"ds_events_fieldsummary": {
+			"name": "Events fieldsummary",
+			"type": "ds.chain",
 			"options": {
-				"extend": "ds_UxePH5tt",
+				"extend": "ds_events",
 				"query": "| fieldsummary maxvals=10"
-			},
-			"type": "ds.chain"
+			}
 		},
-		"ds_W5sUieUj": {
-			"name": "Select component search",
+		"ds_component_list": {
+			"name": "Component list",
+			"type": "ds.search",
 			"options": {
 				"query": "index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread \n| stats count by component \n| sort - count\n| eval label=component.\" (\".count.\")\"",
-				"queryParameters": {
-					"earliest": "0",
-					"latest": "now"
-				}
-			},
-			"type": "ds.search"
+				"queryParameters": {"earliest": "0", "latest": "now"}
+			}
+		},
+		"ds_kpi_events": {
+			"name": "Total events indexed",
+			"type": "ds.search",
+			"options": {
+				"query": "| tstats count where index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread",
+				"queryParameters": {"earliest": "0", "latest": ""}
+			}
+		},
+		"ds_kpi_components": {
+			"name": "Distinct component count",
+			"type": "ds.search",
+			"options": {
+				"query": "| tstats dc(component) as components where index=ingest_eval_examples* sourcetype=enrich_splunkd_component_level_thread",
+				"queryParameters": {"earliest": "0", "latest": ""}
+			}
 		}
 	},
 	"layout": {
 		"globalInputs": [],
 		"layoutDefinitions": {
 			"layout_1": {
-				"options": {
-					"height": 250,
-					"width": 1440
-				},
+				"type": "grid",
+				"options": {"width": 1440, "height": 250},
 				"structure": [
-					{
-						"item": "viz_9hsKoMfi",
-						"position": {
-							"h": 1055,
-							"w": 720,
-							"x": 0,
-							"y": 0
-						},
-						"type": "block"
-					},
-					{
-						"item": "input_KtlHhgqi",
-						"position": {
-							"h": 102,
-							"w": 720,
-							"x": 720,
-							"y": 0
-						},
-						"type": "input"
-					},
-					{
-						"item": "viz_lUxfc0dH",
-						"position": {
-							"h": 953,
-							"w": 720,
-							"x": 720,
-							"y": 102
-						},
-						"type": "block"
-					},
-					{
-						"item": "viz_zKOtw4RX",
-						"position": {
-							"h": 400,
-							"w": 1440,
-							"x": 0,
-							"y": 1055
-						},
-						"type": "block"
-					}
-				],
-				"type": "grid"
+					{"item": "viz_kpi_events",      "type": "block", "position": {"x": 0,    "y": 0,    "w": 240,  "h": 150}},
+					{"item": "viz_kpi_components",  "type": "block", "position": {"x": 240,  "y": 0,    "w": 240,  "h": 150}},
+					{"item": "input_component",     "type": "input", "position": {"x": 480,  "y": 0,    "w": 960,  "h": 150}},
+					{"item": "viz_narrative",       "type": "block", "position": {"x": 0,    "y": 150,  "w": 720,  "h": 720}},
+					{"item": "viz_events",          "type": "block", "position": {"x": 720,  "y": 150,  "w": 720,  "h": 720}},
+					{"item": "viz_props",           "type": "block", "position": {"x": 0,    "y": 870,  "w": 480,  "h": 440}},
+					{"item": "viz_transforms",      "type": "block", "position": {"x": 480,  "y": 870,  "w": 480,  "h": 440}},
+					{"item": "viz_segmenters",      "type": "block", "position": {"x": 960,  "y": 870,  "w": 480,  "h": 440}},
+					{"item": "viz_component_chart", "type": "block", "position": {"x": 0,    "y": 1310, "w": 1440, "h": 400}}
+				]
 			}
 		},
-		"options": {
-			"submitButton": false
-		},
-		"tabs": {
-			"items": [
-				{
-					"label": "New tab",
-					"layoutId": "layout_1"
-				}
-			]
-		}
+		"options": {"submitButton": false},
+		"tabs": {"items": [{"label": "New tab", "layoutId": "layout_1"}]}
 	},
-	"applicationProperties": {
-		"hideEdit": false,
-		"hideExport": false
-	}
+	"applicationProperties": {"hideEdit": false, "hideExport": false}
 }
     ]]></definition>
 </dashboard>
