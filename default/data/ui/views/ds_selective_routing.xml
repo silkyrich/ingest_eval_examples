@@ -1,0 +1,78 @@
+<dashboard version="2" theme="light">
+    <label>Selective routing</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Selective routing\n\nUse CLONE_SOURCETYPE to have fine grain policies when forwarding to multiple targets.\n"
+			}
+		}
+	},
+	"dataSources": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_1",
+					"label": "New tab"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 703
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 960
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Selective routing"
+}
+    ]]></definition>
+</dashboard>

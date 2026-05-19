@@ -1,0 +1,110 @@
+<dashboard version="2" theme="light">
+    <label>Split forwarding</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"title": "Split forwarding",
+	"description": "",
+	"inputs": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem statement\nThe throughput of a single pipeline is about 20MB/s dependant on CPU etc. Many forwarders need to send an excess of 20MB/s but doing so can saturate an indexer. These are jokingly referred to as \"laser beams of death\" as they can overwhelm an indexers pipeline and causes event delay issues for all data passing through that indexer. \n\n## Existing solution\nThis issues is normally resolved by adding more pipelines to the forwarder sending data. Also the features autoLBVolume and / or lowering the autoLBFrequency. However these solutions fail when the input source cannot be mapped across multiple pipelines. In this instance increasing pipelines or switching does not help\n\n# Proposed solution\nFor parsed events, i.e. those that are going through a HWF we can use event routing and INGEST_EVAL to randomly direct events to multiple output stanzas. In this instance we will use two output groups.\n\n### props.conf\n\n    # This sourcetype sends data out via TCP out\n    [split_forwarding]\n    TIME_PREFIX = ^\n    TIME_FORMAT = %Y-%m-%d %H:%M:%S\n    SHOULD_LINEMERGE=false\n    LINE_BREAKER=([\\n\\r]+)\n    rename = split_forwarding_recieved\n    TRANSFORMS-split_forwarding=split_forwarding-randomize_output\n\n\n### transforms.conf\n\n    # this transform randomly assigns each event to one of the two output groups by appending a 0 or 1 to the named output group\n    [split_forwarding-randomize_output]\n    INGEST_EVAL = _TCP_ROUTING=\"split_forwarding_\".random()%2\n\n### outputs.conf\n\n    [tcpout:split_forwarding_0]\n    server=server_a:9997,server_b:9997\n    autoLBVolume=100000\n    autoLBFrequency=1\n    sendCookedData=true\n    dropEventsOnQueueFull=2\n    maxQueueSize=auto\n\n    [tcpout:split_forwarding_1]\n    server=server_a:9997,server_b:9997\n    autoLBVolume=100000\n    autoLBFrequency=1\n    sendCookedData=true\n    dropEventsOnQueueFull=2\n    maxQueueSize=auto\n\n    [tcpout]\n    defaultGroup=split_forwarding_0\n    compressed=true\n    sendCookedData=true"
+			}
+		},
+		"viz_events": {
+			"type": "splunk.events",
+			"dataSources": {
+				"primary": "ds_events"
+			},
+			"options": {
+				"list.drilldown": "none"
+			},
+			"showProgressBar": true
+		}
+	},
+	"dataSources": {
+		"ds_events": {
+			"name": "Split forwarding events",
+			"type": "ds.search",
+			"options": {
+				"query": "index=\"ingest_eval_examples_*\" sourcetype=split*",
+				"queryParameters": {
+					"earliest": "0",
+					"latest": ""
+				}
+			}
+		}
+	},
+	"layout": {
+		"globalInputs": [],
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"options": {
+					"width": 1440,
+					"height": 250
+				},
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 720,
+							"h": 1100
+						}
+					},
+					{
+						"item": "viz_events",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 0,
+							"w": 720,
+							"h": 1100
+						}
+					}
+				]
+			}
+		},
+		"options": {
+			"submitButton": false
+		},
+		"tabs": {
+			"items": [
+				{
+					"label": "New tab",
+					"layoutId": "layout_1"
+				}
+			]
+		}
+	},
+	"applicationProperties": {
+		"hideEdit": false,
+		"hideExport": false
+	}
+}
+    ]]></definition>
+</dashboard>

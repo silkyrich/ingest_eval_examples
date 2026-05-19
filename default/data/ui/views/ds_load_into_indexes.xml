@@ -1,0 +1,78 @@
+<dashboard version="2" theme="light">
+    <label>Export and import data</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem description\n\nOccasionally you may want to export sample data from a production and import it to another. This is especially true when you wish to develop custom props and transforms for enriching data. \n\n## Existing Solutions\nPrimarily you need access to the orignal log files or be able intercept and fork the incoming stream.\n\n## Proposed Solution\nWe write a search that encodes the basic data, `host`, `_raw`, `sourcetype` and `source` into a CSV which can be exported from any splunk instance via search and create a sourcetype which can break up the CSV and write the values back into the appropiate fields\n\n\n### User steps\n\n1. Run the search to capture the sample of data that you require\n1. Export the table as a CSV and export via download in your browser\n1. Use oneshot to load data into splunk specifying the import sourcetype\n\n    /Applications/Splunk/bin/splunk nom on -auth admin:password /Applications/Splunk/etc/apps/ingest_eval_examples/sample/import_data  -sourcetype import_data \n\n\n### The steps performed to import data\n\n1. Break on the line end ^^^END^^^ \n1. Strip the double quotes with SED_CMD, this undoes the splunk encoding of quotes\n1. Read the epoch time stamp from the start of the file\n1. Use a REGEX transform to extract the components for `index`, `host`, `source` and `sourcetype`, write to temporay indexed fields\n1. Use INGEST_EVAL to copy the temporay indexed fields to the correct metadata files\n1. Use INGEST_EVAL and replace to strip the \"header\" from the _raw field\n\n### The search to export data follows:\nThis search finds all data recieved in a one hour period, sampled at one event in every ten and writes the result to a table\n\n    index IN (ingest_eval_examples_1, ingest_eval_examples_2) _index_earliest=-15m _index_latest=now earliest=-1y latest=+1y\n    | noop sample_ratio=10 \n    | eval _raw=_time.\"%%%\".index.\"%%%\".host.\"%%%\".sourcetype.\"%%%\".sourcetype.\"%%%\"._raw.\"^^^END^^^\"\n    | table _raw\n\n### props.conf\n\n    # this is an example for importing data from an external splunk instance\n    [import_data]\n    # time is stored in epoch at the start of each line\n    TIME_FORMAT = %s.%3Q\n    TIME_PREFIX = ^\n    # the transform required to drop the header extract the metafields and copy to the correct fields\n    TRANSFORMS-extract-metadata = drop_header, extract_metadata_copy_to_meta, reassign_meta_to_metadata, remove_metadata_from_raw\n    # Splunk uses double quotes to escape quotes, we want to remove this before we start extracting the fields\n    SEDCMD-strip_double_quotes= s/\"\"/\"/g\n    # The solution supports multiline events\n    LINE_BREAKER=(\\^\\^\\^END\\^\\^\\^\"\\n)\n    SHOULD_LINEMERGE=false\n\n### transforms.conf\n\n    # the header field form a Splunk CSV export starts with the first row being named after the header _raw. We want to drop these\n    [drop_header]\n    INGEST_EVAL = queue=if(_raw=\"\\\"_raw\\\"\",\"nullQueue\", queue)\n\n    # We use REGEX to pop out the values for index, host, sourcetype & source, we then write them to tempory variables in _meta.\n    # We assume that % is not found in the primary keys to optimize the REGEX\n    [extract_metadata_copy_to_meta]\n    SOURCE_KEY=_raw\n    WRITE_META = true\n    REGEX = ^\"\\d+(?:\\.\\d+)?%%%([^%]+)%%%([^%]+)%%%([^%]+)%%%([^%]+)%%%\n    FORMAT = my_index::\"$1\" my_host::\"$2\" my_source::\"$3\" my_sourcetype::\"$4\"\n\n    # copy the temporary user defined fields into the primary metadata locations and then delete the temporary fields\n    [reassign_meta_to_metadata]\n    INGEST_EVAL = host:=my_host, source:=my_source, index:=my_index, sourcetype:=my_sourcetype, my_host:=null(), my_source=null(), my_index:=null(), my_sourcetype:=null()\n\n    # extract the _raw field from the protocol and write back to _raw\n    [remove_metadata_from_raw]\n    INGEST_EVAL = _raw=replace(_raw, \"^[^%]+%%%(?:[^%]+)%%%(?:[^%]+)%%%(?:[^%]+)%%%(?:[^%]+)%%%(.*)\",\"\\1\")\n"
+			}
+		}
+	},
+	"dataSources": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_1",
+					"label": "New tab"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 703
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 960
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Export and import data"
+}
+    ]]></definition>
+</dashboard>

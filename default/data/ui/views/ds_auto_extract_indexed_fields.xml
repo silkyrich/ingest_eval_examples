@@ -1,0 +1,228 @@
+
+<dashboard version="2" theme="light">
+    <label>Auto extract indexed fields</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"title": "Auto extract indexed fields",
+	"description": "",
+	"inputs": {
+		"input_NQvgXNmP": {
+			"options": {
+				"defaultValue": "average_kbps",
+				"items": [
+					{
+						"label": "average_kbps",
+						"value": "average_kbps"
+					},
+					{
+						"label": "stdev_kbps",
+						"value": "stdev_kbps"
+					},
+					{
+						"label": "value",
+						"value": "value"
+					}
+				],
+				"token": "selected_field"
+			},
+			"title": "Select numeric field",
+			"type": "input.dropdown"
+		},
+		"input_mE5bc9qx": {
+			"options": {
+				"defaultValue": "0,",
+				"token": "time"
+			},
+			"title": "",
+			"type": "input.timerange"
+		}
+	},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"visualizations": {
+		"viz_0h7Uo50b": {
+			"options": {
+				"markdown": "# Problem description\n\nIndexed fields are a key accelaration technlogy and can are used with `tstats` to provide a more SQL like search expirence. These searches avoid the need to access the `_raw` data from the journal file. This saves downloading the journal, the extraction and decompression of slices, and avoids schema on the fly - these savings are significant and can be more than 40 times faster. However it can be time consuming and difficult to get indexed fields into your data. \n\nSome file format conform to a consistent naming convension where attributes are assigned to values. This can be seen in splunkd's metrics.log file.\n\n#### Example log line from metrics.log\n\n    01-27-2020 20:29:22.922 +0000 INFO Metrics - group=per_sourcetype_thruput, ingest_pipe=0, series=\"splunkd\", kbps=258.6201534528208, eps=1367.6474892210738, kb=8050.1142578125, ev=42571, avg_age=145747.7853938127, max_age=2116525\n\n\nWe would like to create indexed fields for each of the attribute names: `group`, `ingest_pipe`, `series` ... etc ... and assign those attribtes their associated values `per_sourcetype_thruput`, `0`, `splunkd` ... etc ...\n\nWith this done we can write high performance `tstats` searches like:\n\n    | tstats p95(kbps) where index=_internal TERM(Metrics) and group=per_sourcetype_thruput by _time span=1hr\n\n\n## Existing solution\n\nThere are various ways to insert indexed fields into your ingdex, the most common are documented here. But there exist no out of the box solution for this use case.\n\n* [Create custom fields at index time](https://docs.splunk.com/Documentation/Splunk/latest/Data/Configureindex-timefieldextraction)\n* [Format events for HTTP Event Collector](https://docs.splunk.com/Documentation/Splunk/latest/Data/FormateventsforHTTPEventCollector)\n* [Extract fields from files with structured data](https://docs.splunk.com/Documentation/Splunk/latest/Data/Extractfieldsfromfileswithstructureddata)\n\nThis solution is based on the features described in the first bullet.\n\n## Proposed Solution\n\nWe can use a series of REGEX transformations to extract the values and attributes from the log file and then use the `META_ADD=true` option to append the indexed fields to the `_meta` field. This solution cannot be implemented in `INGEST_EVAL`.\n\n### Sample data\n\nThis application creates a log file for us to test and apply the method to.\n\n#### indexed.log\n\n    2020-08-28 23:09:18 name='single quotes' sum_kbps=8334\n    2020-08-28 23:13:18 group=\"double quotes\" sum_kbps=3051 stdev_kbps=0.03767104255809539\n    2020-08-28 23:15:57 name=no_quotes sum_kbps=9560\n    2020-08-28 23:35:13 stdev_kbps=0.0054915638140592415 value=1429\n    2020-08-28 23:37:20 label=\"double quotes\" group=no_quotes stdev_kbps=0.9375614115100175 name='single quotes'\n    2020-08-28 23:39:08 stdev_kbps=0.14575641669994088 label=\"double quotes\" value=313 average_kbps=0.1644034931497017 name=\"double quotes\"\n    2020-08-28 23:40:32 group=\"double quotes\" sum_kbps=8684 average_kbps=0.05122808844009563 stdev_kbps=0.07653246808729353\n    2020-08-29 00:00:01 average_kbps=0.7319356429044452 stdev_kbps=0.06484472283154874\n    2020-08-29 00:19:29 sum_kbps=6609 stdev_kbps=0.7860664557421805\n    2020-08-29 00:29:17 average_kbps=0.10549943657388261 sum_kbps=4382\n    2020-08-29 00:33:05 label=\"double quotes\" sum_kbps=4560\n    2020-08-29 01:05:14 stdev_kbps=0.5248050365656354 value=460 label='single quotes' average_kbps=0.6813920691093273\n    2020-08-29 01:43:46 name=no_quotes sum_kbps=3237 value=6946 stdev_kbps=0.7316282693378682\n    2020-08-29 02:09:13 name=no_quotes stdev_kbps=0.6549719038966627\n    2020-08-29 03:02:43 sum_kbps=4347 group='single quotes'\n\n### Steps\n\n1. Extract time and line break as normal\n1. Disable `MAJOR_BREAKERS` by using the `segmentation=search` option to save space\n1. Apply the regex to extract attribute value pairs in the form `attribute=value` or `attribute=\"value\"` or `attribute='value'`\n    1. Append `attribute::\"value\"` to `_meta`\n    1. Repeat the match until EOL\n\n### props.conf\n\n    # This sourcetype is an example for how we can use REPEAT_MATCH and regex to automatically extract fields from log files\n    [auto_extract_indexed_fields]\n    TIME_PREFIX = ^\n    TIME_FORMAT = %Y-%m-%d %H:%M:%S\n    SHOULD_LINEMERGE=false\n    LINE_BREAKER=([\\n\\r]+)\n    # because we are creating indexed fields we can disable the major breakers\n    SEGMENTATION = search\n    TRANSFORMS-extract_indexed_fields=auto_extract_indexed_fields-univeral\n\n\n### transforms.conf\n\n    # this regex finds unquote quoted attribute value pairs, ie the form a=b, and appends them to _meta\n    [auto_extract_indexed_fields-univeral]\n    SOURCE_KEY = _raw\n    REGEX = \\s([a-zA-Z][a-zA-Z0-9_-]+)=(?:\"([^\"]+)\"|'([^']+)'|([^\\s\"',]+))\n    REPEAT_MATCH=true\n    FORMAT = $1::\"$2$3$4\"\n    WRITE_META = true\n"
+			},
+			"type": "splunk.markdown"
+		},
+		"viz_lUer7oTK": {
+			"dataSources": {
+				"primary": "ds_46CcsYZa"
+			},
+			"options": {
+				"legendTruncation": "ellipsisMiddle",
+				"showRoundedY2AxisLabels": false,
+				"showY2MajorGridLines": true,
+				"stackMode": "stacked",
+				"y2AxisAbbreviation": "off",
+				"yAxisAbbreviation": "off"
+			},
+			"showProgressBar": true,
+			"title": "This search is written using tstats - Completed in $tstats_duration$ seconds",
+			"type": "splunk.column"
+		},
+		"viz_vXTMw2LO": {
+			"dataSources": {
+				"primary": "ds_UqRpqEWQ"
+			},
+			"options": {
+				"legendTruncation": "ellipsisMiddle",
+				"showRoundedY2AxisLabels": false,
+				"showY2MajorGridLines": true,
+				"stackMode": "stacked",
+				"y2AxisAbbreviation": "off",
+				"yAxisAbbreviation": "off"
+			},
+			"showProgressBar": true,
+			"title": "This search is written using _raw search - Completed in $raw_search_duration$ seconds",
+			"type": "splunk.column"
+		},
+		"viz_yfA4HTvd": {
+			"dataSources": {
+				"fieldsummary": "ds_sTslOS90",
+				"primary": "ds_TpKyIpaC"
+			},
+			"options": {
+				"list.drilldown": "none"
+			},
+			"title": "Source events",
+			"type": "splunk.events"
+		}
+	},
+	"dataSources": {
+		"ds_46CcsYZa": {
+			"name": "This search is written using tstats - Completed in _tstats_duration_ seconds search",
+			"options": {
+				"query": "| tstats sum($selected_field$) as $selected_field$ \n    where index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields \n    by group name\n| xyseries group name $selected_field$",
+				"queryParameters": {
+					"earliest": "$time.earliest$",
+					"latest": "$time.latest$"
+				}
+			},
+			"type": "ds.search"
+		},
+		"ds_TpKyIpaC": {
+			"name": "Source events 1 search",
+			"options": {
+				"query": "index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields",
+				"queryParameters": {
+					"earliest": "$time.earliest$",
+					"latest": "$time.latest$"
+				}
+			},
+			"type": "ds.search"
+		},
+		"ds_UqRpqEWQ": {
+			"name": "This search is written using _raw search - Completed in _raw_search_duration_ seconds search",
+			"options": {
+				"query": "index=ingest_eval_examples_* sourcetype=auto_extract_indexed_fields \n| where isnotnull(group) AND isnotnull(name) \n| chart sum($selected_field$) as $selected_field$ \n    by group name",
+				"queryParameters": {
+					"earliest": "$time.earliest$",
+					"latest": "$time.latest$"
+				}
+			},
+			"type": "ds.search"
+		},
+		"ds_sTslOS90": {
+			"name": "Source events 2 search",
+			"options": {
+				"extend": "ds_TpKyIpaC",
+				"query": "| fieldsummary maxvals=10"
+			},
+			"type": "ds.chain"
+		}
+	},
+	"layout": {
+		"globalInputs": [
+			"input_mE5bc9qx",
+			"input_NQvgXNmP"
+		],
+		"layoutDefinitions": {
+			"layout_1": {
+				"options": {
+					"height": 500,
+					"width": 1440
+				},
+				"structure": [
+					{
+						"item": "viz_0h7Uo50b",
+						"position": {
+							"h": 791,
+							"w": 918,
+							"x": 0,
+							"y": 0
+						},
+						"type": "block"
+					},
+					{
+						"item": "viz_lUer7oTK",
+						"position": {
+							"h": 389,
+							"w": 522,
+							"x": 918,
+							"y": 0
+						},
+						"type": "block"
+					},
+					{
+						"item": "viz_vXTMw2LO",
+						"position": {
+							"h": 402,
+							"w": 522,
+							"x": 918,
+							"y": 389
+						},
+						"type": "block"
+					},
+					{
+						"item": "viz_yfA4HTvd",
+						"position": {
+							"h": 692,
+							"w": 1440,
+							"x": 0,
+							"y": 791
+						},
+						"type": "block"
+					}
+				],
+				"type": "grid"
+			}
+		},
+		"options": {
+			"submitButton": false
+		},
+		"tabs": {
+			"items": [
+				{
+					"label": "New tab",
+					"layoutId": "layout_1"
+				}
+			]
+		}
+	},
+	"applicationProperties": {
+		"hideEdit": false,
+		"hideExport": false
+	}
+}
+    ]]></definition>
+</dashboard>

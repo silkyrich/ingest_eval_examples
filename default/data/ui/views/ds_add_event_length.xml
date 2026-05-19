@@ -1,0 +1,79 @@
+
+<dashboard version="2" theme="light">
+    <label>Add Event Length</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_LRZr5C85": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem statement \n\nSplunk either charges by vCPU or by license usage. Whichever method is used license reporting goes into the `license.log` file and usage it attributed to `sourcetype`, `host` and `index`. This is sufficent for Splunk to assess licence usage and attribute to high level sources. Occasionally you may wish to further breakdown how license usage is being consumed, perphaps attributing to multiple dimensions for instance this host and this sourcetype. \n\nAlso sourcetypes like `stash`, or indexes like `_internal` do not write any data to license.log and it therefore difficult to judge how many MB has been ingested in these cases.\n\n## Existing solution\nYou can write searches on `license.log` for crude roll ups per sourcetype and index. Alternatively you can estimate usage by computing the average len of your events and multipling by the number of events. \n\n# Alternative approach \nWith the introduction of `INGEST_EVAL` we can add an indexed field that contains the length of the `_raw` string and then use `tstats` to compute license usage accurately and effciently at large over long durations with far more complex logic.\n\n### Steps\n\n1. Set the `default` sourcetype to catch very event passing through the ingestion pipeline\n1. Set the `transform` to have a name that comes last in the evaluation logic\n1. Use `INGEST_EVAL` to compute the length of `_raw` and apply to the field `event_length`\n\n### props.conf\n\n    # This configuration is applied to all sourcetypes and it adds an indexed field with len of the event\n    # This is very useful for using with tstats to sum up all ingested data from any source very quickly\n    [default]\n    TRANSFORM-all-data= add_raw_length_to_meta_field\n\n### transforms.conf\n\n    # add the length of the _raw string to the event, this needs to be the last transform so we don't change the\n    # length of _raw again once the value has been computed\n    [add_raw_length_to_meta_field]\n    INGEST_EVAL= _event_length=len(_raw)\n\n"
+			}
+		}
+	},
+	"dataSources": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_1",
+					"label": "New tab"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_LRZr5C85",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 703
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 960
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Add Event Length"
+}
+    ]]></definition>
+</dashboard>

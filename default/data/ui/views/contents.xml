@@ -1,3 +1,704 @@
-<dashboard showsource="false" script="contents.js" stylesheet="contents.css">
-  <label>Advanced pipeline configuration examples</label>
+<dashboard version="2" theme="light">
+    <label>Advanced pipeline configuration examples</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_md_overview": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Advanced pipeline configuration examples\n\nA field guide to Splunk's index-time transformation toolkit \u2014 the features that unlock the hardest-to-reach corners of `props.conf` and `transforms.conf`. Seventeen worked examples drawn from twelve years of real Splunk deployments, each with a concrete problem, a runnable fix, and commented configuration you can adapt.\n\n## Why this exists\n\nSplunk ships with a powerful set of index-time primitives \u2014 `INGEST_EVAL`, `CLONE_SOURCETYPE`, REGEX with `ADD_META` and `REPEAT_MATCH`, `SEDCMD`, custom segmenters \u2014 but the official documentation is thin and canonical field examples are nearly non-existent. If you've ever searched for *\"how do I do X at ingest time in Splunk\"* and come up empty, this app is for you. The *Extended Documentation* tab in the nav also covers behaviour that isn't in the public docs \u2014 multivalue handling, type coercion, the `$pd:` / `$field:` / `$mv:` prefixes, and high-cardinality pitfalls.\n\n## What you get\n\nEvery example provides a clear problem statement, the existing alternatives and why they fall short, a worked solution with commented `props.conf` and `transforms.conf`, and a sample search that demonstrates the result. Pre-loaded sample data lets you see each behaviour working immediately after install.\n\nThe catch with index-time config is that it is hard: ordering matters, keys silently fall through, and mistakes show up a week later as missing fields or bloated `tsidx` files. These examples exist so you don't have to rediscover each pattern from scratch.\n\n## Runs on universal forwarders\n\nMost of these examples can be deployed on a universal forwarder, not just on a heavy forwarder or indexer, by setting `force_local_processing=true` in `inputs.conf` for the relevant sourcetype. That forces the UF to run the linebreaker, aggregator, and regex-replacement processors locally \u2014 enabling `INGEST_EVAL` and `CLONE_SOURCETYPE` transforms at the edge, before the data hits the rest of the pipeline. It is surprisingly undocumented and surprisingly capable, and it lets a small forwarder deployment replace a tier of dedicated pipeline infrastructure.\n\n## How it is organised\n\nFive category tabs, each with a worked pattern per example:\n\n- **Datetime problems** \u2014 parsing timestamps when the source refuses to cooperate.\n- **Enrichment** \u2014 adding indexed fields that make searches orders of magnitude faster.\n- **Security** \u2014 selective masking without destroying the original event.\n- **Platform extension** \u2014 metrics, bucket sharding, license tracking, cross-instance data transfer.\n- **Complex forwarding** \u2014 scaling past per-pipeline throughput limits and per-target routing.\n\n## Who this is for\n\nSplunk administrators, consultants, and data engineers who need to solve real ingestion and enrichment problems \u2014 and want a runnable, self-contained set of patterns they can adapt to their own deployments.\n"
+			}
+		},
+		"viz_md_conflicting_datetime_formats": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Datetime problems\n\n### [Handling conflicting datetime formats](ds_conflicting_datetime_formats)\n\n**Problem.** A single sourcetype receiving events with mixed timestamp formats \u2014 typical for syslog aggregators and catch-all TCP listeners \u2014 defeats Splunk's default parser, which locks to one format per sourcetype. Events that do not match silently get the wrong `_time` and land in the wrong time bucket.\n\n**Fix.** Set `DATETIME_CONFIG=CURRENT` and use an `INGEST_EVAL` cascade of `strptime()` attempts to recognise each format per event. No custom `datetime.xml`, no US-bias in date ordering, and every event's `_time` is correct regardless of which format the producer emitted.\n\n[Open example \u2192](ds_conflicting_datetime_formats)\n"
+			}
+		},
+		"viz_img_conflicting_datetime_formats": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/conflicting_datetime_formats.jpg"
+			}
+		},
+		"viz_md_compound_datetimes": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Stitching dates in filenames with times in events](ds_compound_datetimes)\n\n**Problem.** Some applications write the date into the filename or directory and only the time-of-day into each log line. Splunk's timestamp parsing reads only from `_raw`, so every event in the file gets stamped at the current date instead of the intended one.\n\n**Fix.** `INGEST_EVAL` pulls the date out of `source` with a `replace()` regex, concatenates it with the time from `_raw`, and parses the combined string with `strptime()`. Events are timestamped correctly without touching `datetime.xml`, and a parse failure falls back to `CURRENT_TIME` so bad filenames never drop the event.\n\n[Open example \u2192](ds_compound_datetimes)\n"
+			}
+		},
+		"viz_img_compound_datetimes": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/compound_datetimes.jpg"
+			}
+		},
+		"viz_md_auto_extract_indexed_fields": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Enrichment\n\n### [Dynamic extraction of indexed fields](ds_auto_extract_indexed_fields)\n\n**Problem.** Logs that follow a loose `key=value` convention \u2014 splunkd's `metrics.log` is the canonical case \u2014 have no first-class extractor in Splunk. Writing a REGEX per field is tedious and brittle, and any new key the producer starts emitting quietly disappears.\n\n**Fix.** A REGEX transform with `REPEAT_MATCH=true` and `WRITE_META=true` walks each event and captures every pair \u2014 bare, single-quoted, and double-quoted \u2014 as an indexed field in one pass. Combined with `SEGMENTATION=search` to suppress redundant major breakers, `tstats` on the result runs roughly forty times faster than the schema-on-the-fly equivalent.\n\n[Open example \u2192](ds_auto_extract_indexed_fields)\n"
+			}
+		},
+		"viz_img_auto_extract_indexed_fields": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/auto_extract_indexed_fields.jpg"
+			}
+		},
+		"viz_md_add_event_length": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Additional license usage metadata](ds_add_event_length)\n\n**Problem.** License attribution in `license_usage.log` is limited to sourcetype, host, and index. Internal indexes like `_internal` and `_metrics` never appear there at all, and any dimension the license log does not track (app, team, source path) cannot be reported on without re-parsing every raw event.\n\n**Fix.** Apply an `INGEST_EVAL` under `[default]` that writes `len(_raw)` to a `_event_length` indexed field on every event. A single `tstats sum(_event_length)` query gives you dimensional ingestion volumes across any time range, including the internal indexes, with no raw-event parsing at search time.\n\n[Open example \u2192](ds_add_event_length)\n"
+			}
+		},
+		"viz_img_add_event_length": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/add_event_length.jpg"
+			}
+		},
+		"viz_md_drop_indexed_fields": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Dropping indexed fields from INDEXED_CSV](ds_drop_indexed_fields)\n\n**Problem.** `INDEXED_EXTRACTIONS=CSV` indexes every column as a field regardless of whether any search uses it. High-cardinality or never-queried columns bloat the `tsidx`, and in extreme cases the indexed-fields bucket is larger than the raw-text bucket \u2014 wrecking retention against the storage estimates in the sizing guide.\n\n**Fix.** Keep the columns you actually search as indexed fields; use `INGEST_EVAL` with `:=null()` to remove the rest from `_meta`, and add a search-time `EXTRACT-` for the dropped columns so they remain reachable via schema-on-the-fly. `tstats` speed where it matters, storage penalty only where it does not.\n\n[Open example \u2192](ds_drop_indexed_fields)\n"
+			}
+		},
+		"viz_img_drop_indexed_fields": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/drop_indexed_fields.jpg"
+			}
+		},
+		"viz_md_enrich_splunkd_component_level_thread": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Enrich splunkd.log](ds_enrich_splunkd_component_level_thread)\n\n**Problem.** The `_internal` index is usually one of the largest on any Splunk deployment, and every field in `splunkd.log` \u2014 `log_level`, `component`, `thread_id`, `thread_name` \u2014 is extracted on the fly at search time. Routine diagnostics on `_internal` pay full schema-on-the-fly cost and take minutes on busy clusters.\n\n**Fix.** A REGEX transform extracts `log_level`, `component`, `thread_id`, and `thread_name` as indexed fields at ingest. A companion `segmenters.conf` stanza skips the date and time tokens (they never help search) and disables intermediate major breakers, keeping the `tsidx` small. `tstats count by log_level component` now runs in a fraction of the time.\n\n[Open example \u2192](ds_enrich_splunkd_component_level_thread)\n"
+			}
+		},
+		"viz_img_enrich_splunkd_component_level_thread": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/enrich_splunkd_component_level_thread.jpg"
+			}
+		},
+		"viz_md_enrich_splunkd_access_log": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Enrich splunkd_access.log](ds_enrich_splunkd_access_log)\n\n**Problem.** `splunkd_access.log` records every REST call against `splunkd` \u2014 high volume, entirely unstructured. Performance troubleshooting (\"which endpoint is slow?\", \"which user hit the rate limit?\") requires a full `_raw` scan every time.\n\n**Fix.** A single REGEX parses source IP, user, method, URL, response code, bytes, and duration into indexed fields. A second REGEX with `REPEAT_MATCH=true` splits the URL's query string into per-parameter indexed fields (`rest_param_*`), staged through the host metadata key as a workaround for operating on `_meta`. Latency and usage analysis moves cleanly into `tstats`.\n\n[Open example \u2192](ds_enrich_splunkd_access_log)\n"
+			}
+		},
+		"viz_img_enrich_splunkd_access_log": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/enrich_splunkd_access_log.jpg"
+			}
+		},
+		"viz_md_json_docker": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Loading json-docker logs](ds_json_docker)\n\n**Problem.** Docker's default log driver wraps every line in a JSON envelope like `{\"log\":\"...\",\"stream\":\"stdout\",\"time\":\"...\"}`. Splunk does not recognise this natively, and reading with `INDEXED_EXTRACTIONS=JSON` indexes the log text itself as a high-cardinality `log` field \u2014 bloating the `tsidx` and breaking downstream search patterns. Most teams bolt on FluentD as a workaround.\n\n**Fix.** Parse with `INDEXED_EXTRACTIONS=JSON`, then use `INGEST_EVAL` to copy the `log` field into `_raw` and drop the `log` and `time` indexed fields. The event indexes exactly as it would have before Docker wrapped it, with `stream` preserved as a useful dimension. With `force_local_processing=true`, this even works from a universal forwarder.\n\n[Open example \u2192](ds_json_docker)\n"
+			}
+		},
+		"viz_img_json_docker": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/json_docker.jpg"
+			}
+		},
+		"viz_md_find_ip_addresses": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Find IP addresses](ds_find_ip_addresses)\n\n**Problem.** Searching for an IP like `10.20.30.1` generates a LISPY `[ AND 1 10 20 30 ... ]` that matches every event containing any of those tokens. Splunk filters the false positives back out via schema-on-the-fly, wasting enormous amounts of parsing effort.\n\n**Fix.** A REGEX transform with look-around anchors extracts validated IPv4 addresses into an `ip` indexed field at ingest, rejecting things that look like IPs but are not (`1.2.3.4.5`, `300.x.y.z`). Searches can now eliminate on `ip::10.20.30.1` at the lexicon stage, before any event parsing happens.\n\n[Open example \u2192](ds_find_ip_addresses)\n"
+			}
+		},
+		"viz_img_find_ip_addresses": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/find_ip_addresses.jpg"
+			}
+		},
+		"viz_md_metricify_license": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Platform extension\n\n### [Write license.log into _metrics index](ds_metricify_license)\n\n**Problem.** Historical license analysis from `license_usage.log` is slow because every row is an unstructured string in `_internal`. Questions like \"which host/sourcetype pair drove last quarter's growth?\" take minutes or hours to parse.\n\n**Fix.** `CLONE_SOURCETYPE` each Usage row into a metric-compliant copy. A REGEX extracts `b` into `_value` and the dimensions (host, source, sourcetype, index, indexer, pool) into indexed fields, then `INGEST_EVAL` routes the copy to `_metrics`. `mstats` answers capacity questions in milliseconds; the original event still flows to `_internal` untouched.\n\n[Open example \u2192](ds_metricify_license)\n"
+			}
+		},
+		"viz_img_metricify_license": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/metricify_license.jpg"
+			}
+		},
+		"viz_md_load_into_indexes": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Export and import data](ds_load_into_indexes)\n\n**Problem.** Moving sample events between Splunk instances \u2014 for development, consulting, training, or reproducing a customer issue \u2014 normally requires access to the raw source files. In practice that access is blocked by network segmentation or data-governance policy.\n\n**Fix.** An export search packs `_time`, `index`, `host`, `source`, `sourcetype`, and `_raw` into a single CSV line per event using a `%%%` separator and a `^^^END^^^` line delimiter. An import sourcetype on the target uses REGEX and `INGEST_EVAL` to unpack the encoding, restoring each event exactly as if it had been ingested natively.\n\n[Open example \u2192](ds_load_into_indexes)\n"
+			}
+		},
+		"viz_img_load_into_indexes": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/load_into_indexes.jpg"
+			}
+		},
+		"viz_md_shard_data_with_splitbyindexkeys": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Shard data with splitByIndexKeys](ds_shard_data_with_splitbyindexkeys)\n\n**Problem.** Very large indexes cause SmartStore churn when sparse searches pull small amounts of data from many buckets. SmartStore localises whole buckets, so a query that needs one row per bucket can end up downloading gigabytes of unrelated data.\n\n**Fix.** Set `splitByIndexKeys=source,sourcetype` in `indexes.conf` and raise `maxHotBuckets`. Buckets are no longer split only by time; events with the same key combination land together, so bucket elimination on `source` or `sourcetype` excludes most of the index before any localisation happens. The platform docs say this is metrics-only \u2014 it is not.\n\n[Open example \u2192](ds_shard_data_with_splitbyindexkeys)\n"
+			}
+		},
+		"viz_img_shard_data_with_splitbyindexkeys": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/shard_data_with_splitbyindexkeys.jpg"
+			}
+		},
+		"viz_md_data_estimation_pipeline": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Measure ingestion costs before onboarding](ds_data_estimation_pipeline)\n\n**Problem.** Quoting license impact for a new data source before onboarding normally means guessing. A wrong number either scares off the integration or blows the license budget later in the quarter.\n\n**Fix.** A staging pipeline reads the candidate source, counts bytes per host, source, and sourcetype into a metrics index, and then routes the events to `nullQueue` without committing them to a real index. You hand the onboarding team concrete dimensional numbers instead of estimates.\n\n[Open example \u2192](ds_data_estimation_pipeline)\n"
+			}
+		},
+		"viz_img_data_estimation_pipeline": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/data_estimation_pipeline.jpg"
+			}
+		},
+		"viz_md_mask_data_and_map": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Security\n\n### [Advanced Masking of Data with SHA1](ds_mask_data_and_map)\n\n**Problem.** Sensitive fields \u2014 emails, passwords, internal IDs \u2014 must be hidden from most users but recoverable by privileged operators. Splunk's built-in Anonymize Data destroys the original value, and lookup-based approaches cannot prove the mapping was built at ingest time.\n\n**Fix.** Replace the sensitive value with a short SHA1 hash in the normal event, and `CLONE_SOURCETYPE` a second \"map\" event into a protected index carrying the same hash alongside the original. Low-privilege users see only the redacted version; users with access to both indexes can join the two at search time to reverse the mask, without any lookup infrastructure.\n\n[Open example \u2192](ds_mask_data_and_map)\n"
+			}
+		},
+		"viz_img_mask_data_and_map": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/mask_data_and_map.jpg"
+			}
+		},
+		"viz_md_mask_and_clone": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Simple masking data](ds_mask_and_clone)\n\n**Problem.** You need selective masking \u2014 a redacted copy for general access and an unredacted copy for security auditors \u2014 but do not want the complexity of hash-mapping infrastructure.\n\n**Fix.** `CLONE_SOURCETYPE` the event, apply a `SEDCMD` to the clone that partly masks email addresses (first and last characters preserved for support triage) and fully masks passwords, then route the original and the clone to indexes with different access controls. Two lines of `SEDCMD` and a clone transform is the whole pattern.\n\n[Open example \u2192](ds_mask_and_clone)\n"
+			}
+		},
+		"viz_img_mask_and_clone": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/mask_and_clone.jpg"
+			}
+		},
+		"viz_md_split_forwarding": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Complex forwarding\n\n### [Split splunk forwarding](ds_split_forwarding)\n\n**Problem.** A single Splunk parsing pipeline tops out at roughly 20 MB/s, and concentrating that through one `tcpout` stanza saturates a single indexer connection \u2014 the \"laser beam of death\" that stalls event-delay queues on one indexer while the rest of the cluster sits idle. When the input stream cannot be sharded across forwarder pipelines, adding pipelines does not help.\n\n**Fix.** On a heavy forwarder, set `_TCP_ROUTING` with an `INGEST_EVAL` that appends `random()%N` to a target-group name. Define N matching `[tcpout:group_0]`, `[tcpout:group_1]` \u2026 stanzas in `outputs.conf`, each pointing at the full indexer pool. Each event picks a group at random and the single stream fans out across N independent TCP connections.\n\n[Open example \u2192](ds_split_forwarding)\n"
+			}
+		},
+		"viz_img_split_forwarding": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/split_forwarding.jpg"
+			}
+		},
+		"viz_md_selective_routing": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### [Selective routing](ds_selective_routing)\n\n**Problem.** Different downstream systems need different subsets of the same event stream \u2014 a SIEM might want only security-relevant events, a billing integration might want only license metadata. Filtering on the forwarder is brittle and per-source; filtering downstream wastes bandwidth and compute.\n\n**Fix.** Use `CLONE_SOURCETYPE` with per-copy `INGEST_EVAL` filters, plus `_TCP_ROUTING` targeting different `tcpout` groups. Each event can be duplicated, filtered, redacted, or routed independently from a single heavy-forwarder config \u2014 one source of truth, many downstream consumers.\n\n[Open example \u2192](ds_selective_routing)\n"
+			}
+		},
+		"viz_img_selective_routing": {
+			"type": "splunk.image",
+			"options": {
+				"preserveAspectRatio": true,
+				"src": "/static/app/ingest_eval_examples/icons/selective_routing.jpg"
+			}
+		}
+	},
+	"dataSources": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_overview",
+					"label": "Overview"
+				},
+				{
+					"layoutId": "layout_1",
+					"label": "Datetime problems"
+				},
+				{
+					"layoutId": "layout_2",
+					"label": "Enrichment"
+				},
+				{
+					"layoutId": "layout_3",
+					"label": "Platform extension"
+				},
+				{
+					"layoutId": "layout_4",
+					"label": "Security"
+				},
+				{
+					"layoutId": "layout_5",
+					"label": "Complex forwarding"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_overview": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_overview",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 1400
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 1400
+				}
+			},
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_conflicting_datetime_formats",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_conflicting_datetime_formats",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 0,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_compound_datetimes",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 320,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_compound_datetimes",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 320,
+							"w": 360,
+							"h": 320
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 640
+				}
+			},
+			"layout_2": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_auto_extract_indexed_fields",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_auto_extract_indexed_fields",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 0,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_add_event_length",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 320,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_add_event_length",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 320,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_drop_indexed_fields",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 640,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_drop_indexed_fields",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 640,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_enrich_splunkd_component_level_thread",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 960,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_enrich_splunkd_component_level_thread",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 960,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_enrich_splunkd_access_log",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 1280,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_enrich_splunkd_access_log",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 1280,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_json_docker",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 1600,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_json_docker",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 1600,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_find_ip_addresses",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 1920,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_find_ip_addresses",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 1920,
+							"w": 360,
+							"h": 320
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 2240
+				}
+			},
+			"layout_3": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_metricify_license",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_metricify_license",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 0,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_load_into_indexes",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 320,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_load_into_indexes",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 320,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_shard_data_with_splitbyindexkeys",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 640,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_shard_data_with_splitbyindexkeys",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 640,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_data_estimation_pipeline",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 960,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_data_estimation_pipeline",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 960,
+							"w": 360,
+							"h": 320
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 1280
+				}
+			},
+			"layout_4": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_mask_data_and_map",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_mask_data_and_map",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 0,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_mask_and_clone",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 320,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_mask_and_clone",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 320,
+							"w": 360,
+							"h": 320
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 640
+				}
+			},
+			"layout_5": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_md_split_forwarding",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_split_forwarding",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 0,
+							"w": 360,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_md_selective_routing",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 320,
+							"w": 1080,
+							"h": 320
+						}
+					},
+					{
+						"item": "viz_img_selective_routing",
+						"type": "block",
+						"position": {
+							"x": 1080,
+							"y": 320,
+							"w": 360,
+							"h": 320
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 640
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Advanced pipeline configuration examples"
+}
+    ]]></definition>
 </dashboard>

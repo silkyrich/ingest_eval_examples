@@ -1,0 +1,143 @@
+<dashboard version="2" theme="light">
+    <label>mask_and_clone</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"title": "mask_and_clone",
+	"description": "",
+	"inputs": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem description\nSome data contains private or secret information like user names and passwords that it is inappropiate for all eyes to see. Under these circumstances data needs to be hidden from those users, for instance 1st line support. However this we may still need to keep the orginal data for other reasons, for higher security level users. Splunk doesn't allow for selective masking at point of search, which is a significant challenge for any unstructured data system. \n\n## Existing Solutions\nSplunk documentation a section on how to [Anonymize data|https://docs.splunk.com/Documentation/Splunk/8.0.6/Data/Anonymizedata]. However this is destructive to the orignal event and the ability to see the orginal event is lost. \n\n## Proposed Solution\n`CLONE_SOURCETYPE` offers us the abilty to create two copies of the event and treat them differently. It is possible to implement this solution using entirely using the `INGEST_EVAL` and `replace()`, but in the interests of using the simplist tool for the job and likely the most efficent due, we will use SEDCMD to implement the usecase. Rather than obterate the user name, we will preserve a few charactors from the user name so that our support personola is able to idenfity likely user names in respone to support calls, while retarding the ability to do analytics on the user name.\n\n###  Example log line\n\n    23:16:25 20-09-23 my email_address=julian@wikileaks.com and my terrible password=\"onetimepassword\"\n\n### The steps performed to process data\n\n1. Clone the `mask_and_clone` sourcetype to a new tempory name `mask_and_clone-clone` with the transform `mask_and_clone-clone`.\n1. With the original event we let flow into the targeted index.\n1. The newly created clone event `mask_and_clone-clone` can have a SEDCMD applied it, so we use this to rewrite the event\n    1. We use a REGEX on the email to remove the middle parts of the email so `rmorgan@splunk.com` becomes `rm..n@s..om` \n    2. We completely oblitate the password and replace it with `######`\n\n#### props.conf\n\n    # This sourcetype is cloned and the clone has masking applied, the orignal remains untouched and is routed to the 'secure' index\n    [mask_and_clone]\n    TIME_PREFIX = ^\u203a\n    TIME_FORMAT = %H:%M:%S %y-%m-%d\n    SHOULD_LINEMERGE=false\n    LINE_BREAKER=([\\n\\r]+) \n    # this transform will create a new event with a tempoary sourcetype\n    TRANSFORMS-apply-masking=mask_and_clone-clone\n\n    # we intercept the tempory sourcetype, apply some sed transforms, rename the sourcetype to the original and route to another 'insecure' index\n    [mask_and_clone-clone]\n    # because we have created a new event we can apply a SED transform to the newly created event\n    # we could use the INGEST_EVAL replace function to do this, but using SED is slighly more elegent and is likely use a faster engine and the replace function.\n    # Note that we have specfied two SED commands separated by a space\n    SEDCMD-mask = s/email_address=(\\S\\S)\\S*(.)@(.)\\S*(\\S\\S\\S)\\s/email_address=\\1..\\2@\\3..\\4 /g s/password=\\S+/password=#######/g\n    # we need to route this new event to another index to prove our solution\n    TRANSFORMS-route-to-index = shared-drop_useless_time_fields, mask_and_clone-route_to_index\n    # we can set the sourcetype back to the orginal\n    rename = mask_and_clone\n\n#### transforms.conf\n\n    # we create a clone\n    [mask_and_clone-clone]\n    SOURCE_KEY = Meta:Host\n    DEST_KEY = Meta:Host\n    REGEX = (.)\n    FORMAT = %0\n    CLONE_SOURCETYPE = mask_and_clone-clone\n\n    # routes the cloned data to a different index\n    [shared-route_to_ingest_eval_examples_2]\n    INGEST_EVAL = index=\"ingest_eval_examples_2\"\n"
+			}
+		},
+		"viz_original": {
+			"type": "splunk.events",
+			"dataSources": {
+				"primary": "ds_original"
+			},
+			"options": {
+				"list.drilldown": "none"
+			},
+			"showProgressBar": true,
+			"title": "The orignal event with the user name and password clearly visible"
+		},
+		"viz_masked": {
+			"type": "splunk.events",
+			"dataSources": {
+				"primary": "ds_masked"
+			},
+			"options": {
+				"list.drilldown": "none"
+			},
+			"showProgressBar": true,
+			"title": "The cloned event with the user name and password selectively masked"
+		}
+	},
+	"dataSources": {
+		"ds_original": {
+			"name": "Original events",
+			"type": "ds.search",
+			"options": {
+				"query": "index=\"ingest_eval_examples_1\" sourcetype=mask_and_clone",
+				"queryParameters": {
+					"earliest": "0",
+					"latest": ""
+				}
+			}
+		},
+		"ds_masked": {
+			"name": "Masked clone events",
+			"type": "ds.search",
+			"options": {
+				"query": "index=\"ingest_eval_examples_2\" sourcetype=mask_and_clone",
+				"queryParameters": {
+					"earliest": "0",
+					"latest": ""
+				}
+			}
+		}
+	},
+	"layout": {
+		"globalInputs": [],
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"options": {
+					"width": 1440,
+					"height": 250
+				},
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 720,
+							"h": 1100
+						}
+					},
+					{
+						"item": "viz_original",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 0,
+							"w": 720,
+							"h": 550
+						}
+					},
+					{
+						"item": "viz_masked",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 550,
+							"w": 720,
+							"h": 550
+						}
+					}
+				]
+			}
+		},
+		"options": {
+			"submitButton": false
+		},
+		"tabs": {
+			"items": [
+				{
+					"label": "New tab",
+					"layoutId": "layout_1"
+				}
+			]
+		}
+	},
+	"applicationProperties": {
+		"hideEdit": false,
+		"hideExport": false
+	}
+}
+    ]]></definition>
+</dashboard>

@@ -1,10 +1,38 @@
 <nav color="#293E6A">
-  <view name="contents" default='true' />
-  <view name="extended_documentation" />
+  <view name="contents" default="true" label="Home" />
+  <view name="extended_documentation" label="Extended Documentation" />
+  <collection label="Examples">
+    <collection label="Datetime problems">
+      <view name="ds_conflicting_datetime_formats" label="Handling conflicting datetime formats" />
+      <view name="ds_compound_datetimes" label="Stitching dates in filenames with times in events" />
+    </collection>
+    <collection label="Enrichment">
+      <view name="ds_auto_extract_indexed_fields" label="Dynamic extraction of indexed fields" />
+      <view name="ds_add_event_length" label="Additional license usage metadata" />
+      <view name="ds_drop_indexed_fields" label="Dropping indexed fields from INDEXED_CSV" />
+      <view name="ds_enrich_splunkd_component_level_thread" label="Enrich splunkd.log" />
+      <view name="ds_enrich_splunkd_access_log" label="Enrich splunkd_access.log" />
+      <view name="ds_json_docker" label="Loading json-docker logs" />
+      <view name="ds_find_ip_addresses" label="Find IP addresses" />
+    </collection>
+    <collection label="Platform extension">
+      <view name="ds_metricify_license" label="Write license.log into _metrics index" />
+      <view name="ds_load_into_indexes" label="Export and import data" />
+      <view name="ds_shard_data_with_splitbyindexkeys" label="Shard data with splitByIndexKeys" />
+      <view name="ds_data_estimation_pipeline" label="Measure ingestion costs before onboarding" />
+    </collection>
+    <collection label="Security">
+      <view name="ds_mask_data_and_map" label="Advanced Masking of Data with SHA1" />
+      <view name="ds_mask_and_clone" label="Simple masking data" />
+    </collection>
+    <collection label="Complex forwarding">
+      <view name="ds_split_forwarding" label="Split splunk forwarding" />
+      <view name="ds_selective_routing" label="Selective routing" />
+    </collection>
+  </collection>
   <view name="search" />
   <view name="datasets" />
   <view name="reports" />
   <view name="alerts" />
   <view name="dashboards" />
-
 </nav>

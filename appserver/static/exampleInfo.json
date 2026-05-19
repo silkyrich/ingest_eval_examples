@@ -2,104 +2,120 @@
     {
         "id": "conflicting_datetime_formats",
         "title": "Handling conflicting datetime formats",
-        "short-description": "Bad data hygene can result in multiple datetime formats in a single sourcetype, we can use INGEST_EVAL and strptime to workaround this problem",
-        "category": "Datetime problems"
+        "short-description": "Events from syslog or catch-all TCP inputs often mix several timestamp formats under one sourcetype, defeating the default parser. An INGEST_EVAL that tries strptime() against each candidate format and takes the first match keeps every event's _time accurate.",
+        "category": "Datetime problems",
+        "details": "**Problem.** A single sourcetype receiving events with mixed timestamp formats \u2014 typical for syslog aggregators and catch-all TCP listeners \u2014 defeats Splunk's default parser, which locks to one format per sourcetype. Events that do not match silently get the wrong `_time` and land in the wrong time bucket.\n\n**Fix.** Set `DATETIME_CONFIG=CURRENT` and use an `INGEST_EVAL` cascade of `strptime()` attempts to recognise each format per event. No custom `datetime.xml`, no US-bias in date ordering, and every event's `_time` is correct regardless of which format the producer emitted."
     },
     {
         "id": "compound_datetimes",
-        "title": "Handling diseparate dates and times",
-        "short-description": "Some applications separate the date form the time. This example show how to use INGEST_EVAL to pull the date from a file name and join that with the time stamp found in the file",
-        "category": "Datetime problems"
+        "title": "Stitching dates in filenames with times in events",
+        "short-description": "Some applications put the date in the filename and only the time in each log line. Use INGEST_EVAL to pull the date from source with a regex replace, concatenate it with the time from _raw, and parse the combined string with strptime().",
+        "category": "Datetime problems",
+        "details": "**Problem.** Some applications write the date into the filename or directory and only the time-of-day into each log line. Splunk's timestamp parsing reads only from `_raw`, so every event in the file gets stamped at the current date instead of the intended one.\n\n**Fix.** `INGEST_EVAL` pulls the date out of `source` with a `replace()` regex, concatenates it with the time from `_raw`, and parses the combined string with `strptime()`. Events are timestamped correctly without touching `datetime.xml`, and a parse failure falls back to `CURRENT_TIME` so bad filenames never drop the event."
     },
     {
         "id": "auto_extract_indexed_fields",
         "title": "Dynamic extraction of indexed fields",
-        "short-description": "Some log files conform to an informal syntax where attribute='value'. This example shows how we can use REPEAT_MATCH=true and ADD_META=true to discover and create indexed fields.",
-        "category": "Enrichment"
+        "short-description": "Files with a loose `attribute=value` convention \u2014 like splunkd's metrics.log \u2014 can be fully indexed without enumerating field names. A REGEX transform with REPEAT_MATCH=true and WRITE_META=true captures bare, single-quoted, and double-quoted values in one pass, making tstats searches dramatically faster.",
+        "category": "Enrichment",
+        "details": "**Problem.** Logs that follow a loose `key=value` convention \u2014 splunkd's `metrics.log` is the canonical case \u2014 have no first-class extractor in Splunk. Writing a REGEX per field is tedious and brittle, and any new key the producer starts emitting quietly disappears.\n\n**Fix.** A REGEX transform with `REPEAT_MATCH=true` and `WRITE_META=true` walks each event and captures every pair \u2014 bare, single-quoted, and double-quoted \u2014 as an indexed field in one pass. Combined with `SEGMENTATION=search` to suppress redundant major breakers, `tstats` on the result runs roughly forty times faster than the schema-on-the-fly equivalent."
     },
     {
         "id": "add_event_length",
         "title": "Additional license usage metadata",
-        "short-description": "When back billing license usage it can be difficult to allocate where data volumes originate from. This example assigns the length of the _raw string to each event.",
-        "category": "Enrichment"
+        "short-description": "License attribution in license_usage.log is limited to sourcetype/host/index, and indexes like _internal never appear there at all. Attach len(_raw) as an indexed field on every event so tstats gives you accurate, dimensional ingestion volumes across any time range.",
+        "category": "Enrichment",
+        "details": "**Problem.** License attribution in `license_usage.log` is limited to sourcetype, host, and index. Internal indexes like `_internal` and `_metrics` never appear there at all, and any dimension the license log does not track (app, team, source path) cannot be reported on without re-parsing every raw event.\n\n**Fix.** Apply an `INGEST_EVAL` under `[default]` that writes `len(_raw)` to a `_event_length` indexed field on every event. A single `tstats sum(_event_length)` query gives you dimensional ingestion volumes across any time range, including the internal indexes, with no raw-event parsing at search time."
     },
     {
         "id": "metricify_license",
         "title": "Write license.log into _metrics index",
-        "short-description": "This example uses CLONE_SOURCETYPE to duplicate license_usage.log events and copy the values into the _metrics index",
-        "category": "Platform extension"
+        "short-description": "Historical license analysis from license_usage.log is slow because every row is an unstructured string. Clone each Usage event with CLONE_SOURCETYPE, extract the dimensions into indexed fields, and route the copy to _metrics so mstats can answer capacity questions in milliseconds.",
+        "category": "Platform extension",
+        "details": "**Problem.** Historical license analysis from `license_usage.log` is slow because every row is an unstructured string in `_internal`. Questions like \"which host/sourcetype pair drove last quarter's growth?\" take minutes or hours to parse.\n\n**Fix.** `CLONE_SOURCETYPE` each Usage row into a metric-compliant copy. A REGEX extracts `b` into `_value` and the dimensions (host, source, sourcetype, index, indexer, pool) into indexed fields, then `INGEST_EVAL` routes the copy to `_metrics`. `mstats` answers capacity questions in milliseconds; the original event still flows to `_internal` untouched."
     },
     {
         "id": "drop_indexed_fields",
-        "title" : "Dropping indexed fields from INDEXED_CSV",
-        "short-description" : "INDEXED_CSV and INDEXED_JSON allow you to use tstats and indexed fields on structured data, however sometimes it can bloat your storage. This example demonstrates how to blend search time and indexed time enrichment for a CSV file",
-        "category" : "Enrichment"
+        "title": "Dropping indexed fields from INDEXED_CSV",
+        "short-description": "INDEXED_EXTRACTIONS=CSV turns every column into an indexed field \u2014 fast, but disastrous for bucket size when columns are high-cardinality or unused. Drop the noisy columns from _meta with INGEST_EVAL `:=null()` and fall back to search-time extraction, keeping buckets small without losing the columns that matter.",
+        "category": "Enrichment",
+        "details": "**Problem.** `INDEXED_EXTRACTIONS=CSV` indexes every column as a field regardless of whether any search uses it. High-cardinality or never-queried columns bloat the `tsidx`, and in extreme cases the indexed-fields bucket is larger than the raw-text bucket \u2014 wrecking retention against the storage estimates in the sizing guide.\n\n**Fix.** Keep the columns you actually search as indexed fields; use `INGEST_EVAL` with `:=null()` to remove the rest from `_meta`, and add a search-time `EXTRACT-` for the dropped columns so they remain reachable via schema-on-the-fly. `tstats` speed where it matters, storage penalty only where it does not."
     },
     {
         "id": "mask_data_and_map",
-        "title" : "Advanced Masking of Data with SHA1",
-        "short-description" : "Some log files contain sensitive data that should be hidden from users. This example shows how you can replace senstive data in your log message while creating a reverse map using INGEST_EVAL and CLONE_SOURCETYPE",
-        "category" : "Security"
+        "title": "Advanced Masking of Data with SHA1",
+        "short-description": "Masking sensitive fields usually destroys them. Here the masked event and a second 'map' event in a protected index carry matching SHA1 hashes: low-privilege users see only the redacted version, while privileged users join the two at search time to reverse the mask.",
+        "category": "Security",
+        "details": "**Problem.** Sensitive fields \u2014 emails, passwords, internal IDs \u2014 must be hidden from most users but recoverable by privileged operators. Splunk's built-in Anonymize Data destroys the original value, and lookup-based approaches cannot prove the mapping was built at ingest time.\n\n**Fix.** Replace the sensitive value with a short SHA1 hash in the normal event, and `CLONE_SOURCETYPE` a second \"map\" event into a protected index carrying the same hash alongside the original. Low-privilege users see only the redacted version; users with access to both indexes can join the two at search time to reverse the mask, without any lookup infrastructure."
     },
     {
         "id": "mask_and_clone",
-        "title" : "Simple masking data",
-        "short-description" : "Some log files contain sensitive data that should be hidden from users. This example shows simple method to double index data once with a mask and once without.",
-        "category" : "Security"
+        "title": "Simple masking data",
+        "short-description": "The simple pattern for selective redaction: CLONE_SOURCETYPE the event, apply a SEDCMD to the clone that partly masks email addresses and fully masks passwords, and route the original and the clone to indexes with different access controls.",
+        "category": "Security",
+        "details": "**Problem.** You need selective masking \u2014 a redacted copy for general access and an unredacted copy for security auditors \u2014 but do not want the complexity of hash-mapping infrastructure.\n\n**Fix.** `CLONE_SOURCETYPE` the event, apply a `SEDCMD` to the clone that partly masks email addresses (first and last characters preserved for support triage) and fully masks passwords, then route the original and the clone to indexes with different access controls. Two lines of `SEDCMD` and a clone transform is the whole pattern."
     },
     {
         "id": "load_into_indexes",
-        "title" : "Export and import data",
-        "short-description" : "It is sometimes useful to export snippets of data from one Spunk instance and load that into another. This examples shows how we can build a simple export import tool for loading data into Splunk using REGEX and INGEST_EVAL",
-        "category" : "Platform extension"
+        "title": "Export and import data",
+        "short-description": "Moving sample events between Splunk instances usually needs access to the source files. An export search packs _time, index, host, source, sourcetype, and _raw into a single CSV line, and an import sourcetype unpacks it back into the correct metadata fields on the other side.",
+        "category": "Platform extension",
+        "details": "**Problem.** Moving sample events between Splunk instances \u2014 for development, consulting, training, or reproducing a customer issue \u2014 normally requires access to the raw source files. In practice that access is blocked by network segmentation or data-governance policy.\n\n**Fix.** An export search packs `_time`, `index`, `host`, `source`, `sourcetype`, and `_raw` into a single CSV line per event using a `%%%` separator and a `^^^END^^^` line delimiter. An import sourcetype on the target uses REGEX and `INGEST_EVAL` to unpack the encoding, restoring each event exactly as if it had been ingested natively."
     },
     {
         "id": "split_forwarding",
-        "title" : "Split splunk forwarding",
-        "short-description" : "Splunk can send about 20MB/s per pipeline, and this can staturate ingestion on an indexer. This example shows how you can use INGEST_EVAL and routing groups to split pipeline output across multiple TCP streams",
-        "category" : "Complex forwarding"
+        "title": "Split splunk forwarding",
+        "short-description": "A single parsing pipeline caps around 20 MB/s, and concentrating that through one tcpout stanza can saturate a single indexer (the 'laser beam of death'). Set _TCP_ROUTING with INGEST_EVAL to spread events randomly across several tcpout target groups so load balances across multiple indexer connections.",
+        "category": "Complex forwarding",
+        "details": "**Problem.** A single Splunk parsing pipeline tops out at roughly 20 MB/s, and concentrating that through one `tcpout` stanza saturates a single indexer connection \u2014 the \"laser beam of death\" that stalls event-delay queues on one indexer while the rest of the cluster sits idle. When the input stream cannot be sharded across forwarder pipelines, adding pipelines does not help.\n\n**Fix.** On a heavy forwarder, set `_TCP_ROUTING` with an `INGEST_EVAL` that appends `random()%N` to a target-group name. Define N matching `[tcpout:group_0]`, `[tcpout:group_1]` \u2026 stanzas in `outputs.conf`, each pointing at the full indexer pool. Each event picks a group at random and the single stream fans out across N independent TCP connections."
     },
     {
         "id": "enrich_splunkd_component_level_thread",
-        "title" : "Enrich splunkd.log",
-        "short-description" : "Enrich splunkd logs with indexed fields to extract log_level, component, and thread info",
-        "category" : "Enrichment"
+        "title": "Enrich splunkd.log",
+        "short-description": "The _internal index is usually one of the largest on a platform, so every splunkd search pays full schema-on-the-fly cost. Extract log_level, component, thread_id, and thread_name as indexed fields at ingest \u2014 plus a custom segmenter that skips the timestamp tokens \u2014 to make those searches tractable.",
+        "category": "Enrichment",
+        "details": "**Problem.** The `_internal` index is usually one of the largest on any Splunk deployment, and every field in `splunkd.log` \u2014 `log_level`, `component`, `thread_id`, `thread_name` \u2014 is extracted on the fly at search time. Routine diagnostics on `_internal` pay full schema-on-the-fly cost and take minutes on busy clusters.\n\n**Fix.** A REGEX transform extracts `log_level`, `component`, `thread_id`, and `thread_name` as indexed fields at ingest. A companion `segmenters.conf` stanza skips the date and time tokens (they never help search) and disables intermediate major breakers, keeping the `tsidx` small. `tstats count by log_level component` now runs in a fraction of the time."
     },
     {
         "id": "enrich_splunkd_access_log",
-        "title" : "Enrich splunkd_access.log",
-        "short-description" : "Enrich splunkd_accesss logs with indexed fields to extract ip, wait time, URL and REST parameters",
-        "category" : "Enrichment"
+        "title": "Enrich splunkd_access.log",
+        "short-description": "Every REST call against splunkd lands in splunkd_access.log \u2014 high volume, entirely unstructured. Parse source IP, method, response code, bytes, and duration at ingest, then split the URL's query string into per-parameter indexed fields (rest_param_*) so latency and usage analysis moves to tstats.",
+        "category": "Enrichment",
+        "details": "**Problem.** `splunkd_access.log` records every REST call against `splunkd` \u2014 high volume, entirely unstructured. Performance troubleshooting (\"which endpoint is slow?\", \"which user hit the rate limit?\") requires a full `_raw` scan every time.\n\n**Fix.** A single REGEX parses source IP, user, method, URL, response code, bytes, and duration into indexed fields. A second REGEX with `REPEAT_MATCH=true` splits the URL's query string into per-parameter indexed fields (`rest_param_*`), staged through the host metadata key as a workaround for operating on `_meta`. Latency and usage analysis moves cleanly into `tstats`."
     },
     {
         "id": "shard_data_with_splitbyindexkeys",
-        "title" : "Shard data with splitByIndexKeys",
-        "short-description" : "How to group like data together in buckets to improve the performance of bucket elimintation",
-        "category" : "Platform extension"
+        "title": "Shard data with splitByIndexKeys",
+        "short-description": "Very large indexes cause SmartStore churn when sparse searches pull small amounts of data from many buckets. Set indexes.conf `splitByIndexKeys=source,sourcetype` and raise the hot-bucket count so data with the same keys lands together, giving bucket elimination real leverage.",
+        "category": "Platform extension",
+        "details": "**Problem.** Very large indexes cause SmartStore churn when sparse searches pull small amounts of data from many buckets. SmartStore localises whole buckets, so a query that needs one row per bucket can end up downloading gigabytes of unrelated data.\n\n**Fix.** Set `splitByIndexKeys=source,sourcetype` in `indexes.conf` and raise `maxHotBuckets`. Buckets are no longer split only by time; events with the same key combination land together, so bucket elimination on `source` or `sourcetype` excludes most of the index before any localisation happens. The platform docs say this is metrics-only \u2014 it is not."
     },
     {
         "id": "data_estimation_pipeline",
-        "title" : "Measure ingestion costs before onboarding",
-        "short-description" : "How to build a data estimation pipeline for measuring data ingestion rates coming into Splunk",
-        "category" : "Platform extension"
+        "title": "Measure ingestion costs before onboarding",
+        "short-description": "Measure the real cost of a new data source before committing it to production. A staging pipeline counts bytes per host/source/sourcetype without persisting the events, so you can hand the onboarding team concrete volumes instead of guesses.",
+        "category": "Platform extension",
+        "details": "**Problem.** Quoting license impact for a new data source before onboarding normally means guessing. A wrong number either scares off the integration or blows the license budget later in the quarter.\n\n**Fix.** A staging pipeline reads the candidate source, counts bytes per host, source, and sourcetype into a metrics index, and then routes the events to `nullQueue` without committing them to a real index. You hand the onboarding team concrete dimensional numbers instead of estimates."
     },
     {
         "id": "selective_routing",
-        "title" : "Selective routing",
-        "short-description" : "Use CLONE_SOURCETYPE to have fine grain policies when forwarding to multiple targets.",
-        "category" : "Complex forwarding"
+        "title": "Selective routing",
+        "short-description": "Different downstream systems need different subsets of the same stream. Use CLONE_SOURCETYPE with per-copy filters and _TCP_ROUTING to send the original to one target, a redacted copy to another, and drop the rest \u2014 all from a single heavy-forwarder config.",
+        "category": "Complex forwarding",
+        "details": "**Problem.** Different downstream systems need different subsets of the same event stream \u2014 a SIEM might want only security-relevant events, a billing integration might want only license metadata. Filtering on the forwarder is brittle and per-source; filtering downstream wastes bandwidth and compute.\n\n**Fix.** Use `CLONE_SOURCETYPE` with per-copy `INGEST_EVAL` filters, plus `_TCP_ROUTING` targeting different `tcpout` groups. Each event can be duplicated, filtered, redacted, or routed independently from a single heavy-forwarder config \u2014 one source of truth, many downstream consumers."
     },
     {
         "id": "json_docker",
-        "title" : "Loading json-docker logs",
-        "short-description" : "Some sources use a json logging format which we can pre-processed before ingestion to maximise it search performance",
-        "category" : "Enrichment"
+        "title": "Loading json-docker logs",
+        "short-description": "Docker's default log driver wraps every line in a JSON envelope like `{\"log\":\"...\",\"stream\":\"stdout\",\"time\":\"...\"}`. Parse it with INDEXED_EXTRACTIONS=JSON, then copy the `log` field back into _raw and drop the wrapper with INGEST_EVAL so the event indexes as if Docker never touched it.",
+        "category": "Enrichment",
+        "details": "**Problem.** Docker's default log driver wraps every line in a JSON envelope like `{\"log\":\"...\",\"stream\":\"stdout\",\"time\":\"...\"}`. Splunk does not recognise this natively, and reading with `INDEXED_EXTRACTIONS=JSON` indexes the log text itself as a high-cardinality `log` field \u2014 bloating the `tsidx` and breaking downstream search patterns. Most teams bolt on FluentD as a workaround.\n\n**Fix.** Parse with `INDEXED_EXTRACTIONS=JSON`, then use `INGEST_EVAL` to copy the `log` field into `_raw` and drop the `log` and `time` indexed fields. The event indexes exactly as it would have before Docker wrapped it, with `stream` preserved as a useful dimension. With `force_local_processing=true`, this even works from a universal forwarder."
     },
     {
         "id": "find_ip_addresses",
-        "title" : "Find IP addresses",
-        "short-description" : "Use REGEX to find likely looking IP addresses and write them into indexed fields",
-        "category" : "Enrichment"
-    } 
+        "title": "Find IP addresses",
+        "short-description": "Searching for an IP like 10.20.30.1 builds a LISPY that matches every event containing the tokens 1, 10, 20, and 30 \u2014 wildly inefficient. Extract validated IPv4 addresses into an `ip` indexed field at ingest, with look-around anchors that reject false matches like 1.2.3.4.5, so queries can eliminate on `ip::` directly.",
+        "category": "Enrichment",
+        "details": "**Problem.** Searching for an IP like `10.20.30.1` generates a LISPY `[ AND 1 10 20 30 ... ]` that matches every event containing any of those tokens. Splunk filters the false positives back out via schema-on-the-fly, wasting enormous amounts of parsing effort.\n\n**Fix.** A REGEX transform with look-around anchors extracts validated IPv4 addresses into an `ip` indexed field at ingest, rejecting things that look like IPs but are not (`1.2.3.4.5`, `300.x.y.z`). Searches can now eliminate on `ip::10.20.30.1` at the lexicon stage, before any event parsing happens."
+    }
 ]
-    

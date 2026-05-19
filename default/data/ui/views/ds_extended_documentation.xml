@@ -1,0 +1,78 @@
+<dashboard version="2" theme="light">
+    <label>Extended Documentation</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# INGEST_EVAL Extended Documentation\n\nThe public facing [documentation](https://docs.splunk.com/Documentation/Splunk/8.1.0/Data/IngestEval#Examples)  on `INGEST_EVAL` does not \ninclude all the details mentioned in our internal developer documentation. In particular it doesn't mention details on how `_time`, \nhow to handle `multi-value` fields or how to debigulate between `pipelineData` fields. This documentation is adapted from internal notes exchanged between developers and is presented as is.\n\n---\n# ingest-time transforms via transforms.conf\n\nHere is a snippet of what a configuration looks like for props and transforms when using regex transforms and is well documented \nin [Getting Data In](https://docs.splunk.com/Documentation/Splunk/8.1.0/Data/Configureindex-timefieldextraction#Define_additional_indexed_fields)\n\nData streams are targeted via `sourcetype`, `host` or `source` in `props.conf` which can optionally apply transforms to that stream. \nFor instance, in the example below we have configured the sourcetype `mysourcetype` to have two regex transforms applied to it, `regex1` and `regex2` which are \ndefined in `transforms.conf`\n\n## props.conf\n\n```\n[mysourcetype] \nTRANSFORMS-foo=regex1,regex2\n```\n## transforms.conf\n\n```\n[regex1] \nREGEX=^foo-([A-Z]*) \nFORMAT= foo::$1\n\n[regex2] \nREGEX=bar-([0-9]*)$ \nFORMAT=bar::$2\n```\n---\n# What's New?\n\nSome ingest-time transformations are hard or impossible using regexes alone. For example, regex transforms don\u2019t help much for metrics \nnormalisation. Reusing the existing power of the search-time `| eval` operator makes some of these very simple to write. \n\n* An ingest-time `INGEST_EVAL` is simply another type of transforms.conf stanza\n* The evaluations to run are selected in the exact same way in props.conf\n* Regex-based and `INGEST_EVAL`-based transforms can be combined in any order!\n\nAdditionally, it gives savvy developers more direct control of index-time fields than they had before. A developer can control exactly \nhow an index time field will be stored in the journal. We\u2019ll see examples of this later\n\n## Example of an INGEST_EVAL transform stanza:\n```\n[eval1]\nINGEST_EVAL= field3=length(_raw)*2\n```\nThe evaluation language is identical to the search-time `INGEST_EVAL` command, so refer to our documentation on [`| eval`](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Eval) \nfor further details.\n\n## Multi-Eval support\nJust like on the search-time [`| eval`](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Eval) command, multiple comma-separated expressions can be chained:\n\n```\n[eval2]\nINGEST_EVAL= field4=_time, field5=field4+1\n```\n---\n\n# Defining Variable Names\nMost of the common `PipelineData` keys that transforms.conf normally operates on (`_raw`, `index`, `queue`, ...) can be read or written directly:\n```\nINGEST_EVAL= index=\u201csplit_\u201c+substr(sha1(_raw),1,1)\nINGEST_EVAL= queue=if(random()%3==0,\u201dnullQueue\u201d,\u201dindexQueue\u201d)\n```\nAlso, several search-time variables work as expected (`source`, `sourcetype`, `host`, ...)\n\n```\nINGEST_EVAL= queue=if(linecount>100,\u201dnullQueue\u201d,\u201dindexerQueue\u201d)\nINGEST_EVAL= sourcetype=if(substr(_raw,1,1)==\u201c#\u201d,\u201dcomment\u201d,sourcetype)\n```\n\nBut by default, variables refer to index-time fields. This is the same place that a regex-based transform writes its output \n(in the familiar\n`key::value` form). These are also known as `_meta` fields because of where they are stored internally to `PipelineData`\n\nFor example these two transforms create equivalent results:\n```\n[x1]\nREGEX=.* \nFORMAT=fieldname::3\n\n[x2]\nINGEST_EVAL= fieldname=1+2\n```\n\nThis normally just \u201cdoes what you want\u201d, but the decision about whether a variable is a `PipelineData` key or a `indextime` field can also be overridden by using eval\u2019s dollar-sign format\n```\nINGEST_EVAL= $field:myfield$=length($pd:_raw$)\n```\n\nAgain, normally this verbosity isn\u2019t needed \u2014 whether a variable is an indextime field or not is clear from context.\n\n---\n# Handling the `_time` field\nAs an aside: `_time` works like at search-time (i.e. includes subseconds) \n\n```\nINGEST_EVAL= until_sec=ciel(_time)-_time\n```\n\nHowever, the `PipelineData` time doesn\u2019t have the subseconds-part included yet, and that can be manipulated via `$pd:_time$`\n\n```\nINGEST_EVAL= $pd:_time$=1500000000+(random()%100000)\n```\n---\n# Multivalue indexed fields\nIndex-time fields can have multiple values.\nThese can be created similarly to search-time multival fields. \n\nHere is another example of functional equivalency between `regex` and `INGEST_EVAL` transforms\n\n```\n[multi1]\nREGEX=.*\nFORMAT=x::a x::b x::c\n\n[multi2]\nINGEST_EVAL= x=mvappend(\u201ca\u201d,\u201db\u201d,\u201dc\u201d)\n```\n\nHowever, by default when reading an eval field, only the first value is used: This can be overridden by using `$mv:field$`\n\n```\nmvjoin(x,\u201d.\u201d) => \u201ca\u201d \n\nmvjoin($mv:x$,\u201d.\u201d) => \u201ca.b.c\"\n```\n\nThis may seem odd at first, but multi value fields are a rarely-used feature, and fetching only the first value is much more efficient\n\nJust as with regex-based transforms, by default an eval-based transform creates a new `indextime` field\n```\nINGEST_EVAL= z=10, z=z+1\n```\nProduces `z::10 z::11`\n\nThis can be changed by using `:=` as the assignment operator:\n```\nINGEST_EVAL= z=10, z:=z+1\n```\nProduces `z::11`\n\nNote that there is a slight performance penalty, so it\u2019s best to only do this when it\u2019s possible the field already exists.\n\nThis `:=` format can also be used to remove an existing index-time field:\n\n```[remove-xyz] \nINGEST_EVAL= xyz:=null()\n```\n\n---\n# A note on types\n\nInternally (both in RAM and on disk) an `indextime` field can hold its value in multiple ways: a string, an integer, several floating-point representations\nWith regex-based transforms the developer had no control over this; they were essentially always strings\nOnly internal code (like metrics) could really take advantage of other value types\n\nWith `INGEST_EVAL` based transforms, each evaluation can optionally control the type an `indextime` field will be stored in. Some simple examples:\n\n```\nINGEST_EVAL= field_a[int]=length(_raw) \nINGEST_EVAL= field_a[float]:=log(field_a)\n```\n\nFor floating-point numbers, you can also specify that the number of significant digits of the calculation must be kept by adding `-sf` to the type:\n```\nINGEST_EVAL= a[float-sf]=b*1.35\n```\n\nAlso a less precise (but smaller) encoding is available as `float32`/`float32-sf` \n```\nINGEST_EVAL= bits_per_second[float32]=bytes_per_second*8\n```\nThis can be used to trim the size of metrics data, for instance. Even an existing field can have its type changed:\n```\nINGEST_EVAL= myfield[float32]:=myfield\n```\n\nBy default, a sane result type is chosen from the expression\ni.e. a numeric result will be stored as a number, a string as a string, a multi value as a series of strings, etc\nSo for most cases, specifying an explicit type is not needed.\n\n---\n# High-cardinality strings - a warning\n\nThe `indextime` field system was originally built to handle two use cases:\n1. Low-cardinality \u201ctags\u201d on events (\u201cdate_month::july\u201d) \n1. Substrings extracted from `_raw` via CSV or JSON parsing\n\nThis means in our on-disk index format, strings can take one of two formats:\n\n1. A single integer referring to a value stored in Strings.data\n2. A pair of integers describing the offset of the string inside `_raw` and its `length` (with some small tweaks to allow CSV/JSON quoting)\n\n\u2022\tThis means that high-cardinality string values that don\u2019t originate as part of `_raw` can be very inefficient, both for indexing and searchtime!\n(None of this is new, just something to keep in mind)\n\n## Examples:\n\nHere are some examples around cardinality of strings when applied to indexed fields.\n\n### Good - Low cardinality string \n```\nINGEST_EVAL= sev=if(val>100,\u201dRED\u201d,if(val>50,\u201dYELLOW\u201d,\u201dGREEN\u201d))\n```\n\n### Good - We can detect that the result is a _raw substring! \n```\nINGEST_EVAL= col3=substr(_raw,20,10)\n```\n\n### BAD! - The storage engine doesn\u2019t currently have a way of storing this high-cardinality field efficiently\n```\nINGEST_EVAL= hash=sha1(_raw)\n```\n\n### BAD! - High precision numbers create more cardinality\n```\nINGEST_EVAL= number=random()\n```\n\n### Good - Low precision numbers have reduced cardinality\n```\nINGEST_EVAL= number=round(random(),5)\n```\n\n"
+			}
+		}
+	},
+	"dataSources": {},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_1",
+					"label": "New tab"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 703
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 960
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Extended Documentation"
+}
+    ]]></definition>
+</dashboard>

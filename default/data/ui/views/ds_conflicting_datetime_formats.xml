@@ -1,0 +1,127 @@
+
+<dashboard version="2" theme="light">
+    <label>Conflicting date formats</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem statement\nSome sources can contain conflicting date time formats and Splunk applies parsing logic per sourcetype. This is frequently the case when recieving syslog data or reading from tcp.\n\n\n## Existing solution\nSplunk documentation mentions that this can be a problem on the page [Configure timestamp assignment for events with multiple timestamps](https://docs.splunk.com/Documentation/Splunk/latest/Data/Configurepositionaltimestampextraction) and outlines how to [Configure advanced timestamp recognition with datetime.xml](https://docs.splunk.com/Documentation/Splunk/latest/Data/Configuredatetimexml). \n\nThis approach works but requires that the adminstrator understands and builds a custom `datetime.xml` files, using the defualt one can be especially problematic as it assumes the US date format over others. \n\n## Alternative approach \nWith the introduction of `INGEST_EVAL` we now have an approach using the tools we already know.\n\n### Steps\n\n1. Set the incoming data to use `CURRENT_TIME`\n1. Use `INGEST_EVAL` to repeatedly test strfime formats until one matches\n\n### props.conf\n    # This sourcetype is for the conflicting timestamps usecase, it calls a transform to extract the \n    # datetime format via INGEST_EVAL and the strptime function\n    [demutliplexed_datetime_formats]\n    DATETIME_CONFIG = CURRENT\n    TRANSFORMS-extract_date = demultiplex_datetime\n### transforms.conf\n\n    #  This transform tests three different date time formats and selects the first that matches\n    [demultiplex_datetime]\n    INGEST_EVAL= _time=case(isnotnull(strptime(_raw, \"%c\")), strptime(_raw, \"%c\"), isnotnull(strptime(_raw, \"%H:%M:%S %y-%m-%d\")),strptime(_raw, \"%H:%M:%S %y-%m-%d\"), isnotnull(strptime(_raw, \"%Y-%m-%d %H:%M:%S\")), strptime(_raw, \"%Y-%m-%d %H:%M:%S\"))\n\n\n"
+			}
+		},
+		"viz_YYUmywRv": {
+			"type": "splunk.table",
+			"dataSources": {
+				"primary": "ds_sBEaVYfb"
+			},
+			"options": {
+				"columnFormat": {
+					"_time": {
+						"width": 60,
+						"align": "auto",
+						"headerAlign": "auto",
+						"textOverflow": "break-word",
+						"data": "> table | seriesByName(\"_time\") | formatByType(_timeColumnFormatEditorConfig)"
+					}
+				}
+			},
+			"title": "The data has been loaded into Splunk",
+			"description": "The log line has multiple conflicting date time formats, but they have been plastically loaded correctly",
+			"context": {
+				"_timeColumnFormatEditorConfig": {
+					"time": {
+						"format": "YYYY-MM-DD HH:MM:SS"
+					}
+				}
+			}
+		}
+	},
+	"dataSources": {
+		"ds_sBEaVYfb": {
+			"type": "ds.search",
+			"options": {
+				"query": "index=ingest_eval_examples_* sourcetype=conflicting_datetime_formats\n| table _time _raw",
+				"queryParameters": {
+					"earliest": "0",
+					"latest": "now"
+				}
+			},
+			"name": "base"
+		}
+	},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			},
+			"ds.spl2": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		},
+		"visualizations": {
+			"global": {
+				"showProgressBar": true
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"options": {},
+		"globalInputs": [],
+		"tabs": {
+			"items": [
+				{
+					"layoutId": "layout_1",
+					"label": "New tab"
+				}
+			]
+		},
+		"layoutDefinitions": {
+			"layout_1": {
+				"type": "grid",
+				"structure": [
+					{
+						"item": "viz_markdown",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 0,
+							"w": 1440,
+							"h": 582
+						}
+					},
+					{
+						"item": "viz_YYUmywRv",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 582,
+							"w": 1440,
+							"h": 644
+						}
+					}
+				],
+				"options": {
+					"width": 1440,
+					"height": 960
+				}
+			}
+		}
+	},
+	"description": "",
+	"title": "Conflicting date formats"
+}
+    ]]></definition>
+</dashboard>

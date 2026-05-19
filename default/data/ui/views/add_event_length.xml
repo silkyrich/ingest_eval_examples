@@ -1,4 +1,4 @@
-<form>
+<form version="1.1">
   <label>Additional license usage metadata</label>
   <search>
     <query>| noop | eval dummy_trigger="$selected_resolution$"</query>

@@ -1,4 +1,4 @@
-<dashboard>
+<dashboard version="1.1">
   <label>mask_and_clone</label>
   <row>
     <panel>
