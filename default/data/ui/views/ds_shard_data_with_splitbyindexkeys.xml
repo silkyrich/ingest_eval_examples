@@ -29,7 +29,7 @@
 		"viz_markdown": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "# Problem description\n\nVery large indexes containing a large variety of data can cause SmartStore churn as sparse searches require small amounts of data from multiple buckets. This can force SmartStore to localize a very large number of buckets, despite only needing a small amount of data from each. \n\n## Existing Solutions\nCurrently you can try and use TERM, host, source and sourcetype to improve bucket elimination so that only the `metadata` and `bloomfilter` need to be downloaded from your considered buckets. \n\n## Proposed Solution\nWe can attempt to use the new option \"splitByIndexKeys\" and increase the number of hot buckets so that sharding occurs within the index itself. This will improve bucket elmination when searching on the appropiate metadata fields.\n\n    splitByIndexKeys = <comma separated list>\n    * By default, splunkd splits buckets by time ranges with each bucket having its\n    earliest and latest time.\n    * If one or several keys are provided, splunkd splits buckets by the index key,\n    or a combination of the index keys if more than one key is provided. The\n    buckets will no longer be split by time ranges.\n    * Valid values are: host, sourcetype, source, metric_name\n    * This setting only applies to metric indexes.\n    * If not set, splunkd splits buckets by time span.\n    * Default: empty string (no key)\n\nAlthough it is stated that this only works for metrics indexes, this is not true.\n\n###  Data\n\nWe try and emulate the frequency of events found in a default splunk instance focusing on the `splunkd` sourcetype by looking at the frequency of component logging. We then join this with a concept of \"stacks\" which are embedded in the host names used in Splunk Cloud. This is documented in the data generation workbook.\n\n### Steps to load\n\nWe borrow from the [load data into indexes|../ingest_eval_examples] example to lift the data into events and then use `CLONE_SOURCETYPE` to create fresh events under the sourcetype `shard_data_with_splitbyindexkeys` and throw away the orignal. \n\nThen we process the fresh new events: \n\n1. We create an index using `splitByIndexKeys` and increase the number of hot buckets\n1. We extract the `component` from the events borrowing from the [Enrich splunkd logging|../enrich_splunkd_component_level_thread] usecase.\n1. We extract the metadata from the host name to extract the `stack` name \n1. We assign the value for `component` to the `sourcetype` and the `stack` to the `source`\n    1. We reassign the orginal `sourcetype` and `source` to `orig_sourcetype` and `original_source` \n1. Finally we route the event to the index\n    1. If the `component` value is not extracted we route to the `detritus`\n\n#### indexes.conf\n\n    [shard_data_with_splitbyindexkeys]\n    homePath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/db\n    coldPath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/colddb\n    thawedPath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/thaweddb\n    # we set the size the buckets to be small so they roll more frequently\n    maxDataSize=1\n    journalCompression = zstd\n    tsidxWritingLevel=3\n    disabled = 0\n    # the more hots buckets the better the sharding\n    maxHotBuckets = 20\n    # we will shard around source and sourcetype\n    splitByIndexKeys=source,sourcetype\n\n#### props.conf\n\n    # This is the process for extracting the meta data from a splunkd event and writting it to the sharded index\n    [shard_data_with_splitbyindexkeys]\n    TRANSFORMS-shard_data_with_splitbyindexkeys = enrich_splunkd_component_level_thread-extract_log_level_etc, enrich_splunkd_component_level_thread-drop_null_thread_info, shard_data_with_splitbyindexkeys-extract_metadata_from_host, shard_data_with_splitbyindexkeys-move_meta_data\n    # we are fully decomposing the URL we don't need MAJOR breakers\n    SEGMENTATION=search\n\n#### transforms\n\n    # Use REGEX to extract the values for component, log_level, thread_id and thread_name as indexed fields\n    [enrich_splunkd_component_level_thread-extract_log_level_etc]\n    SOURCE_KEY = _raw\n    WRITE_META = true\n    REGEX = ^\\d\\d\\-\\d\\d-\\d{4}\\s\\d\\d:\\d\\d\\:\\d\\d\\.\\d{0,6}\\s[+\\-]\\d{4}\\s(INFO|DEBUG|ERROR|WARN|DEBUG)\\s+(\\S+)\\s(?:\\[(\\d+)\\s(\\S+)\\])?\n    FORMAT = log_level::$1 component::$2 thread_id::$3 thread_name::$4 \n\n    # the values for thread name and thread_id are optional which will produce empty indexed fields, we use this transform to remove them\n    [enrich_splunkd_component_level_thread-drop_null_thread_info]\n    INGEST_EVAL = thread_id:=if(thread_id=\"\",null(),thread_id), thread_name:=if(thread_name=\"\",null(),thread_name)\n\n    # we use REGEX to extract the meta data encoded in the host name\n    [shard_data_with_splitbyindexkeys-extract_metadata_from_host]\n    SOURCE_KEY = MetaData:Host\n    WRITE_META = true\n    REGEX = ^(?:host::)?([^\\-]+)-([^\\.]+)+\\.([^\\.]+)\\.(.+)$\n    FORMAT = role::\"$1\" instance::\"$2\" stack::\"$3\" domain::\"$4\"\n\n    # we want to write the component name into to sourcetype field, and stack name into the source field, if the component isn't extracted we send to detritus.\n    [shard_data_with_splitbyindexkeys-move_meta_data]\n    INGEST_EVAL =  orig_source=source, orig_sourcetype=sourcetype, source=stack, sourcetype=component, index=if(isnull(component), \"detritus\", index)\n\n\n"
+				"markdown": "# Problem description\n\nVery large indexes containing a large variety of data can cause SmartStore churn as sparse searches require small amounts of data from multiple buckets. This can force SmartStore to localize a very large number of buckets, despite only needing a small amount of data from each. \n\n## Existing Solutions\nCurrently you can try and use TERM, host, source and sourcetype to improve bucket elimination so that only the `metadata` and `bloomfilter` need to be downloaded from your considered buckets. \n\n## Proposed Solution\nWe can attempt to use the new option \"splitByIndexKeys\" and increase the number of hot buckets so that sharding occurs within the index itself. This will improve bucket elmination when searching on the appropiate metadata fields.\n\n    splitByIndexKeys = <comma separated list>\n    * By default, splunkd splits buckets by time ranges with each bucket having its\n    earliest and latest time.\n    * If one or several keys are provided, splunkd splits buckets by the index key,\n    or a combination of the index keys if more than one key is provided. The\n    buckets will no longer be split by time ranges.\n    * Valid values are: host, sourcetype, source, metric_name\n    * This setting only applies to metric indexes.\n    * If not set, splunkd splits buckets by time span.\n    * Default: empty string (no key)\n\nAlthough it is stated that this only works for metrics indexes, this is not true.\n\n###  Data\n\nWe try and emulate the frequency of events found in a default splunk instance focusing on the `splunkd` sourcetype by looking at the frequency of component logging. We then join this with a concept of \"stacks\" which are embedded in the host names used in Splunk Cloud. This is documented in the data generation workbook.\n\n### Steps to load\n\nWe borrow from the [load data into indexes|../ingest_eval_examples] example to lift the data into events and then use `CLONE_SOURCETYPE` to create fresh events under the sourcetype `shard_data_with_splitbyindexkeys` and throw away the orignal. \n\nThen we process the fresh new events: \n\n1. We create an index using `splitByIndexKeys` and increase the number of hot buckets\n1. We extract the `component` from the events borrowing from the [Enrich splunkd logging|../enrich_splunkd_component_level_thread] usecase.\n1. We extract the metadata from the host name to extract the `stack` name \n1. We assign the value for `component` to the `sourcetype` and the `stack` to the `source`\n    1. We reassign the orginal `sourcetype` and `source` to `orig_sourcetype` and `original_source` \n1. Finally we route the event to the index\n    1. If the `component` value is not extracted we route to the `detritus`\n"
 			}
 		},
 		"viz_table": {
@@ -42,6 +42,24 @@
 			},
 			"showProgressBar": true,
 			"title": "How source and source type have been mapped into buckets"
+		},
+		"viz_conf_props": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[shard_data_with_splitbyindexkeys]\nTRANSFORMS-shard_data_with_splitbyindexkeys = enrich_splunkd_component_level_thread-extract_log_level_etc, enrich_splunkd_component_level_thread-drop_null_thread_info, shard_data_with_splitbyindexkeys-extract_metadata_from_host, shard_data_with_splitbyindexkeys-move_meta_data\n# we are fully decomposing the URL we don't need MAJOR breakers\nSEGMENTATION=search\n```\n"
+			}
+		},
+		"viz_conf_transforms": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[shard_data_with_splitbyindexkeys-clone]\nREGEX = .\nCLONE_SOURCETYPE = shard_data_with_splitbyindexkeys\nFORMAT = $0\nDEST_KEY = _raw\n\n[shard_data_with_splitbyindexkeys-extract_metadata_from_host]\nSOURCE_KEY = MetaData:Host\nWRITE_META = true\nREGEX = ^(?:host::)?([^\\-]+)-([^\\.]+)+\\.([^\\.]+)\\.(.+)$\nFORMAT = role::\"$1\" instance::\"$2\" stack::\"$3\" domain::\"$4\"\n\n[shard_data_with_splitbyindexkeys-move_meta_data]\nINGEST_EVAL =  orig_source=source, orig_sourcetype=sourcetype, source=stack, sourcetype=component, index=if(isnull(component), \"detritus\", index)\n```\n"
+			}
+		},
+		"viz_conf_indexes": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### indexes.conf\n\nFrom `default/indexes.conf` \u2014 verbatim:\n\n```ini\n[shard_data_with_splitbyindexkeys]\nhomePath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/db\ncoldPath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/colddb\nthawedPath = $SPLUNK_DB/shard_data_with_splitbyindexkeys/thaweddb\n# we set the size the buckets to be small so they roll more frequently\nmaxDataSize=1\njournalCompression = zstd\ntsidxWritingLevel=4\ndisabled = 0\n# the more hots buckets the better the sharding\nmaxHotBuckets = 20\n# we will shard around source and sourcetype\nsplitByIndexKeys=source,sourcetype\n```\n"
+			}
 		}
 	},
 	"dataSources": {
@@ -85,6 +103,36 @@
 							"y": 0,
 							"w": 720,
 							"h": 1100
+						}
+					},
+					{
+						"item": "viz_conf_props",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 1100,
+							"w": 480,
+							"h": 480
+						}
+					},
+					{
+						"item": "viz_conf_transforms",
+						"type": "block",
+						"position": {
+							"x": 480,
+							"y": 1100,
+							"w": 480,
+							"h": 480
+						}
+					},
+					{
+						"item": "viz_conf_indexes",
+						"type": "block",
+						"position": {
+							"x": 960,
+							"y": 1100,
+							"w": 480,
+							"h": 480
 						}
 					}
 				]

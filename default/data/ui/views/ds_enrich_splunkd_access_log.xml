@@ -29,7 +29,7 @@
 		"viz_markdown": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "# Problem statement\n\nRESTful calls to splunkd are recorded in `splunkd_access.log`. There is vast number of these and it is very expensive to search as everything is extracted at search time. This is a pity as they track many important interactions and the delay in response is very valuable to understand how efficently splunkd is executing.\n\n## Existing solution\n\nCurrently we use schema on the fly and performance is poor, it is expensive to search for delays per rest endpoint. \n\n## Proposed solution\n\nFully parse out all the meta data from the log line building out indexed fields. This will allow us to do tstats searches on the duration of the call by rest endpoint and analysis the parameters passed.\n\n### Example log line \n\n    127.0.0.1 - admin [21/Sep/2020:08:13:51.673 -0030] \"GET /servicesNS/nobody/splunk_app_addon-builder/storage/collections/config/?count=-1&offset=0&search=splunk_app_addon-builder HTTP/1.1\" 200 30503 - - - 8ms\n    10.0.44.11 - hulk@greenmachine.com [21/Sep/2020:08:17:15.312 -0000] \"GET /servicesNS/nobody/search/hulk@greenmachine.com/tcpout-server/_reload HTTP/1.0\" 200 1955 - - - 15ms\n\n## Steps\n\n1. Use a REGEX transform to extract all the fields and write them to meta. \n    1. Do not attempt to decompose the URL at this point\n1. Stash the value for `host` into an tempoary indexed field `my_host` so that we can use `Meta:Host` use with a REGEX transform\n1. Decompose the URL around the `?` to extract the `base_url` and the `parmeters`\n    1. Copy the parameters to the `host` field\n1. Use REGEX with `REPEAT_MATCH` to break up the parameters and copy them to `_meta` with the prefix `rest_param_`\n1. Copy the `my_host` value back to its proper location `Meta:Host`\n1. Drop the `full_url` and `my_host` fields along with the useless time data\n\n#### props.conf\n\n    # During loading we would like to use REGEX to extract the URL metadata from splunkd_access.log \n    [enrich_splunkd_access_log]\n    TIME_PREFIX = \\[\n    TIME_FORMAT = %d/%b/%Y:%H:%M:%S.%f %z\n    SHOULD_LINEMERGE=false\n    LINE_BREAKER=([\\n\\r]+)\n    TRANSFORMS-enrich_splunkd_access_log = enrich_splunkd_access_log-decompose_url, enrich_splunkd_access_log-move_host_to_meta, enrich_splunkd_access_log-move_url_to_host, enrich_splunkd_access_log-extract_url_parameters_from_host_to_meta, enrich_splunkd_access_log-meta_copy_back, shared-drop_useless_time_fields \n    # we are fully decomposing the URL we don't need MAJOR breakers\n    SEGMENTATION=search\n\n\n#### trasforms.conf\n\n    # We cannot target _meta with a REGEX transform, so we will copy the URL into the host field\n    # This means we must stash the existing host field as an indexed field until we are done\n    # We then apply the split function to the full URL to break around the ? REST delimiter \n    # We copy the MV paramaters field into the host field so we can use REGEX repeat match\n    [enrich_splunkd_access_log-move_url_to_host]\n    INGEST_EVAL = my_host:=host, base_url:=mvindex(split($full_url$,\"?\"),0), base_url:=if(isnull(base_url),full_url,base_url), host=mvindex(split($full_url$,\"?\"),1) \n\n    # we have copied the URL paramaters to host, lets extact this and extract the paramaters one by one creating indexed fields\n    [enrich_splunkd_access_log-extract_url_parameters_from_host_to_meta]\n    SOURCE_KEY = MetaData:Host\n    WRITE_META = true\n    REGEX = ([^=&:]+)=([^&]+)\n    FORMAT = rest_param_$1::\"$2\"\n    REPEAT_MATCH = true\n\n    # copy back my_host to host and drop my_host\n    # we don't want to index the full url as it is will bloat tsidx,  we don't need my_host \n    [enrich_splunkd_access_log-meta_copy_back]\n    INGEST_EVAL=host:=my_host, my_host:=null(), full_url:=null()\n"
+				"markdown": "# Problem statement\n\nRESTful calls to splunkd are recorded in `splunkd_access.log`. There is vast number of these and it is very expensive to search as everything is extracted at search time. This is a pity as they track many important interactions and the delay in response is very valuable to understand how efficently splunkd is executing.\n\n## Existing solution\n\nCurrently we use schema on the fly and performance is poor, it is expensive to search for delays per rest endpoint. \n\n## Proposed solution\n\nFully parse out all the meta data from the log line building out indexed fields. This will allow us to do tstats searches on the duration of the call by rest endpoint and analysis the parameters passed.\n\n### Example log line \n\n    127.0.0.1 - admin [21/Sep/2020:08:13:51.673 -0030] \"GET /servicesNS/nobody/splunk_app_addon-builder/storage/collections/config/?count=-1&offset=0&search=splunk_app_addon-builder HTTP/1.1\" 200 30503 - - - 8ms\n    10.0.44.11 - hulk@greenmachine.com [21/Sep/2020:08:17:15.312 -0000] \"GET /servicesNS/nobody/search/hulk@greenmachine.com/tcpout-server/_reload HTTP/1.0\" 200 1955 - - - 15ms\n\n## Steps\n\n1. Use a REGEX transform to extract all the fields and write them to meta. \n    1. Do not attempt to decompose the URL at this point\n1. Stash the value for `host` into an tempoary indexed field `my_host` so that we can use `Meta:Host` use with a REGEX transform\n1. Decompose the URL around the `?` to extract the `base_url` and the `parmeters`\n    1. Copy the parameters to the `host` field\n1. Use REGEX with `REPEAT_MATCH` to break up the parameters and copy them to `_meta` with the prefix `rest_param_`\n1. Copy the `my_host` value back to its proper location `Meta:Host`\n1. Drop the `full_url` and `my_host` fields along with the useless time data\n"
 			}
 		},
 		"viz_events": {
@@ -55,6 +55,18 @@
 			},
 			"showProgressBar": true,
 			"title": "Computation on events via tstats"
+		},
+		"viz_conf_props": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[enrich_splunkd_access_log]\nTIME_PREFIX = \\[\nTIME_FORMAT = %d/%b/%Y:%H:%M:%S.%f %z\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\nTRANSFORMS-enrich_splunkd_access_log = enrich_splunkd_access_log-decompose_url, enrich_splunkd_access_log-move_url_to_host, enrich_splunkd_access_log-extract_url_parameters_from_host_to_meta, enrich_splunkd_access_log-meta_copy_back, shared-drop_useless_time_fields\n# we are fully decomposing the URL we don't need MAJOR breakers\nSEGMENTATION=search\n```\n"
+			}
+		},
+		"viz_conf_transforms": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[enrich_splunkd_access_log-decompose_url]\nSOURCE_KEY = _raw\nWRITE_META = true\nREGEX= (\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s-\\s(\\S*)\\s\\[[^\\]]+\\]\\s\"(GET|POST|PUT|DELETE|PATCH|HEAD|OPTIONS)\\s(\\S+)\\s([^\"]+)\"\\s(\\d+)\\s(\\d+)\\s-\\s\\-\\s-\\s(\\d+)ms\nFORMAT= source_ip::\"$1\" http_user::\"$2\" http_type::\"$3\" full_url::\"$4\" http_version::\"$5\" http_return_code::\"$6\" http_return_code_2::\"$7\" response_time_ms::\"$8\"\n\n[enrich_splunkd_access_log-move_url_to_host]\nINGEST_EVAL = my_host:=host, base_url:=mvindex(split($full_url$,\"?\"),0), base_url:=if(isnull(base_url),full_url,base_url), host=mvindex(split($full_url$,\"?\"),1)\n\n[enrich_splunkd_access_log-extract_url_parameters_from_host_to_meta]\nSOURCE_KEY = MetaData:Host\nWRITE_META = true\nREGEX = ([^=&:]+)=([^&]+)\nFORMAT = rest_param_$1::\"$2\"\nREPEAT_MATCH = true\n\n[enrich_splunkd_access_log-meta_copy_back]\nINGEST_EVAL=host:=my_host, my_host:=null(), full_url:=null()\n```\n"
+			}
 		}
 	},
 	"dataSources": {
@@ -127,6 +139,26 @@
 							"y": 550,
 							"w": 720,
 							"h": 550
+						}
+					},
+					{
+						"item": "viz_conf_props",
+						"type": "block",
+						"position": {
+							"x": 0,
+							"y": 1100,
+							"w": 720,
+							"h": 480
+						}
+					},
+					{
+						"item": "viz_conf_transforms",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 1100,
+							"w": 720,
+							"h": 480
 						}
 					}
 				]
