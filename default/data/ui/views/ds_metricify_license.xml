@@ -3,31 +3,80 @@
     <description></description>
     <definition><![CDATA[
 {
-	"visualizations": {
-		"viz_markdown": {
-			"type": "splunk.markdown",
+	"title": "Convert license.log into metrics events",
+	"description": "",
+	"inputs": {
+		"input_time": {
+			"type": "input.timerange",
+			"title": "",
 			"options": {
-				"markdown": "# Problem description\n\nRunning searches to compute license usgae is very expensive as license.log is held as _raw strings. We must fully parse each log line to access the value for bytes \"b\" and extract the values for host, sourcetype, instance extra at point of search. This makes it difficult to do deep history analysis on license usage.\n\n## Existing Solutions\nPrimarily you must search the license log file with `_raw` search and wait\n\n## Proposed Solution\nWe will copy the events from license_usage.log so that they are also stored in the `_metrics` index so that they can be processed using the `mstats` command.\n\n###  Example log line\n\n    09-18-2020 10:02:11.793 +0100 INFO  LicenseUsage - type=Usage s=\"my_host\" st=\"m_sourcetype\" h=\"my_host\" o=\"\" idx=\"default\" i=\"18F9C3EA-EBB2-497C-801A-098D0C52F9E2\" pool=\"auto_generated_pool_enterprise\" b=2034451 poolsz=53687091200\n\n* `s` : the source that used license\n* `st` : the sourcetype that used license\n* `h` : the host that used license\n* `i` : the GUID of the indexer that reported the license_usgae\n* `idx` : the index the data was written to\n* `pool` : the name of the license pool\n* `b` : the number of bytes written for the `source`, `host` and `sourcetype` on the `indexer` into the `index`\n* `poolz` : the total pool_size\n\n#### Back filling data\n\nTo back fill your existing data into `_metrics` you use `oneshot` to reload the data and target the `metricify_license` sourcetype\n\n    /Applications/Splunk/bin/splunk nom on -auth admin:password /Applications/Splunk/var/log/splunk/license_usage.log  -sourcetype metricify_license -index main\n\n\n### The steps performed to process data\n\n1. We intercept the events created by the license_usage.log file using a source specific stanza\n1. We use a transform that calls CLONE_SOURCETYPE to create a new event with a new sourcetype `metricify_license`\n1. We let the orignal event countinue to indexed as per normal and be written to `the _internal` index\n1. We intercept the cloned event by its sourcetype `metricify_license` \n1. We then process the cloned event with a `REGEX` transform and to turn it into a metrics compliant event\n    1. We assign a fixed value to `metric_name` and copy extract value for \"b\" and copy it into `_value` \n    1. We extract the other fields assigning them to more descriptive indexed fields names - these become dimensions\n1. We route all other types other than \"usage\n1. We copy the indexed fields for host, source and sourcetype in to the proper metrics fields\n1. Finally we assign the `index` field to `_metrics` steering the event into the metrics index\n\n#### props.conf\n\n    # license usage data is under the splunkd sourcetype, so we need to match on the source file to be more selective \n    # The transform uses CLONE_SOURCETYPE to create a copy of the event for further processing\n    [source::.../var/log/splunk/license_usage.log(.\\d+)?]\n    TRANSFORMS-clone_license = metricify_license-clone\n\n    # These transforms convert the event into a metrics compliant one, and steer to the _metrics index \n    [metricify_license]\n    TRANSFORMS-clone_and_convert = metricify_license-extract_fields, shared-drop_useless_time_fields, metricify_license-reassign_meta_fields_and_route_to_index\n\n#### transforms.conf\n\n    # create a copy of the license log files, we leave the orginal event to be written into the _internal index as normal\n    [metricify_license-clone]\n    REGEX = .\n    CLONE_SOURCETYPE = metricify_license\n    FORMAT = $0\n    DEST_KEY = _raw\n\n    # We use a REGEX transformation to lift the fields and then write them to indexed fields, the value for b becomes _value which is the \n    # metric value, the remaining fields will become dimensions, we hard code the metric name to become license_usage\n    # we create two mutally exclusive capture groups for each field that may or may not be quoted with strings, and assign both to the indexed field \n    [metricify_license-extract_fields]\n    SOURCE_KEY = _raw\n    REGEX = type=(\\S+)\\ss=(?:\"([^\"]*)\"|(\\S*))\\s+st=(?:\"([^\"]+)\"|(\\S+))\\s+h=(?:\"([^\"]+)\"|(\\S+))\\so=\"[^\"]*\"\\sidx=(?:\"([^\"]+)\"|(\\S+))\\si=\"([^\"]+)\"\\spool=\"([^\"]+)\"\\sb=(\\d+)\\spoolsz=(\\d+)\n    FORMAT = metric_name::\"license_usage\" type::\"$1\" from_source::\"$2$3\" from_sourcetype::\"$4$5\" from_host::\"$6$7\" into_index::\"$8$9\" on_indexer::\"$10\" allocated_to_pool::\"$11\" _value::\"$12\" pool_size::\"$13\"\n    WRITE_META = true\n\n    # We keep data when type=usage, copy the metadata into the proper fields, drop the immediate indexed fields, and then route the metrics data into the _metrics index\n    [metricify_license-reassign_meta_fields_and_route_to_index]\n    INGEST_EVAL = queue=if(type=\"Usage\", queue, \"nullQueue\"), host=from_host, sourcetype=from_sourcetype, source=from_source,  type:=null(), from_host:=null(), from_sourcetype:=null(), from_source:=null(), index:=\"_metrics\"\n\n\n\n\n\n"
+				"defaultValue": "@w0,now",
+				"token": "time"
+			}
+		},
+		"input_splitby": {
+			"type": "input.dropdown",
+			"title": "Select splitby",
+			"options": {
+				"defaultValue": "sourcetype",
+				"items": [
+					{
+						"label": "host",
+						"value": "host"
+					},
+					{
+						"label": "source",
+						"value": "source"
+					},
+					{
+						"label": "sourcetype",
+						"value": "sourcetype"
+					},
+					{
+						"label": "index",
+						"value": "into_index"
+					},
+					{
+						"label": "splunk_server",
+						"value": "on_indexer"
+					},
+					{
+						"label": "pool",
+						"value": "allocated_to_pool"
+					}
+				],
+				"token": "selected_splitby"
+			}
+		},
+		"input_span": {
+			"type": "input.text",
+			"title": "Span (seconds)",
+			"options": {
+				"defaultValue": "60",
+				"prefix": "span=",
+				"suffix": "sec",
+				"token": "selected_span_min_30_secs"
+			}
+		},
+		"input_limit": {
+			"type": "input.text",
+			"title": "Limit for split by",
+			"options": {
+				"defaultValue": "20",
+				"token": "selected_limit"
 			}
 		}
 	},
-	"dataSources": {},
 	"defaults": {
 		"dataSources": {
 			"ds.search": {
 				"options": {
-					"queryParameters": {
-						"latest": "$global_time.latest$",
-						"earliest": "$global_time.earliest$"
-					}
+					"queryParameters": {}
 				}
 			},
 			"ds.spl2": {
 				"options": {
-					"queryParameters": {
-						"latest": "$global_time.latest$",
-						"earliest": "$global_time.earliest$"
-					}
+					"queryParameters": {}
 				}
 			}
 		},
@@ -37,21 +86,76 @@
 			}
 		}
 	},
-	"inputs": {},
-	"layout": {
-		"options": {},
-		"globalInputs": [],
-		"tabs": {
-			"items": [
-				{
-					"layoutId": "layout_1",
-					"label": "New tab"
-				}
-			]
+	"visualizations": {
+		"viz_markdown": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Problem description\n\nRunning searches to compute license usgae is very expensive as license.log is held as _raw strings. We must fully parse each log line to access the value for bytes \"b\" and extract the values for host, sourcetype, instance extra at point of search. This makes it difficult to do deep history analysis on license usage.\n\n## Existing Solutions\nPrimarily you must search the license log file with `_raw` search and wait\n\n## Proposed Solution\nWe will copy the events from license_usage.log so that they are also stored in the `_metrics` index so that they can be processed using the `mstats` command.\n\n###  Example log line\n\n    09-18-2020 10:02:11.793 +0100 INFO  LicenseUsage - type=Usage s=\"my_host\" st=\"m_sourcetype\" h=\"my_host\" o=\"\" idx=\"default\" i=\"18F9C3EA-EBB2-497C-801A-098D0C52F9E2\" pool=\"auto_generated_pool_enterprise\" b=2034451 poolsz=53687091200\n\n* `s` : the source that used license\n* `st` : the sourcetype that used license\n* `h` : the host that used license\n* `i` : the GUID of the indexer that reported the license_usgae\n* `idx` : the index the data was written to\n* `pool` : the name of the license pool\n* `b` : the number of bytes written for the `source`, `host` and `sourcetype` on the `indexer` into the `index`\n* `poolz` : the total pool_size\n\n#### Back filling data\n\nTo back fill your existing data into `_metrics` you use `oneshot` to reload the data and target the `metricify_license` sourcetype\n\n    /Applications/Splunk/bin/splunk nom on -auth admin:password /Applications/Splunk/var/log/splunk/license_usage.log  -sourcetype metricify_license -index main\n\n\n### The steps performed to process data\n\n1. We intercept the events created by the license_usage.log file using a source specific stanza\n1. We use a transform that calls CLONE_SOURCETYPE to create a new event with a new sourcetype `metricify_license`\n1. We let the orignal event countinue to indexed as per normal and be written to `the _internal` index\n1. We intercept the cloned event by its sourcetype `metricify_license` \n1. We then process the cloned event with a `REGEX` transform and to turn it into a metrics compliant event\n    1. We assign a fixed value to `metric_name` and copy extract value for \"b\" and copy it into `_value` \n    1. We extract the other fields assigning them to more descriptive indexed fields names - these become dimensions\n1. We route all other types other than \"usage\n1. We copy the indexed fields for host, source and sourcetype in to the proper metrics fields\n1. Finally we assign the `index` field to `_metrics` steering the event into the metrics index\n\n#### props.conf\n\n    # license usage data is under the splunkd sourcetype, so we need to match on the source file to be more selective \n    # The transform uses CLONE_SOURCETYPE to create a copy of the event for further processing\n    [source::.../var/log/splunk/license_usage.log(.\\d+)?]\n    TRANSFORMS-clone_license = metricify_license-clone\n\n    # These transforms convert the event into a metrics compliant one, and steer to the _metrics index \n    [metricify_license]\n    TRANSFORMS-clone_and_convert = metricify_license-extract_fields, shared-drop_useless_time_fields, metricify_license-reassign_meta_fields_and_route_to_index\n\n#### transforms.conf\n\n    # create a copy of the license log files, we leave the orginal event to be written into the _internal index as normal\n    [metricify_license-clone]\n    REGEX = .\n    CLONE_SOURCETYPE = metricify_license\n    FORMAT = $0\n    DEST_KEY = _raw\n\n    # We use a REGEX transformation to lift the fields and then write them to indexed fields, the value for b becomes _value which is the \n    # metric value, the remaining fields will become dimensions, we hard code the metric name to become license_usage\n    # we create two mutally exclusive capture groups for each field that may or may not be quoted with strings, and assign both to the indexed field \n    [metricify_license-extract_fields]\n    SOURCE_KEY = _raw\n    REGEX = type=(\\S+)\\ss=(?:\"([^\"]*)\"|(\\S*))\\s+st=(?:\"([^\"]+)\"|(\\S+))\\s+h=(?:\"([^\"]+)\"|(\\S+))\\so=\"[^\"]*\"\\sidx=(?:\"([^\"]+)\"|(\\S+))\\si=\"([^\"]+)\"\\spool=\"([^\"]+)\"\\sb=(\\d+)\\spoolsz=(\\d+)\n    FORMAT = metric_name::\"license_usage\" type::\"$1\" from_source::\"$2$3\" from_sourcetype::\"$4$5\" from_host::\"$6$7\" into_index::\"$8$9\" on_indexer::\"$10\" allocated_to_pool::\"$11\" _value::\"$12\" pool_size::\"$13\"\n    WRITE_META = true\n\n    # We keep data when type=usage, copy the metadata into the proper fields, drop the immediate indexed fields, and then route the metrics data into the _metrics index\n    [metricify_license-reassign_meta_fields_and_route_to_index]\n    INGEST_EVAL = queue=if(type=\"Usage\", queue, \"nullQueue\"), host=from_host, sourcetype=from_sourcetype, source=from_source,  type:=null(), from_host:=null(), from_sourcetype:=null(), from_source:=null(), index:=\"_metrics\"\n\n\n\n\n\n"
+			}
 		},
+		"viz_mstats": {
+			"type": "splunk.column",
+			"dataSources": {
+				"primary": "ds_mstats"
+			},
+			"options": {
+				"stackMode": "stacked",
+				"legendTruncation": "ellipsisMiddle"
+			},
+			"showProgressBar": true,
+			"title": "This chart is calculated by mstats"
+		},
+		"viz_raw": {
+			"type": "splunk.column",
+			"dataSources": {
+				"primary": "ds_raw"
+			},
+			"options": {
+				"stackMode": "stacked",
+				"legendTruncation": "ellipsisMiddle"
+			},
+			"showProgressBar": true,
+			"title": "This chart is calculated via raw search"
+		}
+	},
+	"dataSources": {
+		"ds_mstats": {
+			"name": "mstats chart",
+			"type": "ds.search",
+			"options": {
+				"query": "| mstats sum(_value) as bytes_indexed $selected_span_min_30_secs$ where index=_metrics metric_name=license_usage  by $selected_splitby$\n| xyseries _time $selected_splitby$ bytes_indexed\n| head $selected_limit$",
+				"queryParameters": {
+					"earliest": "$time.earliest$",
+					"latest": "$time.latest$"
+				}
+			}
+		},
+		"ds_raw": {
+			"name": "Raw search chart",
+			"type": "ds.search",
+			"options": {
+				"query": "index=_internal TERM(LicenseUsage) sourcetype=splunkd NOT(IndexProcessor) TERM(type=Usage)\n| eval splitby=case(\"$selected_splitby$\"=\"host\", h, \"$selected_splitby$\"=\"source\", s, \"$selected_splitby$\"=\"sourcetype\", st, \"$selected_splitby$\"=\"into_index\", idx, \"$selected_splitby$\"=\"on_indexer\", i, \"$selected_splitby$\"=\"allocated_to_pool\", pool)\n| timechart limit=$selected_limit$ $selected_span_min_30_secs$ sum(b) as license_used by splitby",
+				"queryParameters": {
+					"earliest": "$time.earliest$",
+					"latest": "$time.latest$"
+				}
+			}
+		}
+	},
+	"layout": {
+		"globalInputs": [
+			"input_time",
+			"input_splitby",
+			"input_span",
+			"input_limit"
+		],
 		"layoutDefinitions": {
 			"layout_1": {
 				"type": "grid",
+				"options": {
+					"width": 1440,
+					"height": 250
+				},
 				"structure": [
 					{
 						"item": "viz_markdown",
@@ -59,20 +163,49 @@
 						"position": {
 							"x": 0,
 							"y": 0,
-							"w": 1440,
-							"h": 703
+							"w": 720,
+							"h": 1200
+						}
+					},
+					{
+						"item": "viz_mstats",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 0,
+							"w": 720,
+							"h": 600
+						}
+					},
+					{
+						"item": "viz_raw",
+						"type": "block",
+						"position": {
+							"x": 720,
+							"y": 600,
+							"w": 720,
+							"h": 600
 						}
 					}
-				],
-				"options": {
-					"width": 1440,
-					"height": 960
-				}
+				]
 			}
+		},
+		"options": {
+			"submitButton": false
+		},
+		"tabs": {
+			"items": [
+				{
+					"label": "New tab",
+					"layoutId": "layout_1"
+				}
+			]
 		}
 	},
-	"description": "",
-	"title": "Convert license.log into metrics events"
+	"applicationProperties": {
+		"hideEdit": false,
+		"hideExport": false
+	}
 }
     ]]></definition>
 </dashboard>
