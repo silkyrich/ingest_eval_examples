@@ -64,13 +64,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[drop_indexed_fields]\n# The timestamp is found in the time column, we need to remove this column\nTIMESTAMP_FIELDS=time\nINDEXED_EXTRACTIONS = CSV\n# These transforms remove the useless columns, and also the useless time fields\nTRANSFORMS-drop_fields = drop_indexed_fields-drop_useless_columns, shared-drop_useless_time_fields\n# Lift the removed columns via search time exraction (only works in the app)\nEXTRACT-removed-columns= [^,]+,[^,]+,[^,]+,(?<random_nonsense>[^,]+),(?<long_payload>[^,]+)\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Example: stripping unwanted indexed fields out of a CSV-parsed source.\n[drop_indexed_fields]\n# Timestamp comes from the `time` column; we drop that column below.\nTIMESTAMP_FIELDS=time\nINDEXED_EXTRACTIONS = CSV\n# Drop the unwanted columns and the noisy date_* fields.\nTRANSFORMS-drop_fields = drop_indexed_fields-drop_useless_columns, shared-drop_useless_time_fields\n# Re-surface the dropped columns at search time (only works in this app).\nEXTRACT-removed-columns= [^,]+,[^,]+,[^,]+,(?<random_nonsense>[^,]+),(?<long_payload>[^,]+)\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[drop_indexed_fields-drop_useless_columns]\nINGEST_EVAL= time:=null(), repeated_field:=null(), random_nonsense:=null(), long_payload:=null()\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# To drop a field from _meta we have to overwrite it; := does the assignment.\n[drop_indexed_fields-drop_useless_columns]\nINGEST_EVAL= time:=null(), repeated_field:=null(), random_nonsense:=null(), long_payload:=null()\n```\n"
 			}
 		}
 	},

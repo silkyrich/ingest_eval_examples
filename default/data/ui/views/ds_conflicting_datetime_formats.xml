@@ -39,13 +39,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[conflicting_datetime_formats]\nDATETIME_CONFIG = CURRENT\nTRANSFORMS-extract_date = conflicting_datetime_formats-test_try_formats\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Sourcetype for the conflicting-timestamps use case. The transform tries\n# several date/time formats via INGEST_EVAL and strptime, picking the first\n# one that parses.\n[conflicting_datetime_formats]\nDATETIME_CONFIG = CURRENT\nTRANSFORMS-extract_date = conflicting_datetime_formats-test_try_formats\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[conflicting_datetime_formats-test_try_formats]\nINGEST_EVAL= _time=case(isnotnull(strptime(_raw, \"%c\")), strptime(_raw, \"%c\"), isnotnull(strptime(_raw, \"%H:%M:%S %y-%m-%d\")),strptime(_raw, \"%H:%M:%S %y-%m-%d\"), isnotnull(strptime(_raw, \"%Y-%m-%d %H:%M:%S\")), strptime(_raw, \"%Y-%m-%d %H:%M:%S\"))\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Try three different date/time formats with strptime and keep the first\n# one that parses successfully.\n[conflicting_datetime_formats-test_try_formats]\nINGEST_EVAL= _time=case(isnotnull(strptime(_raw, \"%c\")), strptime(_raw, \"%c\"), isnotnull(strptime(_raw, \"%H:%M:%S %y-%m-%d\")),strptime(_raw, \"%H:%M:%S %y-%m-%d\"), isnotnull(strptime(_raw, \"%Y-%m-%d %H:%M:%S\")), strptime(_raw, \"%Y-%m-%d %H:%M:%S\"))\n```\n"
 			}
 		}
 	},

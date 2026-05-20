@@ -45,13 +45,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[split_forwarding]\nTIME_PREFIX = ^\nTIME_FORMAT = %Y-%m-%d %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\nrename = split_forwarding_sendout\nTRANSFORMS-split_forwarding=split_forwarding-randomize_output\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# This sourcetype is forwarded out over tcpout. The transform sets\n# _TCP_ROUTING per event to randomise which group each event goes to.\n[split_forwarding]\nTIME_PREFIX = ^\nTIME_FORMAT = %Y-%m-%d %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\nrename = split_forwarding_sendout\nTRANSFORMS-split_forwarding=split_forwarding-randomize_output\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[split_forwarding-randomize_output]\nINGEST_EVAL = _TCP_ROUTING=\"split_forwarding_\".random()%2\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Randomly route each event to one of two tcpout groups by appending a\n# 0 or 1 suffix (split_forwarding_0 / split_forwarding_1) to _TCP_ROUTING.\n[split_forwarding-randomize_output]\nINGEST_EVAL = _TCP_ROUTING=\"split_forwarding_\".random()%2\n```\n"
 			}
 		}
 	},

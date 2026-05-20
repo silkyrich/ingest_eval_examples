@@ -41,13 +41,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[compound_datetimes]\nDATETIME_CONFIG = CURRENT\nTRANSFORMS-get-date = compound_datetimes-join_and_parse\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Sourcetype for the compound-datetimes example: the date comes from the\n# filename, the time-of-day is on each log line, and we stitch them together.\n[compound_datetimes]\nDATETIME_CONFIG = CURRENT\nTRANSFORMS-get-date = compound_datetimes-join_and_parse\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[compound_datetimes-join_and_parse]\nINGEST_EVAL= _time=strptime(replace(source,\".*/(20\\d\\d\\-\\d\\d\\-\\d\\d)\\.log\",\"\\1\").substr(_raw,0,10),\"%Y-%m-%d%H:%M:%S\"), my_date:=null()\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Pull the date out of the source filename with regex, prepend it to the\n# first 10 chars of _raw (the time-of-day), and parse the combined string.\n# If the eval fails Splunk falls back to CURRENT.\n[compound_datetimes-join_and_parse]\nINGEST_EVAL= _time=strptime(replace(source,\".*/(20\\d\\d\\-\\d\\d\\-\\d\\d)\\.log\",\"\\1\").substr(_raw,0,10),\"%Y-%m-%d%H:%M:%S\"), my_date:=null()\n```\n"
 			}
 		}
 	},

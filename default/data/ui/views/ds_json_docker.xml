@@ -13,7 +13,7 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[json_docker]\n# We will use the JSON parser to decompose the JSON structure into indexed fields\nINDEXED_EXTRACTIONS = JSON\n# The value for time is store in the time field\nTIMESTAMP_FIELDS = time\nTIME_FORMAT = %Y-%m-%dT%H:%M:%S.%QZ\n# Use INGEST_EVAL to reassign the fields and replace the _raw string\nTRANSFORMS-json_docker = json_docker_reassign_raw_drop_time\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Docker JSON log driver embeds the original log line inside a \"log\" field.\n[json_docker]\n# Use the JSON parser to lift every JSON key into an indexed field.\nINDEXED_EXTRACTIONS = JSON\n# Timestamp is the JSON `time` field.\nTIMESTAMP_FIELDS = time\nTIME_FORMAT = %Y-%m-%dT%H:%M:%S.%QZ\n# INGEST_EVAL moves the embedded log content back into _raw and drops the\n# JSON wrapper fields.\nTRANSFORMS-json_docker = json_docker_reassign_raw_drop_time\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n```\n"
 			}
 		}
 	},

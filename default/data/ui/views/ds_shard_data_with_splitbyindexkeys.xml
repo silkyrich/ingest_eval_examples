@@ -46,13 +46,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[shard_data_with_splitbyindexkeys]\nTRANSFORMS-shard_data_with_splitbyindexkeys = enrich_splunkd_component_level_thread-extract_log_level_etc, enrich_splunkd_component_level_thread-drop_null_thread_info, shard_data_with_splitbyindexkeys-extract_metadata_from_host, shard_data_with_splitbyindexkeys-move_meta_data\n# we are fully decomposing the URL we don't need MAJOR breakers\nSEGMENTATION=search\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Parses the cloned splunkd events and writes them into the sharded index.\n[shard_data_with_splitbyindexkeys]\nTRANSFORMS-shard_data_with_splitbyindexkeys = enrich_splunkd_component_level_thread-extract_log_level_etc, enrich_splunkd_component_level_thread-drop_null_thread_info, shard_data_with_splitbyindexkeys-extract_metadata_from_host, shard_data_with_splitbyindexkeys-move_meta_data\n# Everything we care about is now in indexed fields, so major segmenters\n# just bloat the tsidx.\nSEGMENTATION=search\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[shard_data_with_splitbyindexkeys-clone]\nREGEX = .\nCLONE_SOURCETYPE = shard_data_with_splitbyindexkeys\nFORMAT = $0\nDEST_KEY = _raw\n\n[shard_data_with_splitbyindexkeys-extract_metadata_from_host]\nSOURCE_KEY = MetaData:Host\nWRITE_META = true\nREGEX = ^(?:host::)?([^\\-]+)-([^\\.]+)+\\.([^\\.]+)\\.(.+)$\nFORMAT = role::\"$1\" instance::\"$2\" stack::\"$3\" domain::\"$4\"\n\n[shard_data_with_splitbyindexkeys-move_meta_data]\nINGEST_EVAL =  orig_source=source, orig_sourcetype=sourcetype, source=stack, sourcetype=component, index=if(isnull(component), \"detritus\", index)\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Clone every event so the clone can be re-parsed under the real sourcetype;\n# the original importer event is dropped further down the pipeline.\n[shard_data_with_splitbyindexkeys-clone]\nREGEX = .\nCLONE_SOURCETYPE = shard_data_with_splitbyindexkeys\nFORMAT = $0\nDEST_KEY = _raw\n\n# The host field encodes role-instance.stack.domain \u2014 pull each part out\n# into its own indexed field.\n[shard_data_with_splitbyindexkeys-extract_metadata_from_host]\nSOURCE_KEY = MetaData:Host\nWRITE_META = true\nREGEX = ^(?:host::)?([^\\-]+)-([^\\.]+)+\\.([^\\.]+)\\.(.+)$\nFORMAT = role::\"$1\" instance::\"$2\" stack::\"$3\" domain::\"$4\"\n\n# Move component into sourcetype and stack into source so splitByIndexKeys\n# can shard by those values. Events with no component land in the\n# \"detritus\" index as a safety net.\n[shard_data_with_splitbyindexkeys-move_meta_data]\nINGEST_EVAL =  orig_source=source, orig_sourcetype=sourcetype, source=stack, sourcetype=component, index=if(isnull(component), \"detritus\", index)\n```\n"
 			}
 		},
 		"viz_conf_indexes": {

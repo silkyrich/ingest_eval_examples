@@ -13,13 +13,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[find_ip_addresses]\nTIME_FORMAT = %d-%m-%Y %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\nTRANSFORMS-find-find_ip_addresses=find_ip_addresses\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Scan _raw for anything that looks like an IP address and write each match\n# out as an indexed `ip` field.\n[find_ip_addresses]\nTIME_FORMAT = %d-%m-%Y %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\nTRANSFORMS-find-find_ip_addresses=find_ip_addresses\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[find_ip_addresses]\nREGEX = (?<![\\d\\.])((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))(?![\\d\\.])\nSOURCE_KEY = _raw\nREPEAT_MATCH=true\nFORMAT = ip::\"$1\"\nWRITE_META = true\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Match anything in _raw that looks like a valid IPv4 dotted-quad and write\n# it out as an indexed `ip` field. The lookahead/lookbehind anchors stop us\n# matching numbers that happen to look IP-like but are part of a longer\n# numeric token.\n[find_ip_addresses]\nREGEX = (?<![\\d\\.])((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))(?![\\d\\.])\nSOURCE_KEY = _raw\nREPEAT_MATCH=true\nFORMAT = ip::\"$1\"\nWRITE_META = true\n```\n"
 			}
 		}
 	},

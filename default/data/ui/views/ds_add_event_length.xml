@@ -121,7 +121,7 @@
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[add_event_length-get_raw_length]\nINGEST_EVAL= _event_length=len(_raw)\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Add an indexed field holding len(_raw). Must be the LAST transform in the\n# chain so nothing else changes _raw after we measure it.\n[add_event_length-get_raw_length]\nINGEST_EVAL= _event_length=len(_raw)\n```\n"
 			}
 		}
 	},

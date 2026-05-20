@@ -109,13 +109,13 @@
 		"viz_conf_props": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n[auto_extract_indexed_fields]\nTIME_PREFIX = ^\nTIME_FORMAT = %Y-%m-%d %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n# because we are creating indexed fields we can disable the major breakers\nSEGMENTATION = search\nTRANSFORMS-extract_indexed_fields=auto_extract_indexed_fields-univeral\n```\n"
+				"markdown": "### props.conf\n\nFrom `default/props.conf` \u2014 verbatim:\n\n```ini\n# Example: REPEAT_MATCH + regex to auto-extract key=value pairs into indexed\n# fields from any log line.\n[auto_extract_indexed_fields]\nTIME_PREFIX = ^\nTIME_FORMAT = %Y-%m-%d %H:%M:%S\nSHOULD_LINEMERGE=false\nLINE_BREAKER=([\\n\\r]+)\n# We have indexed fields covering everything we care about, so the major\n# segmenters add no value and just bloat the tsidx.\nSEGMENTATION = search\nTRANSFORMS-extract_indexed_fields=auto_extract_indexed_fields-univeral\n```\n"
 			}
 		},
 		"viz_conf_transforms": {
 			"type": "splunk.markdown",
 			"options": {
-				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n[auto_extract_indexed_fields-univeral]\nSOURCE_KEY = _raw\nREGEX = \\s([a-zA-Z][a-zA-Z0-9_-]+)=(?:\"([^\"]+)\"|'([^']+)'|([^\\s\"',]+))\nREPEAT_MATCH=true\nFORMAT = $1::\"$2$3$4\"\nWRITE_META = true\n```\n"
+				"markdown": "### transforms.conf\n\nFrom `default/transforms.conf` \u2014 verbatim:\n\n```ini\n# Match every key=value pair (bare, \"double-quoted\" or 'single-quoted') and\n# write each one out as an indexed field.\n[auto_extract_indexed_fields-univeral]\nSOURCE_KEY = _raw\nREGEX = \\s([a-zA-Z][a-zA-Z0-9_-]+)=(?:\"([^\"]+)\"|'([^']+)'|([^\\s\"',]+))\nREPEAT_MATCH=true\nFORMAT = $1::\"$2$3$4\"\nWRITE_META = true\n```\n"
 			}
 		}
 	},
